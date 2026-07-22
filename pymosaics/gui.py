@@ -170,7 +170,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
     def _build_about_tab(self):
         layout = QtWidgets.QVBoxLayout(self.about_tab)
         label = QtWidgets.QLabel(
-            "<h2>PymoSAICS 0.1.0</h2>"
+            "<h2>PymoSAICS 0.1.1</h2>"
             "<p>A transparent, cross-platform PyMOL interface for an external "
             "MOSAICS runtime.</p>"
             "<p>This plugin contains no MOSAICS executable, force-field data, "

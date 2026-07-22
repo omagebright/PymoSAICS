@@ -38,7 +38,7 @@ Python and Qt versions.
 
 ## Install
 
-1. Download `PymoSAICS-0.1.0.zip` from the release assets. Do not extract it.
+1. Download `PymoSAICS-0.1.1.zip` from the release assets. Do not extract it.
 2. In PyMOL, open **Plugin > Plugin Manager > Install New Plugin**.
 3. Select the ZIP file and approve the user plugin directory if prompted.
 4. Restart PyMOL.
@@ -112,7 +112,7 @@ No third-party development dependencies are needed for the core tests:
 ```bash
 python -m unittest discover -v
 python scripts/build_release.py
-python -m zipfile -l dist/PymoSAICS-0.1.0.zip
+python -m zipfile -l dist/PymoSAICS-0.1.1.zip
 ```
 
 The build command creates the Plugin Manager archive in `dist/`.

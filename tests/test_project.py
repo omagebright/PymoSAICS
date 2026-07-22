@@ -1,3 +1,4 @@
+import os
 import tempfile
 import time
 import unittest
@@ -19,7 +20,8 @@ class ProjectTests(unittest.TestCase):
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory(prefix="PymoSAICS project ")
         self.root = Path(self.temporary.name)
-        self.executable = self.root / "bin" / "mosaics.x"
+        executable_name = "mosaics.exe" if os.name == "nt" else "mosaics.x"
+        self.executable = self.root / "bin" / executable_name
         self.executable.parent.mkdir()
         self.executable.write_text("runtime", encoding="utf-8")
         self.executable.chmod(0o755)
@@ -50,7 +52,7 @@ class ProjectTests(unittest.TestCase):
     def test_placeholders_resolve_to_portable_absolute_paths(self):
         resolved = resolve_placeholders("${PYMOSAICS_FORCEFIELD_DIR}|${PROJECT_DIR}", self.project, self.config)
         self.assertNotIn("${", resolved)
-        self.assertIn(str(self.forcefields).replace("\\", "/"), resolved)
+        self.assertIn(str(self.forcefields.resolve()).replace("\\", "/"), resolved)
 
     def test_prepare_preserves_source_and_writes_resolved_copy(self):
         parameter_input = self._input()

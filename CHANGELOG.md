@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 — 2026-07-21
+
+- Corrected Windows test fixtures to use a native executable name.
+- Normalized Windows temporary paths before portability assertions.
+- Updated GitHub Actions to their Node.js 24-compatible releases.
+
 ## 0.1.0 — 2026-07-21
 
 - Replaced the legacy Tk/Pmw interface with PyMOL's Qt compatibility layer.
