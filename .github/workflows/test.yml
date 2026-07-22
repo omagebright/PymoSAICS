@@ -24,4 +24,4 @@ jobs:
       - name: Build Plugin Manager archive
         run: python scripts/build_release.py
       - name: Inspect archive
-        run: python -m zipfile -l dist/PymoSAICS-0.2.0.zip
+        run: python -c "from pathlib import Path; from pymosaics import __version__; import zipfile; archive = Path('dist') / ('PymoSAICS-' + __version__ + '.zip'); print(*zipfile.ZipFile(archive).namelist(), sep='\n')"
