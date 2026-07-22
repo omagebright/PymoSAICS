@@ -38,14 +38,18 @@ Python and Qt versions.
 
 ## Install
 
-1. Download `PymoSAICS-0.1.1.zip` from the release assets. Do not extract it.
-2. In PyMOL, open **Plugin > Plugin Manager > Install New Plugin**.
-3. Select the ZIP file and approve the user plugin directory if prompted.
-4. Restart PyMOL.
-5. Open **Plugin > PymoSAICS**.
+1. In PyMOL, open **Plugin > Plugin Manager > Install New Plugin**.
+2. Paste this URL into **Install from PyMOLWiki or any URL**:
 
-No administrator privileges, XQuartz installation, or separate Python packages
-are required by PymoSAICS itself.
+   ```text
+   https://github.com/omagebright/PymoSAICS/releases/download/v0.1.1/PymoSAICS-0.1.1.zip
+   ```
+
+3. Select **Install**, restart PyMOL, then open **Plugin > PymoSAICS**.
+
+If the old `PymoSAICS` plugin is installed, disable its **Load on startup** entry
+and enable the new lowercase `pymosaics` entry. No extraction, administrator
+privileges, XQuartz installation, or separate Python packages are required.
 
 ## First-time setup
 
