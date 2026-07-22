@@ -1,0 +1,13 @@
+"""PymoSAICS: run an external MOSAICS installation from PyMOL."""
+
+__version__ = "0.1.0"
+
+
+def __init_plugin__(app=None):
+    """Register the plugin in current Qt-based PyMOL releases."""
+
+    from pymol.plugins import addmenuitemqt
+
+    from .plugin import show_dialog
+
+    addmenuitemqt("PymoSAICS", show_dialog)
