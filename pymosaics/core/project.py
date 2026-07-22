@@ -3,6 +3,7 @@
 import hashlib
 import re
 import os
+import shutil
 import tempfile
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -11,6 +12,7 @@ from typing import Dict, Iterable, List, Mapping, Optional, Sequence, Tuple
 
 from .models import Diagnostic, PreparedRun, RuntimeConfig
 from .runtime import build_command, has_errors, validate_runtime
+from .topology import validate_nucleic_chi_definitions
 
 
 PLACEHOLDERS = ("${PYMOSAICS_FORCEFIELD_DIR}", "${PROJECT_DIR}")
@@ -329,9 +331,62 @@ def validate_project(parameter_input: Path, config: RuntimeConfig) -> Tuple[Diag
             Diagnostic("warning", "No recognized input-file references were found; review the parameter file manually")
         )
 
+    topology_value = MosaicsInputDocument(resolved).value("mol_parm_file")
+    if topology_value:
+        topology_path = Path(topology_value).expanduser()
+        if not topology_path.is_absolute():
+            topology_path = parameter_input.parent / topology_path
+        if topology_path.is_file():
+            try:
+                chi_issues = validate_nucleic_chi_definitions(topology_path)
+            except (OSError, UnicodeError) as exc:
+                diagnostics.append(Diagnostic("error", "Cannot inspect topology chi definitions: {}".format(exc)))
+            else:
+                if chi_issues:
+                    diagnostics.append(
+                        Diagnostic(
+                            "error",
+                            "Nucleic-acid topology is missing required chi moves: {}".format(
+                                "; ".join(issue.message for issue in chi_issues[:8])
+                            ),
+                        )
+                    )
+
     if not any(item.severity == "error" for item in diagnostics):
         diagnostics.append(Diagnostic("info", "Project input is ready to run"))
     return tuple(diagnostics)
+
+
+def _archive_existing_outputs(text: str, working_directory: Path, stamp: str) -> Tuple[Path, ...]:
+    """Move previous outputs aside so MOSAICS cannot append a second run."""
+
+    document = MosaicsInputDocument(text)
+    candidates = []
+    for key in sorted(OUTPUT_FILE_KEYS - {"param_out_file"}):
+        value = document.value(key)
+        if not value:
+            continue
+        path = Path(value).expanduser()
+        if not path.is_absolute():
+            path = working_directory / path
+        candidates.append((key, path.resolve()))
+    candidates.append(("sim_param", (working_directory / "sim_param.out").resolve()))
+
+    input_paths = {path.resolve() for path in referenced_input_files(text, working_directory)}
+    archive_root = working_directory / "run_history" / stamp
+    archived = []
+    seen = set()
+    for key, path in candidates:
+        if path in seen or not path.is_file():
+            continue
+        seen.add(path)
+        if path in input_paths:
+            raise PreparationError("Refusing to archive an output path that is also an input: {}".format(path))
+        destination = archive_root / key / path.name
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.move(str(path), str(destination))
+        archived.append(destination.resolve())
+    return tuple(archived)
 
 
 def prepare_run(parameter_input: Path, config: RuntimeConfig) -> PreparedRun:
@@ -358,6 +413,8 @@ def prepare_run(parameter_input: Path, config: RuntimeConfig) -> PreparedRun:
     else:
         resolved_input = parameter_input
 
+    archived_outputs = _archive_existing_outputs(resolved, parameter_input.parent, stamp)
+
     log_file = log_directory / ("run-{}.log".format(stamp))
     return PreparedRun(
         command=build_command(config.executable, resolved_input),
@@ -365,6 +422,7 @@ def prepare_run(parameter_input: Path, config: RuntimeConfig) -> PreparedRun:
         source_input=parameter_input,
         resolved_input=resolved_input,
         log_file=log_file,
+        archived_outputs=archived_outputs,
     )
 
 

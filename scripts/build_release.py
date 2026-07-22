@@ -6,7 +6,7 @@ import zipfile
 from pathlib import Path
 
 
-VERSION = "0.4.0"
+VERSION = "0.4.1"
 ROOT = Path(__file__).resolve().parents[1]
 INCLUDED_ROOT_FILES = ("README.md", "LICENSE", "CHANGELOG.md")
 

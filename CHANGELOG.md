@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.1 — 2026-07-22
+
+- Restored the pminary/MOSAICS nucleic-acid `CHIGROUP`/`CHIPRIM` definitions across all eight bundled bs0, bsc1, OL15/OL3, OL21/OL3, and OL24/OL3 standard and terminal topology profiles.
+- Added release-blocking residue-level validation for glycosidic chi move definitions; incomplete DNA/RNA topology files are now rejected before staging or execution.
+- Archived existing MOSAICS outputs under `run_history/` before each run so trajectories and torsion records from different systems cannot be appended together.
+- Pinned the bundled RTF provenance to pminary/MOSAICS commit `5ad1e934a74c134202ca5e4c5a42805f0b5b15da`.
+
 ## 0.4.0 — 2026-07-22
 
 - Added streaming step progress with percentage, elapsed time, measured rate, ETA countdown, and estimated completion time.

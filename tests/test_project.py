@@ -71,6 +71,28 @@ class ProjectTests(unittest.TestCase):
         self.assertEqual(prepared.log_file.parent, self.project.resolve() / "logs")
         self.assertNotIn(".pymosaics", prepared.log_file.parts)
 
+    def test_prepare_archives_existing_outputs_before_a_new_run(self):
+        trajectory = self.project / "simulation.trajectory.pdb"
+        energy = self.project / "simulation.potential_energy.dat"
+        fixed = self.project / "sim_param.out"
+        trajectory.write_text("old trajectory\n", encoding="utf-8")
+        energy.write_text("old energy\n", encoding="utf-8")
+        fixed.write_text("old parameters\n", encoding="utf-8")
+        parameter_input = self._input(
+            "\\atom_pos_file{simulation.trajectory.pdb}\n"
+            "\\epot_file{simulation.potential_energy.dat}\n"
+        )
+
+        prepared = prepare_run(parameter_input, self.config)
+
+        self.assertFalse(trajectory.exists())
+        self.assertFalse(energy.exists())
+        self.assertFalse(fixed.exists())
+        self.assertEqual(len(prepared.archived_outputs), 3)
+        for archived in prepared.archived_outputs:
+            self.assertTrue(archived.is_file())
+            self.assertIn("run_history", archived.parts)
+
     def test_resolved_input_name_is_content_addressed(self):
         parameter_input = self._input()
         first = planned_parameter_input(parameter_input, self.config)

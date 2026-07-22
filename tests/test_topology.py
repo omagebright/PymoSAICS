@@ -2,7 +2,11 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from pymosaics.core.topology import read_rtf_atom_templates, validate_pdb_against_rtf
+from pymosaics.core.topology import (
+    read_rtf_atom_templates,
+    validate_nucleic_chi_definitions,
+    validate_pdb_against_rtf,
+)
 
 
 def atom_line(serial, atom, residue, chain, number):
@@ -13,6 +17,30 @@ def atom_line(serial, atom, residue, chain, number):
 
 
 class TopologyTests(unittest.TestCase):
+    def test_nucleic_residues_require_glycosidic_chi_groups_and_primitives(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            missing = root / "missing.rtf"
+            missing.write_text(
+                "RESI GUD -1\n"
+                "ATOM C2' CT 0\nATOM C1' CT 0\nATOM N9 NS 0\n"
+                "ATOM C8 CK 0\nATOM C4 CB 0\nEND\n",
+                encoding="utf-8",
+            )
+            issues = validate_nucleic_chi_definitions(missing)
+            self.assertEqual(len(issues), 1)
+            self.assertIn("glycosidic", issues[0].message)
+
+            complete = root / "complete.rtf"
+            complete.write_text(
+                missing.read_text(encoding="utf-8").replace(
+                    "END\n",
+                    "CHIGROUP C8 C4\nCHIPRIM C2' C1' N9 C8\nEND\n",
+                ),
+                encoding="utf-8",
+            )
+            self.assertEqual(validate_nucleic_chi_definitions(complete), ())
+
     def test_reads_rtf_templates_and_reports_missing_atoms(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

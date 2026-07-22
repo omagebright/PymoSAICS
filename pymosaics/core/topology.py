@@ -27,6 +27,81 @@ class TopologyIssue:
         )
 
 
+@dataclass(frozen=True)
+class RtfChiDefinition:
+    chigroups: Tuple[Tuple[str, ...], ...]
+    chiprims: Tuple[Tuple[str, ...], ...]
+
+
+@dataclass(frozen=True)
+class RtfChiIssue:
+    residue: str
+    message: str
+
+
+def read_rtf_chi_definitions(path: Path) -> Dict[str, RtfChiDefinition]:
+    """Read CHIGROUP/CHIPRIM records without altering legacy RTF syntax."""
+
+    records: Dict[str, Dict[str, List[Tuple[str, ...]]]] = {}
+    current = None
+    for raw in path.expanduser().read_text(encoding="utf-8", errors="replace").splitlines():
+        fields = raw.split()
+        if not fields or fields[0].startswith(("!", "*")):
+            continue
+        keyword = fields[0].upper()
+        if keyword == "RESI" and len(fields) >= 2:
+            current = fields[1].upper()
+            records[current] = {"CHIGROUP": [], "CHIPRIM": []}
+        elif keyword in ("PRES", "END"):
+            current = None
+        elif current and keyword in ("CHIGROUP", "CHIPRIM"):
+            records[current][keyword].append(tuple(field.upper() for field in fields[1:]))
+    return {
+        residue: RtfChiDefinition(
+            tuple(values["CHIGROUP"]), tuple(values["CHIPRIM"])
+        )
+        for residue, values in records.items()
+    }
+
+
+def validate_nucleic_chi_definitions(path: Path) -> Tuple[RtfChiIssue, ...]:
+    """Require an explicit glycosidic chi move for every DNA/RNA residue.
+
+    MOSAICS accepts an RTF with zero CHIGROUP and zero CHIPRIM records, but then
+    constructs backbone transformations only.  Atom-level topology validation
+    cannot detect that scientifically incomplete move set.
+    """
+
+    atoms = read_rtf_atom_templates(path)
+    definitions = read_rtf_chi_definitions(path)
+    issues = []
+    for residue, atom_names in atoms.items():
+        atom_set = set(atom_names)
+        if not {"C1'", "C2'"}.issubset(atom_set):
+            continue
+        if {"N9", "C8"}.issubset(atom_set):
+            primitive = ("C2'", "C1'", "N9", "C8")
+        elif {"N1", "C2"}.issubset(atom_set):
+            primitive = ("C2'", "C1'", "N1", "C2")
+        else:
+            continue
+        definition = definitions.get(residue, RtfChiDefinition((), ()))
+        reasons = []
+        if len(definition.chigroups) != len(definition.chiprims):
+            reasons.append(
+                "{} CHIGROUP record(s) but {} CHIPRIM record(s)".format(
+                    len(definition.chigroups), len(definition.chiprims)
+                )
+            )
+        if primitive not in definition.chiprims:
+            reasons.append("missing glycosidic CHIPRIM {}".format(" ".join(primitive)))
+        if not any(primitive[3] in group for group in definition.chigroups):
+            reasons.append("missing glycosidic CHIGROUP containing {}".format(primitive[3]))
+        if reasons:
+            issues.append(RtfChiIssue(residue, "{}: {}".format(residue, "; ".join(reasons))))
+    return tuple(issues)
+
+
 def read_rtf_atom_templates(path: Path) -> Dict[str, Tuple[str, ...]]:
     templates: Dict[str, List[str]] = {}
     current = None

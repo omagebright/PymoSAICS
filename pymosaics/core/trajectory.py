@@ -85,6 +85,24 @@ def _dihedral(first, second, third, fourth) -> float:
     return math.degrees(math.atan2(y_value, x_value))
 
 
+def glycosidic_chi(atoms: Dict[str, Sequence[float]]) -> float:
+    """Return a purine or pyrimidine glycosidic chi angle in degrees.
+
+    The IUPAC atom order is O4'-C1'-N9-C4 for purines and
+    O4'-C1'-N1-C2 for pyrimidines.  Legacy ``*`` sugar atom names are
+    accepted so the measurement also works on older MOSAICS output.
+    """
+
+    normalized = {name.replace("*", "'").upper(): xyz for name, xyz in atoms.items()}
+    if all(name in normalized for name in ("O4'", "C1'", "N9", "C4")):
+        required = ("O4'", "C1'", "N9", "C4")
+    elif all(name in normalized for name in ("O4'", "C1'", "N1", "C2")):
+        required = ("O4'", "C1'", "N1", "C2")
+    else:
+        raise ValueError("residue is missing the atoms required for a glycosidic chi angle")
+    return _dihedral(*(normalized[name] for name in required))
+
+
 def pseudorotation_phase(atoms: Dict[str, Sequence[float]]) -> float:
     """Return the Altona–Sundaralingam furanose phase angle in degrees."""
 

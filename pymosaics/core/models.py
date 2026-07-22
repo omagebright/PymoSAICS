@@ -34,3 +34,4 @@ class PreparedRun:
     source_input: Path
     resolved_input: Path
     log_file: Path
+    archived_outputs: Tuple[Path, ...] = ()

@@ -5,6 +5,12 @@ should cite. It covers the OpenMM-XML-derived decks (`db_ol21_ol3`,
 `db_ol15_ol3`, and their `_terminal` variants), the AMBER-prmtop-derived
 `OL24/OL3` decks, and, by reference, the baseline `db_bsc1` / `db_bs0` decks.
 
+All bundled RTF topology files and their `rtf_sources/` inputs are synchronized
+verbatim from `pminary/MOSAICS` commit
+`5ad1e934a74c134202ca5e4c5a42805f0b5b15da`. This commit includes PR #18,
+which restores paired `CHIGROUP`/`CHIPRIM` records for every DNA and RNA
+residue. `SOURCE_COMMIT` is the machine-readable release pin.
+
 ## What was generated, and from what
 
 The `OL21/OL3` and `OL15/OL3` decks were produced by
