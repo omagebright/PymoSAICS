@@ -65,7 +65,9 @@ class AnalysisTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             path = Path(temporary) / "run.log"
             content = "line\n" * 4096
-            path.write_text(content, encoding="utf-8")
+            # Preserve the exact byte sequence on Windows as well as POSIX;
+            # text-mode writes would translate LF to CRLF before this byte-level test.
+            path.write_bytes(content.encode("utf-8"))
             self.assertEqual(read_text_file(path, maximum_bytes=None), content)
 
     def test_text_reader_rejects_binary(self):
