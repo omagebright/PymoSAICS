@@ -113,6 +113,7 @@ class AnalysisPreset:
     top_temperature: float = 300.0
     stsamc_period: int = 0
     stsamc_amplitude: float = 0.0
+    stsamc_shift: float = 0.0
 
 
 RUNTIME_PROFILES = (
@@ -279,6 +280,20 @@ FORCE_FIELD_PROFILES = (
         "ff14sb/mosaics_openmm-ff14sb.vdw",
         "Validated with the 1HHK protein control and side-chain natural moves.",
     ),
+    ForceFieldProfile(
+        "kb-3pt-protein",
+        "MOSAICS KB_3pt — protein / protein complex",
+        "Historical three-point CA/O/side-chain-centroid model for natural moves and MOSAICS-EM decks.",
+        "coarse_grained",
+        "kb_3pt",
+        "kb_3pt/top_3pt_prot_na.rtf",
+        "kb_3pt/par_3pt_prot_na.prm",
+        "kb_3pt/par_3pt_prot_na.prm",
+        "kb_3pt/par_3pt_prot_na.prm",
+        "kb_3pt/par_3pt_prot_na.prm",
+        "kb_3pt/par_3pt_prot_na.prm",
+        "Authentic MOSAICS three-point topology and parameter pair; generated coordinates remain reviewable.",
+    ),
 )
 
 
@@ -286,6 +301,7 @@ STABLE_391_FORCE_FIELDS = {
     "bsc1-ol3-standard",
     "bs0-standard",
     "ol15-ol3-standard",
+    "kb-3pt-protein",
 }
 
 
@@ -326,6 +342,28 @@ ANALYSIS_PRESETS = (
         minimize_type="bfgs",
         minimize_tolerance="1.e-7",
         minimize_report=2,
+    ),
+    AnalysisPreset(
+        "three-point-natural-moves",
+        "Three-point protein natural moves",
+        "A 100,000-step temperature-modulated KB_3pt search. Each chain starts as one explicit segment region; edit STRIDE and regions for system-specific hierarchy.",
+        "coarse_grained",
+        "tors",
+        "full",
+        100000,
+        100,
+        310.15,
+        "3.5e-05",
+        "off",
+        "off",
+        "successive",
+        simulation_type="MIN",
+        minimize_type="stsamc",
+        minimize_tolerance="1.e-7",
+        minimize_report=2,
+        stsamc_period=10000,
+        stsamc_amplitude=500.0,
+        stsamc_shift=300.0,
     ),
     AnalysisPreset(
         "stsamc-minimum-search",

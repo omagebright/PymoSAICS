@@ -62,7 +62,7 @@ def stage_force_field(project: Path, profile: ForceFieldProfile) -> Path:
         "",
         "files:",
     ]
-    for source in profile.all_paths():
+    for source in dict.fromkeys(profile.all_paths()):
         target = destination / source.name
         temporary = None
         try:
@@ -184,13 +184,11 @@ def generate_mcmc_input(
             entry("stsamc_type", "trigonom"),
             entry("stsamc_period", preset.stsamc_period),
             entry("stsamc_ampl", "{:g}".format(preset.stsamc_amplitude)),
-            entry("stsamc_shift", 0),
+            entry("stsamc_shift", "{:g}".format(preset.stsamc_shift)),
         ]
     if region_filename:
-        # A single PymoSAICS region is equivalent under both MOSAICS propagation
-        # strategies. Write the documented default instead of relying on a hidden
-        # parser default so the run deck remains fully reviewable.
-        general.insert(-1, entry("prop_regions_type", "superimpose"))
+        propagation = "onebyone" if force_field.topology_profile == "kb_3pt" else "superimpose"
+        general.insert(-1, entry("prop_regions_type", propagation))
     molecule = [
         "~sim_mol_def[",
         entry("system_def", "residue"),
@@ -209,6 +207,13 @@ def generate_mcmc_input(
         entry("onfo_database_file", _asset_reference(force_field.one_four)),
         entry("inter_database_file", _asset_reference(force_field.nonbonded)),
     ]
+    if force_field.topology_profile == "kb_3pt":
+        molecule.insert(2, entry("cgres_model", "KB_3pt"))
+        molecule.extend(
+            (entry("inter_replace_type", "KB_UA"), entry("inter_nonpairwise", "off"))
+        )
+        for term in ("bond", "bend", "tors", "onfo", "inter"):
+            molecule.append(entry("energy_term", term))
     if region_filename:
         molecule.append(entry("region_database_file", region_filename))
     molecule.extend(

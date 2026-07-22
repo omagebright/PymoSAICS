@@ -24,3 +24,8 @@ OL24/OL3, and ff14SB MOSAICS representations. Standard and true-terminal
 nucleic-acid profiles are separate because their resolved torsion terms differ.
 See `forcefields/panel/PROVENANCE.md` and `forcefields/panel/FORCEFIELD_USAGE.md`
 for sources, validation boundaries, and citations.
+
+The selectable KB_3pt profile contains the historical three-point topology and
+parameter pair supplied with the Oxford 7QPJ project. Hashes and the scientific
+boundary for generated coarse-grained coordinates are recorded in
+`forcefields/kb_3pt/PROVENANCE.md`.

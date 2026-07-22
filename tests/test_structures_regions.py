@@ -3,6 +3,7 @@ import unittest
 from pathlib import Path
 
 from pymosaics.core.regions import RegionSettings, generate_region_file
+from pymosaics.core.coarse_grain import generate_chain_regions, prepare_three_point_structure
 from pymosaics.core.structures import (
     detect_disulfides_text,
     fetch_rcsb_pdb,
@@ -20,6 +21,59 @@ def atom_line(serial, atom, residue, chain, number, x, y, z, element):
 
 
 class StructureTests(unittest.TestCase):
+    def test_protein_can_be_reduced_to_reviewable_three_point_representation(self):
+        text = "\n".join(
+            (
+                atom_line(1, "N", "ALA", "X", 10, 0, 0, 0, "N"),
+                atom_line(2, "CA", "ALA", "X", 10, 1, 0, 0, "C"),
+                atom_line(3, "C", "ALA", "X", 10, 2, 0, 0, "C"),
+                atom_line(4, "O", "ALA", "X", 10, 3, 0, 0, "O"),
+                atom_line(5, "CB", "ALA", "X", 10, 1, 1, 0, "C"),
+                atom_line(6, "N", "GLY", "X", 11, 4, 0, 0, "N"),
+                atom_line(7, "CA", "GLY", "X", 11, 5, 0, 0, "C"),
+                atom_line(8, "C", "GLY", "X", 11, 6, 0, 0, "C"),
+                atom_line(9, "O", "GLY", "X", 11, 7, 0, 0, "O"),
+                atom_line(10, "C1", "GOL", "X", 99, 9, 0, 0, "C").replace("ATOM  ", "HETATM", 1),
+                "END",
+            )
+        )
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            source = root / "source.pdb"
+            source.write_text(text, encoding="utf-8")
+            prepared = prepare_three_point_structure(
+                source, root / "three-point.pdb", "1", ("X",)
+            )
+            result = prepared.pdb_path.read_text()
+            self.assertTrue(result.startswith("CBLC ~A\nSTRIDE ~RR\n"))
+            self.assertEqual(result.count("ATOM"), 6)
+            self.assertIn(" CMA ALA A   1", result)
+            self.assertIn("   1.000   1.000   0.000", result)
+            self.assertIsNotNone(prepared.mapping_path)
+            self.assertIn("X:10", prepared.mapping_path.read_text())
+
+            regions = generate_chain_regions(prepared.pdb_path)
+            self.assertIn("\\segments_firstres{A:1}", regions)
+            self.assertIn("\\segments_lastres{A:2}", regions)
+
+    def test_three_point_conversion_rejects_a_chain_with_no_complete_residue(self):
+        text = "\n".join(
+            (
+                atom_line(1, "N", "ALA", "A", 1, 0, 0, 0, "N"),
+                atom_line(2, "CA", "ALA", "A", 1, 1, 0, 0, "C"),
+                atom_line(3, "CB", "ALA", "A", 1, 1, 1, 0, "C"),
+                "END",
+            )
+        )
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            source = root / "source.pdb"
+            source.write_text(text, encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "no complete residues"):
+                prepare_three_point_structure(
+                    source, root / "three-point.pdb", "1", ("A",)
+                )
+
     def test_rcsb_identifier_is_validated_before_network_access(self):
         with self.assertRaisesRegex(ValueError, "four"):
             fetch_rcsb_pdb("1BNA;rm", Path("unused.pdb"))

@@ -40,6 +40,7 @@ class CatalogAndBuilderTests(unittest.TestCase):
                 "ol24-ol3-standard",
                 "ol24-ol3-terminal",
                 "ff14sb-protein",
+                "kb-3pt-protein",
             }.issubset(identifiers)
         )
         self.assertIn("AMBER99", force_field_profile("bs0-standard").label)
@@ -110,6 +111,22 @@ class CatalogAndBuilderTests(unittest.TestCase):
         )
         self.assertIn("\\prop_regions_type{superimpose}", text)
         self.assertIn("\\region_database_file{region/region.data}", text)
+
+    def test_three_point_profile_writes_coarse_grained_model_and_energy_terms(self):
+        preset = next(item for item in ANALYSIS_PRESETS if item.identifier == "three-point-natural-moves")
+        profile = force_field_profile("kb-3pt-protein")
+        text = generate_mcmc_input(
+            preset,
+            profile,
+            "structure.pdb",
+            "simulation",
+            default_settings(preset),
+            "region/region.data",
+        )
+        self.assertIn("\\cgres_model{KB_3pt}", text)
+        for term in ("bond", "bend", "tors", "onfo", "inter"):
+            self.assertIn("\\energy_term{" + term + "}", text)
+        self.assertIn("\\prop_regions_type{onebyone}", text)
 
     def test_measured_runtime_force_field_compatibility(self):
         self.assertTrue(runtime_supports_force_field("mosaics-3.9.1", "bsc1-ol3-standard"))
