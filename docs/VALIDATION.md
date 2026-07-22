@@ -1,6 +1,7 @@
 # Release validation
 
-Validation was performed on 2026-07-21 on Apple Silicon macOS. These checks
+Validation was performed on 2026-07-21 and repeated for the 0.2.1 interface on
+2026-07-22 on Apple Silicon macOS. These checks
 establish software/runtime compatibility; they do not establish scientific
 convergence for a production study.
 
@@ -11,6 +12,10 @@ convergence for a production study.
 - The Plugin Manager ZIP contained all assets, no C/C++ source or object files,
   and executable mode metadata for both runtimes.
 - The Qt plugin loaded under PyMOL's bundled Python 3.10 / Qt 5.15 runtime.
+- All tabs rendered without native light-background leakage under forced light
+  and dark host palettes; the minimum-width Build form retained every control.
+- Build and Setup exposed the same nine profiles. Selecting each profile
+  populated all six corresponding force-field directives in `mcmc.input`.
 
 ## Runtime and force-field checks
 

@@ -69,11 +69,28 @@ ITEM_USER_CHECKABLE = (
     else QtCore.Qt.ItemFlag.ItemIsUserCheckable
 )
 USER_ROLE = int(QtCore.Qt.UserRole if hasattr(QtCore.Qt, "UserRole") else QtCore.Qt.ItemDataRole.UserRole)
+TOOLTIP_ROLE = int(
+    QtCore.Qt.ToolTipRole
+    if hasattr(QtCore.Qt, "ToolTipRole")
+    else QtCore.Qt.ItemDataRole.ToolTipRole
+)
 SCROLLBAR_ALWAYS_OFF = (
     QtCore.Qt.ScrollBarAlwaysOff
     if hasattr(QtCore.Qt, "ScrollBarAlwaysOff")
     else QtCore.Qt.ScrollBarPolicy.ScrollBarAlwaysOff
 )
+
+THEME = {
+    "shell": "#071820",
+    "panel": "#0d252f",
+    "card": "#102c36",
+    "field": "#071b24",
+    "line": "#2c5662",
+    "text": "#f0f8f9",
+    "muted": "#a9c0c6",
+    "accent": "#36c6b4",
+    "accent_dark": "#197e75",
+}
 
 
 def _enum_value(owner, direct_name: str, scoped_name: str, member_name: str):
@@ -81,6 +98,27 @@ def _enum_value(owner, direct_name: str, scoped_name: str, member_name: str):
     if direct is not None:
         return direct
     return getattr(getattr(owner, scoped_name), member_name)
+
+
+ALIGN_LEFT = _enum_value(QtCore.Qt, "AlignLeft", "AlignmentFlag", "AlignLeft")
+ALIGN_TOP = _enum_value(QtCore.Qt, "AlignTop", "AlignmentFlag", "AlignTop")
+ALIGN_VCENTER = _enum_value(QtCore.Qt, "AlignVCenter", "AlignmentFlag", "AlignVCenter")
+FRAME_NO_FRAME = _enum_value(QtWidgets.QFrame, "NoFrame", "Shape", "NoFrame")
+FORM_ALL_NON_FIXED_GROW = _enum_value(
+    QtWidgets.QFormLayout,
+    "AllNonFixedFieldsGrow",
+    "FieldGrowthPolicy",
+    "AllNonFixedFieldsGrow",
+)
+FORM_DONT_WRAP_ROWS = _enum_value(
+    QtWidgets.QFormLayout,
+    "DontWrapRows",
+    "RowWrapPolicy",
+    "DontWrapRows",
+)
+SIZE_POLICY_IGNORED = _enum_value(
+    QtWidgets.QSizePolicy, "Ignored", "Policy", "Ignored"
+)
 
 
 PAINTER_ANTIALIASING = _enum_value(QtGui.QPainter, "Antialiasing", "RenderHint", "Antialiasing")
@@ -118,7 +156,7 @@ class EnergyPlot(QtWidgets.QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
         self._series: Optional[EnergySeries] = None
-        self.setMinimumHeight(260)
+        self.setMinimumHeight(210)
 
     def set_series(self, series: Optional[EnergySeries]):
         self._series = series
@@ -126,9 +164,9 @@ class EnergyPlot(QtWidgets.QWidget):
 
     def paintEvent(self, event):
         painter = QtGui.QPainter(self)
-        painter.fillRect(self.rect(), self.palette().base())
+        painter.fillRect(self.rect(), QtGui.QColor(THEME["field"]))
         if self._series is None or not self._series.values:
-            painter.setPen(self.palette().text().color())
+            painter.setPen(QtGui.QColor(THEME["muted"]))
             painter.drawText(20, 35, "No energy series selected")
             return
 
@@ -138,12 +176,12 @@ class EnergyPlot(QtWidgets.QWidget):
         height = max(1, self.height() - top - bottom)
         low, high = min(values), max(values)
         span = high - low if high != low else 1.0
-        axis_pen = QtGui.QPen(self.palette().mid().color())
+        axis_pen = QtGui.QPen(QtGui.QColor(THEME["line"]))
         painter.setPen(axis_pen)
         painter.drawLine(left, top, left, top + height)
         painter.drawLine(left, top + height, left + width, top + height)
 
-        line_pen = QtGui.QPen(QtGui.QColor("#2d7dd2"))
+        line_pen = QtGui.QPen(QtGui.QColor(THEME["accent"]))
         line_pen.setWidth(2)
         painter.setPen(line_pen)
         path = QtGui.QPainterPath()
@@ -165,7 +203,7 @@ class EnergyPlot(QtWidgets.QWidget):
                 path.lineTo(x, y)
         painter.drawPath(path)
 
-        painter.setPen(self.palette().text().color())
+        painter.setPen(QtGui.QColor(THEME["muted"]))
         painter.drawText(4, top + 5, "{:.3g}".format(high))
         painter.drawText(4, top + height, "{:.3g}".format(low))
         painter.drawText(left, self.height() - 12, "sample 1")
@@ -182,7 +220,7 @@ class LandscapePlot(QtWidgets.QWidget):
         self._screen_points = []
         self._selected_frame = None
         self.on_frame_selected = None
-        self.setMinimumHeight(340)
+        self.setMinimumHeight(230)
 
     def set_result(self, result: Optional[LandscapeResult], energies: Optional[Tuple[float, ...]] = None):
         self._result = result
@@ -214,9 +252,9 @@ class LandscapePlot(QtWidgets.QWidget):
     def paintEvent(self, event):
         painter = QtGui.QPainter(self)
         painter.setRenderHint(PAINTER_ANTIALIASING)
-        painter.fillRect(self.rect(), self.palette().base())
+        painter.fillRect(self.rect(), QtGui.QColor(THEME["field"]))
         if self._result is None:
-            painter.setPen(self.palette().text().color())
+            painter.setPen(QtGui.QColor(THEME["muted"]))
             painter.drawText(20, 35, "Select a multi-model PDB trajectory and build the structural map")
             return
         left, top, right, bottom = 62, 28, 26, 48
@@ -250,10 +288,10 @@ class LandscapePlot(QtWidgets.QWidget):
                 painter.setPen(QtGui.QPen(QtGui.QColor("#f5b700"), 3))
                 radius += 3
             else:
-                painter.setPen(QtGui.QPen(self.palette().base().color(), 1))
+                painter.setPen(QtGui.QPen(QtGui.QColor(THEME["field"]), 1))
             painter.setBrush(color)
             painter.drawEllipse(QtCore.QPointF(x, y), radius, radius)
-        painter.setPen(self.palette().text().color())
+        painter.setPen(QtGui.QColor(THEME["muted"]))
         painter.drawText(left + 8, top + 16, "Low energy" if self._energies else "Early frames")
         painter.drawText(left + width - 88, top + 16, "High energy" if self._energies else "Late frames")
 
@@ -533,7 +571,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         super().__init__(parent)
         self.setWindowTitle("PymoSAICS")
         self.resize(1120, 860)
-        self.setMinimumSize(900, 700)
+        self.setMinimumSize(900, 710)
         self.config_store = config_store or ConfigStore()
         self.process = QtCore.QProcess(self)
         self.process.setProcessChannelMode(QtCore.QProcess.MergedChannels)
@@ -557,10 +595,15 @@ class PymoSAICSDialog(QtWidgets.QDialog):
 
         self.tabs = QtWidgets.QTabWidget()
         self.build_tab = QtWidgets.QWidget()
+        self.build_tab.setObjectName("buildTab")
         self.run_tab = QtWidgets.QWidget()
+        self.run_tab.setObjectName("runTab")
         self.analysis_tab = QtWidgets.QWidget()
+        self.analysis_tab.setObjectName("analysisTab")
         self.setup_tab = QtWidgets.QWidget()
+        self.setup_tab.setObjectName("setupTab")
         self.about_tab = QtWidgets.QWidget()
+        self.about_tab.setObjectName("aboutTab")
         self.tabs.addTab(self.build_tab, "Build")
         self.tabs.addTab(self.run_tab, "Run")
         self.tabs.addTab(self.analysis_tab, "Analysis")
@@ -589,17 +632,26 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         header = QtWidgets.QFrame()
         header.setObjectName("productHeader")
         layout = QtWidgets.QHBoxLayout(header)
-        layout.setContentsMargins(18, 14, 18, 14)
+        layout.setContentsMargins(0, 0, 18, 0)
+        layout.setSpacing(16)
+        identity_rail = QtWidgets.QFrame()
+        identity_rail.setObjectName("identityRail")
+        identity_rail.setFixedWidth(5)
+        layout.addWidget(identity_rail)
         title_column = QtWidgets.QVBoxLayout()
+        title_column.setContentsMargins(0, 13, 0, 13)
+        title_column.setSpacing(3)
         title = QtWidgets.QLabel("PymoSAICS")
         title.setObjectName("productTitle")
-        subtitle = QtWidgets.QLabel("Molecular sampling, with every scientific choice left visible")
+        subtitle = QtWidgets.QLabel("Prepare · run · inspect MOSAICS without hidden inputs")
         subtitle.setObjectName("productSubtitle")
         title_column.addWidget(title)
         title_column.addWidget(subtitle)
         layout.addLayout(title_column)
         layout.addStretch(1)
         context = QtWidgets.QVBoxLayout()
+        context.setContentsMargins(0, 11, 0, 11)
+        context.setSpacing(6)
         self.header_runtime = QtWidgets.QLabel("Runtime · not selected")
         self.header_runtime.setObjectName("contextBadge")
         self.header_science = QtWidgets.QLabel("Force field · not selected")
@@ -609,72 +661,182 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         layout.addLayout(context)
         return header
 
+    @staticmethod
+    def _palette_role(direct_name: str, member_name: str):
+        return _enum_value(QtGui.QPalette, direct_name, "ColorRole", member_name)
+
+    def _apply_theme_palette(self):
+        """Keep native Qt themes from replacing plugin surfaces with light colors."""
+
+        palette = QtGui.QPalette(self.palette())
+        colors = {
+            "Window": THEME["shell"],
+            "WindowText": THEME["text"],
+            "Base": THEME["field"],
+            "AlternateBase": THEME["card"],
+            "Text": THEME["text"],
+            "Button": THEME["card"],
+            "ButtonText": THEME["text"],
+            "Highlight": THEME["accent_dark"],
+            "HighlightedText": "#ffffff",
+            "ToolTipBase": THEME["card"],
+            "ToolTipText": THEME["text"],
+        }
+        for role_name, color in colors.items():
+            palette.setColor(self._palette_role(role_name, role_name), QtGui.QColor(color))
+        self.setPalette(palette)
+
     def _apply_style(self):
+        self._apply_theme_palette()
         self.setStyleSheet(
             """
-            QDialog { background: #0b1720; color: #e9f2f4; font-family: "Avenir Next", "Segoe UI", sans-serif; font-size: 13px; }
+            QDialog { background: #071820; color: #f0f8f9; font-family: "Aptos", "Segoe UI", "Helvetica Neue", sans-serif; font-size: 13px; }
+            QWidget#buildTab, QWidget#runTab, QWidget#analysisTab, QWidget#setupTab, QWidget#aboutTab { background: #0d252f; }
             QLabel, QCheckBox { color: #dcebed; background: transparent; }
-            QFrame#productHeader { background: #112935; border: 1px solid #27505d; border-radius: 12px; }
-            QLabel#productTitle { color: #f4fbfc; font-size: 25px; font-weight: 700; letter-spacing: 1px; }
-            QLabel#productSubtitle { color: #9eb8c1; font-size: 12px; }
-            QLabel#contextBadge { color: #bfeee6; background: #173d46; border: 1px solid #2c6b72; border-radius: 8px; padding: 4px 9px; }
-            QTabWidget::pane { border: 1px solid #294653; border-radius: 9px; background: #10212b; top: -1px; }
-            QTabBar::tab { background: #122630; color: #9fb3ba; border: 1px solid #294653; padding: 9px 17px; margin-right: 3px; border-top-left-radius: 7px; border-top-right-radius: 7px; }
-            QTabBar::tab:selected { background: #173b43; color: #ecfffb; border-bottom-color: #173b43; }
-            QTabBar::tab:hover { color: #ffffff; background: #1a4650; }
-            QGroupBox { color: #dcebed; font-weight: 600; border: 1px solid #2a4854; border-radius: 9px; margin-top: 12px; padding: 12px 9px 9px 9px; }
-            QGroupBox::title { subcontrol-origin: margin; left: 11px; padding: 0 6px; color: #7fddd0; }
-            QLineEdit, QPlainTextEdit, QComboBox, QListWidget, QTableWidget, QSpinBox, QDoubleSpinBox { background: #0c1b23; color: #e8f3f5; border: 1px solid #31515d; border-radius: 6px; selection-background-color: #2b827e; padding: 5px; }
-            QPlainTextEdit { font-family: Menlo, Consolas, monospace; font-size: 12px; }
-            QComboBox::drop-down { border: 0; width: 24px; }
-            QHeaderView::section { background: #17313c; color: #c9dde1; border: 0; border-right: 1px solid #294653; padding: 6px; }
-            QPushButton { background: #1c3b47; color: #e8f3f5; border: 1px solid #356171; border-radius: 7px; padding: 7px 12px; font-weight: 600; }
-            QPushButton:hover { background: #245363; border-color: #4b8390; }
-            QPushButton:pressed { background: #102c37; }
-            QPushButton:disabled { background: #18272e; color: #60757d; border-color: #263c45; }
-            QPushButton#primaryAction { background: #177c73; border-color: #3bbdaf; color: #ffffff; }
-            QPushButton#primaryAction:hover { background: #209589; }
-            QPushButton#stopAction { background: #63313a; border-color: #9c5962; }
+            QLabel:disabled, QCheckBox:disabled { color: #6f8991; }
+            QFrame#productHeader { background: #0d2934; border: 1px solid #2c5662; border-radius: 10px; }
+            QFrame#identityRail { background: #36c6b4; border: 0; border-top-left-radius: 9px; border-bottom-left-radius: 9px; }
+            QLabel#productTitle { color: #f5fbfc; font-size: 24px; font-weight: 700; letter-spacing: 1px; }
+            QLabel#productSubtitle { color: #a9c0c6; font-size: 12px; }
+            QLabel#contextBadge { color: #d8fbf5; background: #123944; border: 1px solid #34707a; border-radius: 6px; padding: 4px 9px; }
+            QLabel#sectionLabel { color: #a9c0c6; font-size: 11px; font-weight: 700; letter-spacing: 1px; }
+            QTabWidget::pane { border: 1px solid #2c5662; border-radius: 8px; background: #0d252f; top: -1px; }
+            QTabBar::tab { background: #0b2029; color: #9eb6bc; border: 1px solid #294d58; padding: 9px 18px; margin-right: 3px; border-top-left-radius: 6px; border-top-right-radius: 6px; }
+            QTabBar::tab:selected { background: #16414b; color: #f4fffd; border-color: #39717b; border-bottom-color: #16414b; }
+            QTabBar::tab:hover { color: #ffffff; background: #123640; }
+            QTabWidget#analysisPages QTabBar::tab { min-width: 142px; padding-left: 14px; padding-right: 14px; }
+            QGroupBox { background: #102c36; color: #e7f1f3; font-weight: 600; border: 1px solid #315963; border-radius: 8px; margin-top: 12px; padding: 14px 11px 11px 11px; }
+            QGroupBox::title { subcontrol-origin: margin; left: 12px; padding: 0 7px; color: #75dfd1; background: #102c36; }
+            QLineEdit, QPlainTextEdit, QComboBox, QListWidget, QTableWidget, QSpinBox, QDoubleSpinBox { background: #071b24; color: #edf7f8; border: 1px solid #37616d; border-radius: 5px; selection-background-color: #197e75; selection-color: #ffffff; padding: 5px 7px; }
+            QLineEdit:hover, QPlainTextEdit:hover, QComboBox:hover, QListWidget:hover, QTableWidget:hover, QSpinBox:hover, QDoubleSpinBox:hover { border-color: #4a7f8b; }
+            QLineEdit:focus, QPlainTextEdit:focus, QComboBox:focus, QListWidget:focus, QTableWidget:focus, QSpinBox:focus, QDoubleSpinBox:focus { border: 1px solid #36c6b4; }
+            QLineEdit:read-only, QPlainTextEdit:read-only { background: #091f28; color: #c9dadd; }
+            QPlainTextEdit { font-family: Menlo, "Cascadia Code", Consolas, monospace; font-size: 12px; }
+            QComboBox::drop-down { border: 0; width: 25px; }
+            QComboBox QAbstractItemView { background: #102c36; color: #edf7f8; border: 1px solid #3a7180; outline: 0; selection-background-color: #197e75; }
+            QHeaderView::section { background: #153943; color: #d6e7ea; border: 0; border-right: 1px solid #315963; border-bottom: 1px solid #315963; padding: 7px; }
+            QPushButton { background: #173b47; color: #edf7f8; border: 1px solid #3b6975; border-radius: 6px; min-height: 18px; padding: 6px 12px; font-weight: 600; }
+            QPushButton:hover { background: #205160; border-color: #548894; }
+            QPushButton:focus { border: 1px solid #36c6b4; }
+            QPushButton:pressed { background: #0d2a34; }
+            QPushButton:disabled { background: #14272e; color: #688087; border-color: #28414a; }
+            QPushButton#primaryAction { background: #197e75; border-color: #43cdbc; color: #ffffff; }
+            QPushButton#primaryAction:hover { background: #22978b; }
+            QPushButton#stopAction { background: #67323a; border-color: #a95862; }
+            QPushButton#stopAction:disabled { background: #2a2226; color: #765d62; border-color: #49383d; }
             QCheckBox { spacing: 7px; }
-            QSplitter::handle { background: #294653; }
-            QScrollArea#buildScroll, QWidget#buildScrollContent { background: #10212b; border: 0; }
-            QScrollBar:vertical { background: #0d1c24; width: 12px; margin: 0; }
-            QScrollBar::handle:vertical { background: #315864; border-radius: 5px; min-height: 30px; }
+            QSplitter::handle { background: #315963; width: 8px; }
+            QScrollArea#buildScroll, QScrollArea#setupScroll { background: #0d252f; border: 0; }
+            QWidget#buildScrollContent, QWidget#setupScrollContent { background: #0d252f; }
+            QScrollBar:vertical { background: #091c24; width: 11px; margin: 0; }
+            QScrollBar::handle:vertical { background: #356471; border-radius: 5px; min-height: 34px; }
+            QScrollBar::handle:vertical:hover { background: #477d89; }
             QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
-            QToolTip { background: #16313c; color: #eefafa; border: 1px solid #4c7b86; }
+            QScrollBar:horizontal { background: #091c24; height: 11px; margin: 0; }
+            QScrollBar::handle:horizontal { background: #356471; border-radius: 5px; min-width: 34px; }
+            QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal { width: 0; }
+            QToolTip { background: #153943; color: #f0f8f9; border: 1px solid #4b7e89; padding: 4px; }
             """
         )
+
+    @staticmethod
+    def _configure_form(form):
+        form.setFieldGrowthPolicy(FORM_ALL_NON_FIXED_GROW)
+        form.setRowWrapPolicy(FORM_DONT_WRAP_ROWS)
+        form.setLabelAlignment(ALIGN_LEFT | ALIGN_VCENTER)
+        form.setFormAlignment(ALIGN_LEFT | ALIGN_TOP)
+        form.setHorizontalSpacing(14)
+        form.setVerticalSpacing(9)
+
+    @staticmethod
+    def _allow_label_to_wrap(label):
+        policy = label.sizePolicy()
+        policy.setHorizontalPolicy(SIZE_POLICY_IGNORED)
+        label.setSizePolicy(policy)
+        label.setMinimumWidth(0)
+
+    @staticmethod
+    def _allow_text_area_to_shrink(editor, minimum_height=56):
+        policy = editor.sizePolicy()
+        policy.setVerticalPolicy(SIZE_POLICY_IGNORED)
+        editor.setSizePolicy(policy)
+        editor.setMinimumHeight(minimum_height)
 
     def _path_row(self, line_edit, button_text, callback):
         container = QtWidgets.QWidget()
         layout = QtWidgets.QHBoxLayout(container)
         layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(8)
         layout.addWidget(line_edit, 1)
         button = QtWidgets.QPushButton(button_text)
         button.clicked.connect(callback)
         layout.addWidget(button)
         return container
 
+    @staticmethod
+    def _populate_force_field_combo(combo):
+        combo.setSizeAdjustPolicy(COMBO_ADJUST_MINIMUM)
+        combo.setMinimumContentsLength(12)
+        combo.setMaxVisibleItems(12)
+        for profile in FORCE_FIELD_PROFILES:
+            combo.addItem(profile.label, profile.identifier)
+            combo.setItemData(combo.count() - 1, profile.description, TOOLTIP_ROLE)
+
+    @staticmethod
+    def _force_field_bundle_summary(profile):
+        entries = (
+            ("mol_parm_file", profile.rtf),
+            ("bond_database_file", profile.bond),
+            ("bend_database_file", profile.bend),
+            ("tors_database_file", profile.torsion),
+            ("onfo_database_file", profile.one_four),
+            ("inter_database_file", profile.nonbonded),
+        )
+        return "\n".join(
+            "\\{}{{forcefield/{}}}".format(directive, Path(value).name)
+            for directive, value in entries
+        )
+
     def _build_build_tab(self):
         outer = QtWidgets.QVBoxLayout(self.build_tab)
+        outer.setContentsMargins(12, 12, 12, 12)
         splitter = QtWidgets.QSplitter()
         outer.addWidget(splitter)
         left = QtWidgets.QScrollArea()
         left.setObjectName("buildScroll")
+        left.setFrameShape(FRAME_NO_FRAME)
         left.setWidgetResizable(True)
         left.setHorizontalScrollBarPolicy(SCROLLBAR_ALWAYS_OFF)
         left_content = QtWidgets.QWidget()
         left_content.setObjectName("buildScrollContent")
         left_layout = QtWidgets.QVBoxLayout(left_content)
+        left_layout.setContentsMargins(0, 0, 10, 0)
+        left_layout.setSpacing(12)
         left.setWidget(left_content)
+        surface_palette = QtGui.QPalette(left.palette())
+        surface_palette.setColor(
+            self._palette_role("Window", "Window"), QtGui.QColor(THEME["panel"])
+        )
+        surface_palette.setColor(
+            self._palette_role("Base", "Base"), QtGui.QColor(THEME["panel"])
+        )
+        for surface in (left, left.viewport(), left_content):
+            surface.setPalette(surface_palette)
+            surface.setAutoFillBackground(True)
         right = QtWidgets.QWidget()
+        right.setObjectName("buildEvidencePane")
         right_layout = QtWidgets.QVBoxLayout(right)
+        right_layout.setContentsMargins(4, 0, 0, 0)
+        right_layout.setSpacing(10)
         splitter.addWidget(left)
         splitter.addWidget(right)
-        splitter.setSizes((470, 540))
+        splitter.setStretchFactor(0, 1)
+        splitter.setStretchFactor(1, 1)
+        splitter.setSizes((510, 510))
 
         project_group = QtWidgets.QGroupBox("Project")
         project_form = QtWidgets.QFormLayout(project_group)
+        self._configure_form(project_form)
         self.project_edit = QtWidgets.QLineEdit()
         project_form.addRow("Directory:", self._path_row(self.project_edit, "Browse…", self._browse_project))
         self.input_name_edit = QtWidgets.QLineEdit("mcmc.input")
@@ -685,6 +847,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
 
         structure_group = QtWidgets.QGroupBox("Structure")
         structure_form = QtWidgets.QFormLayout(structure_group)
+        self._configure_form(structure_form)
         self.source_mode = QtWidgets.QComboBox()
         self.source_mode.addItems(("Local PDB", "RCSB PDB", "Live PyMOL object"))
         self.source_mode.currentIndexChanged.connect(self._source_mode_changed)
@@ -711,9 +874,12 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         pymol_layout.addWidget(self.pymol_object_combo, 1)
         pymol_layout.addWidget(refresh_objects)
         structure_form.addRow("PyMOL object:", pymol_widget)
-        self.follow_pymol_edits = QtWidgets.QCheckBox("Use current PyMOL coordinates when preparing the run")
+        self.follow_pymol_edits = QtWidgets.QCheckBox("Use current PyMOL coordinates")
+        self.follow_pymol_edits.setToolTip(
+            "Prepare the next run from the coordinates currently displayed in PyMOL."
+        )
         self.follow_pymol_edits.setChecked(True)
-        structure_form.addRow("Live synchronization:", self.follow_pymol_edits)
+        structure_form.addRow("Synchronization:", self.follow_pymol_edits)
         self.model_combo = QtWidgets.QComboBox()
         structure_form.addRow("PDB model:", self.model_combo)
         self.chain_list = QtWidgets.QListWidget()
@@ -749,9 +915,10 @@ class PymoSAICSDialog(QtWidgets.QDialog):
 
         settings_group = QtWidgets.QGroupBox("Runtime, force field, and analysis")
         settings_form = QtWidgets.QFormLayout(settings_group)
+        self._configure_form(settings_form)
         self.runtime_combo = QtWidgets.QComboBox()
         self.runtime_combo.setSizeAdjustPolicy(COMBO_ADJUST_MINIMUM)
-        self.runtime_combo.setMinimumContentsLength(18)
+        self.runtime_combo.setMinimumContentsLength(12)
         for profile in RUNTIME_PROFILES:
             label = profile.label if profile.available() else profile.label + " — unavailable on this computer"
             self.runtime_combo.addItem(label, profile.identifier)
@@ -759,26 +926,26 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         settings_form.addRow("Runtime:", self.runtime_combo)
         self.runtime_description = QtWidgets.QLabel()
         self.runtime_description.setWordWrap(True)
+        self._allow_label_to_wrap(self.runtime_description)
         settings_form.addRow("Runtime scope:", self.runtime_description)
         self.forcefield_combo = QtWidgets.QComboBox()
-        self.forcefield_combo.setSizeAdjustPolicy(COMBO_ADJUST_MINIMUM)
-        self.forcefield_combo.setMinimumContentsLength(18)
-        for profile in FORCE_FIELD_PROFILES:
-            self.forcefield_combo.addItem(profile.label, profile.identifier)
+        self._populate_force_field_combo(self.forcefield_combo)
         self.forcefield_combo.currentIndexChanged.connect(self._forcefield_changed)
         settings_form.addRow("Force field / topology:", self.forcefield_combo)
         self.forcefield_description = QtWidgets.QLabel()
         self.forcefield_description.setWordWrap(True)
+        self._allow_label_to_wrap(self.forcefield_description)
         settings_form.addRow("Definition:", self.forcefield_description)
         self.preset_combo = QtWidgets.QComboBox()
         self.preset_combo.setSizeAdjustPolicy(COMBO_ADJUST_MINIMUM)
-        self.preset_combo.setMinimumContentsLength(18)
+        self.preset_combo.setMinimumContentsLength(12)
         for preset in ANALYSIS_PRESETS:
             self.preset_combo.addItem(preset.label, preset.identifier)
         self.preset_combo.currentIndexChanged.connect(self._preset_changed)
         settings_form.addRow("Analysis preset:", self.preset_combo)
         self.preset_description = QtWidgets.QLabel()
         self.preset_description.setWordWrap(True)
+        self._allow_label_to_wrap(self.preset_description)
         settings_form.addRow("Purpose:", self.preset_description)
         self.temperature = QtWidgets.QDoubleSpinBox()
         self.temperature.setRange(0.0, 1000000.0)
@@ -796,6 +963,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self.top_temperature.setDecimals(3)
         self.ladder_preview = QtWidgets.QLabel()
         self.ladder_preview.setWordWrap(True)
+        self._allow_label_to_wrap(self.ladder_preview)
         self.temperature.valueChanged.connect(self._update_ladder)
         self.replica_count.valueChanged.connect(self._update_ladder)
         self.top_temperature.valueChanged.connect(self._update_ladder)
@@ -807,19 +975,22 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         settings_form.addRow("Number of PT replicas:", self.replica_count)
         settings_form.addRow("Highest temperature (K):", self.top_temperature)
         settings_form.addRow("Temperature ladder:", self.ladder_preview)
-        self.use_region = QtWidgets.QCheckBox("Write and reference region/region.data")
-        region_button = QtWidgets.QPushButton("Edit region graphically…")
+        self.use_region = QtWidgets.QCheckBox("Use file")
+        self.use_region.setToolTip("Write and reference region/region.data in this project.")
+        region_button = QtWidgets.QPushButton("Edit…")
         region_button.clicked.connect(self._edit_region)
         region_row = QtWidgets.QWidget()
         region_layout = QtWidgets.QHBoxLayout(region_row)
         region_layout.setContentsMargins(0, 0, 0, 0)
         region_layout.addWidget(self.use_region)
         region_layout.addWidget(region_button)
-        settings_form.addRow("Optional region:", region_row)
+        settings_form.addRow("Region:", region_row)
         left_layout.addWidget(settings_group)
         left_layout.addStretch(1)
 
-        right_layout.addWidget(QtWidgets.QLabel("Editable mcmc.input preview"))
+        preview_title = QtWidgets.QLabel("MCMC INPUT · EDITABLE SOURCE OF TRUTH")
+        preview_title.setObjectName("sectionLabel")
+        right_layout.addWidget(preview_title)
         self.input_preview = QtWidgets.QPlainTextEdit()
         self.input_preview.setLineWrapMode(PLAIN_TEXT_NO_WRAP)
         right_layout.addWidget(self.input_preview, 1)
@@ -853,7 +1024,10 @@ class PymoSAICSDialog(QtWidgets.QDialog):
 
     def _build_run_tab(self):
         layout = QtWidgets.QVBoxLayout(self.run_tab)
+        layout.setContentsMargins(16, 16, 16, 16)
+        layout.setSpacing(10)
         form = QtWidgets.QFormLayout()
+        self._configure_form(form)
         self.input_combo = QtWidgets.QComboBox()
         self.input_combo.setEditable(True)
         self.output_edit = QtWidgets.QLineEdit()
@@ -879,11 +1053,13 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self.validation_output = QtWidgets.QPlainTextEdit()
         self.validation_output.setReadOnly(True)
         self.validation_output.setMaximumHeight(125)
+        self._allow_text_area_to_shrink(self.validation_output)
         layout.addWidget(QtWidgets.QLabel("Validation"))
         layout.addWidget(self.validation_output)
         self.command_preview = QtWidgets.QPlainTextEdit()
         self.command_preview.setReadOnly(True)
         self.command_preview.setMaximumHeight(100)
+        self._allow_text_area_to_shrink(self.command_preview)
         layout.addWidget(QtWidgets.QLabel("Exact execution plan"))
         layout.addWidget(self.command_preview)
         controls = QtWidgets.QHBoxLayout()
@@ -918,6 +1094,8 @@ class PymoSAICSDialog(QtWidgets.QDialog):
 
     def _build_analysis_tab(self):
         layout = QtWidgets.QVBoxLayout(self.analysis_tab)
+        layout.setContentsMargins(16, 16, 16, 16)
+        layout.setSpacing(10)
         top = QtWidgets.QHBoxLayout()
         refresh = QtWidgets.QPushButton("Refresh project analysis")
         refresh.clicked.connect(self._refresh_analysis)
@@ -927,6 +1105,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         layout.addLayout(top)
 
         analysis_pages = QtWidgets.QTabWidget()
+        analysis_pages.setObjectName("analysisPages")
         layout.addWidget(analysis_pages, 1)
 
         energy_page = QtWidgets.QWidget()
@@ -1018,35 +1197,103 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         analysis_pages.addTab(files_page, "Files & logs")
 
     def _build_setup_tab(self):
-        layout = QtWidgets.QVBoxLayout(self.setup_tab)
+        outer = QtWidgets.QVBoxLayout(self.setup_tab)
+        outer.setContentsMargins(0, 0, 0, 0)
+        scroll = QtWidgets.QScrollArea()
+        scroll.setObjectName("setupScroll")
+        scroll.setFrameShape(FRAME_NO_FRAME)
+        scroll.setWidgetResizable(True)
+        scroll.setHorizontalScrollBarPolicy(SCROLLBAR_ALWAYS_OFF)
+        content = QtWidgets.QWidget()
+        content.setObjectName("setupScrollContent")
+        content_policy = content.sizePolicy()
+        content_policy.setVerticalPolicy(SIZE_POLICY_IGNORED)
+        content.setSizePolicy(content_policy)
+        layout = QtWidgets.QVBoxLayout(content)
+        layout.setContentsMargins(18, 14, 18, 14)
+        layout.setSpacing(12)
+        scroll.setWidget(content)
+        surface_palette = QtGui.QPalette(scroll.palette())
+        surface_palette.setColor(
+            self._palette_role("Window", "Window"), QtGui.QColor(THEME["panel"])
+        )
+        surface_palette.setColor(
+            self._palette_role("Base", "Base"), QtGui.QColor(THEME["panel"])
+        )
+        for surface in (scroll, scroll.viewport(), content):
+            surface.setPalette(surface_palette)
+            surface.setAutoFillBackground(True)
+        outer.addWidget(scroll)
         explanation = QtWidgets.QLabel(
             "Stable and experimental executables are bundled for Apple-Silicon macOS. "
             "Windows, Linux, and Intel-macOS users can select a compatible custom executable."
         )
         explanation.setWordWrap(True)
         layout.addWidget(explanation)
-        form = QtWidgets.QFormLayout()
+        runtime_group = QtWidgets.QGroupBox("MOSAICS runtime")
+        form = QtWidgets.QFormLayout(runtime_group)
+        self._configure_form(form)
         self.custom_executable_edit = QtWidgets.QLineEdit()
         self.workspace_edit = QtWidgets.QLineEdit()
         form.addRow("Custom MOSAICS executable:", self._path_row(self.custom_executable_edit, "Browse…", self._browse_executable))
         form.addRow("Default workspace:", self._path_row(self.workspace_edit, "Browse…", self._browse_workspace))
+        layout.addWidget(runtime_group)
+
+        force_field_group = QtWidgets.QGroupBox("Force-field profile")
+        force_field_layout = QtWidgets.QVBoxLayout(force_field_group)
+        force_field_form = QtWidgets.QFormLayout()
+        self._configure_form(force_field_form)
+        self.setup_forcefield_combo = QtWidgets.QComboBox()
+        self._populate_force_field_combo(self.setup_forcefield_combo)
+        current_index = self.setup_forcefield_combo.findData(self.forcefield_combo.currentData())
+        if current_index >= 0:
+            self.setup_forcefield_combo.setCurrentIndex(current_index)
+        self.setup_forcefield_combo.currentIndexChanged.connect(self._setup_forcefield_changed)
+        force_field_form.addRow("Profile:", self.setup_forcefield_combo)
         bundled = QtWidgets.QLineEdit(str(FORCEFIELD_ROOT))
         bundled.setReadOnly(True)
-        form.addRow("Bundled force fields:", bundled)
-        layout.addLayout(form)
+        force_field_form.addRow("Bundled library:", bundled)
+        force_field_layout.addLayout(force_field_form)
+        profile_count = QtWidgets.QLabel(
+            "{} complete profiles are bundled: {} DNA/RNA and {} protein. "
+            "This includes AMBER99-based legacy profiles.".format(
+                len(FORCE_FIELD_PROFILES),
+                sum(profile.chemistry == "nucleic_acid" for profile in FORCE_FIELD_PROFILES),
+                sum(profile.chemistry == "protein" for profile in FORCE_FIELD_PROFILES),
+            )
+        )
+        profile_count.setWordWrap(True)
+        force_field_layout.addWidget(profile_count)
+        self.setup_forcefield_description = QtWidgets.QLabel()
+        self.setup_forcefield_description.setWordWrap(True)
+        force_field_layout.addWidget(self.setup_forcefield_description)
+        force_field_layout.addWidget(QtWidgets.QLabel("Files written automatically into mcmc.input"))
+        self.setup_forcefield_files = QtWidgets.QPlainTextEdit()
+        self.setup_forcefield_files.setReadOnly(True)
+        self.setup_forcefield_files.setMaximumHeight(118)
+        force_field_layout.addWidget(self.setup_forcefield_files)
+        layout.addWidget(force_field_group)
+        self._update_setup_force_field_details(self._current_forcefield())
+
         self.setup_status = QtWidgets.QPlainTextEdit()
         self.setup_status.setReadOnly(True)
-        self.setup_status.setMaximumHeight(170)
+        self.setup_status.setMaximumHeight(78)
         layout.addWidget(self.setup_status)
         save = QtWidgets.QPushButton("Validate and save")
+        save.setObjectName("primaryAction")
         save.clicked.connect(self._save_configuration)
-        layout.addWidget(save)
+        save_row = QtWidgets.QHBoxLayout()
+        save_row.addStretch(1)
+        save_row.addWidget(save)
+        layout.addLayout(save_row)
         layout.addStretch(1)
+        self._runtime_changed()
 
     def _build_about_tab(self):
         layout = QtWidgets.QVBoxLayout(self.about_tab)
+        layout.setContentsMargins(24, 22, 24, 22)
         label = QtWidgets.QLabel(
-            "<h2>PymoSAICS 0.2.0</h2>"
+            "<h2>PymoSAICS 0.2.1</h2>"
             "<p>A transparent PyMOL workbench for MOSAICS structure preparation, "
             "input generation, execution, visualization, and analysis.</p>"
             "<p><b>MOSAICS</b> was created by Peter Minary. Obtain official executables, "
@@ -1128,17 +1375,22 @@ class PymoSAICSDialog(QtWidgets.QDialog):
 
     def _runtime_changed(self, *_args):
         profile = self._current_runtime()
+        self.runtime_combo.setToolTip(profile.label)
         self.runtime_description.setText(profile.description)
         self.header_runtime.setText("Runtime · {}".format(profile.label))
         if profile.relative_executable and profile.available():
             make_bundled_executable_runnable(profile)
         if profile.identifier == "custom":
             self.tabs.setTabToolTip(self.tabs.indexOf(self.setup_tab), "Choose the custom executable here")
-        for index, force_field in enumerate(FORCE_FIELD_PROFILES):
-            compatible = runtime_supports_force_field(profile.identifier, force_field.identifier)
-            item = self.forcefield_combo.model().item(index)
-            if item is not None:
-                item.setEnabled(compatible)
+        force_field_combos = [self.forcefield_combo]
+        if hasattr(self, "setup_forcefield_combo"):
+            force_field_combos.append(self.setup_forcefield_combo)
+        for combo in force_field_combos:
+            for index, force_field in enumerate(FORCE_FIELD_PROFILES):
+                compatible = runtime_supports_force_field(profile.identifier, force_field.identifier)
+                item = combo.model().item(index)
+                if item is not None:
+                    item.setEnabled(compatible)
         current = self._current_forcefield()
         if not runtime_supports_force_field(profile.identifier, current.identifier):
             compatible_index = next(
@@ -1150,6 +1402,14 @@ class PymoSAICSDialog(QtWidgets.QDialog):
 
     def _forcefield_changed(self, *_args):
         profile = self._current_forcefield()
+        self.forcefield_combo.setToolTip(profile.label)
+        if hasattr(self, "setup_forcefield_combo"):
+            setup_index = self.setup_forcefield_combo.findData(profile.identifier)
+            if setup_index >= 0 and setup_index != self.setup_forcefield_combo.currentIndex():
+                self.setup_forcefield_combo.blockSignals(True)
+                self.setup_forcefield_combo.setCurrentIndex(setup_index)
+                self.setup_forcefield_combo.blockSignals(False)
+            self._update_setup_force_field_details(profile)
         self.header_science.setText("Force field · {}".format(profile.label))
         self.forcefield_description.setText("{} {}".format(profile.description, profile.validation))
         self.disulfide_group.setVisible(profile.chemistry == "protein")
@@ -1166,8 +1426,29 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self._refresh_disulfides()
         self._regenerate_unedited_preview()
 
+    def _setup_forcefield_changed(self, *_args):
+        identifier = self.setup_forcefield_combo.currentData()
+        build_index = self.forcefield_combo.findData(identifier)
+        if build_index >= 0 and build_index != self.forcefield_combo.currentIndex():
+            self.forcefield_combo.setCurrentIndex(build_index)
+        else:
+            self._update_setup_force_field_details(self._current_forcefield())
+
+    def _update_setup_force_field_details(self, profile):
+        if not hasattr(self, "setup_forcefield_description"):
+            return
+        self.setup_forcefield_combo.setToolTip(profile.label)
+        self.setup_forcefield_description.setText(
+            "{} {} Selecting this profile populates all six force-field directives; "
+            "individual database files do not need to be chosen manually.".format(
+                profile.description, profile.validation
+            )
+        )
+        self.setup_forcefield_files.setPlainText(self._force_field_bundle_summary(profile))
+
     def _preset_changed(self, *_args):
         preset = self._current_preset()
+        self.preset_combo.setToolTip(preset.label)
         self.preset_description.setText(preset.description)
         settings = default_settings(preset)
         self.temperature.setValue(settings.temperature)

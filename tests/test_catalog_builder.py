@@ -27,6 +27,24 @@ class CatalogAndBuilderTests(unittest.TestCase):
             with self.subTest(profile=profile.identifier):
                 self.assertTrue(all(path.is_file() for path in profile.all_paths()))
 
+    def test_catalog_exposes_legacy_modern_terminal_and_protein_profiles(self):
+        identifiers = {profile.identifier for profile in FORCE_FIELD_PROFILES}
+        self.assertTrue(
+            {
+                "bs0-standard",
+                "bsc1-ol3-standard",
+                "ol15-ol3-standard",
+                "ol15-ol3-terminal",
+                "ol21-ol3-standard",
+                "ol21-ol3-terminal",
+                "ol24-ol3-standard",
+                "ol24-ol3-terminal",
+                "ff14sb-protein",
+            }.issubset(identifiers)
+        )
+        self.assertIn("AMBER99", force_field_profile("bs0-standard").label)
+        self.assertIn("protein", force_field_profile("ff14sb-protein").label)
+
     def test_bundled_runtime_hashes_are_fixed(self):
         expected = {
             "mosaics-3.9.1": "a65d34474ba51c479352566928423c9560cb0776c1c37f17cae3bab59e9ab5ad",
@@ -58,7 +76,19 @@ class CatalogAndBuilderTests(unittest.TestCase):
                         default_settings(preset),
                     )
                     self.assertIn("\\pos_init_file{structure.pdb}", text)
-                    self.assertIn("forcefield/" + Path(profile.rtf).name, text)
+                    expected_files = {
+                        "mol_parm_file": profile.rtf,
+                        "bond_database_file": profile.bond,
+                        "bend_database_file": profile.bend,
+                        "tors_database_file": profile.torsion,
+                        "onfo_database_file": profile.one_four,
+                        "inter_database_file": profile.nonbonded,
+                    }
+                    for directive, path in expected_files.items():
+                        self.assertIn(
+                            "\\{}{{forcefield/{}}}".format(directive, Path(path).name),
+                            text,
+                        )
                     self.assertIn("\\simulation_typ{" + preset.simulation_type + "}", text)
 
     def test_landscape_ladder_reaches_documented_top_temperature(self):

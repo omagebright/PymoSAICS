@@ -11,7 +11,7 @@ and outputs remain visible to the user.
 2. Paste this URL into **Install from PyMOLWiki or any URL**:
 
    ```text
-   https://github.com/omagebright/PymoSAICS/releases/download/v0.2.0/PymoSAICS-0.2.0.zip
+   https://github.com/omagebright/PymoSAICS/releases/download/v0.2.1/PymoSAICS-0.2.1.zip
    ```
 
 3. Choose **Install**, restart PyMOL, then open **Plugin → PymoSAICS**.
@@ -30,6 +30,25 @@ macOS. It does not include MOSAICS source code.
 Windows, Linux, and Intel-macOS users should obtain a compatible executable
 from the [official MOSAICS Downloads page](https://www.cs.ox.ac.uk/mosaics/Downloads.php),
 then select **Custom executable** in **Setup**.
+
+## Force-field profiles
+
+Choose one complete profile under **Build → Runtime, force field, and analysis**
+or **Setup → Force-field profile**. Both selectors remain synchronized. One
+selection writes the topology, bond, angle, torsion/improper, 1–4 (`onfo`),
+and nonbonded database directives into the visible `mcmc.input`; individual
+files do not need to be assembled manually.
+
+The bundled profiles are:
+
+- AMBER99 + parmbsc1/OL3 for DNA/RNA;
+- AMBER99 + parmbsc0 as the legacy DNA/RNA comparator;
+- AMBER OL15/OL3, OL21/OL3, and OL24/OL3 for DNA/RNA;
+- true-terminal variants of OL15/OL3, OL21/OL3, and OL24/OL3; and
+- AMBER ff14SB for proteins, including the validated disulfide workflow.
+
+Profiles that have not passed compatibility testing with the selected runtime
+are disabled rather than silently mixed with an incompatible executable.
 
 ## Start a project
 

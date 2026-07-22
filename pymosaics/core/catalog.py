@@ -155,7 +155,7 @@ RUNTIME_PROFILES = (
 FORCE_FIELD_PROFILES = (
     ForceFieldProfile(
         "bsc1-ol3-standard",
-        "parmbsc1 / OL3 — standard hybrid",
+        "AMBER99 + parmbsc1 / OL3 — DNA/RNA",
         "Validated baseline for canonical internalized DNA, RNA, and DNA/RNA hybrids.",
         "nucleic_acid",
         "standard",
@@ -169,7 +169,7 @@ FORCE_FIELD_PROFILES = (
     ),
     ForceFieldProfile(
         "bs0-standard",
-        "parmbsc0 — standard hybrid",
+        "AMBER99 + parmbsc0 — legacy DNA/RNA",
         "Validated historical comparator for canonical internalized nucleic acids.",
         "nucleic_acid",
         "standard",
@@ -183,7 +183,7 @@ FORCE_FIELD_PROFILES = (
     ),
     ForceFieldProfile(
         "ol15-ol3-standard",
-        "OL15 / OL3 — standard hybrid",
+        "AMBER OL15 / OL3 — DNA/RNA",
         "Validated OL15 DNA plus OL3 RNA profile for internalized systems.",
         "nucleic_acid",
         "standard",
@@ -197,7 +197,7 @@ FORCE_FIELD_PROFILES = (
     ),
     ForceFieldProfile(
         "ol15-ol3-terminal",
-        "OL15 / OL3 — true termini",
+        "AMBER OL15 / OL3 — DNA/RNA true termini",
         "Validated for canonical chains with explicit 5-prime and 3-prime terminal chemistry.",
         "nucleic_acid",
         "terminal",
@@ -211,7 +211,7 @@ FORCE_FIELD_PROFILES = (
     ),
     ForceFieldProfile(
         "ol21-ol3-standard",
-        "OL21 / OL3 — standard hybrid",
+        "AMBER OL21 / OL3 — DNA/RNA",
         "Validated current AMBER DNA/RNA combination for internalized heteroduplexes.",
         "nucleic_acid",
         "standard",
@@ -225,7 +225,7 @@ FORCE_FIELD_PROFILES = (
     ),
     ForceFieldProfile(
         "ol21-ol3-terminal",
-        "OL21 / OL3 — true termini",
+        "AMBER OL21 / OL3 — DNA/RNA true termini",
         "Validated for canonical chains with explicit 5-prime and 3-prime terminal chemistry.",
         "nucleic_acid",
         "terminal",
@@ -239,7 +239,7 @@ FORCE_FIELD_PROFILES = (
     ),
     ForceFieldProfile(
         "ol24-ol3-standard",
-        "OL24 / OL3 — standard hybrid",
+        "AMBER OL24 / OL3 — DNA/RNA",
         "Validated OL24 DNA plus OL3 RNA profile for internalized heteroduplexes.",
         "nucleic_acid",
         "standard",
@@ -253,7 +253,7 @@ FORCE_FIELD_PROFILES = (
     ),
     ForceFieldProfile(
         "ol24-ol3-terminal",
-        "OL24 / OL3 — true termini",
+        "AMBER OL24 / OL3 — DNA/RNA true termini",
         "Validated for canonical chains with explicit 5-prime and 3-prime terminal chemistry.",
         "nucleic_acid",
         "terminal",

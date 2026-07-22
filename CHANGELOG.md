@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.1 — 2026-07-22
+
+- Rebuilt the Qt visual system with deterministic dark surfaces, readable labels, consistent spacing, and native-theme-independent plot canvases.
+- Fixed clipped Build controls at the minimum supported window size and made Setup vertically scrollable on smaller displays.
+- Added synchronized force-field profile selectors to Build and Setup.
+- Made all nine bundled modern, terminal, protein, and AMBER99-based legacy profiles visible as complete sets.
+- Added an exact preview of the six force-field directives populated by the selected profile.
+- Added GUI checks for profile synchronization, complete directive generation, viewport width, and host-palette isolation.
+
 ## 0.2.0 — 2026-07-21
 
 - Added a project builder for local, RCSB, and live PyMOL structures.

@@ -5,9 +5,14 @@ import sys
 import tempfile
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 from pymol.Qt import QtCore, QtWidgets
 
 from pymosaics.core.analysis import latest_log
+from pymosaics.core.catalog import FORCE_FIELD_PROFILES
 from pymosaics.core.config import ConfigStore
 from pymosaics.gui import PymoSAICSDialog
 
@@ -29,6 +34,24 @@ def main():
         )
 
         dialog = PymoSAICSDialog(config_store=ConfigStore(root / "config.json"))
+        dialog.resize(900, 700)
+        dialog.show()
+        application.processEvents()
+        force_field_index = dialog.setup_forcefield_combo.findData("ff14sb-protein")
+        dialog.setup_forcefield_combo.setCurrentIndex(force_field_index)
+        if dialog.forcefield_combo.currentData() != "ff14sb-protein":
+            raise SystemExit("Setup and Build force-field selectors are not synchronized")
+        if dialog.setup_forcefield_combo.count() != len(FORCE_FIELD_PROFILES):
+            raise SystemExit("The Setup selector does not expose every force-field profile")
+        for profile_file in FORCE_FIELD_PROFILES[force_field_index].all_paths():
+            if profile_file.name not in dialog.input_preview.toPlainText():
+                raise SystemExit("The selected profile did not populate {}".format(profile_file.name))
+        scroll = dialog.findChild(QtWidgets.QScrollArea, "buildScroll")
+        content = dialog.findChild(QtWidgets.QWidget, "buildScrollContent")
+        if content.width() > scroll.viewport().width():
+            raise SystemExit("The Build form is wider than its viewport")
+        if content.palette().window().color().name().lower() != "#0d252f":
+            raise SystemExit("The Build form did not receive the deterministic dark palette")
         dialog.runtime_combo.setCurrentIndex(dialog.runtime_combo.findData("custom"))
         dialog.custom_executable_edit.setText(sys.executable)
         dialog.project_edit.setText(str(root))
