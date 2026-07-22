@@ -40,7 +40,7 @@ def config_directory(
 class ConfigStore:
     """Read and atomically write the plugin's JSON configuration."""
 
-    SCHEMA_VERSION = 2
+    SCHEMA_VERSION = 3
 
     def __init__(self, path: Optional[Path] = None) -> None:
         override = os.environ.get("PYMOSAICS_CONFIG_FILE")
@@ -55,7 +55,7 @@ class ConfigStore:
             raise ConfigError("Cannot read PymoSAICS configuration: {}".format(exc)) from exc
 
         schema_version = payload.get("schema_version")
-        if schema_version not in (1, self.SCHEMA_VERSION):
+        if schema_version not in (1, 2, self.SCHEMA_VERSION):
             raise ConfigError("Unsupported PymoSAICS configuration version")
 
         try:
@@ -66,6 +66,11 @@ class ConfigStore:
                 default_workspace=Path(workspace).expanduser() if workspace else None,
                 runtime_id=payload.get("runtime_id", "custom"),
                 force_field_id=payload.get("force_field_id", "ol24-ol3-standard"),
+                pdb2pqr_executable=(
+                    Path(payload["pdb2pqr_executable"]).expanduser()
+                    if payload.get("pdb2pqr_executable")
+                    else None
+                ),
             )
         except (KeyError, TypeError) as exc:
             raise ConfigError("PymoSAICS configuration is incomplete") from exc
@@ -83,6 +88,11 @@ class ConfigStore:
             ),
             "runtime_id": config.runtime_id,
             "force_field_id": config.force_field_id,
+            "pdb2pqr_executable": (
+                str(config.pdb2pqr_executable.expanduser().resolve())
+                if config.pdb2pqr_executable is not None
+                else ""
+            ),
         }
 
         temporary_name = None

@@ -22,6 +22,32 @@ pair can be shown as sticks in PyMOL. One-to-one pairs are selected by default;
 ambiguous sulfur neighborhoods are displayed for manual choice but left
 unchecked to avoid assigning one cysteine to multiple bonds.
 
+For a heavy-atom protein, select **Automatic AMBER preparation** and set the
+protonation pH. PymoSAICS runs PDB2PQR with AMBER output names and PROPKA,
+retains the selected input, PQR, converted PDB, and log under
+`.pymosaics/protein-preparation/`, then applies disulfides and revalidates every
+residue against ff14SB. **Strict mode** is for an already prepared all-atom PDB.
+PyMOL's generic hydrogen addition is not an ff14SB preparation method.
+
+## Region workbench
+
+The editor creates one independent residue-level region:
+
+- **Move** includes a residue; **Center** selects a whole-region rotation pivot.
+  MOSAICS requires at least one center.
+- **Residue pairs** are coupled units such as nucleic-acid base pairs. Each
+  residue can occur in only one pair.
+- **Whole region**, **Free residues**, and **Residue pairs** have separate
+  translation widths in Å and rotation widths in radians.
+- **WP2 balanced pilot** enables documented free-residue and pair widths;
+  **WP2 paired-residue motion** holds free residues at zero.
+
+Use **Use current PyMOL selection** to populate membership. **Show region in
+PyMOL** displays members in cyan, paired residues in magenta, and rotation
+centers in yellow. The generated `region.data` remains visible and invalid
+configurations cannot be accepted. Run a short pilot and tune proposal widths
+from acceptance before production.
+
 ## Preparation checks
 
 Preparation creates `structure.pdb`, `mcmc.input`, and a short-path

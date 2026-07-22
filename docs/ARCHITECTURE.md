@@ -7,6 +7,10 @@ structure/topology validation, output discovery, and analysis code. Most of the
 core uses only the Python standard library; structural landscape projection
 uses NumPy supplied by normal PyMOL distributions.
 
+Optional protein repair and protonation is isolated in `core.protein_prep`.
+PDB2PQR is invoked with an argument vector, never a shell, and its AMBER/PROPKA
+PQR, converted PDB, exact arguments, and combined log remain in the project.
+
 The interface imports Qt only through `pymol.Qt`, so PyMOL chooses its bundled
 Qt binding. PyMOL coordinates are read through `cmd.get_pdbstr`; structures and
 trajectory states are returned through `cmd.load` and `cmd.frame`.
@@ -33,3 +37,8 @@ Presets are explicit starting points, not automatic scientific conclusions.
 PymoSAICS checks file compatibility and reproduces configured calculations; it
 does not establish equilibration, convergence, force-field suitability, a
 global energy minimum, or a thermodynamic free-energy landscape.
+
+The graphical region editor intentionally emits one independent residue-level
+region. MOSAICS requires at least one rotation center; PymoSAICS also prevents
+one residue from being assigned to multiple pairs. The generated input writes
+the single-region `superimpose` propagation choice explicitly.

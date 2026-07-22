@@ -97,6 +97,20 @@ class CatalogAndBuilderTests(unittest.TestCase):
         top = settings.temperature * settings.energy_gap ** settings.replica_number
         self.assertAlmostEqual(top, preset.top_temperature, places=8)
 
+    def test_region_input_writes_explicit_single_region_propagation(self):
+        preset = ANALYSIS_PRESETS[0]
+        profile = FORCE_FIELD_PROFILES[0]
+        text = generate_mcmc_input(
+            preset,
+            profile,
+            "structure.pdb",
+            "simulation",
+            default_settings(preset),
+            "region/region.data",
+        )
+        self.assertIn("\\prop_regions_type{superimpose}", text)
+        self.assertIn("\\region_database_file{region/region.data}", text)
+
     def test_measured_runtime_force_field_compatibility(self):
         self.assertTrue(runtime_supports_force_field("mosaics-3.9.1", "bsc1-ol3-standard"))
         self.assertTrue(runtime_supports_force_field("mosaics-3.9.1", "ol15-ol3-standard"))

@@ -11,7 +11,7 @@ and outputs remain visible to the user.
 2. Paste this URL into **Install from PyMOLWiki or any URL**:
 
    ```text
-   https://github.com/omagebright/PymoSAICS/releases/download/v0.2.1/PymoSAICS-0.2.1.zip
+   https://github.com/omagebright/PymoSAICS/releases/download/v0.2.2/PymoSAICS-0.2.2.zip
    ```
 
 3. Choose **Install**, restart PyMOL, then open **Plugin → PymoSAICS**.
@@ -65,6 +65,17 @@ are disabled rather than silently mixed with an incompatible executable.
 PyMOL coordinate edits are synchronized before preparation. The prepared PDB
 is checked residue-by-residue against the selected all-atom RTF; missing
 hydrogens or incorrect names stop the run with explicit diagnostics.
+
+For an RCSB or other heavy-atom protein, choose **Automatic AMBER preparation**.
+PymoSAICS uses PDB2PQR with AMBER naming and PROPKA at the selected pH, keeps
+the PQR and log, and then requires an exact ff14SB match. If PDB2PQR is not
+found automatically, [install it using its official instructions](https://pdb2pqr.readthedocs.io/en/stable/getting.html)
+and select its executable under **Setup → Protein preparation**.
+
+The region workbench defines one residue-level natural-move region. It exposes
+members, required rotation centers, non-overlapping residue pairs, documented
+WP2 proposal-width presets, Å/radian units, a live `region.data` preview, and
+PyMOL selection/visualization. Invalid regions cannot be accepted.
 
 ## Presets
 

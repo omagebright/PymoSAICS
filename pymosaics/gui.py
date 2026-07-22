@@ -47,6 +47,7 @@ from .core.project import (
     prepare_run,
     validate_project,
 )
+from .core.protein_prep import discover_pdb2pqr, prepare_protein_with_pdb2pqr
 from .core.regions import RegionSettings, generate_region_file, write_region_file
 from .core.runtime import has_errors, validate_runtime
 from .core.structures import (
@@ -58,7 +59,7 @@ from .core.structures import (
     prepare_structure,
     unambiguous_disulfide_keys,
 )
-from .core.topology import format_topology_issues, validate_pdb_against_rtf
+from .core.topology import validate_pdb_against_rtf
 
 
 CHECKED = QtCore.Qt.Checked if hasattr(QtCore.Qt, "Checked") else QtCore.Qt.CheckState.Checked
@@ -144,10 +145,98 @@ DIALOG_ACCEPTED = _enum_value(QtWidgets.QDialog, "Accepted", "DialogCode", "Acce
 PROCESS_NOT_RUNNING = _enum_value(QtCore.QProcess, "NotRunning", "ProcessState", "NotRunning")
 PROCESS_NORMAL_EXIT = _enum_value(QtCore.QProcess, "NormalExit", "ExitStatus", "NormalExit")
 TEXT_CURSOR_END = _enum_value(QtGui.QTextCursor, "End", "MoveOperation", "End")
+PALETTE_ACTIVE = _enum_value(QtGui.QPalette, "Active", "ColorGroup", "Active")
+PALETTE_INACTIVE = _enum_value(QtGui.QPalette, "Inactive", "ColorGroup", "Inactive")
+PALETTE_DISABLED = _enum_value(QtGui.QPalette, "Disabled", "ColorGroup", "Disabled")
 
 
 def _safe_name(value: str) -> str:
     return "".join(character if character.isalnum() or character == "_" else "_" for character in value)
+
+
+def _palette_role(direct_name: str, member_name: str):
+    return _enum_value(QtGui.QPalette, direct_name, "ColorRole", member_name)
+
+
+def _install_combo_popup_theme(combo):
+    """Give combo popups a host-independent palette and readable geometry."""
+
+    view = QtWidgets.QListView(combo)
+    view.setObjectName("pymosaicsComboPopup")
+    view.setUniformItemSizes(True)
+    combo.setView(view)
+
+    palette = QtGui.QPalette(combo.palette())
+    standard_colors = {
+        "Window": THEME["card"],
+        "WindowText": THEME["text"],
+        "Base": THEME["card"],
+        "AlternateBase": THEME["card"],
+        "Text": THEME["text"],
+        "Button": THEME["card"],
+        "ButtonText": THEME["text"],
+        "Highlight": THEME["accent_dark"],
+        "HighlightedText": "#ffffff",
+    }
+    for group in (PALETTE_ACTIVE, PALETTE_INACTIVE):
+        for role_name, color in standard_colors.items():
+            palette.setColor(group, _palette_role(role_name, role_name), QtGui.QColor(color))
+    disabled_colors = dict(standard_colors)
+    disabled_colors.update(
+        {
+            "WindowText": "#789198",
+            "Text": "#789198",
+            "ButtonText": "#789198",
+            "HighlightedText": "#c8d8db",
+        }
+    )
+    for role_name, color in disabled_colors.items():
+        palette.setColor(
+            PALETTE_DISABLED,
+            _palette_role(role_name, role_name),
+            QtGui.QColor(color),
+        )
+    combo.setPalette(palette)
+    for surface in (view, view.viewport(), view.window()):
+        surface.setPalette(palette)
+        surface.setAutoFillBackground(True)
+    view.setStyleSheet(
+        """
+        QListView#pymosaicsComboPopup {
+            background-color: #102c36;
+            color: #edf7f8;
+            border: 1px solid #3a7180;
+            outline: 0;
+            padding: 3px 0;
+            selection-background-color: #197e75;
+            selection-color: #ffffff;
+        }
+        QListView#pymosaicsComboPopup::item {
+            background-color: #102c36;
+            color: #edf7f8;
+            min-height: 24px;
+            padding: 3px 10px;
+        }
+        QListView#pymosaicsComboPopup::item:hover {
+            background-color: #17414b;
+            color: #ffffff;
+        }
+        QListView#pymosaicsComboPopup::item:selected {
+            background-color: #197e75;
+            color: #ffffff;
+        }
+        QListView#pymosaicsComboPopup::item:disabled {
+            background-color: #0d252f;
+            color: #789198;
+        }
+        """
+    )
+    metrics = combo.fontMetrics()
+    measure = getattr(metrics, "horizontalAdvance", None)
+    if measure is None:
+        measure = metrics.width
+    longest = max((measure(combo.itemText(index)) for index in range(combo.count())), default=0)
+    view.setMinimumWidth(min(680, max(220, longest + 42)))
 
 
 class EnergyPlot(QtWidgets.QWidget):
@@ -394,28 +483,71 @@ class TextFileDialog(QtWidgets.QDialog):
 
 
 class RegionEditor(QtWidgets.QDialog):
-    """Graphical editor for one transparent MOSAICS region entry."""
+    """Scientific workbench for one explicit residue-level MOSAICS region."""
+
+    PRESETS = {
+        "WP2 balanced pilot": {
+            "translation_sigma": "0.0",
+            "rotation_sigma": "0.0",
+            "free_translation_sigma": ".5e-5",
+            "free_rotation_sigma": ".5e-6",
+            "pair_translation_sigma": ".5e-5",
+            "pair_rotation_sigma": ".5e-6",
+        },
+        "WP2 paired-residue motion": {
+            "translation_sigma": "0.0",
+            "rotation_sigma": "0.0",
+            "free_translation_sigma": "0.0",
+            "free_rotation_sigma": "0.0",
+            "pair_translation_sigma": ".5e-5",
+            "pair_rotation_sigma": ".5e-6",
+        },
+    }
 
     def __init__(self, residues: Sequence[str], pymol_object: str, initial=None, parent=None):
         super().__init__(parent)
-        self.setWindowTitle("MOSAICS region")
-        self.resize(760, 680)
+        self.setWindowTitle("MOSAICS region workbench")
+        self.resize(1080, 790)
+        self.setMinimumSize(920, 690)
         self.pymol_object = pymol_object
         self.settings: Optional[RegionSettings] = None
+        self._changing_table = False
+        self._changing_sigma = False
 
         outer = QtWidgets.QVBoxLayout(self)
+        outer.setContentsMargins(18, 16, 18, 16)
+        outer.setSpacing(12)
         explanation = QtWidgets.QLabel(
-            "Check residues that can move, optionally mark centers, and define paired residues. "
-            "Every graphical choice is shown in the region.data preview."
+            "Define one residue-level natural-move region. Choose its members, at least one "
+            "rotation center, optional non-overlapping residue pairs, and explicit proposal widths."
         )
         explanation.setWordWrap(True)
         outer.addWidget(explanation)
+        self.selection_summary = QtWidgets.QLabel()
+        self.selection_summary.setObjectName("contextBadge")
+        outer.addWidget(self.selection_summary)
 
+        workspace = QtWidgets.QSplitter()
+        left = QtWidgets.QWidget()
+        left_layout = QtWidgets.QVBoxLayout(left)
+        left_layout.setContentsMargins(0, 0, 4, 0)
+        left_layout.setSpacing(10)
+
+        selection_group = QtWidgets.QGroupBox("1 · Region membership and rotation centers")
+        selection_layout = QtWidgets.QVBoxLayout(selection_group)
+        selection_note = QtWidgets.QLabel(
+            "Move includes a residue. Center marks a residue MOSAICS may use as the pivot "
+            "for whole-region rotation; at least one center is required."
+        )
+        selection_note.setWordWrap(True)
+        selection_layout.addWidget(selection_note)
         self.residue_table = QtWidgets.QTableWidget(len(residues), 3)
-        self.residue_table.setHorizontalHeaderLabels(("Include", "Center", "Residue"))
+        self.residue_table.setHorizontalHeaderLabels(("Move", "Center", "Residue (chain:number)"))
         self.residue_table.horizontalHeader().setStretchLastSection(True)
+        self.residue_table.setColumnWidth(0, 72)
+        self.residue_table.setColumnWidth(1, 76)
         initial_residues = set(initial.residues if initial else residues)
-        initial_centers = set(initial.centers if initial else ())
+        initial_centers = set(initial.centers if initial else residues[:1])
         for row, selector in enumerate(residues):
             include = QtWidgets.QTableWidgetItem()
             include.setFlags(include.flags() | ITEM_USER_CHECKABLE)
@@ -426,70 +558,180 @@ class RegionEditor(QtWidgets.QDialog):
             self.residue_table.setItem(row, 0, include)
             self.residue_table.setItem(row, 1, center)
             self.residue_table.setItem(row, 2, QtWidgets.QTableWidgetItem(selector))
-        self.residue_table.itemChanged.connect(self._update_preview)
-        outer.addWidget(self.residue_table, 1)
+        self.residue_table.itemChanged.connect(self._table_changed)
+        selection_layout.addWidget(self.residue_table, 1)
+        selection_actions = QtWidgets.QHBoxLayout()
+        select_all = QtWidgets.QPushButton("Select all")
+        select_all.clicked.connect(lambda _checked=False: self._set_all_residues(True))
+        clear_all = QtWidgets.QPushButton("Clear")
+        clear_all.clicked.connect(lambda _checked=False: self._set_all_residues(False))
+        from_pymol = QtWidgets.QPushButton("Use current PyMOL selection")
+        from_pymol.setToolTip("Replace membership with residues in PyMOL's current 'sele' selection.")
+        from_pymol.clicked.connect(self._use_pymol_selection)
+        selection_actions.addWidget(select_all)
+        selection_actions.addWidget(clear_all)
+        selection_actions.addStretch(1)
+        selection_actions.addWidget(from_pymol)
+        selection_layout.addLayout(selection_actions)
+        left_layout.addWidget(selection_group, 3)
 
-        pair_row = QtWidgets.QHBoxLayout()
+        pair_group = QtWidgets.QGroupBox("2 · Residue pairs")
+        pair_layout = QtWidgets.QVBoxLayout(pair_group)
+        pair_note = QtWidgets.QLabel(
+            "Pair two selected residues that should move as one coupled unit, such as a "
+            "nucleic-acid base pair. A residue can belong to only one pair."
+        )
+        pair_note.setWordWrap(True)
+        pair_layout.addWidget(pair_note)
+        pair_row = QtWidgets.QGridLayout()
         self.pair_first = QtWidgets.QComboBox()
         self.pair_second = QtWidgets.QComboBox()
-        self.pair_first.addItems(residues)
-        self.pair_second.addItems(residues)
         add_pair = QtWidgets.QPushButton("Add pair")
         add_pair.clicked.connect(self._add_pair)
-        remove_pair = QtWidgets.QPushButton("Remove selected pair")
+        remove_pair = QtWidgets.QPushButton("Remove pair")
         remove_pair.clicked.connect(self._remove_pair)
-        pair_row.addWidget(self.pair_first)
-        pair_row.addWidget(self.pair_second)
-        pair_row.addWidget(add_pair)
-        pair_row.addWidget(remove_pair)
-        outer.addLayout(pair_row)
+        pair_row.addWidget(QtWidgets.QLabel("First"), 0, 0)
+        pair_row.addWidget(QtWidgets.QLabel("Second"), 0, 1)
+        pair_row.addWidget(self.pair_first, 1, 0)
+        pair_row.addWidget(self.pair_second, 1, 1)
+        pair_row.addWidget(add_pair, 1, 2)
+        pair_row.addWidget(remove_pair, 1, 3)
+        pair_layout.addLayout(pair_row)
         self.pair_list = QtWidgets.QListWidget()
-        self.pair_list.setMaximumHeight(90)
+        self.pair_list.setFixedHeight(88)
         if initial:
             for first, second in initial.residue_pairs:
                 self.pair_list.addItem("{} — {}".format(first, second))
-        outer.addWidget(self.pair_list)
+        pair_layout.addWidget(self.pair_list)
+        left_layout.addWidget(pair_group)
 
-        form = QtWidgets.QFormLayout()
-        self.dependency = QtWidgets.QComboBox()
-        self.dependency.addItems(("independent", "dependent"))
-        self.dependency.setCurrentText(initial.dependency_type if initial else "independent")
-        form.addRow("Dependency:", self.dependency)
-        self.sigma_edits = {}
-        sigma_fields = (
-            ("translation_sigma", "Rigid translation σ", "0.0"),
-            ("rotation_sigma", "Rigid rotation σ", "0.0"),
-            ("free_translation_sigma", "Free-residue translation σ", ".5e-5"),
-            ("free_rotation_sigma", "Free-residue rotation σ", ".5e-6"),
-            ("pair_translation_sigma", "Residue-pair translation σ", ".5e-5"),
-            ("pair_rotation_sigma", "Residue-pair rotation σ", ".5e-6"),
+        right = QtWidgets.QWidget()
+        right_layout = QtWidgets.QVBoxLayout(right)
+        right_layout.setContentsMargins(4, 0, 0, 0)
+        right_layout.setSpacing(10)
+        model_group = QtWidgets.QGroupBox("3 · Scientific model")
+        model_form = QtWidgets.QFormLayout(model_group)
+        model_form.setHorizontalSpacing(12)
+        self.element_type = QtWidgets.QLineEdit("Residue (supported)")
+        self.element_type.setReadOnly(True)
+        self.element_type.setToolTip("Writes \\element_top_type{residue}.")
+        model_form.addRow("Element type:", self.element_type)
+        self.dependency = QtWidgets.QLineEdit("Independent (supported)")
+        self.dependency.setReadOnly(True)
+        self.dependency.setToolTip(
+            "Writes \\dependency_type{independent}; dependent hierarchy is not valid in this editor."
         )
-        for attribute, label, default in sigma_fields:
-            edit = QtWidgets.QLineEdit(getattr(initial, attribute) if initial else default)
-            edit.textChanged.connect(self._update_preview)
-            self.sigma_edits[attribute] = edit
-            form.addRow(label + ":", edit)
-        self.dependency.currentTextChanged.connect(self._update_preview)
-        outer.addLayout(form)
+        model_form.addRow("Dependency:", self.dependency)
+        self.propagation = QtWidgets.QLineEdit("Superimpose (single region)")
+        self.propagation.setReadOnly(True)
+        self.propagation.setToolTip(
+            "Writes \\prop_regions_type{superimpose} in mcmc.input. With one region, "
+            "superimpose and onebyone select the same sole region."
+        )
+        model_form.addRow("Propagation:", self.propagation)
+        self.preset = QtWidgets.QComboBox()
+        self.preset.addItems(tuple(self.PRESETS) + ("Custom",))
+        self.preset.setToolTip(
+            "WP2 presets reproduce the documented MOSAICS tutorial widths. Run a short pilot "
+            "and tune proposal widths from measured acceptance."
+        )
+        self.preset.currentTextChanged.connect(self._apply_preset)
+        model_form.addRow("Proposal preset:", self.preset)
+        right_layout.addWidget(model_group)
 
+        motion_group = QtWidgets.QGroupBox("4 · Natural-move proposal widths")
+        motion_layout = QtWidgets.QGridLayout(motion_group)
+        motion_layout.setHorizontalSpacing(10)
+        motion_layout.setVerticalSpacing(7)
+        motion_layout.addWidget(QtWidgets.QLabel("Motion level"), 0, 0)
+        motion_layout.addWidget(QtWidgets.QLabel("Translation σ (Å)"), 0, 1)
+        motion_layout.addWidget(QtWidgets.QLabel("Rotation σ (rad)"), 0, 2)
+        self.sigma_edits = {}
+        motion_rows = (
+            ("Whole region", "translation_sigma", "rotation_sigma",
+             "Moves all included residues together about a selected center."),
+            ("Free residues", "free_translation_sigma", "free_rotation_sigma",
+             "Moves individual included residues not assigned to a pair."),
+            ("Residue pairs", "pair_translation_sigma", "pair_rotation_sigma",
+             "Moves each declared pair as a coupled unit."),
+        )
+        defaults = self.PRESETS["WP2 balanced pilot"]
+        validator = QtGui.QDoubleValidator(0.0, 1.0e9, 12, self)
+        compact_definitions = {
+            "Whole region": "all members together",
+            "Free residues": "unpaired members individually",
+            "Residue pairs": "each pair as one unit",
+        }
+        for row, (label, trans_name, rot_name, definition) in enumerate(motion_rows, start=1):
+            motion_layout.setRowMinimumHeight(row, 40)
+            level = QtWidgets.QWidget()
+            level_layout = QtWidgets.QVBoxLayout(level)
+            level_layout.setContentsMargins(0, 0, 0, 0)
+            level_layout.setSpacing(0)
+            level_title = QtWidgets.QLabel(label)
+            level_font = level_title.font()
+            level_font.setBold(True)
+            level_title.setFont(level_font)
+            level_definition = QtWidgets.QLabel(compact_definitions[label])
+            level_definition.setStyleSheet("color: #a9c0c6;")
+            level_layout.addWidget(level_title)
+            level_layout.addWidget(level_definition)
+            level.setToolTip(definition)
+            motion_layout.addWidget(level, row, 0)
+            for column, attribute in ((1, trans_name), (2, rot_name)):
+                edit = QtWidgets.QLineEdit(getattr(initial, attribute) if initial else defaults[attribute])
+                edit.setValidator(validator)
+                edit.setToolTip(definition)
+                edit.textEdited.connect(self._sigma_edited)
+                edit.textChanged.connect(self._update_preview)
+                self.sigma_edits[attribute] = edit
+                motion_layout.addWidget(edit, row, column)
+        motion_layout.setColumnStretch(0, 3)
+        motion_layout.setColumnStretch(1, 1)
+        motion_layout.setColumnStretch(2, 1)
+        right_layout.addWidget(motion_group)
+
+        preview_group = QtWidgets.QGroupBox("5 · Generated region.data")
+        preview_layout = QtWidgets.QVBoxLayout(preview_group)
         self.preview = QtWidgets.QPlainTextEdit()
         self.preview.setReadOnly(True)
-        self.preview.setMaximumHeight(190)
-        outer.addWidget(QtWidgets.QLabel("region.data preview"))
-        outer.addWidget(self.preview)
+        self.preview.setMinimumHeight(85)
+        preview_layout.addWidget(self.preview, 1)
+        self.validation_status = QtWidgets.QLabel()
+        self.validation_status.setWordWrap(True)
+        self.validation_status.setMaximumHeight(38)
+        preview_layout.addWidget(self.validation_status)
+        right_layout.addWidget(preview_group, 1)
+
+        workspace.addWidget(left)
+        workspace.addWidget(right)
+        workspace.setStretchFactor(0, 1)
+        workspace.setStretchFactor(1, 1)
+        outer.addWidget(workspace, 1)
 
         controls = QtWidgets.QHBoxLayout()
         show_button = QtWidgets.QPushButton("Show region in PyMOL")
         show_button.clicked.connect(self._show_in_pymol)
         controls.addWidget(show_button)
+        documentation = QtWidgets.QLabel(
+            '<a style="color:#75dfd1" href="https://www.cs.ox.ac.uk/mosaics/Documentation.php">'
+            "MOSAICS region documentation</a>"
+        )
+        documentation.setOpenExternalLinks(True)
+        controls.addWidget(documentation)
         controls.addStretch(1)
-        save = QtWidgets.QPushButton("Use this region")
         cancel = QtWidgets.QPushButton("Cancel")
-        save.clicked.connect(self._accept_settings)
+        self.save_button = QtWidgets.QPushButton("Use this region")
+        self.save_button.setObjectName("primaryAction")
         cancel.clicked.connect(self.reject)
+        self.save_button.clicked.connect(self._accept_settings)
         controls.addWidget(cancel)
-        controls.addWidget(save)
+        controls.addWidget(self.save_button)
         outer.addLayout(controls)
+        for combo in self.findChildren(QtWidgets.QComboBox):
+            _install_combo_popup_theme(combo)
+        self._sync_pair_choices()
+        self._select_matching_preset()
         self._update_preview()
 
     def _selected(self, column: int) -> Tuple[str, ...]:
@@ -511,23 +753,157 @@ class RegionEditor(QtWidgets.QDialog):
             residues=self._selected(0),
             centers=self._selected(1),
             residue_pairs=self._pairs(),
-            dependency_type=self.dependency.currentText(),
+            dependency_type="independent",
             **{name: edit.text().strip() for name, edit in self.sigma_edits.items()}
         )
 
     def _update_preview(self, *_args):
+        selected, centers, pairs = self._selected(0), self._selected(1), self._pairs()
+        self.selection_summary.setText(
+            "{} residues  ·  {} rotation center{}  ·  {} residue pair{}".format(
+                len(selected), len(centers), "" if len(centers) == 1 else "s",
+                len(pairs), "" if len(pairs) == 1 else "s",
+            )
+        )
         try:
-            self.preview.setPlainText(generate_region_file(self._current_settings()))
+            generated = generate_region_file(self._current_settings())
         except ValueError as exc:
             self.preview.setPlainText("Cannot generate region: {}".format(exc))
+            self.validation_status.setText("⚠ {}".format(exc))
+            self.validation_status.setStyleSheet("color: #f2ad72;")
+            self.save_button.setEnabled(False)
+            return
+        self.preview.setPlainText(generated)
+        note = "Valid. Review region.data before running."
+        if not pairs and any(
+            float(self.sigma_edits[name].text() or 0) > 0
+            for name in ("pair_translation_sigma", "pair_rotation_sigma")
+        ):
+            note += " Pair widths are inactive: no pair is declared."
+        self.validation_status.setText("✓ " + note)
+        self.validation_status.setStyleSheet("color: #75dfd1;")
+        self.save_button.setEnabled(True)
+
+    def _table_changed(self, item):
+        if self._changing_table:
+            return
+        self._changing_table = True
+        try:
+            row = item.row()
+            if item.column() == 1 and item.checkState() == CHECKED:
+                self.residue_table.item(row, 0).setCheckState(CHECKED)
+            elif item.column() == 0 and item.checkState() != CHECKED:
+                self.residue_table.item(row, 1).setCheckState(UNCHECKED)
+                removed = self.residue_table.item(row, 2).text()
+                for pair_row in reversed(range(self.pair_list.count())):
+                    if removed in self.pair_list.item(pair_row).text().split(" — "):
+                        self.pair_list.takeItem(pair_row)
+        finally:
+            self._changing_table = False
+        self._sync_pair_choices()
+        self._update_preview()
+
+    def _set_all_residues(self, selected: bool):
+        self._changing_table = True
+        try:
+            for row in range(self.residue_table.rowCount()):
+                self.residue_table.item(row, 0).setCheckState(CHECKED if selected else UNCHECKED)
+                if not selected:
+                    self.residue_table.item(row, 1).setCheckState(UNCHECKED)
+            if not selected:
+                self.pair_list.clear()
+        finally:
+            self._changing_table = False
+        self._sync_pair_choices()
+        self._update_preview()
+
+    def _sync_pair_choices(self):
+        selected = self._selected(0)
+        previous = (self.pair_first.currentText(), self.pair_second.currentText())
+        for combo, old_value in zip((self.pair_first, self.pair_second), previous):
+            combo.blockSignals(True)
+            combo.clear()
+            combo.addItems(selected)
+            if old_value in selected:
+                combo.setCurrentText(old_value)
+            combo.blockSignals(False)
+
+    def _sigma_edited(self, _text):
+        if self._changing_sigma:
+            return
+        self.preset.blockSignals(True)
+        self.preset.setCurrentText("Custom")
+        self.preset.blockSignals(False)
+
+    def _select_matching_preset(self):
+        values = {name: edit.text().strip() for name, edit in self.sigma_edits.items()}
+        name = next((name for name, preset in self.PRESETS.items() if values == preset), "Custom")
+        self.preset.setCurrentText(name)
+
+    def _apply_preset(self, name):
+        if name not in self.PRESETS:
+            return
+        self._changing_sigma = True
+        try:
+            for attribute, value in self.PRESETS[name].items():
+                self.sigma_edits[attribute].setText(value)
+        finally:
+            self._changing_sigma = False
+        self._update_preview()
+
+    def _use_pymol_selection(self, checked=False):
+        try:
+            model = cmd.get_model("({}) and sele".format(self.pymol_object))
+        except Exception as exc:
+            QtWidgets.QMessageBox.warning(self, "PymoSAICS", "Cannot read the PyMOL selection: {}".format(exc))
+            return
+        selected = {"{}:{}".format(atom.chain or "_", atom.resi) for atom in model.atom}
+        available = {
+            self.residue_table.item(row, 2).text()
+            for row in range(self.residue_table.rowCount())
+        }
+        selected &= available
+        if not selected:
+            QtWidgets.QMessageBox.information(
+                self, "PymoSAICS",
+                "PyMOL's current selection contains no residues from the active object and chains.",
+            )
+            return
+        self._changing_table = True
+        try:
+            first_selected_row = None
+            for row in range(self.residue_table.rowCount()):
+                selector = self.residue_table.item(row, 2).text()
+                include = selector in selected
+                self.residue_table.item(row, 0).setCheckState(CHECKED if include else UNCHECKED)
+                if include and first_selected_row is None:
+                    first_selected_row = row
+                if not include:
+                    self.residue_table.item(row, 1).setCheckState(UNCHECKED)
+            self.pair_list.clear()
+            if not self._selected(1) and first_selected_row is not None:
+                self.residue_table.item(first_selected_row, 1).setCheckState(CHECKED)
+        finally:
+            self._changing_table = False
+        self._sync_pair_choices()
+        self._update_preview()
 
     def _add_pair(self, checked=False):
         first, second = self.pair_first.currentText(), self.pair_second.currentText()
-        if first and second and first != second:
-            value = "{} — {}".format(first, second)
-            if not self.pair_list.findItems(value, getattr(QtCore.Qt, "MatchExactly", QtCore.Qt.MatchFlag.MatchExactly)):
-                self.pair_list.addItem(value)
-                self._update_preview()
+        if not first or not second:
+            return
+        if first == second:
+            QtWidgets.QMessageBox.information(self, "PymoSAICS", "Choose two different residues.")
+            return
+        used = {item for pair in self._pairs() for item in pair}
+        if first in used or second in used:
+            QtWidgets.QMessageBox.information(
+                self, "PymoSAICS",
+                "Each residue can belong to only one pair. Remove the existing pair first.",
+            )
+            return
+        self.pair_list.addItem("{} — {}".format(first, second))
+        self._update_preview()
 
     def _remove_pair(self, checked=False):
         for item in self.pair_list.selectedItems():
@@ -544,12 +920,27 @@ class RegionEditor(QtWidgets.QDialog):
 
     def _show_in_pymol(self, checked=False):
         try:
-            expression = "({}) and ({})".format(
-                self.pymol_object, self._selector_expression(self._selected(0))
+            selected = self._selected(0)
+            centers = self._selected(1)
+            paired = tuple(item for pair in self._pairs() for item in pair)
+            cmd.select(
+                "pymosaics_region",
+                "({}) and ({})".format(self.pymol_object, self._selector_expression(selected)),
             )
-            cmd.select("pymosaics_region", expression)
             cmd.show("sticks", "pymosaics_region")
             cmd.color("cyan", "pymosaics_region")
+            cmd.select(
+                "pymosaics_region_pairs",
+                "({}) and ({})".format(self.pymol_object, self._selector_expression(paired)),
+            )
+            cmd.show("sticks", "pymosaics_region_pairs")
+            cmd.color("magenta", "pymosaics_region_pairs")
+            cmd.select(
+                "pymosaics_region_centers",
+                "({}) and ({})".format(self.pymol_object, self._selector_expression(centers)),
+            )
+            cmd.show("spheres", "pymosaics_region_centers and name CA+C1*")
+            cmd.color("yellow", "pymosaics_region_centers")
             cmd.zoom("pymosaics_region")
         except Exception as exc:
             QtWidgets.QMessageBox.warning(self, "PymoSAICS", "Cannot show region: {}".format(exc))
@@ -663,7 +1054,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
 
     @staticmethod
     def _palette_role(direct_name: str, member_name: str):
-        return _enum_value(QtGui.QPalette, direct_name, "ColorRole", member_name)
+        return _palette_role(direct_name, member_name)
 
     def _apply_theme_palette(self):
         """Keep native Qt themes from replacing plugin surfaces with light colors."""
@@ -738,6 +1129,8 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             QToolTip { background: #153943; color: #f0f8f9; border: 1px solid #4b7e89; padding: 4px; }
             """
         )
+        for combo in self.findChildren(QtWidgets.QComboBox):
+            _install_combo_popup_theme(combo)
 
     @staticmethod
     def _configure_form(form):
@@ -936,6 +1329,34 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self.forcefield_description.setWordWrap(True)
         self._allow_label_to_wrap(self.forcefield_description)
         settings_form.addRow("Definition:", self.forcefield_description)
+        self.protein_prep_mode = QtWidgets.QComboBox()
+        self.protein_prep_mode.addItem(
+            "Automatic AMBER preparation (PDB2PQR + PROPKA)", "pdb2pqr"
+        )
+        self.protein_prep_mode.addItem(
+            "Require an existing ff14SB-ready all-atom PDB", "strict"
+        )
+        self.protein_prep_mode.setToolTip(
+            "Automatic mode repairs missing heavy atoms, assigns AMBER residue names, "
+            "and adds hydrogens before strict RTF validation."
+        )
+        self.protein_prep_mode.currentIndexChanged.connect(
+            self._update_protein_prep_controls
+        )
+        settings_form.addRow("Protein preparation:", self.protein_prep_mode)
+        self.protein_ph = QtWidgets.QDoubleSpinBox()
+        self.protein_ph.setRange(0.0, 14.0)
+        self.protein_ph.setDecimals(2)
+        self.protein_ph.setSingleStep(0.1)
+        self.protein_ph.setValue(7.0)
+        self.protein_ph.setToolTip(
+            "PROPKA uses this pH when assigning titration states for PDB2PQR."
+        )
+        settings_form.addRow("Protonation pH:", self.protein_ph)
+        self.protein_prep_status = QtWidgets.QLabel()
+        self.protein_prep_status.setWordWrap(True)
+        self._allow_label_to_wrap(self.protein_prep_status)
+        settings_form.addRow("Preparation tool:", self.protein_prep_status)
         self.preset_combo = QtWidgets.QComboBox()
         self.preset_combo.setSizeAdjustPolicy(COMBO_ADJUST_MINIMUM)
         self.preset_combo.setMinimumContentsLength(12)
@@ -1239,6 +1660,26 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         form.addRow("Default workspace:", self._path_row(self.workspace_edit, "Browse…", self._browse_workspace))
         layout.addWidget(runtime_group)
 
+        protein_tools = QtWidgets.QGroupBox("Protein preparation")
+        protein_tools_form = QtWidgets.QFormLayout(protein_tools)
+        self._configure_form(protein_tools_form)
+        self.pdb2pqr_edit = QtWidgets.QLineEdit()
+        detected_pdb2pqr = discover_pdb2pqr()
+        if detected_pdb2pqr is not None:
+            self.pdb2pqr_edit.setText(str(detected_pdb2pqr))
+        protein_tools_form.addRow(
+            "PDB2PQR executable:",
+            self._path_row(self.pdb2pqr_edit, "Browse…", self._browse_pdb2pqr),
+        )
+        protein_note = QtWidgets.QLabel(
+            "Used only when automatic protein preparation is selected. PymoSAICS runs "
+            "PDB2PQR with AMBER naming and PROPKA at the visible pH, retains the PQR/log, "
+            "and still requires an exact ff14SB topology match before MOSAICS can run."
+        )
+        protein_note.setWordWrap(True)
+        protein_tools_form.addRow("Method:", protein_note)
+        layout.addWidget(protein_tools)
+
         force_field_group = QtWidgets.QGroupBox("Force-field profile")
         force_field_layout = QtWidgets.QVBoxLayout(force_field_group)
         force_field_form = QtWidgets.QFormLayout()
@@ -1288,12 +1729,13 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         layout.addLayout(save_row)
         layout.addStretch(1)
         self._runtime_changed()
+        self._update_protein_prep_controls()
 
     def _build_about_tab(self):
         layout = QtWidgets.QVBoxLayout(self.about_tab)
         layout.setContentsMargins(24, 22, 24, 22)
         label = QtWidgets.QLabel(
-            "<h2>PymoSAICS 0.2.1</h2>"
+            "<h2>PymoSAICS 0.2.2</h2>"
             "<p>A transparent PyMOL workbench for MOSAICS structure preparation, "
             "input generation, execution, visualization, and analysis.</p>"
             "<p><b>MOSAICS</b> was created by Peter Minary. Obtain official executables, "
@@ -1326,12 +1768,16 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         if executable is None:
             executable = Path("")
         workspace = self.workspace_edit.text().strip()
+        pdb2pqr_text = (
+            self.pdb2pqr_edit.text().strip() if hasattr(self, "pdb2pqr_edit") else ""
+        )
         return RuntimeConfig(
             executable=executable,
             forcefield_directory=FORCEFIELD_ROOT,
             default_workspace=Path(workspace).expanduser() if workspace else None,
             runtime_id=runtime.identifier,
             force_field_id=self._current_forcefield().identifier,
+            pdb2pqr_executable=(Path(pdb2pqr_text).expanduser() if pdb2pqr_text else None),
         )
 
     def _load_configuration(self):
@@ -1355,10 +1801,13 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             self.forcefield_combo.setCurrentIndex(forcefield_index)
         if config.runtime_id == "custom":
             self.custom_executable_edit.setText(str(config.executable))
+        if config.pdb2pqr_executable is not None:
+            self.pdb2pqr_edit.setText(str(config.pdb2pqr_executable))
         self.workspace_edit.setText(str(config.default_workspace or ""))
         if not self.project_edit.text() and config.default_workspace:
             self.project_edit.setText(str(config.default_workspace))
         self.setup_status.setPlainText(format_diagnostics(validate_runtime(self._configuration_from_fields())))
+        self._update_protein_prep_controls()
 
     def _save_configuration(self, checked=False):
         config = self._configuration_from_fields()
@@ -1413,6 +1862,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self.header_science.setText("Force field · {}".format(profile.label))
         self.forcefield_description.setText("{} {}".format(profile.description, profile.validation))
         self.disulfide_group.setVisible(profile.chemistry == "protein")
+        self._update_protein_prep_controls()
         compatible = []
         for index, preset in enumerate(ANALYSIS_PRESETS):
             compatible.append(index if preset.chemistry in ("any", profile.chemistry) else -1)
@@ -1425,6 +1875,37 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             self.preset_combo.setCurrentIndex(first)
         self._refresh_disulfides()
         self._regenerate_unedited_preview()
+
+    def _update_protein_prep_controls(self, *_args):
+        if not hasattr(self, "protein_prep_mode"):
+            return
+        is_protein = self._current_forcefield().chemistry == "protein"
+        fields = (self.protein_prep_mode, self.protein_ph, self.protein_prep_status)
+        form = self.protein_prep_mode.parentWidget().layout()
+        for field in fields:
+            field.setVisible(is_protein)
+            if isinstance(form, QtWidgets.QFormLayout):
+                label = form.labelForField(field)
+                if label is not None:
+                    label.setVisible(is_protein)
+        if not is_protein:
+            return
+        automatic = self.protein_prep_mode.currentData() == "pdb2pqr"
+        self.protein_ph.setEnabled(automatic)
+        explicit = None
+        if hasattr(self, "pdb2pqr_edit") and self.pdb2pqr_edit.text().strip():
+            explicit = Path(self.pdb2pqr_edit.text().strip()).expanduser()
+        tool = discover_pdb2pqr(explicit)
+        if not automatic:
+            self.protein_prep_status.setText(
+                "Strict mode: the selected PDB must already contain exact ff14SB atoms and names."
+            )
+        elif tool is None:
+            self.protein_prep_status.setText(
+                "PDB2PQR was not found. Choose its executable in Setup before preparing a heavy-atom protein."
+            )
+        else:
+            self.protein_prep_status.setText("Detected: {}".format(tool))
 
     def _setup_forcefield_changed(self, *_args):
         identifier = self.setup_forcefield_combo.currentData()
@@ -1829,6 +2310,39 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             return local.resolve()
         raise ValueError("load or fetch a PDB structure first")
 
+    @staticmethod
+    def _concise_topology_issues(issues, maximum=4):
+        missing = sum(len(issue.missing_atoms) for issue in issues)
+        unexpected = sum(len(issue.extra_atoms) for issue in issues)
+        duplicates = sum(len(issue.duplicate_atoms) for issue in issues)
+        lines = [
+            "{} residue mismatch(es): {} missing, {} unexpected, and {} duplicate atom name(s).".format(
+                len(issues), missing, unexpected, duplicates
+            )
+        ]
+        for issue in issues[:maximum]:
+            details = []
+            for label, atoms in (
+                ("missing", issue.missing_atoms),
+                ("unexpected", issue.extra_atoms),
+                ("duplicate", issue.duplicate_atoms),
+            ):
+                if atoms:
+                    preview = ", ".join(atoms[:5])
+                    suffix = " …" if len(atoms) > 5 else ""
+                    details.append("{} {}{}".format(label, preview, suffix))
+            lines.append(
+                "{} {} → {}: {}".format(
+                    issue.selector,
+                    issue.pdb_residue,
+                    issue.topology_residue,
+                    "; ".join(details),
+                )
+            )
+        if len(issues) > maximum:
+            lines.append("… {} additional residue mismatch(es)".format(len(issues) - maximum))
+        return "\n".join(lines)
+
     def _prepare_project(self, checked=False):
         project = self._project_directory()
         if project is None:
@@ -1850,26 +2364,82 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             source = self._source_for_preparation(project)
             force_field = self._current_forcefield()
             staged_force_field = stage_force_field(project, force_field)
+            selected_chains = self._selected_chains()
+            selected_disulfides = self._selected_disulfides()
             prepared = prepare_structure(
                 source,
                 project / "structure.pdb",
                 self.model_combo.currentText(),
-                self._selected_chains(),
+                selected_chains,
                 force_field.chemistry,
                 force_field.topology_profile,
                 self.header_combo.currentData(),
-                self._selected_disulfides(),
+                selected_disulfides,
             )
             topology_issues = validate_pdb_against_rtf(
                 prepared.pdb_path,
                 staged_force_field / Path(force_field.rtf).name,
                 force_field.chemistry,
             )
+            protein_preparation = None
+            if (
+                topology_issues
+                and force_field.chemistry == "protein"
+                and self.protein_prep_mode.currentData() == "pdb2pqr"
+            ):
+                explicit = (
+                    Path(self.pdb2pqr_edit.text().strip()).expanduser()
+                    if self.pdb2pqr_edit.text().strip()
+                    else None
+                )
+                pdb2pqr = discover_pdb2pqr(explicit)
+                if pdb2pqr is None:
+                    raise ValueError(
+                        "This protein is not ff14SB-ready and PDB2PQR was not found. "
+                        "Choose a PDB2PQR executable in Setup, or select strict mode and load "
+                        "an AMBER-prepared all-atom PDB. PyMOL's generic Add Hydrogens command "
+                        "does not produce ff14SB atom names."
+                    )
+                protein_preparation = prepare_protein_with_pdb2pqr(
+                    source,
+                    project / ".pymosaics" / "protein-preparation",
+                    pdb2pqr,
+                    self.model_combo.currentText(),
+                    selected_chains,
+                    ph=self.protein_ph.value(),
+                )
+                prepared = prepare_structure(
+                    protein_preparation.pdb_path,
+                    project / "structure.pdb",
+                    "1",
+                    selected_chains,
+                    force_field.chemistry,
+                    force_field.topology_profile,
+                    self.header_combo.currentData(),
+                    selected_disulfides,
+                )
+                topology_issues = validate_pdb_against_rtf(
+                    prepared.pdb_path,
+                    staged_force_field / Path(force_field.rtf).name,
+                    force_field.chemistry,
+                )
             if topology_issues:
+                summary = self._concise_topology_issues(topology_issues)
+                if force_field.chemistry == "protein" and protein_preparation is None:
+                    raise ValueError(
+                        "The selected protein is not an ff14SB-ready all-atom structure. "
+                        "Choose automatic PDB2PQR/PROPKA preparation, or provide an AMBER-prepared PDB.\n{}".format(
+                            summary
+                        )
+                    )
+                if protein_preparation is not None:
+                    raise ValueError(
+                        "Automatic AMBER protein preparation completed, but exact ff14SB validation still failed. "
+                        "Inspect {}.\n{}".format(protein_preparation.log_path, summary)
+                    )
                 raise ValueError(
-                    "the prepared PDB does not match the selected all-atom topology. "
-                    "Add/rename the required atoms before running:\n{}".format(
-                        format_topology_issues(topology_issues)
+                    "The prepared PDB does not match the selected all-atom topology.\n{}".format(
+                        summary
                     )
                 )
             if self.use_region.isChecked():
@@ -1900,6 +2470,16 @@ class PymoSAICSDialog(QtWidgets.QDialog):
                 prepared.atom_count, prepared.residue_count, prepared.header_line or "none"
             )
             details += "\nForce field: {}".format(staged_force_field)
+            if protein_preparation is not None:
+                details += (
+                    "\nProtein preparation: PDB2PQR AMBER + PROPKA at pH {:.2f}"
+                    "\nPrepared all-atom source: {}"
+                    "\nPreparation log: {}"
+                ).format(
+                    protein_preparation.ph,
+                    protein_preparation.pdb_path,
+                    protein_preparation.log_path,
+                )
             if prepared.mapping_path:
                 details += "\nNaming map: {}".format(prepared.mapping_path)
             self.build_status.setPlainText(details)
@@ -1980,6 +2560,15 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         if path:
             self.custom_executable_edit.setText(path)
             self.runtime_combo.setCurrentIndex(self.runtime_combo.findData("custom"))
+
+    def _browse_pdb2pqr(self, checked=False):
+        start = self.pdb2pqr_edit.text().strip() or str(Path.home())
+        path, _ = QtWidgets.QFileDialog.getOpenFileName(
+            self, "Select PDB2PQR executable", start
+        )
+        if path:
+            self.pdb2pqr_edit.setText(path)
+            self._update_protein_prep_controls()
 
     def _browse_workspace(self, checked=False):
         path = QtWidgets.QFileDialog.getExistingDirectory(self, "Select default workspace", str(Path.home()))

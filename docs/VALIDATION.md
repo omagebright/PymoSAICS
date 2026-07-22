@@ -1,6 +1,6 @@
 # Release validation
 
-Validation was performed on 2026-07-21 and repeated for the 0.2.1 interface on
+Validation was performed on 2026-07-21 and repeated for the 0.2.2 interface on
 2026-07-22 on Apple Silicon macOS. These checks
 establish software/runtime compatibility; they do not establish scientific
 convergence for a production study.
@@ -16,6 +16,10 @@ convergence for a production study.
   and dark host palettes; the minimum-width Build form retained every control.
 - Build and Setup exposed the same nine profiles. Selecting each profile
   populated all six corresponding force-field directives in `mcmc.input`.
+- Every combo popup used an explicit dark Qt view with readable active,
+  selected, and disabled text under the PyMOL runtime.
+- The region workbench generated a valid center by default, rejected empty or
+  overlapping-pair definitions, and wrote explicit single-region propagation.
 
 ## Runtime and force-field checks
 
@@ -34,6 +38,11 @@ decks are encoded in the selector and validator.
 
 Fixtures covered a 1EFS DNA/RNA heteroduplex, true-terminal DNA ACGT, and the
 1HHK MHC/peptide ff14SB system with three disulfides.
+
+The previously failing RCSB 1A6Z protein path was repeated through the GUI.
+PDB2PQR/PROPKA at pH 7 prepared 6,021 atoms in 371 residues, preserved three
+disulfides, and passed the ff14SB atom validator with zero mismatches. The GUI
+retained the selected input, PQR, converted PDB, and preparation log.
 
 ## Preset checks
 

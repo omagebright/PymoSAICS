@@ -148,14 +148,30 @@ class RegionTests(unittest.TestCase):
     def test_region_rejects_invalid_widths_and_duplicate_pairs(self):
         with self.assertRaisesRegex(ValueError, "numeric"):
             generate_region_file(
-                RegionSettings(("A:1",), (), (), translation_sigma="not-a-number")
+                RegionSettings(("A:1",), ("A:1",), (), translation_sigma="not-a-number")
             )
         with self.assertRaisesRegex(ValueError, "only once"):
             generate_region_file(
                 RegionSettings(
                     ("A:1", "A:2"),
-                    (),
+                    ("A:1",),
                     (("A:1", "A:2"), ("A:2", "A:1")),
+                )
+            )
+
+    def test_region_requires_supported_dependency_center_and_unique_pair_members(self):
+        with self.assertRaisesRegex(ValueError, "independent"):
+            generate_region_file(
+                RegionSettings(("A:1",), ("A:1",), (), dependency_type="dependent")
+            )
+        with self.assertRaisesRegex(ValueError, "rotation center"):
+            generate_region_file(RegionSettings(("A:1",), (), ()))
+        with self.assertRaisesRegex(ValueError, "only one residue pair"):
+            generate_region_file(
+                RegionSettings(
+                    ("A:1", "A:2", "A:3"),
+                    ("A:1",),
+                    (("A:1", "A:2"), ("A:1", "A:3")),
                 )
             )
 

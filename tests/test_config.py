@@ -30,6 +30,7 @@ class ConfigStoreTests(unittest.TestCase):
                 executable=Path(temporary) / "MOSAICS executable",
                 forcefield_directory=Path(temporary) / "force fields",
                 default_workspace=Path(temporary) / "workspace",
+                pdb2pqr_executable=Path(temporary) / "pdb2pqr",
             )
             store.save(expected)
             self.assertEqual(
@@ -38,9 +39,10 @@ class ConfigStoreTests(unittest.TestCase):
                     expected.executable.resolve(),
                     expected.forcefield_directory.resolve(),
                     expected.default_workspace.resolve(),
+                    pdb2pqr_executable=expected.pdb2pqr_executable.resolve(),
                 ),
             )
-            self.assertEqual(json.loads(path.read_text())["schema_version"], 2)
+            self.assertEqual(json.loads(path.read_text())["schema_version"], 3)
 
     def test_schema_one_is_migrated_with_safe_defaults(self):
         with tempfile.TemporaryDirectory() as temporary:

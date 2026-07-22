@@ -14,7 +14,7 @@ from pymol.Qt import QtCore, QtWidgets
 from pymosaics.core.analysis import latest_log
 from pymosaics.core.catalog import FORCE_FIELD_PROFILES
 from pymosaics.core.config import ConfigStore
-from pymosaics.gui import PymoSAICSDialog
+from pymosaics.gui import PymoSAICSDialog, RegionEditor
 
 
 def main():
@@ -52,6 +52,32 @@ def main():
             raise SystemExit("The Build form is wider than its viewport")
         if content.palette().window().color().name().lower() != "#0d252f":
             raise SystemExit("The Build form did not receive the deterministic dark palette")
+        for combo in dialog.findChildren(QtWidgets.QComboBox):
+            popup = combo.view()
+            if not isinstance(popup, QtWidgets.QListView):
+                raise SystemExit("A combo box is still using a host-native popup")
+            if popup.palette().base().color().name().lower() != "#102c36":
+                raise SystemExit("A combo popup inherited a light host palette")
+            if popup.palette().text().color().name().lower() != "#edf7f8":
+                raise SystemExit("A combo popup does not use readable foreground text")
+            if "#789198" not in popup.styleSheet().lower():
+                raise SystemExit("Disabled combo choices do not have a readable muted color")
+            if popup.minimumWidth() < 220:
+                raise SystemExit("A combo popup is too narrow to identify its choices")
+        region = RegionEditor(("A:1", "A:2", "B:3"), "demo", parent=dialog)
+        if region._current_settings().dependency_type != "independent":
+            raise SystemExit("The region editor exposed an unsupported dependency type")
+        if region._current_settings().centers != ("A:1",):
+            raise SystemExit("A new region does not start with a valid rotation center")
+        if not region.save_button.isEnabled() or "\\ncenter{1}" not in region.preview.toPlainText():
+            raise SystemExit("The default graphical region does not generate a valid preview")
+        region._set_all_residues(False)
+        if region.save_button.isEnabled():
+            raise SystemExit("An invalid empty region can be accepted")
+        for combo in region.findChildren(QtWidgets.QComboBox):
+            if combo.view().palette().base().color().name().lower() != "#102c36":
+                raise SystemExit("A region-editor combo popup inherited a light host palette")
+        region.close()
         dialog.runtime_combo.setCurrentIndex(dialog.runtime_combo.findData("custom"))
         dialog.custom_executable_edit.setText(sys.executable)
         dialog.project_edit.setText(str(root))

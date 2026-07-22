@@ -186,6 +186,11 @@ def generate_mcmc_input(
             entry("stsamc_ampl", "{:g}".format(preset.stsamc_amplitude)),
             entry("stsamc_shift", 0),
         ]
+    if region_filename:
+        # A single PymoSAICS region is equivalent under both MOSAICS propagation
+        # strategies. Write the documented default instead of relying on a hidden
+        # parser default so the run deck remains fully reviewable.
+        general.insert(-1, entry("prop_regions_type", "superimpose"))
     molecule = [
         "~sim_mol_def[",
         entry("system_def", "residue"),

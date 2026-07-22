@@ -14,6 +14,7 @@ class RuntimeConfig:
     default_workspace: Optional[Path] = None
     runtime_id: str = "custom"
     force_field_id: str = "ol24-ol3-standard"
+    pdb2pqr_executable: Optional[Path] = None
 
 
 @dataclass(frozen=True)

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.2 — 2026-07-22
+
+- Replaced host-native combo popups with readable, platform-independent Qt popup views.
+- Added optional PDB2PQR/PROPKA preparation for heavy-atom proteins, with AMBER naming, explicit pH, retained PQR/log provenance, and mandatory ff14SB revalidation.
+- Replaced the region dialog with a scientific workbench for membership, required rotation centers, non-overlapping residue pairs, WP2 move-width presets, units, live validation, and PyMOL selection/visualization.
+- Removed the unsupported dependent residue-region choice and made single-region `superimpose` propagation explicit in generated inputs.
+- Reproduced the previous 1A6Z failure path successfully: 6,021 prepared atoms, 371 residues, three disulfides, and zero ff14SB topology mismatches.
+
 ## 0.2.1 — 2026-07-22
 
 - Rebuilt the Qt visual system with deterministic dark surfaces, readable labels, consistent spacing, and native-theme-independent plot canvases.

@@ -23,13 +23,15 @@ class RegionSettings:
 def generate_region_file(settings: RegionSettings) -> str:
     if not settings.residues:
         raise ValueError("a region must contain at least one residue")
-    if settings.dependency_type not in ("independent", "dependent"):
-        raise ValueError("dependency type must be independent or dependent")
+    if settings.dependency_type != "independent":
+        raise ValueError("residue-level regions must use the supported independent dependency type")
     residue_set = set(settings.residues)
     unknown_centers = [item for item in settings.centers if item not in residue_set]
     unknown_pairs = [item for pair in settings.residue_pairs for item in pair if item not in residue_set]
     if unknown_centers or unknown_pairs:
         raise ValueError("centers and residue pairs must belong to the selected region")
+    if not settings.centers:
+        raise ValueError("a residue-level region must define at least one rotation center")
     if len(set(settings.residues)) != len(settings.residues):
         raise ValueError("a residue may appear only once in a region")
     normalized_pairs = {tuple(sorted(pair)) for pair in settings.residue_pairs}
@@ -37,6 +39,9 @@ def generate_region_file(settings: RegionSettings) -> str:
         raise ValueError("a residue cannot be paired with itself")
     if len(normalized_pairs) != len(settings.residue_pairs):
         raise ValueError("each residue pair may appear only once")
+    paired_residues = [item for pair in settings.residue_pairs for item in pair]
+    if len(set(paired_residues)) != len(paired_residues):
+        raise ValueError("a residue may belong to only one residue pair")
     sigma_values = (
         settings.translation_sigma,
         settings.rotation_sigma,
