@@ -118,7 +118,10 @@ def prepare_run(parameter_input: Path, config: RuntimeConfig) -> PreparedRun:
     resolved = resolve_placeholders(source, parameter_input.parent, config)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
     state_directory = parameter_input.parent / ".pymosaics"
-    log_directory = state_directory / "logs"
+    # A run log is a primary scientific record, not internal application state.
+    # Keep it in a visible project directory so it is easy to find, archive,
+    # compare, and share outside PymoSAICS.
+    log_directory = parameter_input.parent / "logs"
     log_directory.mkdir(parents=True, exist_ok=True)
 
     if resolved != source:

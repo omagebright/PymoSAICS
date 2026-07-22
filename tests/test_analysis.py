@@ -1,3 +1,4 @@
+import os
 import tempfile
 import unittest
 from pathlib import Path
@@ -6,6 +7,7 @@ from pymosaics.core.analysis import (
     discover_energy_series,
     discover_pdb_outputs,
     discover_project_files,
+    latest_log,
     parse_acceptance_log,
     read_text_file,
 )
@@ -37,6 +39,34 @@ class AnalysisTests(unittest.TestCase):
             pdb = next(item for item in files if item.path.suffix == ".pdb")
             self.assertTrue(pdb.text_readable)
             self.assertTrue(pdb.loadable_in_pymol)
+
+    def test_latest_log_discovers_visible_and_legacy_locations(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            visible = root / "logs" / "run-visible.log"
+            visible.parent.mkdir()
+            visible.write_text("visible\n", encoding="utf-8")
+            legacy = root / ".pymosaics" / "logs" / "run-legacy.log"
+            legacy.parent.mkdir(parents=True)
+            legacy.write_text("legacy\n", encoding="utf-8")
+            os.utime(legacy, (1, 1))
+            os.utime(visible, (2, 2))
+            preparation = root / "preparation" / "pdb2pqr.log"
+            preparation.parent.mkdir()
+            preparation.write_text("preparation\n", encoding="utf-8")
+            os.utime(preparation, (3, 3))
+            self.assertEqual(latest_log(root), visible.resolve())
+            visible.unlink()
+            self.assertEqual(latest_log(root), legacy.resolve())
+            legacy.unlink()
+            self.assertEqual(latest_log(root), preparation.resolve())
+
+    def test_text_reader_can_load_a_complete_log_without_size_limit(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "run.log"
+            content = "line\n" * 4096
+            path.write_text(content, encoding="utf-8")
+            self.assertEqual(read_text_file(path, maximum_bytes=None), content)
 
     def test_text_reader_rejects_binary(self):
         with tempfile.TemporaryDirectory() as temporary:

@@ -11,7 +11,7 @@ and outputs remain visible to the user.
 2. Paste this URL into **Install from PyMOLWiki or any URL**:
 
    ```text
-   https://github.com/omagebright/PymoSAICS/releases/download/v0.2.3/PymoSAICS-0.2.3.zip
+   https://github.com/omagebright/PymoSAICS/releases/download/v0.2.4/PymoSAICS-0.2.4.zip
    ```
 
 3. Choose **Install**, restart PyMOL, then open **Plugin → PymoSAICS**.
@@ -103,12 +103,18 @@ project/
 ├── forcefield/        # the six selected files plus checksums
 ├── region/            # only when enabled
 ├── analysis/          # exported structural-map coordinates
-└── .pymosaics/logs/   # persistent run logs
+└── logs/              # visible, persistent, complete run logs
 ```
 
+Opening or entering a project directory automatically discovers its `.input`
+and `.inp` files in the Run selector. An existing `mcmc.input` is preferred;
+when no input exists, PymoSAICS starts with the planned `mcmc.input` path and
+the current visible defaults.
+
 Before running, `mcmc.input` and `structure.pdb` can be opened and edited as
-text inside PymoSAICS. After running, logs and text outputs can be opened from
-the same interface; PDB files and trajectories load directly into PyMOL.
+text inside PymoSAICS. After running, complete logs are visible under `logs/`
+and are reloaded in full in the Run tab and text viewer; PDB files and
+trajectories load directly into PyMOL.
 Energy series, natural-move acceptance, and clickable representative
 structures are available under **Analysis**.
 

@@ -105,10 +105,28 @@ def parse_acceptance_log(path: Path) -> Tuple[AcceptanceSummary, ...]:
 
 
 def latest_log(project: Path) -> Optional[Path]:
-    logs = list(project.expanduser().resolve().rglob("*.log"))
-    logs.extend((project.expanduser().resolve() / ".pymosaics" / "logs").glob("*.log"))
-    logs = [path for path in set(logs) if path.is_file()]
-    return max(logs, key=lambda path: path.stat().st_mtime) if logs else None
+    """Return the newest visible or legacy PymoSAICS log in a project."""
+
+    root = project.expanduser().resolve()
+    run_directories = (root / "logs", root / ".pymosaics" / "logs")
+    logs = [
+        path
+        for directory in run_directories
+        if directory.is_dir()
+        for path in directory.glob("*.log")
+        if path.is_file()
+    ]
+    # Older projects occasionally kept a run log directly in the project. Only
+    # use this broad fallback when neither supported run-log directory exists;
+    # otherwise a newer protein-preparation log could mask the simulation log.
+    if not logs:
+        logs = [path for path in root.rglob("*.log") if path.is_file()]
+    if not logs:
+        return None
+    return max(
+        logs,
+        key=lambda path: (path.stat().st_mtime_ns, ".pymosaics" not in path.parts),
+    )
 
 
 def discover_pdb_outputs(project: Path, exclude: Optional[Path] = None) -> Tuple[Path, ...]:
@@ -169,11 +187,11 @@ def discover_project_files(project: Path) -> Tuple[ProjectFile, ...]:
     return tuple(files)
 
 
-def read_text_file(path: Path, maximum_bytes: int = 10 * 1024 * 1024) -> str:
+def read_text_file(path: Path, maximum_bytes: Optional[int] = 10 * 1024 * 1024) -> str:
     path = path.expanduser().resolve()
     if not path.is_file():
         raise ValueError("file does not exist: {}".format(path))
-    if path.stat().st_size > maximum_bytes:
+    if maximum_bytes is not None and path.stat().st_size > maximum_bytes:
         raise ValueError("file is larger than the 10 MB text-viewer limit: {}".format(path.name))
     data = path.read_bytes()
     if b"\x00" in data[:4096]:

@@ -145,6 +145,7 @@ DIALOG_ACCEPTED = _enum_value(QtWidgets.QDialog, "Accepted", "DialogCode", "Acce
 PROCESS_NOT_RUNNING = _enum_value(QtCore.QProcess, "NotRunning", "ProcessState", "NotRunning")
 PROCESS_NORMAL_EXIT = _enum_value(QtCore.QProcess, "NormalExit", "ExitStatus", "NormalExit")
 TEXT_CURSOR_END = _enum_value(QtGui.QTextCursor, "End", "MoveOperation", "End")
+TEXT_CURSOR_START = _enum_value(QtGui.QTextCursor, "Start", "MoveOperation", "Start")
 PALETTE_ACTIVE = _enum_value(QtGui.QPalette, "Active", "ColorGroup", "Active")
 PALETTE_INACTIVE = _enum_value(QtGui.QPalette, "Inactive", "ColorGroup", "Inactive")
 PALETTE_DISABLED = _enum_value(QtGui.QPalette, "Disabled", "ColorGroup", "Disabled")
@@ -344,7 +345,8 @@ class LandscapePlot(QtWidgets.QWidget):
         painter.fillRect(self.rect(), QtGui.QColor(THEME["field"]))
         if self._result is None:
             painter.setPen(QtGui.QColor(THEME["muted"]))
-            painter.drawText(20, 35, "Select a multi-model PDB trajectory and build the structural map")
+            painter.drawText(20, 35, "No structural map yet")
+            painter.drawText(20, 57, "Choose a trajectory, then build the map.")
             return
         left, top, right, bottom = 62, 28, 26, 48
         width = max(1, self.width() - left - right)
@@ -432,14 +434,24 @@ class TextFileDialog(QtWidgets.QDialog):
 
     def reload(self, checked=False):
         try:
-            content = read_text_file(self.path)
+            # Run logs are authoritative records and must never be truncated in
+            # the in-app viewer. Retain the safety limit for other project files.
+            maximum_bytes = None if self.path.suffix.lower() == ".log" else 10 * 1024 * 1024
+            content = read_text_file(self.path, maximum_bytes=maximum_bytes)
         except (OSError, ValueError) as exc:
             self.editor.clear()
             self.status.setText(str(exc))
             return
         self.editor.setPlainText(content)
+        self.editor.moveCursor(TEXT_CURSOR_START)
+        self.editor.verticalScrollBar().setValue(0)
         self.editor.document().setModified(False)
-        self.status.setText("{} bytes · UTF-8 text view".format(self.path.stat().st_size))
+        line_count = content.count("\n") + (1 if content and not content.endswith("\n") else 0)
+        self.status.setText(
+            "{} lines · {} bytes · complete UTF-8 text view".format(
+                line_count, self.path.stat().st_size
+            )
+        )
 
     def save(self, checked=False):
         if not self.editable:
@@ -1202,6 +1214,10 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         left.setHorizontalScrollBarPolicy(SCROLLBAR_ALWAYS_OFF)
         left_content = QtWidgets.QWidget()
         left_content.setObjectName("buildScrollContent")
+        left_content_policy = left_content.sizePolicy()
+        left_content_policy.setHorizontalPolicy(SIZE_POLICY_IGNORED)
+        left_content.setSizePolicy(left_content_policy)
+        left_content.setMinimumWidth(0)
         left_layout = QtWidgets.QVBoxLayout(left_content)
         left_layout.setContentsMargins(0, 0, 10, 0)
         left_layout.setSpacing(12)
@@ -1231,6 +1247,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         project_form = QtWidgets.QFormLayout(project_group)
         self._configure_form(project_form)
         self.project_edit = QtWidgets.QLineEdit()
+        self.project_edit.editingFinished.connect(self._project_directory_changed)
         project_form.addRow("Directory:", self._path_row(self.project_edit, "Browse…", self._browse_project))
         self.input_name_edit = QtWidgets.QLineEdit("mcmc.input")
         self.output_stem_edit = QtWidgets.QLineEdit("simulation")
@@ -1451,6 +1468,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self._configure_form(form)
         self.input_combo = QtWidgets.QComboBox()
         self.input_combo.setEditable(True)
+        self.input_combo.currentTextChanged.connect(self._run_input_changed)
         self.output_edit = QtWidgets.QLineEdit()
         input_row = QtWidgets.QWidget()
         input_layout = QtWidgets.QHBoxLayout(input_row)
@@ -1523,14 +1541,14 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         run_controls_layout.addWidget(self.auto_load)
         layout.addWidget(run_controls)
 
-        output_group = QtWidgets.QGroupBox("Live MOSAICS output")
-        output_layout = QtWidgets.QVBoxLayout(output_group)
+        self.output_group = QtWidgets.QGroupBox("MOSAICS output · no run log selected")
+        output_layout = QtWidgets.QVBoxLayout(self.output_group)
         self.log_output = QtWidgets.QPlainTextEdit()
         self.log_output.setReadOnly(True)
         self.log_output.setLineWrapMode(PLAIN_TEXT_NO_WRAP)
         self.log_output.setMinimumHeight(130)
         output_layout.addWidget(self.log_output)
-        layout.addWidget(output_group, 1)
+        layout.addWidget(self.output_group, 1)
 
     def _build_analysis_tab(self):
         layout = QtWidgets.QVBoxLayout(self.analysis_tab)
@@ -1540,70 +1558,121 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         refresh = QtWidgets.QPushButton("Refresh project analysis")
         refresh.clicked.connect(self._refresh_analysis)
         top.addWidget(refresh)
-        top.addWidget(QtWidgets.QLabel("Inspect the exact files, energies, acceptance, and sampled conformations."))
+        top.addWidget(QtWidgets.QLabel("Inspect energies, natural-move acceptance, structures, and exact output files."))
         top.addStretch(1)
         layout.addLayout(top)
+        self.analysis_project_status = QtWidgets.QLabel("Project · no prepared project selected")
+        self.analysis_project_status.setObjectName("contextBadge")
+        self.analysis_project_status.setTextInteractionFlags(
+            _enum_value(QtCore.Qt, "TextSelectableByMouse", "TextInteractionFlag", "TextSelectableByMouse")
+        )
+        layout.addWidget(self.analysis_project_status)
 
-        analysis_pages = QtWidgets.QTabWidget()
-        analysis_pages.setObjectName("analysisPages")
-        layout.addWidget(analysis_pages, 1)
+        self.analysis_pages = QtWidgets.QTabWidget()
+        self.analysis_pages.setObjectName("analysisPages")
+        layout.addWidget(self.analysis_pages, 1)
 
         energy_page = QtWidgets.QWidget()
-        energy_layout = QtWidgets.QVBoxLayout(energy_page)
+        energy_layout = QtWidgets.QHBoxLayout(energy_page)
+        energy_layout.setContentsMargins(10, 10, 10, 10)
+        energy_layout.setSpacing(10)
+
+        energy_group = QtWidgets.QGroupBox("Energy trajectory")
+        energy_group_layout = QtWidgets.QVBoxLayout(energy_group)
         energy_row = QtWidgets.QHBoxLayout()
         self.energy_combo = QtWidgets.QComboBox()
         self.energy_combo.currentIndexChanged.connect(self._energy_changed)
         energy_row.addWidget(QtWidgets.QLabel("Energy series:"))
         energy_row.addWidget(self.energy_combo, 1)
-        energy_layout.addLayout(energy_row)
+        energy_group_layout.addLayout(energy_row)
         self.energy_summary = QtWidgets.QLabel("No analysis loaded")
         self.energy_summary.setWordWrap(True)
-        energy_layout.addWidget(self.energy_summary)
+        energy_group_layout.addWidget(self.energy_summary)
         self.energy_plot = EnergyPlot()
-        energy_layout.addWidget(self.energy_plot, 1)
-        energy_layout.addWidget(QtWidgets.QLabel("Natural-move acceptance reported by MOSAICS"))
+        energy_group_layout.addWidget(self.energy_plot, 1)
+
+        acceptance_group = QtWidgets.QGroupBox("Natural-move acceptance")
+        acceptance_layout = QtWidgets.QVBoxLayout(acceptance_group)
+        acceptance_note = QtWidgets.QLabel(
+            "Accepted and attempted moves are read verbatim from the newest complete MOSAICS run log."
+        )
+        acceptance_note.setWordWrap(True)
+        acceptance_layout.addWidget(acceptance_note)
         self.acceptance_table = QtWidgets.QTableWidget(0, 4)
         self.acceptance_table.setHorizontalHeaderLabels(("Chain", "Accepted", "Attempted", "Ratio"))
-        self.acceptance_table.horizontalHeader().setStretchLastSection(True)
-        self.acceptance_table.setMaximumHeight(180)
-        energy_layout.addWidget(self.acceptance_table)
-        analysis_pages.addTab(energy_page, "Energy & acceptance")
+        acceptance_header = self.acceptance_table.horizontalHeader()
+        resize_to_contents = _enum_value(
+            QtWidgets.QHeaderView, "ResizeToContents", "ResizeMode", "ResizeToContents"
+        )
+        for column in range(3):
+            acceptance_header.setSectionResizeMode(column, resize_to_contents)
+        acceptance_header.setSectionResizeMode(
+            3, _enum_value(QtWidgets.QHeaderView, "Stretch", "ResizeMode", "Stretch")
+        )
+        self.acceptance_table.setMinimumHeight(210)
+        acceptance_layout.addWidget(self.acceptance_table, 1)
+
+        energy_splitter = QtWidgets.QSplitter()
+        energy_splitter.setChildrenCollapsible(False)
+        energy_splitter.addWidget(energy_group)
+        energy_splitter.addWidget(acceptance_group)
+        energy_splitter.setStretchFactor(0, 1)
+        energy_splitter.setStretchFactor(1, 1)
+        energy_splitter.setSizes((500, 500))
+        energy_layout.addWidget(energy_splitter)
+        self.analysis_pages.addTab(energy_page, "Energy && acceptance")
 
         landscape_page = QtWidgets.QWidget()
         landscape_layout = QtWidgets.QVBoxLayout(landscape_page)
+        landscape_layout.setContentsMargins(10, 10, 10, 10)
+        landscape_layout.setSpacing(10)
+        landscape_setup = QtWidgets.QGroupBox("Structural-map setup")
+        landscape_setup_layout = QtWidgets.QVBoxLayout(landscape_setup)
         landscape_intro = QtWidgets.QLabel(
             "The map preserves pairwise, rigid-body-aligned RMSD as closely as two dimensions allow. "
             "It is a structural projection—not proof of thermodynamic convergence or a free-energy surface."
         )
         landscape_intro.setWordWrap(True)
-        landscape_layout.addWidget(landscape_intro)
-        landscape_controls = QtWidgets.QHBoxLayout()
+        landscape_setup_layout.addWidget(landscape_intro)
+        landscape_controls = QtWidgets.QGridLayout()
+        landscape_controls.setHorizontalSpacing(10)
+        landscape_controls.setVerticalSpacing(7)
         self.trajectory_combo = QtWidgets.QComboBox()
+        self.trajectory_combo.setMinimumHeight(32)
         self.landscape_representatives = QtWidgets.QSpinBox()
+        self.landscape_representatives.setMinimumHeight(32)
         self.landscape_representatives.setRange(1, 24)
         self.landscape_representatives.setValue(6)
         self.landscape_maximum_frames = QtWidgets.QSpinBox()
+        self.landscape_maximum_frames.setMinimumHeight(32)
         self.landscape_maximum_frames.setRange(2, 300)
         self.landscape_maximum_frames.setValue(200)
         self.landscape_energy_combo = QtWidgets.QComboBox()
+        self.landscape_energy_combo.setMinimumHeight(32)
         self.landscape_energy_combo.addItem("No energy coloring", "")
         build_map = QtWidgets.QPushButton("Build structural map")
+        build_map.setObjectName("primaryAction")
         build_map.clicked.connect(self._build_landscape)
-        landscape_controls.addWidget(QtWidgets.QLabel("Trajectory:"))
-        landscape_controls.addWidget(self.trajectory_combo, 1)
-        landscape_controls.addWidget(QtWidgets.QLabel("Representatives:"))
-        landscape_controls.addWidget(self.landscape_representatives)
-        landscape_controls.addWidget(QtWidgets.QLabel("Max frames:"))
-        landscape_controls.addWidget(self.landscape_maximum_frames)
-        landscape_controls.addWidget(build_map)
-        landscape_layout.addLayout(landscape_controls)
-        energy_color_row = QtWidgets.QHBoxLayout()
-        energy_color_row.addWidget(QtWidgets.QLabel("Point color:"))
-        energy_color_row.addWidget(self.landscape_energy_combo, 1)
-        landscape_layout.addLayout(energy_color_row)
+        landscape_controls.addWidget(QtWidgets.QLabel("Trajectory:"), 0, 0)
+        landscape_controls.addWidget(self.trajectory_combo, 0, 1, 1, 4)
+        landscape_controls.addWidget(build_map, 0, 5)
+        landscape_controls.addWidget(QtWidgets.QLabel("Representatives:"), 1, 0)
+        landscape_controls.addWidget(self.landscape_representatives, 1, 1)
+        frame_count_label = QtWidgets.QLabel("Sampled frames:")
+        frame_count_label.setToolTip(
+            "Maximum trajectory frames used for the pairwise RMSD projection; longer trajectories are sampled evenly."
+        )
+        landscape_controls.addWidget(frame_count_label, 1, 2)
+        landscape_controls.addWidget(self.landscape_maximum_frames, 1, 3)
+        landscape_controls.addWidget(QtWidgets.QLabel("Point color:"), 1, 4)
+        landscape_controls.addWidget(self.landscape_energy_combo, 1, 5)
+        landscape_controls.setColumnStretch(1, 2)
+        landscape_controls.setColumnStretch(5, 2)
+        landscape_setup_layout.addLayout(landscape_controls)
         self.landscape_status = QtWidgets.QLabel("No structural map built")
         self.landscape_status.setWordWrap(True)
-        landscape_layout.addWidget(self.landscape_status)
+        landscape_setup_layout.addWidget(self.landscape_status)
+        landscape_layout.addWidget(landscape_setup)
         landscape_splitter = QtWidgets.QSplitter()
         self.landscape_plot = LandscapePlot()
         self.landscape_plot.on_frame_selected = self._landscape_frame_selected
@@ -1611,21 +1680,31 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self.representative_list.itemDoubleClicked.connect(self._representative_selected)
         representative_widget = QtWidgets.QWidget()
         representative_layout = QtWidgets.QVBoxLayout(representative_widget)
+        representative_layout.setContentsMargins(10, 10, 10, 10)
         representative_layout.addWidget(QtWidgets.QLabel("Representative frames"))
         representative_layout.addWidget(self.representative_list)
         representative_layout.addWidget(QtWidgets.QLabel("Click a point or double-click a frame to show it in PyMOL."))
         landscape_splitter.addWidget(self.landscape_plot)
         landscape_splitter.addWidget(representative_widget)
+        landscape_splitter.setChildrenCollapsible(False)
+        landscape_splitter.setStretchFactor(0, 3)
+        landscape_splitter.setStretchFactor(1, 2)
         landscape_splitter.setSizes((760, 240))
         landscape_layout.addWidget(landscape_splitter, 1)
-        analysis_pages.addTab(landscape_page, "Structural landscape")
+        self.analysis_pages.addTab(landscape_page, "Structural landscape")
 
         files_page = QtWidgets.QWidget()
         output_layout = QtWidgets.QVBoxLayout(files_page)
+        output_layout.setContentsMargins(10, 10, 10, 10)
+        output_layout.setSpacing(10)
+        files_note = QtWidgets.QLabel(
+            "Every visible project output is listed here. Double-click text to inspect it or a PDB to load it in PyMOL."
+        )
+        files_note.setWordWrap(True)
+        output_layout.addWidget(files_note)
         self.output_list = QtWidgets.QListWidget()
         self.output_list.itemDoubleClicked.connect(self._open_analysis_item)
-        output_layout.addWidget(QtWidgets.QLabel("Project files and simulation outputs"))
-        output_layout.addWidget(self.output_list)
+        output_layout.addWidget(self.output_list, 1)
         output_buttons = QtWidgets.QHBoxLayout()
         view_selected = QtWidgets.QPushButton("View selected as text")
         view_selected.clicked.connect(self._view_selected_analysis_output)
@@ -1633,8 +1712,9 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         load_selected.clicked.connect(self._load_selected_analysis_outputs)
         output_buttons.addWidget(view_selected)
         output_buttons.addWidget(load_selected)
+        output_buttons.addStretch(1)
         output_layout.addLayout(output_buttons)
-        analysis_pages.addTab(files_page, "Files & logs")
+        self.analysis_pages.addTab(files_page, "Files && logs")
 
     def _build_setup_tab(self):
         outer = QtWidgets.QVBoxLayout(self.setup_tab)
@@ -1754,7 +1834,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         layout = QtWidgets.QVBoxLayout(self.about_tab)
         layout.setContentsMargins(24, 22, 24, 22)
         label = QtWidgets.QLabel(
-            "<h2>PymoSAICS 0.2.3</h2>"
+            "<h2>PymoSAICS 0.2.4</h2>"
             "<p>A transparent PyMOL workbench for MOSAICS structure preparation, "
             "input generation, execution, visualization, and analysis.</p>"
             "<p><b>MOSAICS</b> was created by Peter Minary. Obtain official executables, "
@@ -1825,6 +1905,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self.workspace_edit.setText(str(config.default_workspace or ""))
         if not self.project_edit.text() and config.default_workspace:
             self.project_edit.setText(str(config.default_workspace))
+        self._scan_inputs()
         self.setup_status.setPlainText(format_diagnostics(validate_runtime(self._configuration_from_fields())))
         self._update_protein_prep_controls()
 
@@ -1977,7 +2058,11 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         path = QtWidgets.QFileDialog.getExistingDirectory(self, "Select MOSAICS project directory", start)
         if path:
             self.project_edit.setText(path)
-            self._scan_inputs()
+            self._project_directory_changed()
+
+    def _project_directory_changed(self):
+        self._scan_inputs()
+        self._refresh_analysis()
 
     def _browse_local_pdb(self, checked=False):
         path, _ = QtWidgets.QFileDialog.getOpenFileName(self, "Select PDB", str(Path.home()), "PDB files (*.pdb);;All files (*)")
@@ -2510,20 +2595,59 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         project = self._project_directory()
         if project is None or not project.is_dir():
             return
-        paths = sorted(list(project.glob("*.input")) + list(project.glob("*.inp")))
-        current = str(preferred or self.input_combo.currentText())
+        paths = sorted(
+            (
+                path.resolve()
+                for path in project.iterdir()
+                if path.is_file() and path.suffix.lower() in (".input", ".inp")
+            ),
+            key=lambda path: path.name.lower(),
+        )
+        current_text = self.input_combo.currentText().strip()
+        current_path = Path(current_text).expanduser().resolve() if current_text else None
+        preferred_path = Path(preferred).expanduser().resolve() if preferred else None
         self.input_combo.clear()
         for path in paths:
-            self.input_combo.addItem(str(path.resolve()))
-        if current:
-            self.input_combo.setEditText(current)
+            self.input_combo.addItem(str(path))
+
+        candidates = set(paths)
+        canonical = (project / "mcmc.input").resolve()
+        if preferred_path in candidates:
+            selected = preferred_path
+        elif current_path in candidates:
+            selected = current_path
+        elif canonical in candidates:
+            selected = canonical
+        elif paths:
+            selected = paths[0]
+        else:
+            selected = canonical
+        self.input_combo.setEditText(str(selected))
+
+        if paths:
+            self._validate_current_project()
+        else:
+            self.validation_output.setPlainText(
+                "[INFO] No .input or .inp file exists yet. Prepare mcmc.input from the Build tab."
+            )
+            self.command_preview.setPlainText(
+                "Planned input: {}\nThe current visible Build settings will generate this file.".format(
+                    canonical
+                )
+            )
+        if self.process.state() == PROCESS_NOT_RUNNING:
+            self._load_latest_project_log(project, follow_end=True)
 
     def _browse_input(self, checked=False):
         start = str(self._project_directory() or Path.home())
         path, _ = QtWidgets.QFileDialog.getOpenFileName(self, "Select MOSAICS input", start, "MOSAICS input (*.input *.inp *.txt);;All files (*)")
         if path:
-            self.input_combo.setEditText(path)
             self.project_edit.setText(str(Path(path).parent))
+            self._scan_inputs(preferred=Path(path))
+
+    def _run_input_changed(self, text):
+        value = text.strip()
+        if value and Path(value).expanduser().is_file():
             self._validate_current_project()
 
     def _browse_output(self, checked=False):
@@ -2572,6 +2696,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         if path is None:
             QtWidgets.QMessageBox.information(self, "PymoSAICS", "No MOSAICS run log was found in this project.")
             return
+        self._load_complete_log(path, follow_end=True)
         self._show_text_file(path, editable=False)
 
     def _browse_executable(self, checked=False):
@@ -2636,6 +2761,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             self._active_run = None
             return
         self.log_output.clear()
+        self._show_log_location(active_run.log_file)
         preamble = "Starting MOSAICS\nProgram: {}\nInput: {}\nWorking directory: {}\nLog: {}\n\n".format(
             active_run.command[0], active_run.command[1], active_run.working_directory, active_run.log_file
         )
@@ -2660,15 +2786,51 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self.log_output.insertPlainText(data.decode("utf-8", errors="replace"))
         self.log_output.moveCursor(TEXT_CURSOR_END)
 
-    def _process_error(self, error):
-        message = "\nProcess error: {}".format(self.process.errorString())
+    def _show_log_location(self, path: Path):
+        project = self._project_directory()
+        try:
+            display = path.resolve().relative_to(project.resolve()) if project else path.resolve()
+        except ValueError:
+            display = path.resolve()
+        self.output_group.setTitle("MOSAICS output · {}".format(display))
+        self.output_group.setToolTip(str(path.resolve()))
+
+    def _load_complete_log(self, path: Path, follow_end: bool = True):
+        """Display the complete persisted log, with no viewer-size truncation."""
+
+        try:
+            content = read_text_file(path, maximum_bytes=None)
+        except (OSError, ValueError) as exc:
+            self.log_output.setPlainText("Could not read the run log: {}".format(exc))
+            return
+        self._show_log_location(path)
+        self.log_output.setPlainText(content)
+        self.log_output.moveCursor(TEXT_CURSOR_END if follow_end else TEXT_CURSOR_START)
+        if not follow_end:
+            self.log_output.verticalScrollBar().setValue(0)
+
+    def _load_latest_project_log(self, project: Path, follow_end: bool = True):
+        path = latest_log(project)
+        if path is not None:
+            self._load_complete_log(path, follow_end=follow_end)
+
+    def _append_run_record(self, message: str):
+        """Append the same application-generated message to the UX and run log."""
+
         self.log_output.appendPlainText(message)
         if self._log_handle is not None:
             self._log_handle.write((message + "\n").encode("utf-8"))
             self._log_handle.flush()
+
+    def _process_error(self, error):
+        message = "\nProcess error: {}".format(self.process.errorString())
+        self._append_run_record(message)
         if self.process.state() == PROCESS_NOT_RUNNING:
+            log_path = self._active_run.log_file if self._active_run else None
             self._close_run_log()
             self._active_run = None
+            if log_path is not None:
+                self._load_complete_log(log_path, follow_end=True)
 
     def _close_run_log(self):
         if self._log_handle is not None:
@@ -2683,12 +2845,12 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         completion = "\nMOSAICS finished with exit code {} ({}).".format(
             exit_code, "success" if succeeded else "failure"
         )
-        self.log_output.appendPlainText(completion)
-        if self._log_handle is not None:
-            self._log_handle.write((completion + "\n").encode("utf-8"))
-            self._log_handle.flush()
+        self._append_run_record(completion)
+        log_path = self._active_run.log_file if self._active_run else None
         self._close_run_log()
         self._active_run = None
+        if log_path is not None:
+            self._load_complete_log(log_path, follow_end=True)
         if succeeded and self.auto_load.isChecked():
             self._load_all_outputs()
         self._refresh_analysis()
@@ -2696,13 +2858,13 @@ class PymoSAICSDialog(QtWidgets.QDialog):
     def _stop_process(self, checked=False):
         if self.process.state() == PROCESS_NOT_RUNNING:
             return
-        self.log_output.appendPlainText("\nStopping MOSAICS…")
+        self._append_run_record("\nStopping MOSAICS…")
         self.process.terminate()
         QtCore.QTimer.singleShot(3000, self._kill_if_running)
 
     def _kill_if_running(self):
         if self.process.state() != PROCESS_NOT_RUNNING:
-            self.log_output.appendPlainText("MOSAICS did not stop; terminating it forcefully.")
+            self._append_run_record("MOSAICS did not stop; terminating it forcefully.")
             self.process.kill()
 
     def _load_pdb_paths(self, paths: Sequence[Path]):
@@ -2732,7 +2894,11 @@ class PymoSAICSDialog(QtWidgets.QDialog):
     def _refresh_analysis(self, checked=False):
         project = self._project_directory()
         if project is None or not project.is_dir():
+            self.analysis_project_status.setText("Project · no prepared project selected")
+            self.analysis_project_status.setToolTip("")
             return
+        self.analysis_project_status.setText("Project · {}".format(project))
+        self.analysis_project_status.setToolTip(str(project))
         self._energy_series = discover_energy_series(project)
         self.energy_combo.clear()
         current_landscape_energy = self.landscape_energy_combo.currentData()
@@ -2749,6 +2915,8 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             self.landscape_energy_combo.setCurrentIndex(1)
         self._energy_changed()
         log = latest_log(project)
+        if log is not None and self.process.state() == PROCESS_NOT_RUNNING:
+            self._load_complete_log(log, follow_end=True)
         summaries = parse_acceptance_log(log) if log else ()
         self.acceptance_table.setRowCount(len(summaries))
         for row, summary in enumerate(summaries):

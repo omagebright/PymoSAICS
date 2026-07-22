@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.4 — 2026-07-22
+
+- Moved new MOSAICS run logs from hidden application state into the visible project `logs/` directory while retaining discovery of legacy logs.
+- Reloaded the complete persisted log into the Run tab after execution and removed the text-viewer size limit for logs.
+- Automatically discovered `.input` and `.inp` files whenever a project directory is selected, with an explicit `mcmc.input` fallback for empty projects.
+- Rebuilt the Analysis pages into responsive energy/acceptance, structural-map, and files/logs workspaces.
+- Corrected Qt mnemonic rendering, clipped landscape controls, truncated acceptance headers, and minimum-window geometry regressions.
+
 ## 0.2.3 — 2026-07-22
 
 - Rebuilt the Run tab so validation and execution-plan diagnostics cannot overlap subsequent controls.

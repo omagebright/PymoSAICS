@@ -1,6 +1,6 @@
 # Release validation
 
-Validation was performed on 2026-07-21 and repeated for the 0.2.3 interface on
+Validation was performed on 2026-07-21 and repeated for the 0.2.4 interface on
 2026-07-22 on Apple Silicon macOS. These checks
 establish software/runtime compatibility; they do not establish scientific
 convergence for a production study.
@@ -22,6 +22,12 @@ convergence for a production study.
   overlapping-pair definitions, and wrote explicit single-region propagation.
 - The Run tab retained non-overlapping validation, execution-plan, action,
   automatic-loading, and live-output regions at both 1092×874 and 900×710.
+- Project-directory changes discovered all `.input` and `.inp` files, preferred
+  an existing `mcmc.input`, and supplied a planned `mcmc.input` when none existed.
+- New logs were written visibly under `logs/`; the complete persisted bytes were
+  reproduced in the Run tab, and legacy hidden logs remained discoverable.
+- All three Analysis pages rendered without clipping at 900×710: energy and
+  acceptance panels, structural-map controls/plot/representatives, and files/logs.
 
 ## Runtime and force-field checks
 

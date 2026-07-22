@@ -65,6 +65,8 @@ class ProjectTests(unittest.TestCase):
         self.assertEqual(prepared.command[0], str(self.executable.resolve()))
         self.assertEqual(prepared.working_directory, self.project.resolve())
         self.assertEqual(prepared.resolved_input, planned_parameter_input(parameter_input, self.config))
+        self.assertEqual(prepared.log_file.parent, self.project.resolve() / "logs")
+        self.assertNotIn(".pymosaics", prepared.log_file.parts)
 
     def test_resolved_input_name_is_content_addressed(self):
         parameter_input = self._input()

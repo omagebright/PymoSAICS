@@ -11,7 +11,7 @@ if str(ROOT) not in sys.path:
 
 from pymol.Qt import QtCore, QtWidgets
 
-from pymosaics.core.analysis import latest_log
+from pymosaics.core.analysis import latest_log, read_text_file
 from pymosaics.core.catalog import FORCE_FIELD_PROFILES
 from pymosaics.core.config import ConfigStore
 from pymosaics.gui import PymoSAICSDialog, RegionEditor
@@ -32,6 +32,8 @@ def main():
             "print('PYMOSAICS_QPROCESS_SMOKE')\n",
             encoding="utf-8",
         )
+        alternate_input = root / "alternate.inp"
+        alternate_input.write_text(parameter_input.read_text(encoding="utf-8"), encoding="utf-8")
 
         dialog = PymoSAICSDialog(config_store=ConfigStore(root / "config.json"))
         dialog.resize(900, 700)
@@ -52,6 +54,23 @@ def main():
             raise SystemExit("The Build form is wider than its viewport")
         if content.palette().window().color().name().lower() != "#0d252f":
             raise SystemExit("The Build form did not receive the deterministic dark palette")
+
+        dialog.project_edit.setText(str(root))
+        dialog._scan_inputs()
+        discovered_inputs = {
+            Path(dialog.input_combo.itemText(index)).name
+            for index in range(dialog.input_combo.count())
+        }
+        if discovered_inputs != {"parameters.input", "alternate.inp"}:
+            raise SystemExit("The project directory did not automatically expose every input file")
+        empty_project = root / "empty-project"
+        empty_project.mkdir()
+        dialog.project_edit.setText(str(empty_project))
+        dialog._scan_inputs()
+        if Path(dialog.input_combo.currentText()) != (empty_project / "mcmc.input").resolve():
+            raise SystemExit("An empty project did not default to mcmc.input")
+        dialog.project_edit.setText(str(root))
+        dialog._scan_inputs(preferred=parameter_input)
 
         dialog.tabs.setCurrentWidget(dialog.run_tab)
         application.processEvents()
@@ -74,6 +93,27 @@ def main():
             raise SystemExit("Run-tab diagnostic panels are too short to inspect")
         if dialog.log_output.height() < 130:
             raise SystemExit("The live MOSAICS output panel is too short to use")
+        dialog.tabs.setCurrentWidget(dialog.analysis_tab)
+        dialog.analysis_pages.setCurrentIndex(0)
+        application.processEvents()
+        if dialog.energy_plot.width() < 300 or dialog.energy_plot.height() < 210:
+            raise SystemExit("The Analysis energy plot is clipped at the minimum window size")
+        if dialog.acceptance_table.width() < 250 or dialog.acceptance_table.height() < 210:
+            raise SystemExit("The Analysis acceptance table is clipped at the minimum window size")
+        if dialog.acceptance_table.horizontalScrollBar().maximum() != 0:
+            raise SystemExit("The Analysis acceptance columns require horizontal scrolling")
+        dialog.analysis_pages.setCurrentIndex(1)
+        application.processEvents()
+        if dialog.trajectory_combo.width() < 200:
+            raise SystemExit("The structural-landscape trajectory selector is clipped")
+        if dialog.landscape_plot.width() < 300 or dialog.landscape_plot.height() < 170:
+            raise SystemExit("The structural-landscape plot is too small to use")
+        if dialog.representative_list.width() < 250 or dialog.representative_list.height() < 100:
+            raise SystemExit("The structural representative list is too small to use")
+        dialog.analysis_pages.setCurrentIndex(2)
+        application.processEvents()
+        if dialog.output_list.height() < 260:
+            raise SystemExit("The Analysis files list is too small to use")
         dialog.tabs.setCurrentWidget(dialog.build_tab)
         application.processEvents()
 
@@ -118,6 +158,10 @@ def main():
         log = latest_log(root)
         if log is None or "exit code 0 (success)" not in log.read_text(encoding="utf-8"):
             raise SystemExit("PymoSAICS did not persist the process completion status")
+        if log.parent != (root / "logs").resolve():
+            raise SystemExit("The run log is hidden instead of being stored in project/logs")
+        if read_text_file(log, maximum_bytes=None).rstrip("\n") != dialog.log_output.toPlainText().rstrip("\n"):
+            raise SystemExit("The Run tab does not display the complete persisted log")
         dialog.close()
         print("PASS: Qt dialog and shell-free QProcess execution")
 

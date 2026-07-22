@@ -63,17 +63,25 @@ bundled all-atom profiles.
 ## Run
 
 The Run tab shows the exact executable, input argument, working directory, and
-validation result. MOSAICS is started without a shell. Output appears live and
-is retained under `.pymosaics/logs/`. **Stop** first requests normal termination
-and then kills the process if it does not exit within three seconds.
+validation result. Choosing or entering a project directory automatically
+populates the input selector with every `.input` and `.inp` file. An existing
+`mcmc.input` is preferred; if none exists, the planned path defaults to
+`mcmc.input` for preparation from the visible Build settings.
+
+MOSAICS is started without a shell. Output appears live and is retained under
+the visible `logs/` directory. The complete persisted log is loaded back into
+the Run tab after execution and can be opened without truncation in the text
+viewer. Legacy `.pymosaics/logs/` records remain discoverable. **Stop** first
+requests normal termination and then kills the process if it does not exit
+within three seconds.
 
 Use **View / edit** for `mcmc.input`, **View / edit input PDB** for the prepared
 structure, and **View latest log** for the newest run record.
 
 ## Analysis
 
-- **Energy & acceptance** plots discovered energy files and reports MOSAICS
-  natural-move acceptance counts.
+- **Energy & acceptance** places the selected energy trace and complete-log
+  acceptance counts in resizable, side-by-side scientific panels.
 - **Structural landscape** aligns trajectory frames, computes pairwise RMSD,
   projects the distances into two dimensions, and selects representative
   frames. Clicking a point shows that frame in PyMOL.
