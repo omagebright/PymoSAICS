@@ -14,6 +14,7 @@ from pymosaics.core.catalog import (
     runtime_profile,
     runtime_supports_force_field,
 )
+from pymosaics.core.topology import validate_nucleic_chi_definitions
 
 
 class CatalogAndBuilderTests(unittest.TestCase):
@@ -26,6 +27,24 @@ class CatalogAndBuilderTests(unittest.TestCase):
         for profile in FORCE_FIELD_PROFILES:
             with self.subTest(profile=profile.identifier):
                 self.assertTrue(all(path.is_file() for path in profile.all_paths()))
+
+    def test_every_nucleic_force_field_has_glycosidic_chi_moves(self):
+        for profile in FORCE_FIELD_PROFILES:
+            if profile.chemistry != "nucleic_acid":
+                continue
+            with self.subTest(profile=profile.identifier):
+                self.assertEqual(validate_nucleic_chi_definitions(profile.rtf_path()), ())
+
+    def test_pinned_nucleic_rtf_checksums_match_bundled_files(self):
+        panel = force_field_profile("bs0-standard").rtf_path().parent
+        manifest = panel / "RTF_SHA256SUMS"
+        self.assertTrue(manifest.is_file())
+        for line in manifest.read_text().splitlines():
+            digest, relative = line.split(None, 1)
+            path = panel / relative.strip()
+            with self.subTest(path=relative):
+                self.assertTrue(path.is_file())
+                self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), digest)
 
     def test_catalog_exposes_legacy_modern_terminal_and_protein_profiles(self):
         identifiers = {profile.identifier for profile in FORCE_FIELD_PROFILES}
@@ -165,6 +184,10 @@ class CatalogAndBuilderTests(unittest.TestCase):
                 {path.name for path in profile.all_paths()} | {"PROFILE.txt"},
             )
             self.assertIn("identifier: ol24-ol3-standard", (destination / "PROFILE.txt").read_text())
+            self.assertIn(
+                "commit: 5ad1e934a74c134202ca5e4c5a42805f0b5b15da",
+                (destination / "PROFILE.txt").read_text(),
+            )
 
     def test_staging_force_field_preserves_unrelated_user_files(self):
         profile = force_field_profile("ol24-ol3-standard")

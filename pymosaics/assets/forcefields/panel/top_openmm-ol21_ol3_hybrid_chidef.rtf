@@ -118,6 +118,10 @@ ATOM  H2''  RNA-H1      0.0972     ! note: this is H2'1
 ATOM  O2'   RNA-OH     -0.6139
 ATOM  H2'   RNA-HO      0.4186     ! note: this is HO'2
 ATOM  O3'   RNA-OS     -0.5246
+CHIGROUP C8 H8 N7 C5 C6 N6 N1 C2 H2 N3 C4
+CHIGROUP H61 H62
+CHIPRIM C2' C1' N9 C8
+CHIPRIM C5 C6 N6 H61
 
 !  using charmm bond lists (top_all22_na.inp)
 BOND C2'  O2'       O2'  H2'
@@ -183,6 +187,8 @@ ATOM  H2''  RNA-H1      0.0972    ! note: name is H2'1
 ATOM  O2'   RNA-OH     -0.6139
 ATOM  H2'   RNA-HO      0.4186    ! note: name is HO'2
 ATOM  O3'   RNA-OS     -0.5246
+CHIGROUP C2 O2 N3 H3 C4 O4 C5 C6 H6 H5
+CHIPRIM C2' C1' N1 C2
 
 BOND P    O1P       P    O2P       P     O5'
 BOND O5'  C5'       C5'  C4'       C4'  O4'       C4'  C3'       O4'  C1'
@@ -246,6 +252,10 @@ ATOM  H2''  RNA-H1      0.0972    ! this is H2'1
 ATOM  O2'   RNA-OH     -0.6139
 ATOM  H2'   RNA-HO      0.4186    ! this is HO'2
 ATOM  O3'   RNA-OS     -0.5246
+CHIGROUP C2 O2 N3 C4 N4 C5 H5 C6 H6
+CHIGROUP H42 H41
+CHIPRIM C2' C1' N1 C2
+CHIPRIM N3 C4 N4 H41
 
 BOND C2'  O2'       O2'  H2'
 BOND P    O1P       P    O2P       P     O5'
@@ -313,6 +323,10 @@ ATOM  H2''  RNA-H1      0.0972    ! this is H2'1
 ATOM  O2'   RNA-OH     -0.6139
 ATOM  H2'   RNA-HO      0.4186    ! this is HO'2
 ATOM  O3'   RNA-OS     -0.5246
+CHIGROUP C8 H8 N7 C5 C6 O6 N1 H1 C2 N2 N3 C4
+CHIGROUP H21 H22
+CHIPRIM C2' C1' N9 C8
+CHIPRIM N3 C2 N2 H21
 
 BOND C2'  O2'       O2'  H2'
 BOND P    O1P       P    O2P       P     O5'
@@ -385,6 +399,10 @@ ATOM  C2'   DNA-CT     -0.0854
 ATOM  H2'   DNA-HC      0.0718     ! note: this is H2'1
 ATOM  H2''  DNA-HC      0.0718     ! note: this is H2'2
 ATOM  O3'   DNA-OS     -0.5232
+CHIGROUP C8 H8 N7 C5 C6 N6 N1 C2 H2 N3 C4
+CHIGROUP H61 H62
+CHIPRIM C2' C1' N9 C8
+CHIPRIM C5 C6 N6 H61
 
 BOND C2'  H2'       C2'  H2''
 BOND P    O1P       P    O2P       P    O5'
@@ -450,6 +468,10 @@ ATOM  C2'   DNA-CT     -0.0854
 ATOM  H2'   DNA-HC      0.0718    ! this is H2'1
 ATOM  H2''  DNA-HC      0.0718    ! this is H2'2
 ATOM  O3'   DNA-OS     -0.5232
+CHIGROUP C2 O2 N3 H3 C4 O4 C5 C5M C6 H6
+CHIGROUP H51 H52 H53
+CHIPRIM C2' C1' N1 C2
+CHIPRIM C6 C5 C5M H51
 
 BOND C2'  H2'       C2'  H2''
 BOND P    O1P       P    O2P       P     O5'
@@ -511,6 +533,10 @@ ATOM  C2'   DNA-CT     -0.0854
 ATOM  H2''  DNA-HC      0.0718    ! this is H2'2
 ATOM  H2'   DNA-HC      0.0718    ! this is H2'1
 ATOM  O3'   DNA-OS     -0.5232
+CHIGROUP C2 O2 N3 C4 N4 C5 H5 C6 H6
+CHIGROUP H42 H41
+CHIPRIM C2' C1' N1 C2
+CHIPRIM N3 C4 N4 H41
 
 BOND C2'  H2'       C2'  H2''
 BOND P    O1P       P    O2P       P     O5'
@@ -576,6 +602,10 @@ ATOM  C2'   DNA-CT     -0.0854
 ATOM  H2''  DNA-HC      0.0718    ! this is H2'2
 ATOM  H2'   DNA-HC      0.0718    ! this is H2'1
 ATOM  O3'   DNA-OS     -0.5232
+CHIGROUP C8 H8 N7 C5 C6 O6 N1 H1 C2 N2 N3 C4
+CHIGROUP H21 H22
+CHIPRIM C2' C1' N9 C8
+CHIPRIM N3 C2 N2 H21
 
 BOND C2'  H2'       C2'  H2''
 BOND P    O1P       P    O2P       P     O5'
@@ -647,6 +677,10 @@ ATOM  C2'   DNA-CT     -0.0854
 ATOM  H2'   DNA-HC      0.0718
 ATOM  H2''  DNA-HC      0.0718
 ATOM  O3'   DNA-OS     -0.5232
+CHIGROUP C8 H8 N7 C5 C6 N6 N1 C2 H2 N3 C4
+CHIGROUP H61 H62
+CHIPRIM C2' C1' N9 C8
+CHIPRIM C5 C6 N6 H61
 BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
 BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
 BOND O4'  C1'       C1'  H1'       C1'  N9        C1'  C2'
@@ -697,6 +731,10 @@ ATOM  H2'   DNA-HC      0.0718
 ATOM  H2''  DNA-HC      0.0718
 ATOM  O3'   DNA-OH     -0.6549
 ATOM  HO3'  DNA-HO      0.4396
+CHIGROUP C8 H8 N7 C5 C6 N6 N1 C2 H2 N3 C4
+CHIGROUP H61 H62
+CHIPRIM C2' C1' N9 C8
+CHIPRIM C5 C6 N6 H61
 BOND P    O1P       P    O2P       P    O5'       O5'  C5'
 BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
 BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
@@ -745,6 +783,10 @@ ATOM  C2'   DNA-CT     -0.0854
 ATOM  H2'   DNA-HC      0.0718
 ATOM  H2''  DNA-HC      0.0718
 ATOM  O3'   DNA-OS     -0.5232
+CHIGROUP C8 H8 N7 C5 C6 O6 N1 H1 C2 N2 N3 C4
+CHIGROUP H21 H22
+CHIPRIM C2' C1' N9 C8
+CHIPRIM N3 C2 N2 H21
 BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
 BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
 BOND O4'  C1'       C1'  H1'       C1'  N9        C1'  C2'
@@ -798,6 +840,10 @@ ATOM  H2'   DNA-HC      0.0718
 ATOM  H2''  DNA-HC      0.0718
 ATOM  O3'   DNA-OH     -0.6549
 ATOM  HO3'  DNA-HO      0.4396
+CHIGROUP C8 H8 N7 C5 C6 O6 N1 H1 C2 N2 N3 C4
+CHIGROUP H21 H22
+CHIPRIM C2' C1' N9 C8
+CHIPRIM N3 C2 N2 H21
 BOND P    O1P       P    O2P       P    O5'       O5'  C5'
 BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
 BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
@@ -844,6 +890,10 @@ ATOM  C2'   DNA-CT     -0.0854
 ATOM  H2'   DNA-HC      0.0718
 ATOM  H2''  DNA-HC      0.0718
 ATOM  O3'   DNA-OS     -0.5232
+CHIGROUP C2 O2 N3 C4 N4 C5 H5 C6 H6
+CHIGROUP H42 H41
+CHIPRIM C2' C1' N1 C2
+CHIPRIM N3 C4 N4 H41
 BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
 BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
 BOND O4'  C1'       C1'  H1'       C1'  N1        C1'  C2'
@@ -893,6 +943,10 @@ ATOM  H2'   DNA-HC      0.0718
 ATOM  H2''  DNA-HC      0.0718
 ATOM  O3'   DNA-OH     -0.6549
 ATOM  HO3'  DNA-HO      0.4396
+CHIGROUP C2 O2 N3 C4 N4 C5 H5 C6 H6
+CHIGROUP H42 H41
+CHIPRIM C2' C1' N1 C2
+CHIPRIM N3 C4 N4 H41
 BOND P    O1P       P    O2P       P    O5'       O5'  C5'
 BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
 BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
@@ -940,6 +994,10 @@ ATOM  C2'   DNA-CT     -0.0854
 ATOM  H2'   DNA-HC      0.0718
 ATOM  H2''  DNA-HC      0.0718
 ATOM  O3'   DNA-OS     -0.5232
+CHIGROUP C2 O2 N3 H3 C4 O4 C5 C5M C6 H6
+CHIGROUP H51 H52 H53
+CHIPRIM C2' C1' N1 C2
+CHIPRIM C6 C5 C5M H51
 BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
 BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
 BOND O4'  C1'       C1'  H1'       C1'  N1        C1'  C2'
@@ -991,6 +1049,10 @@ ATOM  H2'   DNA-HC      0.0718
 ATOM  H2''  DNA-HC      0.0718
 ATOM  O3'   DNA-OH     -0.6549
 ATOM  HO3'  DNA-HO      0.4396
+CHIGROUP C2 O2 N3 H3 C4 O4 C5 C5M C6 H6
+CHIGROUP H51 H52 H53
+CHIPRIM C2' C1' N1 C2
+CHIPRIM C6 C5 C5M H51
 BOND P    O1P       P    O2P       P    O5'       O5'  C5'
 BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
 BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
@@ -1040,6 +1102,10 @@ ATOM  H2''  RNA-H1      0.0972
 ATOM  O2'   RNA-OH     -0.6139
 ATOM  H2'   RNA-HO      0.4186
 ATOM  O3'   RNA-OS     -0.5246
+CHIGROUP C8 H8 N7 C5 C6 N6 N1 C2 H2 N3 C4
+CHIGROUP H61 H62
+CHIPRIM C2' C1' N9 C8
+CHIPRIM C5 C6 N6 H61
 BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
 BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
 BOND O4'  C1'       C1'  H1'       C1'  N9        C1'  C2'
@@ -1092,6 +1158,10 @@ ATOM  O2'   RNA-OH     -0.6139
 ATOM  H2'   RNA-HO      0.4186
 ATOM  O3'   RNA-OH     -0.6541
 ATOM  HO3'  RNA-HO      0.4376
+CHIGROUP C8 H8 N7 C5 C6 N6 N1 C2 H2 N3 C4
+CHIGROUP H61 H62
+CHIPRIM C2' C1' N9 C8
+CHIPRIM C5 C6 N6 H61
 BOND P    O1P       P    O2P       P    O5'       O5'  C5'
 BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
 BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
@@ -1141,6 +1211,10 @@ ATOM  H2''  RNA-H1      0.0972
 ATOM  O2'   RNA-OH     -0.6139
 ATOM  H2'   RNA-HO      0.4186
 ATOM  O3'   RNA-OS     -0.5246
+CHIGROUP C8 H8 N7 C5 C6 O6 N1 H1 C2 N2 N3 C4
+CHIGROUP H21 H22
+CHIPRIM C2' C1' N9 C8
+CHIPRIM N3 C2 N2 H21
 BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
 BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
 BOND O4'  C1'       C1'  H1'       C1'  N9        C1'  C2'
@@ -1195,6 +1269,10 @@ ATOM  O2'   RNA-OH     -0.6139
 ATOM  H2'   RNA-HO      0.4186
 ATOM  O3'   RNA-OH     -0.6541
 ATOM  HO3'  RNA-HO      0.4376
+CHIGROUP C8 H8 N7 C5 C6 O6 N1 H1 C2 N2 N3 C4
+CHIGROUP H21 H22
+CHIPRIM C2' C1' N9 C8
+CHIPRIM N3 C2 N2 H21
 BOND P    O1P       P    O2P       P    O5'       O5'  C5'
 BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
 BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
@@ -1243,6 +1321,10 @@ ATOM  H2''  RNA-H1      0.0972
 ATOM  O2'   RNA-OH     -0.6139
 ATOM  H2'   RNA-HO      0.4186
 ATOM  O3'   RNA-OS     -0.5246
+CHIGROUP C2 O2 N3 C4 N4 C5 H5 C6 H6
+CHIGROUP H42 H41
+CHIPRIM C2' C1' N1 C2
+CHIPRIM N3 C4 N4 H41
 BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
 BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
 BOND O4'  C1'       C1'  H1'       C1'  N1        C1'  C2'
@@ -1293,6 +1375,10 @@ ATOM  O2'   RNA-OH     -0.6139
 ATOM  H2'   RNA-HO      0.4186
 ATOM  O3'   RNA-OH     -0.6541
 ATOM  HO3'  RNA-HO      0.4376
+CHIGROUP C2 O2 N3 C4 N4 C5 H5 C6 H6
+CHIGROUP H42 H41
+CHIPRIM C2' C1' N1 C2
+CHIPRIM N3 C4 N4 H41
 BOND P    O1P       P    O2P       P    O5'       O5'  C5'
 BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
 BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
@@ -1339,6 +1425,8 @@ ATOM  H2''  RNA-H1      0.0972
 ATOM  O2'   RNA-OH     -0.6139
 ATOM  H2'   RNA-HO      0.4186
 ATOM  O3'   RNA-OS     -0.5246
+CHIGROUP C2 O2 N3 H3 C4 O4 C5 C6 H6 H5
+CHIPRIM C2' C1' N1 C2
 BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
 BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
 BOND O4'  C1'       C1'  H1'       C1'  N1        C1'  C2'
@@ -1388,6 +1476,8 @@ ATOM  O2'   RNA-OH     -0.6139
 ATOM  H2'   RNA-HO      0.4186
 ATOM  O3'   RNA-OH     -0.6541
 ATOM  HO3'  RNA-HO      0.4376
+CHIGROUP C2 O2 N3 H3 C4 O4 C5 C6 H6 H5
+CHIPRIM C2' C1' N1 C2
 BOND P    O1P       P    O2P       P    O5'       O5'  C5'
 BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
 BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'

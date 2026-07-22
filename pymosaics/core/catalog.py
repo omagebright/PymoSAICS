@@ -89,6 +89,9 @@ class ForceFieldProfile:
             for value in (self.rtf, self.bond, self.bend, self.torsion, self.one_four, self.nonbonded)
         )
 
+    def rtf_path(self) -> Path:
+        return self.path(self.rtf)
+
 
 @dataclass(frozen=True)
 class AnalysisPreset:

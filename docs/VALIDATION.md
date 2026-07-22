@@ -1,6 +1,6 @@
 # Release validation
 
-Validation was performed on 2026-07-21 and repeated for the 0.4.0 interface on
+Validation was performed on 2026-07-21 and repeated for the 0.4.1 interface on
 2026-07-22 on Apple Silicon macOS. These checks
 establish software/runtime compatibility; they do not establish scientific
 convergence for a production study.

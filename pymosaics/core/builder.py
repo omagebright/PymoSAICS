@@ -9,6 +9,7 @@ import shutil
 import tempfile
 
 from .catalog import AnalysisPreset, FORCEFIELD_ROOT, ForceFieldProfile
+from .topology import validate_nucleic_chi_definitions
 
 
 @dataclass(frozen=True)
@@ -49,6 +50,14 @@ def validate_profile_files(profile: ForceFieldProfile) -> None:
     missing = [path for path in profile.all_paths() if not path.is_file()]
     if missing:
         raise ValueError("force-field profile is incomplete: {}".format(", ".join(map(str, missing))))
+    if profile.chemistry == "nucleic_acid":
+        issues = validate_nucleic_chi_definitions(profile.rtf_path())
+        if issues:
+            raise ValueError(
+                "nucleic-acid topology is missing required chi moves: {}".format(
+                    "; ".join(issue.message for issue in issues[:8])
+                )
+            )
 
 
 def stage_force_field(project: Path, profile: ForceFieldProfile) -> Path:
@@ -80,6 +89,14 @@ def stage_force_field(project: Path, profile: ForceFieldProfile) -> Path:
                 temporary.unlink()
         digest = hashlib.sha256(target.read_bytes()).hexdigest()
         manifest.append("{}  {}".format(digest, target.name))
+    source_pin = profile.rtf_path().parent / "SOURCE_COMMIT"
+    if source_pin.is_file():
+        manifest.extend(("", "topology source:"))
+        manifest.extend(
+            "  " + line
+            for line in source_pin.read_text(encoding="utf-8", errors="replace").splitlines()
+            if line.strip()
+        )
     manifest_target = destination / "PROFILE.txt"
     temporary_manifest = None
     try:

@@ -3582,6 +3582,11 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         preamble = "Starting MOSAICS\nProgram: {}\nInput: {}\nWorking directory: {}\nLog: {}\n\n".format(
             active_run.command[0], active_run.command[1], active_run.working_directory, active_run.log_file
         )
+        if active_run.archived_outputs:
+            preamble += "Archived {} previous output file(s) under {} before this run.\n\n".format(
+                len(active_run.archived_outputs),
+                active_run.archived_outputs[0].parents[1],
+            )
         self.log_output.setPlainText(preamble)
         self._log_handle.write(preamble.encode("utf-8"))
         self._log_handle.flush()
