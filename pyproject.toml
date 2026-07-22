@@ -19,5 +19,10 @@ classifiers = [
   "Programming Language :: Python :: 3",
 ]
 
+[project.urls]
+Homepage = "https://github.com/omagebright/PymoSAICS"
+Repository = "https://github.com/omagebright/PymoSAICS"
+Issues = "https://github.com/omagebright/PymoSAICS/issues"
+
 [tool.setuptools.packages.find]
 include = ["pymosaics*"]

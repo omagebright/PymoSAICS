@@ -128,3 +128,10 @@ the relevant MOSAICS documentation and project maintainers.
 
 PymoSAICS plugin code is released under the MIT Licence. MOSAICS and force-field
 data are separate works and are not covered or distributed by this licence.
+
+## Support
+
+Report reproducible plugin problems through the
+[PymoSAICS issue tracker](https://github.com/omagebright/PymoSAICS/issues).
+Questions about MOSAICS itself, its scientific methods, or force-field data
+belong with the corresponding MOSAICS maintainers.
