@@ -11,7 +11,7 @@ and outputs remain visible to the user.
 2. Paste this URL into **Install from PyMOLWiki or any URL**:
 
    ```text
-   https://github.com/omagebright/PymoSAICS/releases/download/v0.3.0/PymoSAICS-0.3.0.zip
+   https://github.com/omagebright/PymoSAICS/releases/download/v0.4.0/PymoSAICS-0.4.0.zip
    ```
 
 3. Choose **Install**, restart PyMOL, then open **Plugin → PymoSAICS**.
@@ -63,6 +63,12 @@ are disabled rather than silently mixed with an incompatible executable.
 6. Choose **Prepare project**, inspect validation, then **Run MOSAICS**.
 7. Follow the live log and inspect results under **Analysis**.
 
+**Run MOSAICS** executes the selected input without silently rebuilding it.
+During a run, the reported Monte Carlo step and `total_step_mc` drive a live
+percentage, elapsed time, measured step rate, countdown, and estimated finish
+time. The estimate begins after MOSAICS reports its first step and updates as
+new reports arrive.
+
 PyMOL coordinate edits are synchronized before preparation. The prepared PDB
 is checked residue-by-residue against the selected all-atom RTF; missing
 hydrogens or incorrect names stop the run with explicit diagnostics.
@@ -77,6 +83,22 @@ The region workbench defines one residue-level natural-move region. It exposes
 members, required rotation centers, non-overlapping residue pairs, documented
 WP2 proposal-width presets, Å/radian units, a live `region.data` preview, and
 PyMOL selection/visualization. Invalid regions cannot be accepted.
+
+### Build DNA and RNA directly
+
+Under **Build → Build DNA / RNA**, choose a single DNA or RNA nucleotide/strand,
+a DNA or RNA duplex, or a DNA:RNA hybrid. Enter strand 1 in 5′→3′ order;
+PymoSAICS validates the optional second strand or constructs its antiparallel
+Watson–Crick reverse complement. A- or B-form geometry is explicit for each
+strand. Mixed-form constructions are labeled as hypotheses that require
+relaxation.
+
+The builder uses PyMOL's nucleic-acid geometry, creates and correctly names all
+hydrogens, applies the required single-chain or true-terminal chemistry, and
+then performs an exact residue-by-residue check against the selected MOSAICS
+RTF before reporting success. Measured sugar pseudorotation phases are shown
+immediately and colored in PyMOL (cyan A-like/C3′-endo, orange
+B-like/C2′-endo).
 
 ### Existing and historical MOSAICS projects
 
@@ -157,7 +179,15 @@ text inside PymoSAICS. After running, complete logs are visible under `logs/`
 and are reloaded in full in the Run tab and text viewer; PDB files and
 trajectories load directly into PyMOL.
 Energy series, natural-move acceptance, and clickable representative
-structures are available under **Analysis**.
+structures are available under **Analysis**. The trajectory workspace aligns
+frames to frame 1, plots RMSD, ranks start-to-end residue changes, measures DNA
+and RNA sugar-pucker phases, and flags invariant atoms at 5′/3′ (or protein
+N/C) termini. It can play an aligned PyMOL movie, compare cyan start and
+magenta end structures, and color final A/B-like sugar states. The input and
+protocol page shows the full current deck and records comparable evidence for
+single-replica, fluctuating-temperature, and parallel-tempering runs. An
+acceptance ratio from 0.20 through 0.50 is labeled as the current target; this
+label is a tuning aid, not evidence of convergence.
 
 ## Credits and terms
 

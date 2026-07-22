@@ -20,6 +20,9 @@ class InputSettings:
     closure_sigma: str
     replica_number: int = 0
     energy_gap: float = 1.1
+    torsion_sigma: str = "1.e-5"
+    translation_sigma: str = "0"
+    rotation_sigma: str = "0"
 
 
 def default_settings(preset: AnalysisPreset) -> InputSettings:
@@ -117,12 +120,19 @@ def generate_mcmc_input(
         raise ValueError("temperature must be a positive finite number")
     if settings.replica_number < 0 or settings.energy_gap < 1 or not math.isfinite(settings.energy_gap):
         raise ValueError("replica count and temperature-ladder energy gap are invalid")
-    try:
-        closure_sigma = float(settings.closure_sigma)
-    except (TypeError, ValueError) as exc:
-        raise ValueError("closure sigma must be numeric") from exc
-    if closure_sigma < 0 or not math.isfinite(closure_sigma):
-        raise ValueError("closure sigma must be a non-negative finite number")
+    proposal_widths = {
+        "closure sigma": settings.closure_sigma,
+        "torsion sigma": settings.torsion_sigma,
+        "translation sigma": settings.translation_sigma,
+        "rotation sigma": settings.rotation_sigma,
+    }
+    for label, raw_value in proposal_widths.items():
+        try:
+            parsed = float(raw_value)
+        except (TypeError, ValueError) as exc:
+            raise ValueError("{} must be numeric".format(label)) from exc
+        if parsed < 0 or not math.isfinite(parsed):
+            raise ValueError("{} must be a non-negative finite number".format(label))
 
     def validate_entry_value(label: str, value: str, allow_directory: bool = False) -> None:
         if not value.strip():
@@ -154,9 +164,9 @@ def generate_mcmc_input(
         entry("minimize_report", preset.minimize_report),
         entry("energy_report", 2),
         entry("prop_type", preset.proposal_type),
-        entry("prop_tors_sig", "1.e-5"),
-        entry("prop_trans_sig", 0),
-        entry("prop_rot_sig", 0),
+        entry("prop_tors_sig", settings.torsion_sigma),
+        entry("prop_trans_sig", settings.translation_sigma),
+        entry("prop_rot_sig", settings.rotation_sigma),
         entry("prop_tors_type", preset.torsion_type),
         entry("prop_clos_sig", settings.closure_sigma),
         entry("replica_number", settings.replica_number),

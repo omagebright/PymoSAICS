@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.0 — 2026-07-22
+
+- Added streaming step progress with percentage, elapsed time, measured rate, ETA countdown, and estimated completion time.
+- Made Run execute the selected input verbatim; live-coordinate regeneration now happens only through the explicit Build action.
+- Added visible torsion, translation, and rotation proposal-width controls plus chain-level assessment against the 0.20–0.50 acceptance target.
+- Added first-frame trajectory alignment, RMSD plots, residue-change ranking, terminal mobility checks, aligned movies, start/end overlays, and protocol evidence comparison.
+- Added Altona–Sundaralingam DNA/RNA sugar-pucker measurement and A-like/C3′-endo versus B-like/C2′-endo visualization.
+- Added validated single-strand, DNA/RNA duplex, and DNA:RNA hybrid construction with explicit A/B forms, antiparallel complement generation, exact hydrogen naming, and preflight RTF validation.
+- Added a full input/protocol viewer for single-replica, fluctuating-temperature, and interacting-replica workflows.
+
 ## 0.3.0 — 2026-07-22
 
 - Added lossless MOSAICS input parsing and surgical scalar-setting updates that preserve repeated, unknown, region, and cryo-EM directives.

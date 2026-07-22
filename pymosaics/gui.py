@@ -3,6 +3,8 @@
 import hashlib
 import os
 import re
+import time
+from datetime import datetime, timedelta
 from pathlib import Path
 import tempfile
 from typing import List, Optional, Sequence, Tuple
@@ -10,6 +12,7 @@ from typing import List, Optional, Sequence, Tuple
 from pymol import cmd
 from pymol.Qt import QtCore, QtGui, QtWidgets
 
+from . import __version__
 from .core.analysis import (
     EnergySeries,
     discover_energy_series,
@@ -17,6 +20,7 @@ from .core.analysis import (
     discover_project_files,
     latest_log,
     parse_acceptance_log,
+    parse_sampling_protocol,
     read_text_file,
 )
 from .core.builder import (
@@ -40,6 +44,8 @@ from .core.catalog import (
 )
 from .core.config import ConfigError, ConfigStore
 from .core.landscape import LandscapeResult, build_landscape, write_landscape_table
+from .core.nucleic_builder import hydrogen_names_for_parent, plan_nucleic_acid_build
+from .core.progress import RunProgressTracker, format_duration, total_steps_from_input
 from .core.models import PreparedRun, RuntimeConfig
 from .core.project import (
     MosaicsInputDocument,
@@ -64,6 +70,7 @@ from .core.structures import (
     unambiguous_disulfide_keys,
 )
 from .core.topology import validate_pdb_against_rtf
+from .core.trajectory import TrajectoryAnalysis, analyze_structure_puckers, analyze_trajectory
 
 
 CHECKED = QtCore.Qt.Checked if hasattr(QtCore.Qt, "Checked") else QtCore.Qt.CheckState.Checked
@@ -245,26 +252,39 @@ def _install_combo_popup_theme(combo):
 
 
 class EnergyPlot(QtWidgets.QWidget):
-    """Small dependency-free line plot for MOSAICS energy output."""
+    """Small dependency-free line plot for numeric MOSAICS series."""
 
     def __init__(self, parent=None):
         super().__init__(parent)
         self._series: Optional[EnergySeries] = None
+        self._values: Tuple[float, ...] = ()
+        self._empty_message = "No energy series selected"
+        self._sample_label = "sample"
         self.setMinimumHeight(210)
 
     def set_series(self, series: Optional[EnergySeries]):
         self._series = series
+        self._values = series.values if series is not None else ()
+        self._empty_message = "No energy series selected"
+        self._sample_label = "sample"
+        self.update()
+
+    def set_values(self, values: Sequence[float], empty_message="No values available", sample_label="frame"):
+        self._series = None
+        self._values = tuple(values)
+        self._empty_message = empty_message
+        self._sample_label = sample_label
         self.update()
 
     def paintEvent(self, event):
         painter = QtGui.QPainter(self)
         painter.fillRect(self.rect(), QtGui.QColor(THEME["field"]))
-        if self._series is None or not self._series.values:
+        if not self._values:
             painter.setPen(QtGui.QColor(THEME["muted"]))
-            painter.drawText(20, 35, "No energy series selected")
+            painter.drawText(20, 35, self._empty_message)
             return
 
-        values = self._series.values
+        values = self._values
         left, top, right, bottom = 64, 24, 18, 44
         width = max(1, self.width() - left - right)
         height = max(1, self.height() - top - bottom)
@@ -300,8 +320,12 @@ class EnergyPlot(QtWidgets.QWidget):
         painter.setPen(QtGui.QColor(THEME["muted"]))
         painter.drawText(4, top + 5, "{:.3g}".format(high))
         painter.drawText(4, top + height, "{:.3g}".format(low))
-        painter.drawText(left, self.height() - 12, "sample 1")
-        painter.drawText(left + width - 90, self.height() - 12, "sample {}".format(len(values)))
+        painter.drawText(left, self.height() - 12, "{} 1".format(self._sample_label))
+        painter.drawText(
+            left + width - 90,
+            self.height() - 12,
+            "{} {}".format(self._sample_label, len(values)),
+        )
 
 
 class LandscapePlot(QtWidgets.QWidget):
@@ -998,6 +1022,10 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self._landscape_result: Optional[LandscapeResult] = None
         self._landscape_path: Optional[Path] = None
         self._landscape_object = ""
+        self._trajectory_analysis: Optional[TrajectoryAnalysis] = None
+        self._trajectory_path: Optional[Path] = None
+        self._trajectory_object = ""
+        self._progress_tracker: Optional[RunProgressTracker] = None
         self._preview_signature = None
         self._synchronized_input_path: Optional[Path] = None
         self._loading_input = False
@@ -1035,6 +1063,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
 
         self.live_timer = QtCore.QTimer(self)
         self.live_timer.timeout.connect(self._poll_pymol)
+        self.live_timer.timeout.connect(self._update_run_progress)
         self.live_timer.start(1000)
 
     def _build_product_header(self):
@@ -1133,6 +1162,8 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             QPushButton#primaryAction:hover { background: #22978b; }
             QPushButton#stopAction { background: #67323a; border-color: #a95862; }
             QPushButton#stopAction:disabled { background: #2a2226; color: #765d62; border-color: #49383d; }
+            QProgressBar { background: #071b24; color: #ffffff; border: 1px solid #37616d; border-radius: 6px; min-height: 22px; text-align: center; }
+            QProgressBar::chunk { background: #36c6b4; border-radius: 5px; }
             QCheckBox { spacing: 7px; }
             QSplitter::handle { background: #315963; width: 8px; }
             QScrollArea#buildScroll, QScrollArea#setupScroll { background: #0d252f; border: 0; }
@@ -1294,7 +1325,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self.follow_pymol_edits.setToolTip(
             "Prepare the next run from the coordinates currently displayed in PyMOL."
         )
-        self.follow_pymol_edits.setChecked(True)
+        self.follow_pymol_edits.setChecked(False)
         structure_form.addRow("Synchronization:", self.follow_pymol_edits)
         self.model_combo = QtWidgets.QComboBox()
         structure_form.addRow("PDB model:", self.model_combo)
@@ -1316,6 +1347,42 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self.structure_status.setWordWrap(True)
         structure_form.addRow("Live status:", self.structure_status)
         left_layout.addWidget(structure_group)
+
+        nucleic_group = QtWidgets.QGroupBox("Build DNA / RNA")
+        nucleic_form = QtWidgets.QFormLayout(nucleic_group)
+        self._configure_form(nucleic_form)
+        self.nucleic_kind = QtWidgets.QComboBox()
+        for label, identifier in (
+            ("Single DNA strand / nucleotide", "single-dna"),
+            ("Single RNA strand / nucleotide", "single-rna"),
+            ("DNA duplex", "dna-duplex"),
+            ("RNA duplex", "rna-duplex"),
+            ("DNA:RNA hybrid", "dna-rna-hybrid"),
+        ):
+            self.nucleic_kind.addItem(label, identifier)
+        self.nucleic_sequence = QtWidgets.QLineEdit("ACG")
+        self.nucleic_sequence.setPlaceholderText("ACG — one letter also builds one nucleotide")
+        self.nucleic_second_sequence = QtWidgets.QLineEdit()
+        self.nucleic_second_sequence.setPlaceholderText("blank = antiparallel Watson–Crick complement")
+        self.nucleic_form1 = QtWidgets.QComboBox()
+        self.nucleic_form1.addItems(("A", "B"))
+        self.nucleic_form2 = QtWidgets.QComboBox()
+        self.nucleic_form2.addItems(("A", "B"))
+        build_nucleic = QtWidgets.QPushButton("Build, measure puckers, and show in PyMOL")
+        build_nucleic.setObjectName("primaryAction")
+        build_nucleic.clicked.connect(self._build_nucleic_acid)
+        self.nucleic_status = QtWidgets.QLabel(
+            "Builds explicit coordinates; measured sugar phases are reported after construction."
+        )
+        self.nucleic_status.setWordWrap(True)
+        nucleic_form.addRow("System:", self.nucleic_kind)
+        nucleic_form.addRow("Strand 1 sequence:", self.nucleic_sequence)
+        nucleic_form.addRow("Strand 2 sequence:", self.nucleic_second_sequence)
+        nucleic_form.addRow("Strand 1 form:", self.nucleic_form1)
+        nucleic_form.addRow("Strand 2 form:", self.nucleic_form2)
+        nucleic_form.addRow(build_nucleic)
+        nucleic_form.addRow("Measured result:", self.nucleic_status)
+        left_layout.addWidget(nucleic_group)
 
         self.disulfide_group = QtWidgets.QGroupBox("Protein disulfides")
         disulfide_layout = QtWidgets.QVBoxLayout(self.disulfide_group)
@@ -1400,6 +1467,9 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self.statistics.setRange(1, 2147483647)
         self.seed = QtWidgets.QLineEdit("-7143580450")
         self.closure_sigma = QtWidgets.QLineEdit("0.001")
+        self.torsion_sigma = QtWidgets.QLineEdit("1.e-5")
+        self.translation_sigma = QtWidgets.QLineEdit("0")
+        self.rotation_sigma = QtWidgets.QLineEdit("0")
         self.replica_count = QtWidgets.QSpinBox()
         self.replica_count.setRange(1, 64)
         self.top_temperature = QtWidgets.QDoubleSpinBox()
@@ -1416,6 +1486,9 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         settings_form.addRow("Statistics frequency:", self.statistics)
         settings_form.addRow("Random seed:", self.seed)
         settings_form.addRow("Closure σ:", self.closure_sigma)
+        settings_form.addRow("Cartesian torsion σ:", self.torsion_sigma)
+        settings_form.addRow("Cartesian translation σ:", self.translation_sigma)
+        settings_form.addRow("Cartesian rotation σ:", self.rotation_sigma)
         settings_form.addRow("Number of PT replicas:", self.replica_count)
         settings_form.addRow("Highest temperature (K):", self.top_temperature)
         settings_form.addRow("Temperature ladder:", self.ladder_preview)
@@ -1466,6 +1539,9 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self.output_stem_edit.textChanged.connect(self._mark_preview_stale)
         self.seed.textChanged.connect(self._mark_preview_stale)
         self.closure_sigma.textChanged.connect(self._mark_preview_stale)
+        self.torsion_sigma.textChanged.connect(self._mark_preview_stale)
+        self.translation_sigma.textChanged.connect(self._mark_preview_stale)
+        self.rotation_sigma.textChanged.connect(self._mark_preview_stale)
         self.temperature.valueChanged.connect(self._regenerate_unedited_preview)
         self.steps.valueChanged.connect(self._regenerate_unedited_preview)
         self.statistics.valueChanged.connect(self._regenerate_unedited_preview)
@@ -1534,6 +1610,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         layout.addLayout(diagnostics)
 
         run_controls = QtWidgets.QGroupBox("Run controls")
+        run_controls.setMinimumHeight(175)
         run_controls_layout = QtWidgets.QVBoxLayout(run_controls)
         run_controls_layout.setSpacing(7)
         controls = QtWidgets.QHBoxLayout()
@@ -1559,8 +1636,20 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         controls.addStretch(1)
         run_controls_layout.addLayout(controls)
         self.auto_load = QtWidgets.QCheckBox("Load all final structures and trajectories after a successful run")
+        self.auto_load.setMinimumHeight(24)
         self.auto_load.setChecked(True)
         run_controls_layout.addWidget(self.auto_load)
+        self.run_progress = QtWidgets.QProgressBar()
+        self.run_progress.setRange(0, 1000)
+        self.run_progress.setValue(0)
+        self.run_progress.setFormat("Ready · 0.0%")
+        self.run_progress.setTextVisible(True)
+        run_controls_layout.addWidget(self.run_progress)
+        self.run_progress_detail = QtWidgets.QLabel(
+            "Step 0 / — · elapsed 00:00:00 · remaining --:--:-- · finish —"
+        )
+        self.run_progress_detail.setWordWrap(True)
+        run_controls_layout.addWidget(self.run_progress_detail)
         layout.addWidget(run_controls)
 
         self.output_group = QtWidgets.QGroupBox("MOSAICS output · no run log selected")
@@ -1620,16 +1709,17 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         )
         acceptance_note.setWordWrap(True)
         acceptance_layout.addWidget(acceptance_note)
-        self.acceptance_table = QtWidgets.QTableWidget(0, 4)
-        self.acceptance_table.setHorizontalHeaderLabels(("Chain", "Accepted", "Attempted", "Ratio"))
-        acceptance_header = self.acceptance_table.horizontalHeader()
-        resize_to_contents = _enum_value(
-            QtWidgets.QHeaderView, "ResizeToContents", "ResizeMode", "ResizeToContents"
+        self.acceptance_table = QtWidgets.QTableWidget(0, 5)
+        self.acceptance_table.setHorizontalHeaderLabels(
+            ("Chain", "Accepted", "Attempted", "Ratio", "Target [0.2, 0.5]")
         )
-        for column in range(3):
-            acceptance_header.setSectionResizeMode(column, resize_to_contents)
+        acceptance_header = self.acceptance_table.horizontalHeader()
+        fixed = _enum_value(QtWidgets.QHeaderView, "Fixed", "ResizeMode", "Fixed")
+        for column, width in enumerate((48, 70, 76, 70)):
+            acceptance_header.setSectionResizeMode(column, fixed)
+            self.acceptance_table.setColumnWidth(column, width)
         acceptance_header.setSectionResizeMode(
-            3, _enum_value(QtWidgets.QHeaderView, "Stretch", "ResizeMode", "Stretch")
+            4, _enum_value(QtWidgets.QHeaderView, "Stretch", "ResizeMode", "Stretch")
         )
         self.acceptance_table.setMinimumHeight(210)
         acceptance_layout.addWidget(self.acceptance_table, 1)
@@ -1643,6 +1733,105 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         energy_splitter.setSizes((500, 500))
         energy_layout.addWidget(energy_splitter)
         self.analysis_pages.addTab(energy_page, "Energy && acceptance")
+
+        trajectory_page = QtWidgets.QWidget()
+        trajectory_page_layout = QtWidgets.QVBoxLayout(trajectory_page)
+        trajectory_page_layout.setContentsMargins(0, 0, 0, 0)
+        trajectory_scroll = QtWidgets.QScrollArea()
+        trajectory_scroll.setFrameShape(FRAME_NO_FRAME)
+        trajectory_scroll.setWidgetResizable(True)
+        trajectory_scroll.setHorizontalScrollBarPolicy(SCROLLBAR_ALWAYS_OFF)
+        trajectory_content = QtWidgets.QWidget()
+        trajectory_layout = QtWidgets.QVBoxLayout(trajectory_content)
+        trajectory_layout.setContentsMargins(10, 10, 10, 10)
+        trajectory_scroll.setWidget(trajectory_content)
+        trajectory_page_layout.addWidget(trajectory_scroll)
+        trajectory_controls = QtWidgets.QGridLayout()
+        trajectory_controls.addWidget(QtWidgets.QLabel("Trajectory:"), 0, 0)
+        self.trajectory_analysis_combo = QtWidgets.QComboBox()
+        trajectory_controls.addWidget(self.trajectory_analysis_combo, 0, 1, 1, 4)
+        analyze_button = QtWidgets.QPushButton("Analyze trajectory")
+        analyze_button.setObjectName("primaryAction")
+        analyze_button.clicked.connect(self._analyze_selected_trajectory)
+        align_button = QtWidgets.QPushButton("Align to first frame")
+        align_button.clicked.connect(self._align_trajectory_to_first)
+        movie_button = QtWidgets.QPushButton("Play movie")
+        movie_button.clicked.connect(self._play_trajectory_movie)
+        stop_movie_button = QtWidgets.QPushButton("Stop movie")
+        stop_movie_button.clicked.connect(self._stop_trajectory_movie)
+        compare_button = QtWidgets.QPushButton("Compare start ↔ end")
+        compare_button.clicked.connect(self._compare_trajectory_ends)
+        pucker_button = QtWidgets.QPushButton("Color final A/B puckers")
+        pucker_button.clicked.connect(self._show_final_puckers_in_pymol)
+        trajectory_controls.addWidget(analyze_button, 0, 5)
+        trajectory_controls.addWidget(align_button, 1, 0)
+        trajectory_controls.addWidget(movie_button, 1, 1)
+        trajectory_controls.addWidget(stop_movie_button, 1, 2)
+        trajectory_controls.addWidget(compare_button, 1, 3)
+        trajectory_controls.addWidget(pucker_button, 1, 4, 1, 2)
+        trajectory_controls.setColumnStretch(1, 1)
+        trajectory_controls.setColumnStretch(4, 1)
+        trajectory_layout.addLayout(trajectory_controls)
+        self.trajectory_summary = QtWidgets.QLabel(
+            "Select a multi-model PDB. RMSD is computed after rigid-body alignment to frame 1."
+        )
+        self.trajectory_summary.setWordWrap(True)
+        trajectory_layout.addWidget(self.trajectory_summary)
+
+        trajectory_splitter = QtWidgets.QSplitter()
+        rmsd_group = QtWidgets.QGroupBox("Aligned RMSD to first frame (Å)")
+        rmsd_layout = QtWidgets.QVBoxLayout(rmsd_group)
+        self.rmsd_plot = EnergyPlot()
+        self.rmsd_plot.set_values((), "Analyze a trajectory to plot RMSD")
+        rmsd_layout.addWidget(self.rmsd_plot)
+        changes_group = QtWidgets.QGroupBox("Largest start-to-end residue changes")
+        changes_layout = QtWidgets.QVBoxLayout(changes_group)
+        self.residue_change_table = QtWidgets.QTableWidget(0, 4)
+        self.residue_change_table.setMinimumHeight(180)
+        self.residue_change_table.setHorizontalHeaderLabels(("Chain", "Residue", "Name", "RMSD Å"))
+        self.residue_change_table.horizontalHeader().setStretchLastSection(True)
+        changes_layout.addWidget(self.residue_change_table)
+        trajectory_splitter.addWidget(rmsd_group)
+        trajectory_splitter.addWidget(changes_group)
+        trajectory_splitter.setStretchFactor(0, 1)
+        trajectory_splitter.setStretchFactor(1, 1)
+        trajectory_layout.addWidget(trajectory_splitter, 1)
+
+        detail_splitter = QtWidgets.QSplitter()
+        pucker_group = QtWidgets.QGroupBox("DNA / RNA sugar-pucker landscape")
+        pucker_layout = QtWidgets.QVBoxLayout(pucker_group)
+        pucker_note = QtWidgets.QLabel(
+            "Altona–Sundaralingam phase: A-like/C3′-endo near 18°; B-like/C2′-endo near 162°."
+        )
+        pucker_note.setWordWrap(True)
+        pucker_layout.addWidget(pucker_note)
+        self.pucker_table = QtWidgets.QTableWidget(0, 7)
+        self.pucker_table.setMinimumHeight(180)
+        self.pucker_table.setHorizontalHeaderLabels(
+            ("Chain", "Residue", "Name", "Initial °", "Final °", "Final state", "Changed frames")
+        )
+        self.pucker_table.horizontalHeader().setStretchLastSection(True)
+        pucker_layout.addWidget(self.pucker_table)
+        terminal_group = QtWidgets.QGroupBox("3′ / 5′ terminal mobility check")
+        terminal_layout = QtWidgets.QVBoxLayout(terminal_group)
+        terminal_note = QtWidgets.QLabel(
+            "Flags atoms that remain invariant after global alignment. This is trajectory evidence; topology rotation groups still require input/setup review."
+        )
+        terminal_note.setWordWrap(True)
+        terminal_layout.addWidget(terminal_note)
+        self.terminal_table = QtWidgets.QTableWidget(0, 7)
+        self.terminal_table.setMinimumHeight(180)
+        self.terminal_table.setHorizontalHeaderLabels(
+            ("Chain", "End", "Residue", "Name", "Atoms", "Invariant", "Maximum Δ Å")
+        )
+        self.terminal_table.horizontalHeader().setStretchLastSection(True)
+        terminal_layout.addWidget(self.terminal_table)
+        detail_splitter.addWidget(pucker_group)
+        detail_splitter.addWidget(terminal_group)
+        detail_splitter.setStretchFactor(0, 1)
+        detail_splitter.setStretchFactor(1, 1)
+        trajectory_layout.addWidget(detail_splitter, 1)
+        self.analysis_pages.addTab(trajectory_page, "Trajectory changes")
 
         landscape_page = QtWidgets.QWidget()
         landscape_layout = QtWidgets.QVBoxLayout(landscape_page)
@@ -1678,6 +1867,10 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         landscape_controls.addWidget(QtWidgets.QLabel("Trajectory:"), 0, 0)
         landscape_controls.addWidget(self.trajectory_combo, 0, 1, 1, 4)
         landscape_controls.addWidget(build_map, 0, 5)
+        landscape_movie = QtWidgets.QPushButton("Play aligned movie")
+        landscape_movie.clicked.connect(self._play_trajectory_movie)
+        landscape_compare = QtWidgets.QPushButton("Show start ↔ end")
+        landscape_compare.clicked.connect(self._compare_trajectory_ends)
         landscape_controls.addWidget(QtWidgets.QLabel("Representatives:"), 1, 0)
         landscape_controls.addWidget(self.landscape_representatives, 1, 1)
         frame_count_label = QtWidgets.QLabel("Sampled frames:")
@@ -1688,6 +1881,8 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         landscape_controls.addWidget(self.landscape_maximum_frames, 1, 3)
         landscape_controls.addWidget(QtWidgets.QLabel("Point color:"), 1, 4)
         landscape_controls.addWidget(self.landscape_energy_combo, 1, 5)
+        landscape_controls.addWidget(landscape_movie, 2, 4)
+        landscape_controls.addWidget(landscape_compare, 2, 5)
         landscape_controls.setColumnStretch(1, 2)
         landscape_controls.setColumnStretch(5, 2)
         landscape_setup_layout.addLayout(landscape_controls)
@@ -1737,6 +1932,56 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         output_buttons.addStretch(1)
         output_layout.addLayout(output_buttons)
         self.analysis_pages.addTab(files_page, "Files && logs")
+
+        protocol_page = QtWidgets.QWidget()
+        protocol_page_layout = QtWidgets.QVBoxLayout(protocol_page)
+        protocol_page_layout.setContentsMargins(0, 0, 0, 0)
+        protocol_scroll = QtWidgets.QScrollArea()
+        protocol_scroll.setFrameShape(FRAME_NO_FRAME)
+        protocol_scroll.setWidgetResizable(True)
+        protocol_scroll.setHorizontalScrollBarPolicy(SCROLLBAR_ALWAYS_OFF)
+        protocol_content = QtWidgets.QWidget()
+        protocol_layout = QtWidgets.QVBoxLayout(protocol_content)
+        protocol_layout.setContentsMargins(10, 10, 10, 10)
+        protocol_scroll.setWidget(protocol_content)
+        protocol_page_layout.addWidget(protocol_scroll)
+        protocol_row = QtWidgets.QHBoxLayout()
+        protocol_row.addWidget(QtWidgets.QLabel("Input deck:"))
+        self.analysis_input_combo = QtWidgets.QComboBox()
+        self.analysis_input_combo.currentIndexChanged.connect(self._analysis_input_changed)
+        protocol_row.addWidget(self.analysis_input_combo, 1)
+        protocol_layout.addLayout(protocol_row)
+        self.protocol_summary = QtWidgets.QLabel("No input selected")
+        self.protocol_summary.setWordWrap(True)
+        protocol_layout.addWidget(self.protocol_summary)
+        protocol_guidance = QtWidgets.QLabel(
+            "Peter workflow: tune the single-replica protocol across temperatures first; use the measured Cartesian acceptance target [0.2, 0.5], terminal mobility, RMSD coverage, energies, and movies before starting interacting replicas."
+        )
+        protocol_guidance.setWordWrap(True)
+        protocol_layout.addWidget(protocol_guidance)
+        comparison_row = QtWidgets.QHBoxLayout()
+        record_comparison = QtWidgets.QPushButton("Record current run evidence")
+        record_comparison.clicked.connect(self._record_protocol_evidence)
+        clear_comparison = QtWidgets.QPushButton("Clear comparison")
+        clear_comparison.clicked.connect(lambda: self.protocol_comparison.setRowCount(0))
+        comparison_row.addWidget(record_comparison)
+        comparison_row.addWidget(clear_comparison)
+        comparison_row.addStretch(1)
+        protocol_layout.addLayout(comparison_row)
+        self.protocol_comparison = QtWidgets.QTableWidget(0, 7)
+        self.protocol_comparison.setHorizontalHeaderLabels(
+            ("Input", "Method", "Temperature", "Acceptance", "Target", "Maximum RMSD Å", "Energy span")
+        )
+        self.protocol_comparison.horizontalHeader().setStretchLastSection(True)
+        self.protocol_comparison.setMinimumHeight(120)
+        self.protocol_comparison.setMaximumHeight(180)
+        protocol_layout.addWidget(self.protocol_comparison)
+        self.analysis_input_preview = QtWidgets.QPlainTextEdit()
+        self.analysis_input_preview.setReadOnly(True)
+        self.analysis_input_preview.setLineWrapMode(PLAIN_TEXT_NO_WRAP)
+        self.analysis_input_preview.setMinimumHeight(220)
+        protocol_layout.addWidget(self.analysis_input_preview, 1)
+        self.analysis_pages.addTab(protocol_page, "Input && protocol")
 
     def _build_setup_tab(self):
         outer = QtWidgets.QVBoxLayout(self.setup_tab)
@@ -1856,7 +2101,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         layout = QtWidgets.QVBoxLayout(self.about_tab)
         layout.setContentsMargins(24, 22, 24, 22)
         label = QtWidgets.QLabel(
-            "<h2>PymoSAICS 0.2.4</h2>"
+            f"<h2>PymoSAICS {__version__}</h2>"
             "<p>A transparent PyMOL workbench for MOSAICS structure preparation, "
             "input generation, execution, visualization, and analysis.</p>"
             "<p><b>MOSAICS</b> was created by Peter Minary. Obtain official executables, "
@@ -2063,6 +2308,9 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self.statistics.setValue(settings.statistics_frequency)
         self.seed.setText(str(settings.random_seed))
         self.closure_sigma.setText(settings.closure_sigma)
+        self.torsion_sigma.setText(settings.torsion_sigma)
+        self.translation_sigma.setText(settings.translation_sigma)
+        self.rotation_sigma.setText(settings.rotation_sigma)
         self.replica_count.setValue(preset.replica_count)
         self.top_temperature.setValue(preset.top_temperature)
         if preset.identifier in ("landscape-pilot", "protein-landscape-pilot"):
@@ -2113,6 +2361,287 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             return
         self.source_mode.setCurrentText("RCSB PDB")
         self._inspect_source(path, load_into_pymol=True)
+
+    def _build_nucleic_acid(self, checked=False):
+        project = self._project_directory()
+        if project is None:
+            QtWidgets.QMessageBox.warning(
+                self, "PymoSAICS", "Choose a project directory before building DNA or RNA."
+            )
+            return
+        try:
+            plan = plan_nucleic_acid_build(
+                self.nucleic_kind.currentData(),
+                self.nucleic_sequence.text(),
+                self.nucleic_form1.currentText(),
+                self.nucleic_form2.currentText(),
+                self.nucleic_second_sequence.text(),
+            )
+            required_topology = "standard" if len(plan.strands) == 1 else "terminal"
+            current_profile = self._current_forcefield()
+            target_profile = None
+            if current_profile.chemistry == "nucleic_acid":
+                family = current_profile.identifier.rsplit("-", 1)[0]
+                target_identifier = family + "-" + required_topology
+                target_profile = next(
+                    (item for item in FORCE_FIELD_PROFILES if item.identifier == target_identifier),
+                    None,
+                )
+            candidates = [
+                item
+                for item in FORCE_FIELD_PROFILES
+                if item.chemistry == "nucleic_acid"
+                and item.topology_profile == required_topology
+            ]
+            if target_profile is None:
+                target_profile = next(
+                    (
+                        item
+                        for item in candidates
+                        if runtime_supports_force_field(
+                            self.runtime_combo.currentData(), item.identifier
+                        )
+                    ),
+                    candidates[0],
+                )
+            if not runtime_supports_force_field(
+                self.runtime_combo.currentData(), target_profile.identifier
+            ):
+                runtime_index = self.runtime_combo.findData(
+                    "mosaics-experimental-2026-07-21"
+                )
+                if runtime_index >= 0:
+                    self.runtime_combo.setCurrentIndex(runtime_index)
+            profile_index = self.forcefield_combo.findData(target_profile.identifier)
+            if profile_index >= 0:
+                self.forcefield_combo.setCurrentIndex(profile_index)
+            project.mkdir(parents=True, exist_ok=True)
+            destination = project / "built_nucleic_acid.pdb"
+            # PyMOL's fnab editor uses derived temporary selection names and
+            # becomes unreliable with long object identifiers.
+            final_name = "pymos_na"
+            temporary_names = (
+                "pymos_tpl",
+                "pymos_na_a",
+                "pymos_na_b",
+            )
+            cmd.delete(final_name)
+            for name in temporary_names:
+                cmd.delete(name)
+
+            if len(plan.strands) == 1:
+                strand = plan.strands[0]
+                cmd.fnab(
+                    strand.sequence,
+                    final_name,
+                    mode=strand.polymer,
+                    form=strand.form,
+                    dbl_helix=0,
+                )
+                cmd.alter(final_name, "chain='A'")
+            else:
+                template_sequence = plan.strands[0].sequence.replace("U", "T")
+                cmd.fnab(
+                    template_sequence,
+                    temporary_names[0],
+                    mode="DNA",
+                    form=plan.template_form,
+                    dbl_helix=1,
+                )
+                for strand_index, strand in enumerate(plan.strands):
+                    mobile_name = temporary_names[strand_index + 1]
+                    cmd.fnab(
+                        strand.sequence,
+                        mobile_name,
+                        mode=strand.polymer,
+                        form=strand.form,
+                        dbl_helix=0,
+                    )
+                    atom_pairs = []
+                    length = len(strand.sequence)
+                    for residue_index in range(1, length + 1):
+                        template_residue = (
+                            residue_index
+                            if strand_index == 0
+                            else residue_index - length - 1
+                        )
+                        template_selector_residue = (
+                            str(template_residue)
+                            if template_residue >= 0
+                            else "\\{}".format(template_residue)
+                        )
+                        for atom_name in ("C1'", "C3'", "C4'"):
+                            atom_pairs.extend(
+                                (
+                                    "{} and resi {} and name {}".format(
+                                        mobile_name, residue_index, atom_name
+                                    ),
+                                    "{} and chain {} and resi {} and name {}".format(
+                                        temporary_names[0],
+                                        "A" if strand_index == 0 else "B",
+                                        template_selector_residue,
+                                        atom_name,
+                                    ),
+                                )
+                            )
+                    cmd.pair_fit(*atom_pairs)
+                    cmd.alter(mobile_name, "chain='{}'".format(strand.chain))
+                cmd.create(
+                    final_name,
+                    "{} or {}".format(temporary_names[1], temporary_names[2]),
+                )
+                for name in temporary_names:
+                    cmd.delete(name)
+            self._hydrogenate_nucleic_object(
+                final_name, terminal_hydrogens=(required_topology == "terminal")
+            )
+            cmd.sort(final_name)
+            cmd.save(str(destination), final_name, state=1)
+            cmd.hide("everything", final_name)
+            cmd.show("sticks", final_name)
+            cmd.color("gray70", final_name)
+            cmd.orient(final_name)
+            measurements = analyze_structure_puckers(destination)
+            for measurement in measurements:
+                color = (
+                    "cyan"
+                    if measurement.state.startswith("A-like")
+                    else "orange"
+                    if measurement.state.startswith("B-like")
+                    else "gray70"
+                )
+                chain_expression = (
+                    "chain {}".format(measurement.chain)
+                    if measurement.chain != "_"
+                    else "chain ''"
+                )
+                cmd.color(
+                    color,
+                    "{} and {} and resi {}".format(
+                        final_name, chain_expression, measurement.residue
+                    ),
+                )
+            with tempfile.TemporaryDirectory(prefix="pymosaics-na-check-") as temporary:
+                check_path = Path(temporary) / "prepared.pdb"
+                prepared = prepare_structure(
+                    destination,
+                    check_path,
+                    "1",
+                    tuple(strand.chain for strand in plan.strands),
+                    "nucleic_acid",
+                    required_topology,
+                    "successive",
+                )
+                issues = validate_pdb_against_rtf(
+                    prepared.pdb_path,
+                    target_profile.path(target_profile.rtf),
+                    "nucleic_acid",
+                )
+                if issues:
+                    raise ValueError(
+                        "generated PDB did not pass the {} topology check: {}".format(
+                            target_profile.label,
+                            self._concise_topology_issues(issues, maximum=2),
+                        )
+                    )
+        except Exception as exc:
+            self.nucleic_status.setText("Build failed: {}".format(exc))
+            QtWidgets.QMessageBox.warning(self, "PymoSAICS", "Nucleic-acid build failed: {}".format(exc))
+            return
+
+        self.local_pdb_edit.setText(str(destination))
+        self.source_mode.setCurrentText("Local PDB")
+        self.follow_pymol_edits.setChecked(False)
+        self._inspect_source(destination, load_into_pymol=False)
+        self._refresh_pymol_objects()
+        self.pymol_object_combo.setCurrentText(final_name)
+        measured = ", ".join(
+            "{}:{} {:.1f}° {}".format(
+                item.chain, item.residue, item.phase_degrees, item.state
+            )
+            for item in measurements[:8]
+        )
+        if len(measurements) > 8:
+            measured += " …"
+        warnings = " ".join(plan.warnings)
+        self.nucleic_status.setText(
+            "Saved {}. Exact atom names passed {}. Measured: {}{}".format(
+                destination,
+                target_profile.label,
+                measured or "no complete furanose rings found",
+                " Warning: " + warnings if warnings else "",
+            )
+        )
+
+    @staticmethod
+    def _hydrogenate_nucleic_object(name: str, terminal_hydrogens: bool):
+        """Use PyMOL geometry, then replace generic H names with MOSAICS/PDB names."""
+
+        if terminal_hydrogens:
+            model = cmd.get_model(name)
+            first_residue_by_chain = {}
+            for atom in model.atom:
+                first_residue_by_chain.setdefault(atom.chain, atom.resi)
+            for chain, residue in first_residue_by_chain.items():
+                escaped_residue = residue if not residue.startswith("-") else "\\" + residue
+                cmd.remove(
+                    "{} and chain {} and resi {} and name P+OP1+OP2+O1P+O2P".format(
+                        name, chain, escaped_residue
+                    )
+                )
+
+        cmd.h_add(name)
+        model = cmd.get_model(name)
+        atoms_by_index = {atom.index: atom for atom in model.atom}
+        neighbors = {atom.index: [] for atom in model.atom}
+        for bond in model.bond:
+            first = model.atom[bond.index[0]].index
+            second = model.atom[bond.index[1]].index
+            neighbors[first].append(second)
+            neighbors[second].append(first)
+        groups = {}
+        unbound = []
+        for atom in model.atom:
+            if atom.symbol.upper() != "H":
+                continue
+            heavy_neighbors = [
+                atoms_by_index[index]
+                for index in neighbors.get(atom.index, ())
+                if atoms_by_index[index].symbol.upper() != "H"
+            ]
+            if len(heavy_neighbors) != 1:
+                unbound.append(atom.index)
+                continue
+            parent = heavy_neighbors[0]
+            groups.setdefault(
+                (atom.chain, atom.resi, atom.resn, parent.name), []
+            ).append(atom.index)
+
+        remove_indices = list(unbound)
+        for (_chain, _resi, residue_name, parent_name), indices in groups.items():
+            expected = hydrogen_names_for_parent(
+                residue_name, parent_name, terminal_hydrogens=terminal_hydrogens
+            )
+            if not expected:
+                remove_indices.extend(indices)
+                continue
+            if len(indices) != len(expected):
+                raise ValueError(
+                    "PyMOL generated {} hydrogen(s), but {} requires {} on {}".format(
+                        len(indices), residue_name, len(expected), parent_name
+                    )
+                )
+            for atom_index, hydrogen_name in zip(sorted(indices), expected):
+                cmd.alter(
+                    "{} and index {}".format(name, atom_index),
+                    'name="{}"'.format(hydrogen_name),
+                )
+        if remove_indices:
+            cmd.remove(
+                "{} and index {}".format(
+                    name, "+".join(str(index) for index in sorted(remove_indices))
+                )
+            )
 
     def _refresh_pymol_objects(self, checked=False):
         try:
@@ -2330,6 +2859,9 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             closure_sigma=self.closure_sigma.text().strip(),
             replica_number=count - 1,
             energy_gap=gap,
+            torsion_sigma=self.torsion_sigma.text().strip(),
+            translation_sigma=self.translation_sigma.text().strip(),
+            rotation_sigma=self.rotation_sigma.text().strip(),
         )
 
     def _apply_landscape_suggestion(self):
@@ -2383,6 +2915,9 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             settings.closure_sigma,
             settings.replica_number,
             settings.energy_gap,
+            settings.torsion_sigma,
+            settings.translation_sigma,
+            settings.rotation_sigma,
             self.use_region.isChecked(),
         )
 
@@ -2488,6 +3023,9 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             statistics = self._document_int(document, "statistics_freq")
             seed = document.value("random_seed")
             closure = document.value("prop_clos_sig")
+            torsion_sigma = document.value("prop_tors_sig")
+            translation_sigma = document.value("prop_trans_sig")
+            rotation_sigma = document.value("prop_rot_sig")
             replica_number = self._document_int(document, "replica_number")
             energy_gap = self._document_float(document, "energy_gap")
             if temperature is not None and temperature > 0:
@@ -2500,6 +3038,12 @@ class PymoSAICSDialog(QtWidgets.QDialog):
                 self.seed.setText(seed)
             if closure is not None:
                 self.closure_sigma.setText(closure)
+            if torsion_sigma is not None:
+                self.torsion_sigma.setText(torsion_sigma)
+            if translation_sigma is not None:
+                self.translation_sigma.setText(translation_sigma)
+            if rotation_sigma is not None:
+                self.rotation_sigma.setText(rotation_sigma)
             if replica_number is not None and replica_number >= 0:
                 count = min(self.replica_count.maximum(), replica_number + 1)
                 self.replica_count.setValue(count)
@@ -2557,6 +3101,9 @@ class PymoSAICSDialog(QtWidgets.QDialog):
                 "statistics_freq": settings.statistics_frequency,
                 "random_seed": settings.random_seed,
                 "prop_clos_sig": settings.closure_sigma,
+                "prop_tors_sig": settings.torsion_sigma,
+                "prop_trans_sig": settings.translation_sigma,
+                "prop_rot_sig": settings.rotation_sigma,
                 "replica_number": settings.replica_number,
                 "energy_gap": "{:.8g}".format(settings.energy_gap),
             }
@@ -3006,12 +3553,6 @@ class PymoSAICSDialog(QtWidgets.QDialog):
     def _start_process(self, checked=False):
         if self.process.state() != PROCESS_NOT_RUNNING:
             return
-        use_live_coordinates = self.source_mode.currentText() == "Live PyMOL object" or (
-            self.follow_pymol_edits.isChecked() and bool(self._pymol_source_object())
-        )
-        if use_live_coordinates and self._project_directory():
-            if self._prepare_project() is None:
-                return
         diagnostics = self._validate_current_project()
         if has_errors(diagnostics):
             QtWidgets.QMessageBox.warning(self, "PymoSAICS", "Correct the validation errors before running.")
@@ -3022,6 +3563,14 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             QtWidgets.QMessageBox.critical(self, "PymoSAICS", str(exc))
             return
         self._active_run = active_run
+        try:
+            total_steps = total_steps_from_input(
+                active_run.source_input.read_text(encoding="utf-8", errors="replace")
+            )
+        except (OSError, ValueError):
+            total_steps = 0
+        self._progress_tracker = RunProgressTracker(total_steps, time.monotonic())
+        self._render_run_progress(self._progress_tracker.snapshot(time.monotonic()))
         try:
             self._log_handle = active_run.log_file.open("ab")
         except OSError as exc:
@@ -3047,12 +3596,47 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         data = bytes(self.process.readAllStandardOutput())
         if not data:
             return
+        decoded = data.decode("utf-8", errors="replace")
+        if self._progress_tracker is not None:
+            self._render_run_progress(
+                self._progress_tracker.ingest(decoded, time.monotonic())
+            )
         if self._log_handle is not None:
             self._log_handle.write(data)
             self._log_handle.flush()
         self.log_output.moveCursor(TEXT_CURSOR_END)
-        self.log_output.insertPlainText(data.decode("utf-8", errors="replace"))
+        self.log_output.insertPlainText(decoded)
         self.log_output.moveCursor(TEXT_CURSOR_END)
+
+    def _update_run_progress(self):
+        if self._progress_tracker is None or self.process.state() == PROCESS_NOT_RUNNING:
+            return
+        self._render_run_progress(self._progress_tracker.snapshot(time.monotonic()))
+
+    def _render_run_progress(self, progress):
+        if progress.total_steps > 0:
+            value = min(1000, max(0, int(round(progress.fraction * 1000))))
+            self.run_progress.setRange(0, 1000)
+            self.run_progress.setValue(value)
+            self.run_progress.setFormat("Running · {:.1%}".format(progress.fraction))
+            step_text = "{} / {}".format(progress.current_step, progress.total_steps)
+        else:
+            self.run_progress.setRange(0, 0)
+            self.run_progress.setFormat("Running · waiting for a reported step")
+            step_text = "{} / unknown".format(progress.current_step)
+        finish = "—"
+        if progress.remaining_seconds is not None:
+            finish = (datetime.now() + timedelta(seconds=progress.remaining_seconds)).strftime("%Y-%m-%d %H:%M:%S")
+        rate = "—" if progress.steps_per_second is None else "{:.2f} steps/s".format(progress.steps_per_second)
+        self.run_progress_detail.setText(
+            "Step {} · elapsed {} · remaining {} · rate {} · estimated finish {}".format(
+                step_text,
+                format_duration(progress.elapsed_seconds),
+                format_duration(progress.remaining_seconds),
+                rate,
+                finish,
+            )
+        )
 
     def _show_log_location(self, path: Path):
         project = self._project_directory()
@@ -3094,9 +3678,13 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         message = "\nProcess error: {}".format(self.process.errorString())
         self._append_run_record(message)
         if self.process.state() == PROCESS_NOT_RUNNING:
+            self.run_progress.setRange(0, 1000)
+            self.run_progress.setFormat("Run failed")
+            self.run_progress_detail.setText("Process failed before completion")
             log_path = self._active_run.log_file if self._active_run else None
             self._close_run_log()
             self._active_run = None
+            self._progress_tracker = None
             if log_path is not None:
                 self._load_complete_log(log_path, follow_end=True)
 
@@ -3114,9 +3702,24 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             exit_code, "success" if succeeded else "failure"
         )
         self._append_run_record(completion)
+        if succeeded:
+            self.run_progress.setRange(0, 1000)
+            self.run_progress.setValue(1000)
+            self.run_progress.setFormat("Complete · 100.0%")
+            if self._progress_tracker is not None:
+                progress = self._progress_tracker.snapshot(time.monotonic())
+                self.run_progress_detail.setText(
+                    "Completed · elapsed {} · remaining 00:00:00".format(
+                        format_duration(progress.elapsed_seconds)
+                    )
+                )
+        else:
+            self.run_progress.setRange(0, 1000)
+            self.run_progress.setFormat("Run ended with an error")
         log_path = self._active_run.log_file if self._active_run else None
         self._close_run_log()
         self._active_run = None
+        self._progress_tracker = None
         if log_path is not None:
             self._load_complete_log(log_path, follow_end=True)
         if succeeded and self.auto_load.isChecked():
@@ -3188,9 +3791,28 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         summaries = parse_acceptance_log(log) if log else ()
         self.acceptance_table.setRowCount(len(summaries))
         for row, summary in enumerate(summaries):
-            values = (summary.chain, summary.accepted, summary.attempted, "{:.2%}".format(summary.ratio))
+            assessment = summary.assessment
+            guidance = {
+                "target": "in target",
+                "low": "low — reduce proposal width",
+                "high": "high — increase proposal width",
+            }[assessment]
+            values = (
+                summary.chain,
+                summary.accepted,
+                summary.attempted,
+                "{:.2%}".format(summary.ratio),
+                guidance,
+            )
             for column, value in enumerate(values):
-                self.acceptance_table.setItem(row, column, QtWidgets.QTableWidgetItem(str(value)))
+                item = QtWidgets.QTableWidgetItem(str(value))
+                if assessment == "target":
+                    item.setForeground(QtGui.QColor("#75dfd1"))
+                elif assessment == "low":
+                    item.setForeground(QtGui.QColor("#ff9b9b"))
+                else:
+                    item.setForeground(QtGui.QColor("#ffd37a"))
+                self.acceptance_table.setItem(row, column, item)
         project_files = discover_project_files(project)
         self.output_list.clear()
         for project_file in project_files:
@@ -3204,13 +3826,44 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             item.setData(USER_ROLE + 2, project_file.loadable_in_pymol)
             self.output_list.addItem(item)
         current_trajectory = self.trajectory_combo.currentData()
+        current_analysis_trajectory = self.trajectory_analysis_combo.currentData()
         self.trajectory_combo.clear()
-        for path in discover_pdb_outputs(project, self._loaded_input_structure):
+        self.trajectory_analysis_combo.clear()
+        trajectory_paths = discover_pdb_outputs(project, self._loaded_input_structure)
+        for path in trajectory_paths:
             self.trajectory_combo.addItem(path.name, str(path))
+            self.trajectory_analysis_combo.addItem(path.name, str(path))
         if current_trajectory:
             index = self.trajectory_combo.findData(current_trajectory)
             if index >= 0:
                 self.trajectory_combo.setCurrentIndex(index)
+        if current_analysis_trajectory:
+            index = self.trajectory_analysis_combo.findData(current_analysis_trajectory)
+            if index >= 0:
+                self.trajectory_analysis_combo.setCurrentIndex(index)
+
+        current_input = self.analysis_input_combo.currentData()
+        self.analysis_input_combo.clear()
+        input_paths = [
+            item.path for item in project_files if item.path.suffix.lower() in (".input", ".inp")
+        ]
+        selected_run_input = Path(self.input_combo.currentText().strip()).expanduser()
+        if selected_run_input.is_file() and selected_run_input.resolve() not in input_paths:
+            input_paths.insert(0, selected_run_input.resolve())
+        for path in input_paths:
+            try:
+                label = str(path.relative_to(project))
+            except ValueError:
+                label = str(path)
+            self.analysis_input_combo.addItem(label, str(path))
+        preferred = current_input or (
+            str(selected_run_input.resolve()) if selected_run_input.is_file() else ""
+        )
+        if preferred:
+            index = self.analysis_input_combo.findData(preferred)
+            if index >= 0:
+                self.analysis_input_combo.setCurrentIndex(index)
+        self._analysis_input_changed()
 
     def _energy_changed(self, *_args):
         index = self.energy_combo.currentIndex()
@@ -3225,6 +3878,312 @@ class PymoSAICSDialog(QtWidgets.QDialog):
                 len(series.values), series.minimum, series.mean, series.maximum, series.path
             )
         )
+
+    def _analysis_input_changed(self, *_args):
+        value = self.analysis_input_combo.currentData()
+        if not value:
+            self.analysis_input_preview.clear()
+            self.protocol_summary.setText("No input selected")
+            return
+        path = Path(value)
+        try:
+            text = read_text_file(path, maximum_bytes=None)
+            protocol = parse_sampling_protocol(text)
+        except (OSError, ValueError) as exc:
+            self.analysis_input_preview.clear()
+            self.protocol_summary.setText("Cannot read protocol: {}".format(exc))
+            return
+        self.analysis_input_preview.setPlainText(text)
+        sigmas = "torsion {} · translation {} · rotation {}".format(
+            "—" if protocol.proposal_torsion_sigma is None else "{:g}".format(protocol.proposal_torsion_sigma),
+            "—" if protocol.proposal_translation_sigma is None else "{:g}".format(protocol.proposal_translation_sigma),
+            "—" if protocol.proposal_rotation_sigma is None else "{:g}".format(protocol.proposal_rotation_sigma),
+        )
+        temperature = "—" if protocol.temperature is None else "{:g} K".format(protocol.temperature)
+        steps = "—" if protocol.total_steps is None else "{:,}".format(protocol.total_steps)
+        self.protocol_summary.setText(
+            "{} · simulation {} · minimizer {} · proposal {} · {} · {} steps · {} replica(s) · proposal σ: {}".format(
+                protocol.method,
+                protocol.simulation_type,
+                protocol.minimization_type,
+                protocol.proposal_type,
+                temperature,
+                steps,
+                protocol.replica_count,
+                sigmas,
+            )
+        )
+
+    def _record_protocol_evidence(self, checked=False):
+        value = self.analysis_input_combo.currentData()
+        if not value:
+            return
+        try:
+            protocol = parse_sampling_protocol(
+                read_text_file(Path(value), maximum_bytes=None)
+            )
+        except (OSError, ValueError):
+            return
+        project = self._project_directory()
+        log = latest_log(project) if project else None
+        summaries = parse_acceptance_log(log) if log else ()
+        mean_acceptance = (
+            sum(item.ratio for item in summaries) / len(summaries) if summaries else None
+        )
+        target = (
+            "in target"
+            if mean_acceptance is not None and 0.2 <= mean_acceptance <= 0.5
+            else "low"
+            if mean_acceptance is not None and mean_acceptance < 0.2
+            else "high"
+            if mean_acceptance is not None
+            else "—"
+        )
+        maximum_rmsd = (
+            "{:.3f}".format(self._trajectory_analysis.maximum_rmsd)
+            if self._trajectory_analysis is not None
+            else "—"
+        )
+        energy_span = "—"
+        index = self.energy_combo.currentIndex()
+        if 0 <= index < len(self._energy_series):
+            series = self._energy_series[index]
+            energy_span = "{:.6g}".format(series.maximum - series.minimum)
+        row = self.protocol_comparison.rowCount()
+        self.protocol_comparison.insertRow(row)
+        values = (
+            Path(value).name,
+            protocol.method,
+            "—" if protocol.temperature is None else "{:g} K".format(protocol.temperature),
+            "—" if mean_acceptance is None else "{:.2%}".format(mean_acceptance),
+            target,
+            maximum_rmsd,
+            energy_span,
+        )
+        for column, field in enumerate(values):
+            item = QtWidgets.QTableWidgetItem(str(field))
+            if column == 4 and target != "—":
+                item.setForeground(
+                    QtGui.QColor("#75dfd1" if target == "in target" else "#ff9b9b")
+                )
+            self.protocol_comparison.setItem(row, column, item)
+
+    def _analyze_selected_trajectory(self, checked=False):
+        value = self.trajectory_analysis_combo.currentData()
+        if not value:
+            QtWidgets.QMessageBox.information(
+                self, "PymoSAICS", "Select a multi-model PDB trajectory first."
+            )
+            return
+        path = Path(value)
+        self.trajectory_summary.setText("Aligning and measuring trajectory frames…")
+        QtWidgets.QApplication.processEvents()
+        try:
+            result = analyze_trajectory(path, maximum_frames=500)
+        except (OSError, RuntimeError, ValueError) as exc:
+            self._trajectory_analysis = None
+            self.rmsd_plot.set_values((), "Trajectory analysis failed")
+            self.trajectory_summary.setText("Trajectory analysis failed: {}".format(exc))
+            return
+        self._trajectory_analysis = result
+        self._trajectory_path = path.resolve()
+        self.rmsd_plot.set_values(result.rmsd_to_first, sample_label="frame")
+        self.trajectory_summary.setText(
+            "{} sampled frames · {} alignment atoms · start→end RMSD {:.3f} Å · maximum RMSD {:.3f} Å. "
+            "Values remove whole-structure translation and rotation.{}".format(
+                len(result.frame_numbers),
+                result.aligned_atom_count,
+                result.start_to_end_rmsd,
+                result.maximum_rmsd,
+                " No complete furanose rings were found (expected for protein or coarse-grained output)."
+                if not result.puckers
+                else "",
+            )
+        )
+
+        changes = result.residue_changes[:40]
+        self.residue_change_table.setRowCount(len(changes))
+        for row, change in enumerate(changes):
+            for column, value in enumerate(
+                (change.chain, change.residue, change.residue_name, "{:.3f}".format(change.rmsd_angstrom))
+            ):
+                self.residue_change_table.setItem(row, column, QtWidgets.QTableWidgetItem(str(value)))
+
+        grouped = {}
+        for measurement in result.puckers:
+            grouped.setdefault(
+                (measurement.chain, measurement.residue, measurement.residue_name), []
+            ).append(measurement)
+        self.pucker_table.setRowCount(len(grouped))
+        for row, (key, values) in enumerate(grouped.items()):
+            initial, final = values[0], values[-1]
+            changed_frames = sum(item.state != initial.state for item in values[1:])
+            fields = (
+                key[0],
+                key[1],
+                key[2],
+                "{:.1f}".format(initial.phase_degrees),
+                "{:.1f}".format(final.phase_degrees),
+                final.state,
+                changed_frames,
+            )
+            for column, value in enumerate(fields):
+                item = QtWidgets.QTableWidgetItem(str(value))
+                if column == 5:
+                    item.setForeground(
+                        QtGui.QColor("#69d7ff" if final.state.startswith("A-like") else "#ffb45e")
+                    )
+                self.pucker_table.setItem(row, column, item)
+
+        self.terminal_table.setRowCount(len(result.terminal_mobility))
+        for row, terminal in enumerate(result.terminal_mobility):
+            fields = (
+                terminal.chain,
+                terminal.end,
+                terminal.residue,
+                terminal.residue_name,
+                terminal.atom_count,
+                terminal.invariant_atom_count,
+                "{:.3f}".format(terminal.maximum_displacement),
+            )
+            for column, value in enumerate(fields):
+                item = QtWidgets.QTableWidgetItem(str(value))
+                if column == 5 and terminal.invariant_atom_count:
+                    item.setForeground(QtGui.QColor("#ff9b9b"))
+                self.terminal_table.setItem(row, column, item)
+
+    def _selected_trajectory_path(self) -> Optional[Path]:
+        for combo in (self.trajectory_analysis_combo, self.trajectory_combo):
+            value = combo.currentData()
+            if value and Path(value).is_file():
+                return Path(value).resolve()
+        return None
+
+    def _ensure_trajectory_in_pymol(self) -> Optional[str]:
+        path = self._trajectory_path or self._selected_trajectory_path()
+        if path is None or not path.is_file():
+            return None
+        name = _safe_name("pymosaics_trajectory_" + path.stem)
+        try:
+            if name not in set(cmd.get_object_list("all")):
+                cmd.load(str(path), name)
+            self._trajectory_path = path
+            self._trajectory_object = name
+            cmd.show("cartoon", name)
+            cmd.show("sticks", "{} and polymer.nucleic".format(name))
+            cmd.orient(name)
+            return name
+        except Exception as exc:
+            QtWidgets.QMessageBox.warning(
+                self, "PymoSAICS", "Cannot load trajectory into PyMOL: {}".format(exc)
+            )
+            return None
+
+    def _align_trajectory_to_first(self, checked=False):
+        name = self._ensure_trajectory_in_pymol()
+        if not name:
+            return
+        try:
+            cmd.intra_fit("{} and polymer".format(name), 1)
+            cmd.frame(1)
+            cmd.orient(name)
+            self.trajectory_summary.setText(
+                "Aligned every PyMOL state of {} to frame 1; the source trajectory file was not modified.".format(name)
+            )
+        except Exception as exc:
+            QtWidgets.QMessageBox.warning(self, "PymoSAICS", "Alignment failed: {}".format(exc))
+
+    def _play_trajectory_movie(self, checked=False):
+        name = self._ensure_trajectory_in_pymol()
+        if not name:
+            return
+        try:
+            cmd.intra_fit("{} and polymer".format(name), 1)
+            states = int(cmd.count_states(name))
+            cmd.mset("1 -{}".format(states))
+            cmd.frame(1)
+            cmd.mplay()
+            self.trajectory_summary.setText(
+                "Playing {} aligned states in PyMOL. Use Stop movie to pause.".format(states)
+            )
+        except Exception as exc:
+            QtWidgets.QMessageBox.warning(self, "PymoSAICS", "Movie could not start: {}".format(exc))
+
+    def _stop_trajectory_movie(self, checked=False):
+        try:
+            cmd.mstop()
+        except Exception:
+            pass
+
+    def _compare_trajectory_ends(self, checked=False):
+        name = self._ensure_trajectory_in_pymol()
+        if not name:
+            return
+        try:
+            cmd.intra_fit("{} and polymer".format(name), 1)
+            states = int(cmd.count_states(name))
+            cmd.delete("pymosaics_start")
+            cmd.delete("pymosaics_end")
+            cmd.create("pymosaics_start", name, 1, 1)
+            cmd.create("pymosaics_end", name, states, 1)
+            cmd.color("cyan", "pymosaics_start")
+            cmd.color("magenta", "pymosaics_end")
+            cmd.show("cartoon", "pymosaics_start or pymosaics_end")
+            cmd.show("sticks", "(pymosaics_start or pymosaics_end) and polymer.nucleic")
+            cmd.orient("pymosaics_start or pymosaics_end")
+            self.trajectory_summary.setText(
+                "PyMOL comparison: frame 1 is cyan; frame {} is magenta.".format(states)
+            )
+        except Exception as exc:
+            QtWidgets.QMessageBox.warning(self, "PymoSAICS", "Comparison failed: {}".format(exc))
+
+    def _show_final_puckers_in_pymol(self, checked=False):
+        if self._trajectory_analysis is None:
+            self._analyze_selected_trajectory()
+        result = self._trajectory_analysis
+        if result is None or not result.puckers:
+            QtWidgets.QMessageBox.information(
+                self, "PymoSAICS", "No complete DNA/RNA sugar rings were measured in this trajectory."
+            )
+            return
+        name = self._ensure_trajectory_in_pymol()
+        if not name:
+            return
+        final_frame = result.frame_numbers[-1]
+        final_measurements = {
+            (item.chain, item.residue): item
+            for item in result.puckers
+            if item.frame == final_frame
+        }
+        try:
+            states = int(cmd.count_states(name))
+            cmd.frame(states)
+            for measurement in final_measurements.values():
+                color = (
+                    "cyan"
+                    if measurement.state.startswith("A-like")
+                    else "orange"
+                    if measurement.state.startswith("B-like")
+                    else "gray70"
+                )
+                chain_expression = (
+                    "chain {}".format(measurement.chain)
+                    if measurement.chain != "_"
+                    else "chain ''"
+                )
+                cmd.color(
+                    color,
+                    "{} and {} and resi {}".format(
+                        name, chain_expression, measurement.residue
+                    ),
+                )
+            cmd.show("sticks", "{} and polymer.nucleic".format(name))
+            cmd.orient(name)
+            self.trajectory_summary.setText(
+                "Final sugar puckers shown in PyMOL: cyan = A-like/C3′-endo, orange = B-like/C2′-endo, gray = other."
+            )
+        except Exception as exc:
+            QtWidgets.QMessageBox.warning(self, "PymoSAICS", "Pucker display failed: {}".format(exc))
 
     def _build_landscape(self, checked=False):
         value = self.trajectory_combo.currentData()
@@ -3256,6 +4215,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             return
         self._landscape_result = result
         self._landscape_path = path.resolve()
+        self._trajectory_path = path.resolve()
         self.landscape_plot.set_result(result, energies)
         self.representative_list.clear()
         for frame in result.representative_frames:

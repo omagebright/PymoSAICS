@@ -1,6 +1,6 @@
 # Release validation
 
-Validation was performed on 2026-07-21 and repeated for the 0.3.0 interface on
+Validation was performed on 2026-07-21 and repeated for the 0.4.0 interface on
 2026-07-22 on Apple Silicon macOS. These checks
 establish software/runtime compatibility; they do not establish scientific
 convergence for a production study.
@@ -28,6 +28,18 @@ convergence for a production study.
   reproduced in the Run tab, and legacy hidden logs remained discoverable.
 - All three Analysis pages rendered without clipping at 900×710: energy and
   acceptance panels, structural-map controls/plot/representatives, and files/logs.
+- Run progress was streamed from split output chunks and reached 100% with a
+  zero remaining-time display when the process completed.
+- Canonical B-DNA measured at approximately 154° (C2′-endo/B-like) and
+  canonical A-RNA at approximately 8° (C3′-endo/A-like).
+- Single DNA, single RNA, DNA duplex, RNA duplex, and DNA:RNA hybrid builds
+  completed inside PyMOL. All-base ACGT/ACGU fixtures were hydrogenated,
+  assigned explicit 5′/3′ chemistry where applicable, and passed the selected
+  bundled RTF with zero atom-name mismatches.
+- A 400-frame WP7 DNA/RNA trajectory produced aligned RMSD, per-residue changes,
+  720 sampled pucker measurements, and 5′/3′ mobility evidence. Tom's 508-frame
+  KB_3pt trajectory produced protein N/C mobility and RMSD evidence without
+  falsely claiming sugar measurements.
 
 ## Runtime and force-field checks
 
@@ -95,8 +107,10 @@ The public GUI completed this sequence:
 4. launch MOSAICS through `QProcess` and capture its persistent log;
 5. discover energy and output files;
 6. load final and trajectory PDBs into PyMOL;
-7. build an RMSD landscape with matched energy coloring; and
-8. switch PyMOL to a selected representative frame.
+7. build an RMSD landscape with matched energy coloring;
+8. align a trajectory, inspect RMSD/puckers/terminal mobility, and play a movie;
+9. compare first and final structures in PyMOL; and
+10. switch PyMOL to a selected representative frame.
 
 An HTTPS fetch of RCSB entry 1BNA also completed and produced the expected two
 chains. RCSB structures without all required hydrogens are intentionally

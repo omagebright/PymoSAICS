@@ -31,18 +31,18 @@ def _numpy():
     return np
 
 
-def _atom_key(line: str):
+def atom_key(line: str):
     line = line.ljust(80)
     return (line[21].strip(), line[22:26].strip(), line[26].strip(), line[12:16].strip())
 
 
-def _element(line: str) -> str:
+def atom_element(line: str) -> str:
     line = line.ljust(80)
     value = line[76:78].strip().upper()
     return value or line[12:16].strip().lstrip("0123456789")[:1].upper()
 
 
-def _iter_raw_frames(lines):
+def iter_pdb_frames(lines):
     current = []
     explicit_models = False
     for raw in lines:
@@ -77,7 +77,7 @@ def read_coordinate_frames(path: Path, maximum_frames: int = 500):
     if not path.is_file():
         raise ValueError("trajectory does not exist: {}".format(path))
     with path.open("r", encoding="utf-8", errors="replace") as handle:
-        frame_count = sum(1 for _frame in _iter_raw_frames(handle))
+        frame_count = sum(1 for _frame in iter_pdb_frames(handle))
     if frame_count < 2:
         raise ValueError("a structural map requires a PDB trajectory with at least two frames")
     if maximum_frames < 2:
@@ -92,7 +92,7 @@ def read_coordinate_frames(path: Path, maximum_frames: int = 500):
     selected_indices = set(sampled_indices)
     raw_frames = []
     with path.open("r", encoding="utf-8", errors="replace") as handle:
-        for index, frame in enumerate(_iter_raw_frames(handle)):
+        for index, frame in enumerate(iter_pdb_frames(handle)):
             if index in selected_indices:
                 raw_frames.append(frame)
     if len(raw_frames) != len(sampled_indices):
@@ -103,13 +103,13 @@ def read_coordinate_frames(path: Path, maximum_frames: int = 500):
         atoms = {}
         for raw in frame:
             line = raw.ljust(80)
-            if line[16].strip() not in ("", "A") or _element(line) == "H":
+            if line[16].strip() not in ("", "A") or atom_element(line) == "H":
                 continue
             try:
                 xyz = (float(line[30:38]), float(line[38:46]), float(line[46:54]))
             except ValueError:
                 continue
-            atoms[_atom_key(line)] = xyz
+            atoms[atom_key(line)] = xyz
         parsed.append(atoms)
 
     common = set(parsed[0])

@@ -33,6 +33,10 @@ class AcceptanceSummary:
     attempted: int
     ratio: float
 
+    @property
+    def assessment(self) -> str:
+        return acceptance_assessment(self.ratio)
+
 
 @dataclass(frozen=True)
 class ProjectFile:
@@ -40,6 +44,20 @@ class ProjectFile:
     kind: str
     text_readable: bool
     loadable_in_pymol: bool
+
+
+@dataclass(frozen=True)
+class SamplingProtocol:
+    method: str
+    simulation_type: str
+    minimization_type: str
+    proposal_type: str
+    temperature: Optional[float]
+    total_steps: Optional[int]
+    replica_count: int
+    proposal_torsion_sigma: Optional[float]
+    proposal_translation_sigma: Optional[float]
+    proposal_rotation_sigma: Optional[float]
 
 
 ENERGY_PATTERNS = ("*.pot_energy", "*.inter_energy", "*potential_energy*.dat", "*inter_energy*.dat")
@@ -50,6 +68,52 @@ TEXT_SUFFIXES = {
     ".json", ".md",
 }
 HIDDEN_PROJECT_PARTS = {"resolved"}
+INPUT_DIRECTIVE = re.compile(r"\\([A-Za-z0-9_]+)\{([^{}]*)\}")
+
+
+def parse_sampling_protocol(text: str) -> SamplingProtocol:
+    """Summarize the sampling choices written in a MOSAICS input deck."""
+
+    values = {
+        match.group(1): match.group(2).strip()
+        for raw in text.splitlines()
+        if not raw.lstrip().startswith(("#", "!"))
+        for match in INPUT_DIRECTIVE.finditer(raw)
+    }
+
+    def as_float(key: str) -> Optional[float]:
+        try:
+            value = float(values[key])
+        except (KeyError, ValueError):
+            return None
+        return value if math.isfinite(value) else None
+
+    def as_int(key: str) -> Optional[int]:
+        try:
+            return int(values[key])
+        except (KeyError, ValueError):
+            return None
+
+    replica_number = max(0, as_int("replica_number") or 0)
+    minimization = values.get("minimize_type", "")
+    if replica_number:
+        method = "Parallel tempering / interacting replicas"
+    elif minimization.lower() == "stsamc":
+        method = "Single-replica fluctuating-temperature stochastic minimisation"
+    else:
+        method = "Single-replica sampling"
+    return SamplingProtocol(
+        method,
+        values.get("simulation_typ", "not specified"),
+        minimization or "not specified",
+        values.get("prop_type", "not specified"),
+        as_float("temperature"),
+        as_int("total_step_mc"),
+        replica_number + 1,
+        as_float("prop_tors_sig"),
+        as_float("prop_trans_sig"),
+        as_float("prop_rot_sig"),
+    )
 
 
 def read_energy_series(path: Path) -> EnergySeries:
@@ -88,20 +152,27 @@ def discover_energy_series(project: Path) -> Tuple[EnergySeries, ...]:
 
 
 def parse_acceptance_log(path: Path) -> Tuple[AcceptanceSummary, ...]:
-    summaries = []
+    summaries = {}
     with path.open("r", encoding="utf-8", errors="replace") as handle:
         for raw in handle:
             match = CHAIN_ACCEPTANCE.match(raw)
             if match:
-                summaries.append(
-                    AcceptanceSummary(
-                        int(match.group(1)),
-                        int(match.group(2)),
-                        int(match.group(3)),
-                        float(match.group(4)),
-                    )
+                summary = AcceptanceSummary(
+                    int(match.group(1)),
+                    int(match.group(2)),
+                    int(match.group(3)),
+                    float(match.group(4)),
                 )
-    return tuple(summaries)
+                summaries[summary.chain] = summary
+    return tuple(summaries[chain] for chain in sorted(summaries))
+
+
+def acceptance_assessment(ratio: float, low: float = 0.2, high: float = 0.5) -> str:
+    if ratio < low:
+        return "low"
+    if ratio > high:
+        return "high"
+    return "target"
 
 
 def latest_log(project: Path) -> Optional[Path]:

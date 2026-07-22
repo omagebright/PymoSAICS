@@ -98,6 +98,27 @@ class CatalogAndBuilderTests(unittest.TestCase):
         top = settings.temperature * settings.energy_gap ** settings.replica_number
         self.assertAlmostEqual(top, preset.top_temperature, places=8)
 
+    def test_visible_proposal_widths_are_written_verbatim(self):
+        preset = ANALYSIS_PRESETS[0]
+        profile = FORCE_FIELD_PROFILES[0]
+        settings = default_settings(preset)
+        settings = settings.__class__(
+            settings.temperature,
+            settings.total_steps,
+            settings.statistics_frequency,
+            settings.random_seed,
+            settings.closure_sigma,
+            settings.replica_number,
+            settings.energy_gap,
+            "2e-5",
+            "3e-5",
+            "4e-6",
+        )
+        text = generate_mcmc_input(preset, profile, "structure.pdb", "simulation", settings)
+        self.assertIn("\\prop_tors_sig{2e-5}", text)
+        self.assertIn("\\prop_trans_sig{3e-5}", text)
+        self.assertIn("\\prop_rot_sig{4e-6}", text)
+
     def test_region_input_writes_explicit_single_region_propagation(self):
         preset = ANALYSIS_PRESETS[0]
         profile = FORCE_FIELD_PROFILES[0]
