@@ -1,2 +1,4 @@
 pymosaics/assets/forcefields/kb_3pt/*.prm -diff -text
 pymosaics/assets/forcefields/kb_3pt/*.rtf -diff -text
+pymosaics/assets/forcefields/panel/*.rtf -diff -text
+pymosaics/assets/forcefields/panel/rtf_sources/*.rtf -diff -text

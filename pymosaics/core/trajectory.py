@@ -67,21 +67,36 @@ def _numpy():
 
 
 def _dihedral(first, second, third, fourth) -> float:
-    np = _numpy()
-    first, second, third, fourth = (
-        np.asarray(value, dtype=float) for value in (first, second, third, fourth)
-    )
-    first_bond = -(second - first)
-    axis = third - second
-    last_bond = fourth - third
-    length = np.linalg.norm(axis)
+    def subtract(left, right):
+        return tuple(float(a) - float(b) for a, b in zip(left, right))
+
+    def dot(left, right):
+        return sum(a * b for a, b in zip(left, right))
+
+    def cross(left, right):
+        return (
+            left[1] * right[2] - left[2] * right[1],
+            left[2] * right[0] - left[0] * right[2],
+            left[0] * right[1] - left[1] * right[0],
+        )
+
+    first_bond = subtract(first, second)
+    axis = subtract(third, second)
+    last_bond = subtract(fourth, third)
+    length = math.sqrt(dot(axis, axis))
     if length == 0:
         raise ValueError("cannot calculate a torsion around a zero-length bond")
-    axis /= length
-    first_plane = first_bond - np.dot(first_bond, axis) * axis
-    last_plane = last_bond - np.dot(last_bond, axis) * axis
-    x_value = np.dot(first_plane, last_plane)
-    y_value = np.dot(np.cross(axis, first_plane), last_plane)
+    axis = tuple(value / length for value in axis)
+    first_projection = dot(first_bond, axis)
+    last_projection = dot(last_bond, axis)
+    first_plane = tuple(
+        value - first_projection * direction for value, direction in zip(first_bond, axis)
+    )
+    last_plane = tuple(
+        value - last_projection * direction for value, direction in zip(last_bond, axis)
+    )
+    x_value = dot(first_plane, last_plane)
+    y_value = dot(cross(axis, first_plane), last_plane)
     return math.degrees(math.atan2(y_value, x_value))
 
 
