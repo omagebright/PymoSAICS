@@ -1,6 +1,6 @@
 """PymoSAICS: a transparent MOSAICS workbench inside PyMOL."""
 
-__version__ = "0.2.2"
+__version__ = "0.2.3"
 
 
 def __init_plugin__(app=None):

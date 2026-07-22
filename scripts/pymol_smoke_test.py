@@ -52,6 +52,31 @@ def main():
             raise SystemExit("The Build form is wider than its viewport")
         if content.palette().window().color().name().lower() != "#0d252f":
             raise SystemExit("The Build form did not receive the deterministic dark palette")
+
+        dialog.tabs.setCurrentWidget(dialog.run_tab)
+        application.processEvents()
+        run_widgets = (
+            dialog.validation_output,
+            dialog.command_preview,
+            dialog.run_button,
+            dialog.auto_load,
+            dialog.log_output,
+        )
+        run_rectangles = []
+        for widget in run_widgets:
+            top_left = widget.mapTo(dialog.run_tab, QtCore.QPoint(0, 0))
+            run_rectangles.append(QtCore.QRect(top_left, widget.size()))
+        for index, first in enumerate(run_rectangles):
+            for second in run_rectangles[index + 1 :]:
+                if first.intersects(second):
+                    raise SystemExit("Run-tab controls overlap at the minimum window size")
+        if dialog.validation_output.height() < 72 or dialog.command_preview.height() < 72:
+            raise SystemExit("Run-tab diagnostic panels are too short to inspect")
+        if dialog.log_output.height() < 130:
+            raise SystemExit("The live MOSAICS output panel is too short to use")
+        dialog.tabs.setCurrentWidget(dialog.build_tab)
+        application.processEvents()
+
         for combo in dialog.findChildren(QtWidgets.QComboBox):
             popup = combo.view()
             if not isinstance(popup, QtWidgets.QListView):

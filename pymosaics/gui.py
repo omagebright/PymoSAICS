@@ -1471,19 +1471,33 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         view_structure.clicked.connect(self._view_prepared_structure)
         form.addRow("Prepared structure:", view_structure)
         layout.addLayout(form)
+
+        diagnostics = QtWidgets.QHBoxLayout()
+        diagnostics.setSpacing(10)
+        validation_group = QtWidgets.QGroupBox("Validation")
+        validation_layout = QtWidgets.QVBoxLayout(validation_group)
         self.validation_output = QtWidgets.QPlainTextEdit()
         self.validation_output.setReadOnly(True)
-        self.validation_output.setMaximumHeight(125)
-        self._allow_text_area_to_shrink(self.validation_output)
-        layout.addWidget(QtWidgets.QLabel("Validation"))
-        layout.addWidget(self.validation_output)
+        self.validation_output.setMinimumHeight(72)
+        self.validation_output.setMaximumHeight(112)
+        validation_layout.addWidget(self.validation_output)
+        diagnostics.addWidget(validation_group, 1)
+
+        command_group = QtWidgets.QGroupBox("Exact execution plan")
+        command_layout = QtWidgets.QVBoxLayout(command_group)
         self.command_preview = QtWidgets.QPlainTextEdit()
         self.command_preview.setReadOnly(True)
-        self.command_preview.setMaximumHeight(100)
-        self._allow_text_area_to_shrink(self.command_preview)
-        layout.addWidget(QtWidgets.QLabel("Exact execution plan"))
-        layout.addWidget(self.command_preview)
+        self.command_preview.setMinimumHeight(72)
+        self.command_preview.setMaximumHeight(112)
+        command_layout.addWidget(self.command_preview)
+        diagnostics.addWidget(command_group, 1)
+        layout.addLayout(diagnostics)
+
+        run_controls = QtWidgets.QGroupBox("Run controls")
+        run_controls_layout = QtWidgets.QVBoxLayout(run_controls)
+        run_controls_layout.setSpacing(7)
         controls = QtWidgets.QHBoxLayout()
+        controls.setSpacing(8)
         validate = QtWidgets.QPushButton("Validate")
         validate.clicked.connect(self._validate_current_project)
         self.run_button = QtWidgets.QPushButton("Run MOSAICS")
@@ -1503,15 +1517,20 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         controls.addWidget(load)
         controls.addWidget(open_log)
         controls.addStretch(1)
-        layout.addLayout(controls)
+        run_controls_layout.addLayout(controls)
         self.auto_load = QtWidgets.QCheckBox("Load all final structures and trajectories after a successful run")
         self.auto_load.setChecked(True)
-        layout.addWidget(self.auto_load)
+        run_controls_layout.addWidget(self.auto_load)
+        layout.addWidget(run_controls)
+
+        output_group = QtWidgets.QGroupBox("Live MOSAICS output")
+        output_layout = QtWidgets.QVBoxLayout(output_group)
         self.log_output = QtWidgets.QPlainTextEdit()
         self.log_output.setReadOnly(True)
         self.log_output.setLineWrapMode(PLAIN_TEXT_NO_WRAP)
-        layout.addWidget(QtWidgets.QLabel("MOSAICS output"))
-        layout.addWidget(self.log_output, 1)
+        self.log_output.setMinimumHeight(130)
+        output_layout.addWidget(self.log_output)
+        layout.addWidget(output_group, 1)
 
     def _build_analysis_tab(self):
         layout = QtWidgets.QVBoxLayout(self.analysis_tab)
@@ -1735,7 +1754,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         layout = QtWidgets.QVBoxLayout(self.about_tab)
         layout.setContentsMargins(24, 22, 24, 22)
         label = QtWidgets.QLabel(
-            "<h2>PymoSAICS 0.2.2</h2>"
+            "<h2>PymoSAICS 0.2.3</h2>"
             "<p>A transparent PyMOL workbench for MOSAICS structure preparation, "
             "input generation, execution, visualization, and analysis.</p>"
             "<p><b>MOSAICS</b> was created by Peter Minary. Obtain official executables, "

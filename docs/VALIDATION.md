@@ -1,6 +1,6 @@
 # Release validation
 
-Validation was performed on 2026-07-21 and repeated for the 0.2.2 interface on
+Validation was performed on 2026-07-21 and repeated for the 0.2.3 interface on
 2026-07-22 on Apple Silicon macOS. These checks
 establish software/runtime compatibility; they do not establish scientific
 convergence for a production study.
@@ -20,6 +20,8 @@ convergence for a production study.
   selected, and disabled text under the PyMOL runtime.
 - The region workbench generated a valid center by default, rejected empty or
   overlapping-pair definitions, and wrote explicit single-region propagation.
+- The Run tab retained non-overlapping validation, execution-plan, action,
+  automatic-loading, and live-output regions at both 1092×874 and 900×710.
 
 ## Runtime and force-field checks
 

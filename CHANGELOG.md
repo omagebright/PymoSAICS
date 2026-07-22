@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.3 — 2026-07-22
+
+- Rebuilt the Run tab so validation and execution-plan diagnostics cannot overlap subsequent controls.
+- Placed diagnostics side by side, grouped all run actions, and gave live MOSAICS output the expanding workspace.
+- Added minimum-window geometry assertions for diagnostics, actions, automatic loading, and live output.
+
 ## 0.2.2 — 2026-07-22
 
 - Replaced host-native combo popups with readable, platform-independent Qt popup views.

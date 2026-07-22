@@ -11,7 +11,7 @@ and outputs remain visible to the user.
 2. Paste this URL into **Install from PyMOLWiki or any URL**:
 
    ```text
-   https://github.com/omagebright/PymoSAICS/releases/download/v0.2.2/PymoSAICS-0.2.2.zip
+   https://github.com/omagebright/PymoSAICS/releases/download/v0.2.3/PymoSAICS-0.2.3.zip
    ```
 
 3. Choose **Install**, restart PyMOL, then open **Plugin → PymoSAICS**.
