@@ -27,14 +27,41 @@ def validate_runtime(
     if not forcefields.is_dir():
         diagnostics.append(Diagnostic("error", "Force-field directory does not exist: {}".format(forcefields)))
     else:
-        expected = (forcefields / "top_database", forcefields / "pot_database")
-        if not any(path.is_dir() for path in expected):
+        try:
+            from .catalog import force_field_profile, runtime_supports_force_field
+
+            profile = force_field_profile(config.force_field_id)
+        except (ImportError, StopIteration):
             diagnostics.append(
                 Diagnostic(
-                    "warning",
-                    "Force-field directory has no top_database or pot_database subdirectory; verify its layout",
+                    "error",
+                    "Unknown force-field profile: {}".format(config.force_field_id),
                 )
             )
+        else:
+            if not runtime_supports_force_field(config.runtime_id, config.force_field_id):
+                diagnostics.append(
+                    Diagnostic(
+                        "error",
+                        "{} is not compatible with force-field profile {}".format(
+                            config.runtime_id, profile.label
+                        ),
+                    )
+                )
+            missing = [path for path in profile.all_paths() if not path.is_file()]
+            if missing:
+                diagnostics.append(
+                    Diagnostic(
+                        "error",
+                        "Selected force-field profile is incomplete: {}".format(
+                            ", ".join(path.name for path in missing)
+                        ),
+                    )
+                )
+            else:
+                diagnostics.append(
+                    Diagnostic("info", "Force-field profile is complete: {}".format(profile.label))
+                )
 
     if config.default_workspace is not None and not config.default_workspace.expanduser().is_dir():
         diagnostics.append(

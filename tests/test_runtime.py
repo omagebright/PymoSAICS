@@ -3,6 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from pymosaics.core.catalog import FORCEFIELD_ROOT
 from pymosaics.core.models import RuntimeConfig
 from pymosaics.core.runtime import build_command, has_errors, validate_runtime
 
@@ -44,6 +45,20 @@ class RuntimeTests(unittest.TestCase):
             self.assertEqual(len(command), 2)
             self.assertIn("spaces", command[0])
             self.assertNotIn(" > ", command)
+
+    def test_stable_runtime_rejects_newer_force_field_profile(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            executable = Path(temporary) / "mosaics"
+            executable.write_text("runtime", encoding="utf-8")
+            executable.chmod(0o755)
+            config = RuntimeConfig(
+                executable,
+                FORCEFIELD_ROOT,
+                runtime_id="mosaics-3.9.1",
+                force_field_id="ol24-ol3-standard",
+            )
+            diagnostics = validate_runtime(config, platform_name="linux")
+            self.assertTrue(any("not compatible" in item.message for item in diagnostics))
 
 
 if __name__ == "__main__":

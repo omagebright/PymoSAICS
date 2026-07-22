@@ -1,0 +1,416 @@
+~bend_parm[\atom1{DNA-C}\atom2{DNA-CB}\atom3{DNA-CB}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{119.200051086221}]
+~bend_parm[\atom1{DNA-C}\atom2{DNA-NA}\atom3{DNA-C}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{126.4000541719659}]
+~bend_parm[\atom1{DNA-C}\atom2{DNA-NA}\atom3{DNA-CA}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{125.2000536576751}]
+~bend_parm[\atom1{DNA-C}\atom2{DNA-NA}\atom3{DNA-H}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{116.8000500576394}]
+~bend_parm[\atom1{DNA-C1}\atom2{DNA-C1}\atom3{DNA-CA}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{117.0000501433545}]
+~bend_parm[\atom1{DNA-C1}\atom2{DNA-C1}\atom3{DNA-HA}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{119.7000513005089}]
+~bend_parm[\atom1{DNA-C1}\atom2{DNA-CA}\atom3{DNA-N2}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{120.1000514719391}]
+~bend_parm[\atom1{DNA-C1}\atom2{DNA-CA}\atom3{DNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{121.5000520719451}]
+~bend_parm[\atom1{DNA-C1}\atom2{DNA-N*}\atom3{DNA-C}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{121.6000521148027}]
+~bend_parm[\atom1{DNA-C2}\atom2{DNA-N*}\atom3{DNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{105.4000451718766}]
+~bend_parm[\atom1{DNA-C2}\atom2{DNA-NB}\atom3{DNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{103.8000444861556}]
+~bend_parm[\atom1{DNA-C7}\atom2{DNA-CT}\atom3{DNA-HC}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-C7}\atom2{DNA-OH}\atom3{DNA-HO}
+           \pot_type_bend{harm}\fk_bend{55354.51822292776}\eq_bend{108.5000465004612}]
+~bend_parm[\atom1{DNA-C7}\atom2{DNA-OS}\atom3{DNA-P}
+           \pot_type_bend{harm}\fk_bend{100644.5785871414}\eq_bend{120.5000516433694}]
+~bend_parm[\atom1{DNA-CA}\atom2{DNA-CB}\atom3{DNA-CB}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{117.3000502719272}]
+~bend_parm[\atom1{DNA-CA}\atom2{DNA-N2}\atom3{DNA-H}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{120.0000514290816}]
+~bend_parm[\atom1{DNA-CA}\atom2{DNA-NC}\atom3{DNA-C}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{120.5000516433694}]
+~bend_parm[\atom1{DNA-CA}\atom2{DNA-NC}\atom3{DNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{112.2000480861913}]
+~bend_parm[\atom1{DNA-CA}\atom2{DNA-NC}\atom3{DNA-CQ}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{118.6000508290756}]
+~bend_parm[\atom1{DNA-CB}\atom2{DNA-C}\atom3{DNA-NA}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{111.3000477004732}]
+~bend_parm[\atom1{DNA-CB}\atom2{DNA-C}\atom3{DNA-O}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{128.8000552005475}]
+~bend_parm[\atom1{DNA-CB}\atom2{DNA-CA}\atom3{DNA-N2}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{123.5000529290964}]
+~bend_parm[\atom1{DNA-CB}\atom2{DNA-CA}\atom3{DNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{117.3000502719272}]
+~bend_parm[\atom1{DNA-CB}\atom2{DNA-CB}\atom3{DNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{127.7000547291143}]
+~bend_parm[\atom1{DNA-CJ}\atom2{DNA-CT}\atom3{DNA-C7}
+           \pot_type_bend{harm}\fk_bend{40257.83143485655}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-CJ}\atom2{DNA-CT}\atom3{DNA-H1}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-CJ}\atom2{DNA-CT}\atom3{DNA-OS}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-CK}\atom2{DNA-N*}\atom3{DNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{105.4000451718766}]
+~bend_parm[\atom1{DNA-CK}\atom2{DNA-NB}\atom3{DNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{103.8000444861556}]
+~bend_parm[\atom1{DNA-CM}\atom2{DNA-C}\atom3{DNA-NA}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{114.100048900485}]
+~bend_parm[\atom1{DNA-CM}\atom2{DNA-C}\atom3{DNA-O}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{125.3000537005327}]
+~bend_parm[\atom1{DNA-CM}\atom2{DNA-CM}\atom3{DNA-C}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{120.7000517290845}]
+~bend_parm[\atom1{DNA-CM}\atom2{DNA-CM}\atom3{DNA-CT}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{119.7000513005089}]
+~bend_parm[\atom1{DNA-CM}\atom2{DNA-CT}\atom3{DNA-HC}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-CM}\atom2{DNA-N*}\atom3{DNA-C}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{121.6000521148027}]
+~bend_parm[\atom1{DNA-CQ}\atom2{DNA-NC}\atom3{DNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{111.0000475719005}]
+~bend_parm[\atom1{DNA-CT}\atom2{DNA-C7}\atom3{DNA-CT}
+           \pot_type_bend{harm}\fk_bend{40257.83143485655}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-CT}\atom2{DNA-C7}\atom3{DNA-H1}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-CT}\atom2{DNA-C7}\atom3{DNA-OH}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-CT}\atom2{DNA-C7}\atom3{DNA-OS}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-CT}\atom2{DNA-CM}\atom3{DNA-C}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{119.7000513005089}]
+~bend_parm[\atom1{DNA-CT}\atom2{DNA-CT}\atom3{DNA-C7}
+           \pot_type_bend{harm}\fk_bend{40257.83143485655}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-CT}\atom2{DNA-CT}\atom3{DNA-HC}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-CT}\atom2{DNA-N*}\atom3{DNA-C}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{117.6000504004999}]
+~bend_parm[\atom1{DNA-CT}\atom2{DNA-N*}\atom3{DNA-C1}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{121.2000519433724}]
+~bend_parm[\atom1{DNA-CT}\atom2{DNA-N*}\atom3{DNA-C2}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{128.8000552005475}]
+~bend_parm[\atom1{DNA-CT}\atom2{DNA-N*}\atom3{DNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{125.8000539148205}]
+~bend_parm[\atom1{DNA-CT}\atom2{DNA-N*}\atom3{DNA-CK}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{128.8000552005475}]
+~bend_parm[\atom1{DNA-CT}\atom2{DNA-N*}\atom3{DNA-CM}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{121.2000519433724}]
+~bend_parm[\atom1{DNA-CT}\atom2{DNA-OS}\atom3{DNA-CT}
+           \pot_type_bend{harm}\fk_bend{60386.74715228482}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-H}\atom2{DNA-N2}\atom3{DNA-H}
+           \pot_type_bend{harm}\fk_bend{35225.60250549948}\eq_bend{120.0000514290816}]
+~bend_parm[\atom1{DNA-H}\atom2{DNA-NA}\atom3{DNA-C}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{116.8000500576394}]
+~bend_parm[\atom1{DNA-H}\atom2{DNA-NA}\atom3{DNA-CA}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{118.0000505719302}]
+~bend_parm[\atom1{DNA-H1}\atom2{DNA-C7}\atom3{DNA-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-H1}\atom2{DNA-C7}\atom3{DNA-OH}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-H1}\atom2{DNA-C7}\atom3{DNA-OS}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-H1}\atom2{DNA-CJ}\atom3{DNA-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-H1}\atom2{DNA-CJ}\atom3{DNA-H1}
+           \pot_type_bend{harm}\fk_bend{35225.60250549948}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-H1}\atom2{DNA-CT}\atom3{DNA-C7}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-H1}\atom2{DNA-CT}\atom3{DNA-OS}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-H2}\atom2{DNA-CT}\atom3{DNA-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-H2}\atom2{DNA-CT}\atom3{DNA-N*}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-H4}\atom2{DNA-C1}\atom3{DNA-C1}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{119.7000513005089}]
+~bend_parm[\atom1{DNA-H4}\atom2{DNA-CM}\atom3{DNA-CM}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{119.7000513005089}]
+~bend_parm[\atom1{DNA-H5}\atom2{DNA-C2}\atom3{DNA-NB}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{123.0500530227163}]
+~bend_parm[\atom1{DNA-H5}\atom2{DNA-CK}\atom3{DNA-NB}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{123.0500530227163}]
+~bend_parm[\atom1{DNA-H5}\atom2{DNA-CQ}\atom3{DNA-NC}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{115.4500497655411}]
+~bend_parm[\atom1{DNA-HA}\atom2{DNA-C1}\atom3{DNA-CA}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{123.3000528433813}]
+~bend_parm[\atom1{DNA-HC}\atom2{DNA-CT}\atom3{DNA-HC}
+           \pot_type_bend{harm}\fk_bend{35225.60250549948}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-HO}\atom2{DNA-OH}\atom3{DNA-CJ}
+           \pot_type_bend{harm}\fk_bend{55354.51822292776}\eq_bend{108.5000465004612}]
+~bend_parm[\atom1{DNA-N*}\atom2{DNA-C}\atom3{DNA-NA}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{115.4000494576334}]
+~bend_parm[\atom1{DNA-N*}\atom2{DNA-C}\atom3{DNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{118.6000508290756}]
+~bend_parm[\atom1{DNA-N*}\atom2{DNA-C}\atom3{DNA-O}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{120.9000518147997}]
+~bend_parm[\atom1{DNA-N*}\atom2{DNA-C1}\atom3{DNA-C1}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{121.2000519433724}]
+~bend_parm[\atom1{DNA-N*}\atom2{DNA-C1}\atom3{DNA-H4}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{119.1000510433635}]
+~bend_parm[\atom1{DNA-N*}\atom2{DNA-C2}\atom3{DNA-H5}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{123.0500530227163}]
+~bend_parm[\atom1{DNA-N*}\atom2{DNA-C2}\atom3{DNA-NB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{113.9000488147699}]
+~bend_parm[\atom1{DNA-N*}\atom2{DNA-CB}\atom3{DNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{106.2000455147372}]
+~bend_parm[\atom1{DNA-N*}\atom2{DNA-CB}\atom3{DNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{126.2000540862508}]
+~bend_parm[\atom1{DNA-N*}\atom2{DNA-CK}\atom3{DNA-H5}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{123.0500530227163}]
+~bend_parm[\atom1{DNA-N*}\atom2{DNA-CK}\atom3{DNA-NB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{113.9000488147699}]
+~bend_parm[\atom1{DNA-N*}\atom2{DNA-CM}\atom3{DNA-CM}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{121.2000519433724}]
+~bend_parm[\atom1{DNA-N*}\atom2{DNA-CM}\atom3{DNA-H4}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{119.1000510433635}]
+~bend_parm[\atom1{DNA-N*}\atom2{DNA-CT}\atom3{DNA-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-N2}\atom2{DNA-CA}\atom3{DNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{119.3000511290786}]
+~bend_parm[\atom1{DNA-NA}\atom2{DNA-C}\atom3{DNA-O}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{120.600051686227}]
+~bend_parm[\atom1{DNA-NA}\atom2{DNA-CA}\atom3{DNA-N2}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{116.0000497147789}]
+~bend_parm[\atom1{DNA-NA}\atom2{DNA-CA}\atom3{DNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{123.3000528433813}]
+~bend_parm[\atom1{DNA-NB}\atom2{DNA-CB}\atom3{DNA-C}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{130.0000557148384}]
+~bend_parm[\atom1{DNA-NB}\atom2{DNA-CB}\atom3{DNA-CA}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{132.40005674342}]
+~bend_parm[\atom1{DNA-NB}\atom2{DNA-CB}\atom3{DNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{110.400047314755}]
+~bend_parm[\atom1{DNA-NC}\atom2{DNA-C}\atom3{DNA-O}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{122.5000525005208}]
+~bend_parm[\atom1{DNA-NC}\atom2{DNA-CQ}\atom3{DNA-H5}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{115.4500497655411}]
+~bend_parm[\atom1{DNA-NC}\atom2{DNA-CQ}\atom3{DNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{129.1000553291203}]
+~bend_parm[\atom1{DNA-O}\atom2{DNA-C}\atom3{DNA-NA}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{120.600051686227}]
+~bend_parm[\atom1{DNA-O2}\atom2{DNA-P}\atom3{DNA-O2}
+           \pot_type_bend{harm}\fk_bend{140902.4100219979}\eq_bend{119.900051386224}]
+~bend_parm[\atom1{DNA-O2}\atom2{DNA-P}\atom3{DNA-OS}
+           \pot_type_bend{harm}\fk_bend{100644.5785871414}\eq_bend{108.2300464420416}]
+~bend_parm[\atom1{DNA-OH}\atom2{DNA-CJ}\atom3{DNA-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-OH}\atom2{DNA-CJ}\atom3{DNA-H1}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-OS}\atom2{DNA-CJ}\atom3{DNA-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-OS}\atom2{DNA-CJ}\atom3{DNA-H1}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-OS}\atom2{DNA-CT}\atom3{DNA-C7}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-OS}\atom2{DNA-CT}\atom3{DNA-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-OS}\atom2{DNA-CT}\atom3{DNA-H2}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-OS}\atom2{DNA-CT}\atom3{DNA-N*}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{DNA-OS}\atom2{DNA-P}\atom3{DNA-O2}
+           \pot_type_bend{harm}\fk_bend{100644.5785871414}\eq_bend{108.2300464420416}]
+~bend_parm[\atom1{DNA-OS}\atom2{DNA-P}\atom3{DNA-OS}
+           \pot_type_bend{harm}\fk_bend{45290.06036421362}\eq_bend{102.6000439718647}]
+~bend_parm[\atom1{DNA-P}\atom2{DNA-OS}\atom3{DNA-CJ}
+           \pot_type_bend{harm}\fk_bend{100644.5785871414}\eq_bend{120.5000516433694}]
+~bend_parm[\atom1{RNA-C}\atom2{RNA-CB}\atom3{RNA-CB}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{119.200051086221}]
+~bend_parm[\atom1{RNA-C}\atom2{RNA-NA}\atom3{RNA-C}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{126.4000541719659}]
+~bend_parm[\atom1{RNA-C}\atom2{RNA-NA}\atom3{RNA-CA}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{125.2000536576751}]
+~bend_parm[\atom1{RNA-C}\atom2{RNA-NA}\atom3{RNA-H}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{116.8000500576394}]
+~bend_parm[\atom1{RNA-C4}\atom2{RNA-C4}\atom3{RNA-CA}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{117.0000501433545}]
+~bend_parm[\atom1{RNA-C4}\atom2{RNA-C4}\atom3{RNA-HA}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{119.7000513005089}]
+~bend_parm[\atom1{RNA-C4}\atom2{RNA-CA}\atom3{RNA-N2}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{120.1000514719391}]
+~bend_parm[\atom1{RNA-C4}\atom2{RNA-CA}\atom3{RNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{121.5000520719451}]
+~bend_parm[\atom1{RNA-C4}\atom2{RNA-N*}\atom3{RNA-C}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{121.6000521148027}]
+~bend_parm[\atom1{RNA-C5}\atom2{RNA-N*}\atom3{RNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{105.4000451718766}]
+~bend_parm[\atom1{RNA-C5}\atom2{RNA-NB}\atom3{RNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{103.8000444861556}]
+~bend_parm[\atom1{RNA-CA}\atom2{RNA-CB}\atom3{RNA-CB}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{117.3000502719272}]
+~bend_parm[\atom1{RNA-CA}\atom2{RNA-N2}\atom3{RNA-H}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{120.0000514290816}]
+~bend_parm[\atom1{RNA-CA}\atom2{RNA-NC}\atom3{RNA-C}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{120.5000516433694}]
+~bend_parm[\atom1{RNA-CA}\atom2{RNA-NC}\atom3{RNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{112.2000480861913}]
+~bend_parm[\atom1{RNA-CA}\atom2{RNA-NC}\atom3{RNA-CQ}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{118.6000508290756}]
+~bend_parm[\atom1{RNA-CB}\atom2{RNA-C}\atom3{RNA-NA}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{111.3000477004732}]
+~bend_parm[\atom1{RNA-CB}\atom2{RNA-C}\atom3{RNA-O}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{128.8000552005475}]
+~bend_parm[\atom1{RNA-CB}\atom2{RNA-CA}\atom3{RNA-N2}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{123.5000529290964}]
+~bend_parm[\atom1{RNA-CB}\atom2{RNA-CA}\atom3{RNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{117.3000502719272}]
+~bend_parm[\atom1{RNA-CB}\atom2{RNA-CB}\atom3{RNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{127.7000547291143}]
+~bend_parm[\atom1{RNA-CI}\atom2{RNA-CT}\atom3{RNA-CT}
+           \pot_type_bend{harm}\fk_bend{40257.83143485655}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-CI}\atom2{RNA-CT}\atom3{RNA-H1}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-CI}\atom2{RNA-CT}\atom3{RNA-OS}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-CP}\atom2{RNA-N*}\atom3{RNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{105.4000451718766}]
+~bend_parm[\atom1{RNA-CP}\atom2{RNA-NB}\atom3{RNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{103.8000444861556}]
+~bend_parm[\atom1{RNA-CQ}\atom2{RNA-NC}\atom3{RNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{111.0000475719005}]
+~bend_parm[\atom1{RNA-CS}\atom2{RNA-C}\atom3{RNA-NA}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{114.100048900485}]
+~bend_parm[\atom1{RNA-CS}\atom2{RNA-C}\atom3{RNA-O}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{125.3000537005327}]
+~bend_parm[\atom1{RNA-CS}\atom2{RNA-CS}\atom3{RNA-C}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{120.7000517290845}]
+~bend_parm[\atom1{RNA-CS}\atom2{RNA-CS}\atom3{RNA-HA}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{119.7000513005089}]
+~bend_parm[\atom1{RNA-CS}\atom2{RNA-N*}\atom3{RNA-C}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{121.6000521148027}]
+~bend_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-CT}
+           \pot_type_bend{harm}\fk_bend{40257.83143485655}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-H1}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-OH}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-OS}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-CT}\atom2{RNA-N*}\atom3{RNA-C}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{117.6000504004999}]
+~bend_parm[\atom1{RNA-CT}\atom2{RNA-N*}\atom3{RNA-C4}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{121.2000519433724}]
+~bend_parm[\atom1{RNA-CT}\atom2{RNA-N*}\atom3{RNA-C5}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{128.8000552005475}]
+~bend_parm[\atom1{RNA-CT}\atom2{RNA-N*}\atom3{RNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{125.8000539148205}]
+~bend_parm[\atom1{RNA-CT}\atom2{RNA-N*}\atom3{RNA-CP}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{128.8000552005475}]
+~bend_parm[\atom1{RNA-CT}\atom2{RNA-N*}\atom3{RNA-CS}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{121.2000519433724}]
+~bend_parm[\atom1{RNA-CT}\atom2{RNA-OH}\atom3{RNA-HO}
+           \pot_type_bend{harm}\fk_bend{55354.51822292776}\eq_bend{108.5000465004612}]
+~bend_parm[\atom1{RNA-CT}\atom2{RNA-OS}\atom3{RNA-CT}
+           \pot_type_bend{harm}\fk_bend{60386.74715228482}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-CT}\atom2{RNA-OS}\atom3{RNA-P}
+           \pot_type_bend{harm}\fk_bend{100644.5785871414}\eq_bend{120.5000516433694}]
+~bend_parm[\atom1{RNA-H}\atom2{RNA-N2}\atom3{RNA-H}
+           \pot_type_bend{harm}\fk_bend{35225.60250549948}\eq_bend{120.0000514290816}]
+~bend_parm[\atom1{RNA-H}\atom2{RNA-NA}\atom3{RNA-C}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{116.8000500576394}]
+~bend_parm[\atom1{RNA-H}\atom2{RNA-NA}\atom3{RNA-CA}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{118.0000505719302}]
+~bend_parm[\atom1{RNA-H1}\atom2{RNA-CI}\atom3{RNA-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-H1}\atom2{RNA-CI}\atom3{RNA-H1}
+           \pot_type_bend{harm}\fk_bend{35225.60250549948}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-H1}\atom2{RNA-CT}\atom3{RNA-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-H1}\atom2{RNA-CT}\atom3{RNA-OH}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-H1}\atom2{RNA-CT}\atom3{RNA-OS}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-H2}\atom2{RNA-CT}\atom3{RNA-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-H2}\atom2{RNA-CT}\atom3{RNA-N*}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-H4}\atom2{RNA-C4}\atom3{RNA-C4}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{119.7000513005089}]
+~bend_parm[\atom1{RNA-H4}\atom2{RNA-CS}\atom3{RNA-CS}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{119.7000513005089}]
+~bend_parm[\atom1{RNA-H5}\atom2{RNA-C5}\atom3{RNA-NB}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{123.0500530227163}]
+~bend_parm[\atom1{RNA-H5}\atom2{RNA-CP}\atom3{RNA-NB}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{123.0500530227163}]
+~bend_parm[\atom1{RNA-H5}\atom2{RNA-CQ}\atom3{RNA-NC}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{115.4500497655411}]
+~bend_parm[\atom1{RNA-HA}\atom2{RNA-C4}\atom3{RNA-CA}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{123.3000528433813}]
+~bend_parm[\atom1{RNA-HA}\atom2{RNA-CS}\atom3{RNA-C}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{119.7000513005089}]
+~bend_parm[\atom1{RNA-HO}\atom2{RNA-OH}\atom3{RNA-CI}
+           \pot_type_bend{harm}\fk_bend{55354.51822292776}\eq_bend{108.5000465004612}]
+~bend_parm[\atom1{RNA-N*}\atom2{RNA-C}\atom3{RNA-NA}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{115.4000494576334}]
+~bend_parm[\atom1{RNA-N*}\atom2{RNA-C}\atom3{RNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{118.6000508290756}]
+~bend_parm[\atom1{RNA-N*}\atom2{RNA-C}\atom3{RNA-O}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{120.9000518147997}]
+~bend_parm[\atom1{RNA-N*}\atom2{RNA-C4}\atom3{RNA-C4}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{121.2000519433724}]
+~bend_parm[\atom1{RNA-N*}\atom2{RNA-C4}\atom3{RNA-H4}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{119.1000510433635}]
+~bend_parm[\atom1{RNA-N*}\atom2{RNA-C5}\atom3{RNA-H5}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{123.0500530227163}]
+~bend_parm[\atom1{RNA-N*}\atom2{RNA-C5}\atom3{RNA-NB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{113.9000488147699}]
+~bend_parm[\atom1{RNA-N*}\atom2{RNA-CB}\atom3{RNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{106.2000455147372}]
+~bend_parm[\atom1{RNA-N*}\atom2{RNA-CB}\atom3{RNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{126.2000540862508}]
+~bend_parm[\atom1{RNA-N*}\atom2{RNA-CP}\atom3{RNA-H5}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{123.0500530227163}]
+~bend_parm[\atom1{RNA-N*}\atom2{RNA-CP}\atom3{RNA-NB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{113.9000488147699}]
+~bend_parm[\atom1{RNA-N*}\atom2{RNA-CS}\atom3{RNA-CS}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{121.2000519433724}]
+~bend_parm[\atom1{RNA-N*}\atom2{RNA-CS}\atom3{RNA-H4}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{119.1000510433635}]
+~bend_parm[\atom1{RNA-N*}\atom2{RNA-CT}\atom3{RNA-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-N2}\atom2{RNA-CA}\atom3{RNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{119.3000511290786}]
+~bend_parm[\atom1{RNA-NA}\atom2{RNA-C}\atom3{RNA-O}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{120.600051686227}]
+~bend_parm[\atom1{RNA-NA}\atom2{RNA-CA}\atom3{RNA-N2}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{116.0000497147789}]
+~bend_parm[\atom1{RNA-NA}\atom2{RNA-CA}\atom3{RNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{123.3000528433813}]
+~bend_parm[\atom1{RNA-NB}\atom2{RNA-CB}\atom3{RNA-C}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{130.0000557148384}]
+~bend_parm[\atom1{RNA-NB}\atom2{RNA-CB}\atom3{RNA-CA}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{132.40005674342}]
+~bend_parm[\atom1{RNA-NB}\atom2{RNA-CB}\atom3{RNA-CB}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{110.400047314755}]
+~bend_parm[\atom1{RNA-NC}\atom2{RNA-C}\atom3{RNA-O}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{122.5000525005208}]
+~bend_parm[\atom1{RNA-NC}\atom2{RNA-CQ}\atom3{RNA-H5}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{115.4500497655411}]
+~bend_parm[\atom1{RNA-NC}\atom2{RNA-CQ}\atom3{RNA-NC}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{129.1000553291203}]
+~bend_parm[\atom1{RNA-O}\atom2{RNA-C}\atom3{RNA-NA}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{120.600051686227}]
+~bend_parm[\atom1{RNA-O2}\atom2{RNA-P}\atom3{RNA-O2}
+           \pot_type_bend{harm}\fk_bend{140902.4100219979}\eq_bend{119.900051386224}]
+~bend_parm[\atom1{RNA-O2}\atom2{RNA-P}\atom3{RNA-OS}
+           \pot_type_bend{harm}\fk_bend{100644.5785871414}\eq_bend{108.2300464420416}]
+~bend_parm[\atom1{RNA-OH}\atom2{RNA-CI}\atom3{RNA-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-OH}\atom2{RNA-CI}\atom3{RNA-H1}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-OS}\atom2{RNA-CI}\atom3{RNA-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-OS}\atom2{RNA-CI}\atom3{RNA-H1}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-OS}\atom2{RNA-CT}\atom3{RNA-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-OS}\atom2{RNA-CT}\atom3{RNA-H2}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-OS}\atom2{RNA-CT}\atom3{RNA-N*}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{RNA-OS}\atom2{RNA-P}\atom3{RNA-O2}
+           \pot_type_bend{harm}\fk_bend{100644.5785871414}\eq_bend{108.2300464420416}]
+~bend_parm[\atom1{RNA-OS}\atom2{RNA-P}\atom3{RNA-OS}
+           \pot_type_bend{harm}\fk_bend{45290.06036421362}\eq_bend{102.6000439718647}]
+~bend_parm[\atom1{RNA-P}\atom2{RNA-OS}\atom3{RNA-CI}
+           \pot_type_bend{harm}\fk_bend{100644.5785871414}\eq_bend{120.5000516433694}]

@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pymosaics-plugin"
-version = "0.1.1"
-description = "Cross-platform PyMOL interface for an external MOSAICS runtime"
+version = "0.2.0"
+description = "Transparent MOSAICS preparation, simulation, and analysis inside PyMOL"
 readme = "README.md"
 requires-python = ">=3.9"
 license = {file = "LICENSE"}
-authors = [{name = "PymoSAICS contributors"}]
+authors = [{name = "Folorunsho Bright Omage"}]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "License :: OSI Approved :: MIT License",
@@ -26,3 +26,6 @@ Issues = "https://github.com/omagebright/PymoSAICS/issues"
 
 [tool.setuptools.packages.find]
 include = ["pymosaics*"]
+
+[tool.setuptools.package-data]
+pymosaics = ["assets/**/*"]

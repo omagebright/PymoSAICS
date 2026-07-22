@@ -1,0 +1,1785 @@
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-2C}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{27.52629224358316}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-3C}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{27.52629224358316}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-C}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-C*}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-C8}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{27.52629224358316}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-CA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-CB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-CC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-CN}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-CO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-CR}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-CT}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{27.52629224358316}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-CV}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-CW}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-CX}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{27.52629224358316}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.935511276272418}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.192593051308}\sig{2.955111048071505}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.192593051308}\sig{2.910566112164489}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.192593051308}\sig{2.999655983978523}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{3.024601148086452}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.699834754211768}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.679823344166141}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{38.13719108080734}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{38.13719108080734}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{38.17349493584433}\sig{3.233071448131292}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{41.61108688590342}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-2C}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{41.61108688590342}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-3C}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{27.52629224358316}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-C}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-C*}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-C8}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{27.52629224358316}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-CA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-CB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-CC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-CN}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-CO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-CR}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-CT}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{27.52629224358316}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-CV}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-CW}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-CX}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{27.52629224358316}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.935511276272418}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.192593051308}\sig{2.955111048071505}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.192593051308}\sig{2.910566112164489}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.192593051308}\sig{2.999655983978523}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{3.024601148086452}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.699834754211768}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.679823344166141}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{38.13719108080734}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{38.13719108080734}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{38.17349493584433}\sig{3.233071448131292}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{41.61108688590342}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-3C}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{41.61108688590342}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-C}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-C*}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-C8}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-CA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-CB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-CC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-CN}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-CO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-CR}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-CT}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-CV}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-CW}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-CX}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.935511276272418}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.955111048071505}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.910566112164489}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.999655983978523}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{3.024601148086452}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.699834754211768}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.679823344166141}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.84562106525775}\sig{3.233071448131292}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-C*}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-C8}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-CA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-CB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-CC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-CN}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-CO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-CR}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-CT}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-CV}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-CW}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-CX}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.935511276272418}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.955111048071505}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.910566112164489}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.999655983978523}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{3.024601148086452}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.699834754211768}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.679823344166141}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.84562106525775}\sig{3.233071448131292}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C*}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-C8}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{27.52629224358316}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-CA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-CB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-CC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-CN}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-CO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-CR}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-CT}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{27.52629224358316}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-CV}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-CW}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-CX}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{27.52629224358316}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.935511276272418}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.192593051308}\sig{2.955111048071505}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.192593051308}\sig{2.910566112164489}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.192593051308}\sig{2.999655983978523}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{3.024601148086452}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.699834754211768}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.679823344166141}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{38.13719108080734}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{38.13719108080734}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{38.17349493584433}\sig{3.233071448131292}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{41.61108688590342}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-C8}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{41.61108688590342}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-CA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-CB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-CC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-CN}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-CO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-CR}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-CT}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-CV}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-CW}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-CX}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.935511276272418}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.955111048071505}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.910566112164489}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.999655983978523}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{3.024601148086452}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.699834754211768}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.679823344166141}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.84562106525775}\sig{3.233071448131292}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CA}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-CB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-CC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-CN}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-CO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-CR}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-CT}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-CV}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-CW}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-CX}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.935511276272418}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.955111048071505}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.910566112164489}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.999655983978523}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{3.024601148086452}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.699834754211768}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.679823344166141}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.84562106525775}\sig{3.233071448131292}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CB}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-CC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-CN}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-CO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-CR}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-CT}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-CV}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-CW}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-CX}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.935511276272418}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.955111048071505}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.910566112164489}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.999655983978523}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{3.024601148086452}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.699834754211768}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.679823344166141}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.84562106525775}\sig{3.233071448131292}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CC}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-CN}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-CO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-CR}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-CT}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-CV}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-CW}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-CX}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.935511276272418}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.955111048071505}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.910566112164489}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.999655983978523}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{3.024601148086452}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.699834754211768}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.679823344166141}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.84562106525775}\sig{3.233071448131292}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CN}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-CO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-CR}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-CT}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-CV}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-CW}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-CX}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.935511276272418}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.955111048071505}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.910566112164489}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.999655983978523}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{3.024601148086452}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.699834754211768}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.679823344166141}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.84562106525775}\sig{3.233071448131292}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CO}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-CR}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-CT}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-CV}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-CW}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-CX}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.935511276272418}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.955111048071505}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.910566112164489}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.999655983978523}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{3.024601148086452}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.699834754211768}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.679823344166141}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.84562106525775}\sig{3.233071448131292}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CR}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-CT}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{27.52629224358316}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-CV}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-CW}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-CX}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{27.52629224358316}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.935511276272418}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.192593051308}\sig{2.955111048071505}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.192593051308}\sig{2.910566112164489}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.192593051308}\sig{2.999655983978523}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{3.024601148086452}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.699834754211768}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.679823344166141}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{38.13719108080734}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{38.13719108080734}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{38.17349493584433}\sig{3.233071448131292}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{41.61108688590342}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CT}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{41.61108688590342}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-CV}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-CW}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-CX}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.935511276272418}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.955111048071505}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.910566112164489}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.999655983978523}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{3.024601148086452}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.699834754211768}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.679823344166141}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.84562106525775}\sig{3.233071448131292}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CV}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-CW}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{21.63858439623539}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-CX}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{24.40553211524416}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.935511276272418}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.955111048071505}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.910566112164489}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.037020127885222}\sig{2.999655983978523}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{3.024601148086452}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.699834754211768}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.679823344166141}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{9.245479633605825}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{30.42314313655144}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.81343311592653}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{33.84562106525775}\sig{3.233071448131292}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CW}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{36.89348018096663}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-CX}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{27.52629224358316}\sig{3.399669508423535}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.935511276272418}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.192593051308}\sig{2.955111048071505}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.192593051308}\sig{2.910566112164489}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.192593051308}\sig{2.999655983978523}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{3.024601148086452}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.699834754211768}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.679823344166141}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{10.42770848531381}\sig{2.234373985095971}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{34.31338128546673}\sig{3.324834016099746}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{38.13719108080734}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{38.13719108080734}\sig{3.179795704786499}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{38.17349493584433}\sig{3.233071448131292}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{41.61108688590342}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-CX}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{41.61108688590342}\sig{3.481632190492446}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-H}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.950299709545298}\sig{1.069078461768407}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.950299709545298}\sig{1.770215752944854}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.861231585712453}\sig{1.789815524743942}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.861231585712453}\sig{1.745270588836925}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.861231585712453}\sig{1.834360460650959}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.950299709545298}\sig{1.859305624758888}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{5.534539230884204}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.950299709545298}\sig{1.514527820838577}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.950299709545298}\sig{1.069078461768407}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.159538492772183}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.159538492772183}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.159538492772183}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.159538492772183}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.159538492772183}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.44740568472586}\sig{2.014500181458935}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.44740568472586}\sig{2.014500181458935}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.46115857283258}\sig{2.067775924803728}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.7634119395218}\sig{2.316336667164882}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.7634119395218}\sig{2.316336667164882}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-H1}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.950299709545298}\sig{2.471353044121301}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.861231585712453}\sig{2.490952815920389}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.861231585712453}\sig{2.446407880013371}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.861231585712453}\sig{2.535497751827406}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.950299709545298}\sig{2.560442915935335}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.23567652206065}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.950299709545298}\sig{2.215665112015024}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.950299709545298}\sig{1.770215752944854}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.86067578394863}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.86067578394863}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.86067578394863}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.86067578394863}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.86067578394863}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.44740568472586}\sig{2.715637472635382}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.44740568472586}\sig{2.715637472635382}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.46115857283258}\sig{2.768913215980175}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.7634119395218}\sig{3.017473958341329}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H1}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.7634119395218}\sig{3.017473958341329}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-H4}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.774171697017801}\sig{2.510552587719476}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.774171697017801}\sig{2.466007651812459}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.774171697017801}\sig{2.555097523626493}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.861231585712453}\sig{2.580042687734423}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.255276293859739}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.861231585712453}\sig{2.235264883814112}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.861231585712453}\sig{1.789815524743942}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.70575523075256}\sig{2.880275555747717}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.70575523075256}\sig{2.880275555747717}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.70575523075256}\sig{2.880275555747717}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.70575523075256}\sig{2.880275555747717}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.70575523075256}\sig{2.880275555747717}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.1216574090998}\sig{2.73523724443447}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.1216574090998}\sig{2.73523724443447}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.13510020834465}\sig{2.788512987779262}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.40799143224614}\sig{3.037073730140417}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H4}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.40799143224614}\sig{3.037073730140417}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-H5}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.774171697017801}\sig{2.421462715905442}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.774171697017801}\sig{2.510552587719476}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.861231585712453}\sig{2.535497751827406}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.210731357952721}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.861231585712453}\sig{2.190719947907095}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.861231585712453}\sig{1.745270588836925}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.70575523075256}\sig{2.8357306198407}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.70575523075256}\sig{2.8357306198407}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.70575523075256}\sig{2.8357306198407}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.70575523075256}\sig{2.8357306198407}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.70575523075256}\sig{2.8357306198407}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.1216574090998}\sig{2.690692308527453}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.1216574090998}\sig{2.690692308527453}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.13510020834465}\sig{2.743968051872245}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.40799143224614}\sig{2.9925287942334}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-H5}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.40799143224614}\sig{2.9925287942334}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HA}\atom2{PROT-HA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.774171697017801}\sig{2.599642459533511}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HA}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.861231585712453}\sig{2.62458762364144}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HA}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.299821229766756}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HA}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.861231585712453}\sig{2.279809819721129}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HA}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.861231585712453}\sig{1.834360460650959}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HA}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.70575523075256}\sig{2.924820491654734}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HA}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.70575523075256}\sig{2.924820491654734}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HA}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.70575523075256}\sig{2.924820491654734}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HA}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.70575523075256}\sig{2.924820491654734}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HA}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.70575523075256}\sig{2.924820491654734}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HA}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.1216574090998}\sig{2.779782180341487}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HA}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.1216574090998}\sig{2.779782180341487}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HA}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.13510020834465}\sig{2.83305792368628}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HA}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.40799143224614}\sig{3.081618666047434}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HA}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.40799143224614}\sig{3.081618666047434}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HC}\atom2{PROT-HC}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.950299709545298}\sig{2.649532787749369}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HC}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.324766393874684}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HC}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.950299709545298}\sig{2.304754983829058}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HC}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.950299709545298}\sig{1.859305624758888}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HC}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.949765655762664}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HC}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.949765655762664}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HC}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.949765655762664}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HC}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.949765655762664}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HC}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.949765655762664}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HC}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.44740568472586}\sig{2.804727344449416}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HC}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.44740568472586}\sig{2.804727344449416}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HC}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.46115857283258}\sig{2.858003087794208}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HC}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.7634119395218}\sig{3.106563830155364}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HC}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.7634119395218}\sig{3.106563830155364}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HO}\atom2{PROT-HO}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{10}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HO}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{5.979988589954374}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HO}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{5.534539230884204}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HO}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.624999261887979}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HO}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.624999261887979}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HO}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.624999261887979}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HO}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.624999261887979}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HO}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.624999261887979}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HO}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.479960950574732}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HO}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.479960950574732}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HO}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.533236693919524}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HO}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.781797436280678}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HO}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{0}\sig{6.781797436280678}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HP}\atom2{PROT-HP}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.950299709545298}\sig{1.959977179908747}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HP}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.950299709545298}\sig{1.514527820838577}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HP}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.604987851842353}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HP}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.604987851842353}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HP}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.604987851842353}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HP}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.604987851842353}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HP}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.604987851842353}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HP}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.44740568472586}\sig{2.459949540529105}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HP}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.44740568472586}\sig{2.459949540529105}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HP}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.46115857283258}\sig{2.513225283873898}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HP}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.7634119395218}\sig{2.761786026235052}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HP}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.7634119395218}\sig{2.761786026235052}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HS}\atom2{PROT-HS}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{3.950299709545298}\sig{1.069078461768407}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HS}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.159538492772183}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HS}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.159538492772183}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HS}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.159538492772183}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HS}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.159538492772183}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HS}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{12.99884248935419}\sig{2.159538492772183}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HS}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.44740568472586}\sig{2.014500181458935}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HS}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.44740568472586}\sig{2.014500181458935}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HS}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{14.46115857283258}\sig{2.067775924803728}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HS}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.7634119395218}\sig{2.316336667164882}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-HS}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{15.7634119395218}\sig{2.316336667164882}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N}\atom2{PROT-N}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{42.77394589953509}\sig{3.249998523775958}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{42.77394589953509}\sig{3.249998523775958}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{42.77394589953509}\sig{3.249998523775958}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{42.77394589953509}\sig{3.249998523775958}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{42.77394589953509}\sig{3.249998523775958}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{47.54058291368695}\sig{3.104960212462711}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{47.54058291368695}\sig{3.104960212462711}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{47.58583811947323}\sig{3.158235955807503}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{51.87102852007017}\sig{3.406796698168658}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{51.87102852007017}\sig{3.406796698168658}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N2}\atom2{PROT-N2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{42.77394589953509}\sig{3.249998523775958}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N2}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{42.77394589953509}\sig{3.249998523775958}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N2}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{42.77394589953509}\sig{3.249998523775958}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N2}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{42.77394589953509}\sig{3.249998523775958}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N2}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{47.54058291368695}\sig{3.104960212462711}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N2}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{47.54058291368695}\sig{3.104960212462711}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N2}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{47.58583811947323}\sig{3.158235955807503}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N2}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{51.87102852007017}\sig{3.406796698168658}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N2}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{51.87102852007017}\sig{3.406796698168658}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N3}\atom2{PROT-N3}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{42.77394589953509}\sig{3.249998523775958}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N3}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{42.77394589953509}\sig{3.249998523775958}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N3}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{42.77394589953509}\sig{3.249998523775958}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N3}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{47.54058291368695}\sig{3.104960212462711}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N3}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{47.54058291368695}\sig{3.104960212462711}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N3}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{47.58583811947323}\sig{3.158235955807503}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N3}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{51.87102852007017}\sig{3.406796698168658}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-N3}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{51.87102852007017}\sig{3.406796698168658}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-NA}\atom2{PROT-NA}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{42.77394589953509}\sig{3.249998523775958}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-NA}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{42.77394589953509}\sig{3.249998523775958}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-NA}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{47.54058291368695}\sig{3.104960212462711}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-NA}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{47.54058291368695}\sig{3.104960212462711}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-NA}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{47.58583811947323}\sig{3.158235955807503}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-NA}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{51.87102852007017}\sig{3.406796698168658}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-NA}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{51.87102852007017}\sig{3.406796698168658}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-NB}\atom2{PROT-NB}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{42.77394589953509}\sig{3.249998523775958}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-NB}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{47.54058291368695}\sig{3.104960212462711}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-NB}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{47.54058291368695}\sig{3.104960212462711}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-NB}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{47.58583811947323}\sig{3.158235955807503}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-NB}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{51.87102852007017}\sig{3.406796698168658}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-NB}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{51.87102852007017}\sig{3.406796698168658}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-O}\atom2{PROT-O}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{52.83840375824921}\sig{2.959921901149463}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-O}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{52.83840375824921}\sig{2.959921901149463}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-O}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{52.88870210734265}\sig{3.013197644494256}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-O}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{57.65142495781338}\sig{3.26175838685541}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-O}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{57.65142495781338}\sig{3.26175838685541}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-O2}\atom2{PROT-O2}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{52.83840375824921}\sig{2.959921901149463}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-O2}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{52.88870210734265}\sig{3.013197644494256}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-O2}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{57.65142495781338}\sig{3.26175838685541}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-O2}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{57.65142495781338}\sig{3.26175838685541}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-OH}\atom2{PROT-OH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{52.93904833683636}\sig{3.066473387839048}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-OH}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{57.706304955921}\sig{3.315034130200203}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-OH}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{57.706304955921}\sig{3.315034130200203}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-S}\atom2{PROT-S}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{62.90286161696336}\sig{3.563594872561358}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-S}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{62.90286161696336}\sig{3.563594872561358}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]
+~onefour_parm[\atom1{PROT-SH}\atom2{PROT-SH}\scale{0.8333333333333334}\pot_type{lennard-jones}
+            \eps{62.90286161696336}\sig{3.563594872561358}
+            \min_dist{0.5}\max_dist{10}\res_dist{6.8}]

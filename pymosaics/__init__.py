@@ -1,6 +1,6 @@
-"""PymoSAICS: run an external MOSAICS installation from PyMOL."""
+"""PymoSAICS: a transparent MOSAICS workbench inside PyMOL."""
 
-__version__ = "0.1.1"
+__version__ = "0.2.0"
 
 
 def __init_plugin__(app=None):

@@ -1,0 +1,14 @@
+preset	ol15_ol3
+xml_sources	amber14/DNA.OL15.xml;amber14/RNA.OL3.xml
+atom_types	56
+residues	33
+bonds	145
+bends	371
+torsion_entries	487
+nonbonded_types	56
+nbfix_pairs	0
+coulomb14scale	0.8333333333
+lj14scale	0.5
+added_rtf_proper_aliases	0
+added_rtf_improper_aliases	42
+added_prmtop_proper_overlays	199

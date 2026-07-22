@@ -1,0 +1,3682 @@
+~torsion_parm[\atom1{PROT-C}\atom2{X}\atom3{X}\atom4{PROT-O}\pot_type{power}
+              \p0{10567.68075164984}\p1{0}\p2{-10567.68075164984}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167640691908e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CA}\atom2{X}\atom3{X}\atom4{PROT-H4}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CA}\atom2{X}\atom3{X}\atom4{PROT-H5}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CA}\atom2{X}\atom3{X}\atom4{PROT-HA}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CR}\atom2{X}\atom3{X}\atom4{PROT-H5}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CV}\atom2{X}\atom3{X}\atom4{PROT-H4}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CW}\atom2{X}\atom3{X}\atom4{PROT-H4}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-N}\atom2{X}\atom3{X}\atom4{PROT-H}\pot_type{power}
+              \p0{1006.445785871414}\p1{0}\p2{-1006.445785871414}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-N2}\atom2{X}\atom3{X}\atom4{PROT-H}\pot_type{power}
+              \p0{1006.445785871414}\p1{0}\p2{-1006.445785871414}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-NA}\atom2{X}\atom3{X}\atom4{PROT-H}\pot_type{power}
+              \p0{1006.445785871414}\p1{0}\p2{-1006.445785871414}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{PROT-2C}\atom3{PROT-2C}\atom4{X}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C}\atom3{PROT-C}\atom4{X}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C}\atom3{PROT-CA}\atom4{X}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C}\atom3{PROT-CB}\atom4{X}\pot_type{power}
+              \p0{3019.337357614241}\p1{0}\p2{-3019.337357614241}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C}\atom3{PROT-CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C}\atom3{PROT-CX}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C}\atom3{PROT-N}\atom4{X}\pot_type{power}
+              \p0{2516.114464678534}\p1{0}\p2{-2516.114464678534}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C}\atom3{PROT-NA}\atom4{X}\pot_type{power}
+              \p0{1358.701810926409}\p1{0}\p2{-1358.701810926409}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C}\atom3{PROT-O}\atom4{X}\pot_type{power}
+              \p0{2818.048200439958}\p1{0}\p2{-2818.048200439958}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C}\atom3{PROT-OH}\atom4{X}\pot_type{power}
+              \p0{2314.825307504251}\p1{0}\p2{-2314.825307504251}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C*}\atom3{PROT-CB}\atom4{X}\pot_type{power}
+              \p0{1685.796691334618}\p1{0}\p2{-1685.796691334618}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C*}\atom3{PROT-CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C*}\atom3{PROT-CW}\atom4{X}\pot_type{power}
+              \p0{6567.058752810975}\p1{0}\p2{-6567.058752810975}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C8}\atom3{PROT-C8}\atom4{X}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C8}\atom3{PROT-CX}\atom4{X}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C8}\atom3{PROT-N2}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-C8}\atom3{PROT-N3}\atom4{X}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CA}\atom3{PROT-2C}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{X}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CA}\atom3{PROT-CB}\atom4{X}\pot_type{power}
+              \p0{3522.560250549948}\p1{0}\p2{-3522.560250549948}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CA}\atom3{PROT-CN}\atom4{X}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CA}\atom3{PROT-CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CA}\atom3{PROT-N2}\atom4{X}\pot_type{power}
+              \p0{2415.469886091393}\p1{0}\p2{-2415.469886091393}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CA}\atom3{PROT-NA}\atom4{X}\pot_type{power}
+              \p0{1509.668678807121}\p1{0}\p2{-1509.668678807121}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CA}\atom3{PROT-OH}\atom4{X}\pot_type{power}
+              \p0{905.8012072842723}\p1{0}\p2{-905.8012072842723}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CB}\atom3{PROT-CB}\atom4{X}\pot_type{power}
+              \p0{5485.129532999204}\p1{0}\p2{-5485.129532999204}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CB}\atom3{PROT-CN}\atom4{X}\pot_type{power}
+              \p0{3019.337357614241}\p1{0}\p2{-3019.337357614241}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CB}\atom3{PROT-NB}\atom4{X}\pot_type{power}
+              \p0{2566.436753972105}\p1{0}\p2{-2566.436753972105}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CC}\atom3{PROT-CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CC}\atom3{PROT-CV}\atom4{X}\pot_type{power}
+              \p0{5183.195797237781}\p1{0}\p2{-5183.195797237781}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CC}\atom3{PROT-CW}\atom4{X}\pot_type{power}
+              \p0{5409.646099058848}\p1{0}\p2{-5409.646099058848}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CC}\atom3{PROT-NA}\atom4{X}\pot_type{power}
+              \p0{1409.024100219979}\p1{0}\p2{-1409.024100219979}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CC}\atom3{PROT-NB}\atom4{X}\pot_type{power}
+              \p0{2415.469886091393}\p1{0}\p2{-2415.469886091393}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CN}\atom3{PROT-NA}\atom4{X}\pot_type{power}
+              \p0{1534.829823453906}\p1{0}\p2{-1534.829823453906}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CR}\atom3{PROT-NA}\atom4{X}\pot_type{power}
+              \p0{2339.986452151037}\p1{0}\p2{-2339.986452151037}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CR}\atom3{PROT-NB}\atom4{X}\pot_type{power}
+              \p0{5032.228929357068}\p1{0}\p2{-5032.228929357068}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{X}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CT}\atom3{PROT-CX}\atom4{X}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CT}\atom3{PROT-N}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CT}\atom3{PROT-N2}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CT}\atom3{PROT-N3}\atom4{X}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CT}\atom3{PROT-OH}\atom4{X}\pot_type{power}
+              \p0{83.87048215595114}\p1{-251.6114464678534}\p2{0}\p3{335.4819286238045}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CT}\atom3{PROT-S}\atom4{X}\pot_type{power}
+              \p0{167.7409643119023}\p1{-503.2228929357068}\p2{0}\p3{670.9638572476091}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CT}\atom3{PROT-SH}\atom4{X}\pot_type{power}
+              \p0{125.8057232339267}\p1{-377.4171697017802}\p2{0}\p3{503.2228929357069}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CV}\atom3{PROT-NB}\atom4{X}\pot_type{power}
+              \p0{2415.469886091393}\p1{0}\p2{-2415.469886091393}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CW}\atom3{PROT-NA}\atom4{X}\pot_type{power}
+              \p0{1509.668678807121}\p1{0}\p2{-1509.668678807121}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{X}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{X}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CX}\atom3{PROT-N}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-CX}\atom3{PROT-N3}\atom4{X}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-S}\atom3{PROT-2C}\atom4{X}\pot_type{power}
+              \p0{167.7409643119023}\p1{-503.2228929357068}\p2{0}\p3{670.9638572476091}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{PROT-SH}\atom3{PROT-2C}\atom4{X}\pot_type{power}
+              \p0{125.8057232339267}\p1{-377.4171697017802}\p2{0}\p3{503.2228929357069}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{X}\atom3{PROT-O2}\atom4{PROT-O2}\pot_type{power}
+              \p0{10567.68075164984}\p1{0}\p2{-10567.68075164984}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167640691908e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CA}\atom2{X}\atom3{PROT-N2}\atom4{PROT-N2}\pot_type{power}
+              \p0{10567.68075164984}\p1{0}\p2{-10567.68075164984}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167640691908e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CO}\atom2{X}\atom3{PROT-O2}\atom4{PROT-O2}\pot_type{power}
+              \p0{10567.68075164984}\p1{0}\p2{-10567.68075164984}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167640691908e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-N}\atom2{X}\atom3{PROT-CT}\atom4{PROT-CT}\pot_type{power}
+              \p0{1006.445785871414}\p1{0}\p2{-1006.445785871414}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-N}\atom2{X}\atom3{PROT-CX}\atom4{PROT-CT}\pot_type{power}
+              \p0{1006.445785871414}\p1{0}\p2{-1006.445785871414}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-2C}\atom3{PROT-C}\atom4{PROT-N}\pot_type{power}
+              \p0{1241.954099765324}\p1{-178.1409040992402}\p2{-1019.529581087742}\p3{-171.0957835981403}
+              \p4{169.0828920263975}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-2C}\atom3{PROT-C}\atom4{PROT-O}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-2C}\atom3{PROT-C}\atom4{PROT-OH}\pot_type{power}
+              \p0{1538.352383704456}\p1{-376.9139468088444}\p2{-845.4144601319877}\p3{-50.32228929357069}
+              \p4{-265.7016874700532}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-2C}\atom3{PROT-CO}\atom4{PROT-O2}\pot_type{power}
+              \p0{456.9263867856218}\p1{0}\p2{-650.1639776729332}\p3{0}
+              \p4{257.6501211830819}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-2C}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{825.7887673074949}\p1{-429.2491276741579}\p2{-979.2717496528855}\p3{289.8563863309671}
+              \p4{583.7385558054199}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-2C}\atom3{PROT-S}\atom4{PROT-CT}\pot_type{power}
+              \p0{389.9977420251728}\p1{-749.2988875812674}\p2{215.3793981764825}\p3{833.3371107015305}
+              \p4{229.4696391786823}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-3C}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-3C}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{993.8652135480211}\p1{-89.0704520496201}\p2{-1202.702714116339}\p3{227.4567476069395}
+              \p4{462.9650615008503}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-C}\atom3{PROT-N}\atom4{PROT-H}\pot_type{power}
+              \p0{2516.114464678534}\p1{0}\p2{-2516.114464678534}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-C}\atom3{PROT-OH}\atom4{PROT-HO}\pot_type{power}
+              \p0{3303.658292122916}\p1{-948.5751531838075}\p2{-3178.355791781924}\p3{964.1750628648143}
+              \p4{454.913495213879}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-CC}\atom3{PROT-CV}\atom4{PROT-H4}\pot_type{power}
+              \p0{5183.195797237781}\p1{0}\p2{-5183.195797237781}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-CC}\atom3{PROT-CV}\atom4{PROT-NB}\pot_type{power}
+              \p0{5183.195797237781}\p1{0}\p2{-5183.195797237781}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-CC}\atom3{PROT-CW}\atom4{PROT-H4}\pot_type{power}
+              \p0{5409.646099058848}\p1{0}\p2{-5409.646099058848}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-CC}\atom3{PROT-CW}\atom4{PROT-NA}\pot_type{power}
+              \p0{5409.646099058848}\p1{0}\p2{-5409.646099058848}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-CC}\atom3{PROT-NA}\atom4{PROT-CR}\pot_type{power}
+              \p0{1409.024100219979}\p1{0}\p2{-1409.024100219979}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-CC}\atom3{PROT-NA}\atom4{PROT-H}\pot_type{power}
+              \p0{1409.024100219979}\p1{0}\p2{-1409.024100219979}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-CC}\atom3{PROT-NB}\atom4{PROT-CR}\pot_type{power}
+              \p0{2415.469886091393}\p1{0}\p2{-2415.469886091393}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-CX}\atom3{PROT-C}\atom4{PROT-N}\pot_type{power}
+              \p0{301.9337357614241}\p1{-503.2228929357069}\p2{201.2891571742828}\p3{805.1566286971311}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-CX}\atom3{PROT-N}\atom4{PROT-C}\pot_type{power}
+              \p0{1409.024100219979}\p1{-201.2891571742829}\p2{1811.602414568545}\p3{1610.313257394262}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-N}\atom3{PROT-C}\atom4{PROT-O}\pot_type{power}
+              \p0{10567.68075164984}\p1{0}\p2{-10567.68075164984}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167640691908e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-O}\atom3{PROT-C}\atom4{PROT-OH}\pot_type{power}
+              \p0{10567.68075164984}\p1{0}\p2{-10567.68075164984}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167640691908e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-O2}\atom3{PROT-CO}\atom4{PROT-O2}\pot_type{power}
+              \p0{10567.68075164984}\p1{0}\p2{-10567.68075164984}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167640691908e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-S}\atom3{PROT-CT}\atom4{PROT-H1}\pot_type{power}
+              \p0{167.7409643119023}\p1{-503.2228929357068}\p2{0}\p3{670.9638572476091}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-2C}\atom2{PROT-S}\atom3{PROT-S}\atom4{PROT-2C}\pot_type{power}
+              \p0{935.9945808604148}\p1{-818.2404239134594}\p2{2983.10530932287}\p3{1372.792051928608}
+              \p4{1525.771811381063}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-3C}\atom2{PROT-2C}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-3C}\atom2{PROT-2C}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{1242.960545551196}\p1{137.8830726643837}\p2{-1388.895184502551}\p3{289.8563863309671}
+              \p4{764.8987972622745}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-3C}\atom2{PROT-CX}\atom3{PROT-C}\atom4{PROT-N}\pot_type{power}
+              \p0{301.9337357614241}\p1{-503.2228929357069}\p2{201.2891571742828}\p3{805.1566286971311}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-3C}\atom2{PROT-CX}\atom3{PROT-N}\atom4{PROT-C}\pot_type{power}
+              \p0{1409.024100219979}\p1{-201.2891571742829}\p2{1811.602414568545}\p3{1610.313257394262}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-2C}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{955.6202736849073}\p1{476.5520796101144}\p2{-735.7118694720034}\p3{66.42542186751331}
+              \p4{430.7587963529651}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-2C}\atom3{PROT-O}\atom4{PROT-OH}\pot_type{power}
+              \p0{10567.68075164984}\p1{0}\p2{-10567.68075164984}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167640691908e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-HA}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-HA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-OH}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CT}\atom3{PROT-N}\atom4{PROT-CX}\pot_type{power}
+              \p0{1006.445785871414}\p1{0}\p2{-1006.445785871414}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CT}\atom3{PROT-N}\atom4{PROT-H}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CT}\atom3{PROT-O}\atom4{PROT-OH}\pot_type{power}
+              \p0{10567.68075164984}\p1{0}\p2{-10567.68075164984}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167640691908e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-2C}\pot_type{power}
+              \p0{825.7887673074949}\p1{-429.2491276741579}\p2{-979.2717496528855}\p3{289.8563863309671}
+              \p4{583.7385558054199}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-3C}\pot_type{power}
+              \p0{1242.960545551196}\p1{137.8830726643837}\p2{-1388.895184502551}\p3{289.8563863309671}
+              \p4{764.8987972622745}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-C}\pot_type{power}
+              \p0{955.6202736849073}\p1{476.5520796101144}\p2{-735.7118694720034}\p3{66.42542186751331}
+              \p4{430.7587963529651}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-CO}\pot_type{power}
+              \p0{859.5047011341874}\p1{125.8057232339267}\p2{-1081.92921981177}\p3{116.747711161084}
+              \p4{619.9706040967908}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-OH}\pot_type{power}
+              \p0{883.6593999951012}\p1{-938.0074724321576}\p2{-738.7312068296177}\p3{807.1695202688738}
+              \p4{519.3260255096495}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-S}\pot_type{power}
+              \p0{1141.812744071119}\p1{-184.6828017074044}\p2{-1515.707353522349}\p3{650.1639776729332}
+              \p4{1119.167713889012}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-SH}\pot_type{power}
+              \p0{676.3315681055901}\p1{-514.2937965802923}\p2{-641.1059656000905}\p3{505.2357845074497}
+              \p4{301.9337357614241}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-2C}\pot_type{power}
+              \p0{993.8652135480211}\p1{-89.0704520496201}\p2{-1202.702714116339}\p3{227.4567476069395}
+              \p4{462.9650615008503}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-CT}\pot_type{power}
+              \p0{682.3702428208185}\p1{-427.7394589953508}\p2{-741.750544187232}\p3{297.9079526179385}
+              \p4{450.8877120703934}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-OH}\pot_type{power}
+              \p0{786.0341587655741}\p1{-826.2919902004305}\p2{-747.7892189024603}\p3{634.0608450989906}
+              \p4{628.0221703837622}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CX}\atom3{PROT-C8}\atom4{PROT-C8}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-C*}\pot_type{power}
+              \p0{556.061296693956}\p1{-361.8172600207732}\p2{-653.1833150305474}\p3{471.0166277878216}
+              \p4{297.9079526179385}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-CA}\pot_type{power}
+              \p0{596.3191281288126}\p1{-262.1791272195033}\p2{-423.7136758518652}\p3{386.4751817746229}
+              \p4{-48.30939772182786}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-CC}\pot_type{power}
+              \p0{452.9006036421362}\p1{-402.5783143485655}\p2{-346.2173503397663}\p3{440.8232542116792}
+              \p4{100.6445785871414}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-CX}\atom3{PROT-N}\atom4{PROT-H}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-H}\atom3{PROT-N}\atom4{PROT-H}\pot_type{power}
+              \p0{1006.445785871414}\p1{0}\p2{-1006.445785871414}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-H5}\atom3{PROT-O}\atom4{PROT-OH}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-N}\atom3{PROT-CT}\atom4{PROT-CT}\pot_type{power}
+              \p0{1207.734943045697}\p1{402.5783143485654}\p2{2012.891571742827}\p3{805.1566286971311}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-N}\atom3{PROT-CX}\atom4{PROT-2C}\pot_type{power}
+              \p0{1409.024100219979}\p1{-201.2891571742829}\p2{1811.602414568545}\p3{1610.313257394262}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-N}\atom3{PROT-CX}\atom4{PROT-3C}\pot_type{power}
+              \p0{1409.024100219979}\p1{-201.2891571742829}\p2{1811.602414568545}\p3{1610.313257394262}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-N}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{211.3536150329969}\p1{-634.0608450989905}\p2{271.7403621852817}\p3{845.4144601319874}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-N}\atom3{PROT-CX}\atom4{PROT-C8}\pot_type{power}
+              \p0{1409.024100219979}\p1{-201.2891571742829}\p2{1811.602414568545}\p3{1610.313257394262}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C}\atom2{PROT-N}\atom3{PROT-CX}\atom4{PROT-CT}\pot_type{power}
+              \p0{1409.024100219979}\p1{-201.2891571742829}\p2{1811.602414568545}\p3{1610.313257394262}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C*}\atom2{PROT-CB}\atom3{PROT-CA}\atom4{PROT-CA}\pot_type{power}
+              \p0{3522.560250549948}\p1{0}\p2{-3522.560250549948}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C*}\atom2{PROT-CB}\atom3{PROT-CA}\atom4{PROT-HA}\pot_type{power}
+              \p0{3522.560250549948}\p1{0}\p2{-3522.560250549948}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C*}\atom2{PROT-CB}\atom3{PROT-CN}\atom4{PROT-CA}\pot_type{power}
+              \p0{3019.337357614241}\p1{0}\p2{-3019.337357614241}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C*}\atom2{PROT-CB}\atom3{PROT-CN}\atom4{PROT-NA}\pot_type{power}
+              \p0{3019.337357614241}\p1{0}\p2{-3019.337357614241}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C*}\atom2{PROT-CB}\atom3{PROT-CT}\atom4{PROT-CW}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-C*}\atom2{PROT-CT}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{556.061296693956}\p1{-361.8172600207732}\p2{-653.1833150305474}\p3{471.0166277878216}
+              \p4{297.9079526179385}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C*}\atom2{PROT-CW}\atom3{PROT-NA}\atom4{PROT-CN}\pot_type{power}
+              \p0{1509.668678807121}\p1{0}\p2{-1509.668678807121}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C*}\atom2{PROT-CW}\atom3{PROT-NA}\atom4{PROT-H}\pot_type{power}
+              \p0{1509.668678807121}\p1{0}\p2{-1509.668678807121}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C*}\atom2{PROT-NA}\atom3{PROT-CW}\atom4{PROT-H4}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-C8}\atom2{PROT-C8}\atom3{PROT-C8}\atom4{PROT-C8}\pot_type{power}
+              \p0{442.836145783422}\p1{-372.3849407724231}\p2{-251.6114464678534}\p3{362.3204829137089}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C8}\atom2{PROT-C8}\atom3{PROT-C8}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C8}\atom2{PROT-C8}\atom3{PROT-C8}\atom4{PROT-HC}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C8}\atom2{PROT-C8}\atom3{PROT-C8}\atom4{PROT-HP}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C8}\atom2{PROT-C8}\atom3{PROT-C8}\atom4{PROT-N2}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C8}\atom2{PROT-C8}\atom3{PROT-C8}\atom4{PROT-N3}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C8}\atom2{PROT-C8}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C8}\atom2{PROT-C8}\atom3{PROT-N2}\atom4{PROT-CA}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C8}\atom2{PROT-C8}\atom3{PROT-N3}\atom4{PROT-H}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C8}\atom2{PROT-CA}\atom3{PROT-N2}\atom4{PROT-H}\pot_type{power}
+              \p0{1006.445785871414}\p1{0}\p2{-1006.445785871414}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-C8}\atom2{PROT-CX}\atom3{PROT-C}\atom4{PROT-N}\pot_type{power}
+              \p0{301.9337357614241}\p1{-503.2228929357069}\p2{201.2891571742828}\p3{805.1566286971311}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C8}\atom2{PROT-CX}\atom3{PROT-N}\atom4{PROT-C}\pot_type{power}
+              \p0{1409.024100219979}\p1{-201.2891571742829}\p2{1811.602414568545}\p3{1610.313257394262}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-C8}\atom2{PROT-N2}\atom3{PROT-CA}\atom4{PROT-N2}\pot_type{power}
+              \p0{2415.469886091393}\p1{0}\p2{-2415.469886091393}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-2C}\atom3{PROT-CA}\atom4{PROT-CA}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-C}\atom3{PROT-CA}\atom4{PROT-CA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-C}\atom3{PROT-CA}\atom4{PROT-HA}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-C}\atom3{PROT-CA}\atom4{PROT-HA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-C}\atom3{PROT-OH}\atom4{PROT-HO}\pot_type{power}
+              \p0{954.1106050061003}\p1{0}\p2{-1150.367533251026}\p3{0}
+              \p4{261.6759043265675}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-CA}\atom3{PROT-C}\atom4{PROT-CA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-CA}\atom3{PROT-C}\atom4{PROT-OH}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-CA}\atom3{PROT-C}\atom4{PROT-OH}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-C}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-CA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-CB}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-CT}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-HA}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-HA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-OH}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-CA}\atom3{PROT-CN}\atom4{PROT-CB}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-CB}\atom3{PROT-CA}\atom4{PROT-HA}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-CN}\atom3{PROT-CB}\atom4{PROT-CA}\pot_type{power}
+              \p0{3019.337357614241}\p1{0}\p2{-3019.337357614241}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-CT}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{596.3191281288126}\p1{-262.1791272195033}\p2{-423.7136758518652}\p3{386.4751817746229}
+              \p4{-48.30939772182786}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CA}\atom2{PROT-H}\atom3{PROT-N2}\atom4{PROT-H}\pot_type{power}
+              \p0{1006.445785871414}\p1{0}\p2{-1006.445785871414}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CB}\atom2{PROT-C*}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CB}\atom2{PROT-CT}\atom3{PROT-C*}\atom4{PROT-CW}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CC}\atom2{PROT-CR}\atom3{PROT-NA}\atom4{PROT-H}\pot_type{power}
+              \p0{1006.445785871414}\p1{0}\p2{-1006.445785871414}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CC}\atom2{PROT-CT}\atom3{PROT-CV}\atom4{PROT-NA}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CC}\atom2{PROT-CT}\atom3{PROT-CW}\atom4{PROT-NA}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CC}\atom2{PROT-CT}\atom3{PROT-CW}\atom4{PROT-NB}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CC}\atom2{PROT-CT}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{452.9006036421362}\p1{-402.5783143485655}\p2{-346.2173503397663}\p3{440.8232542116792}
+              \p4{100.6445785871414}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CC}\atom2{PROT-CV}\atom3{PROT-NB}\atom4{PROT-CR}\pot_type{power}
+              \p0{2415.469886091393}\p1{0}\p2{-2415.469886091393}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CC}\atom2{PROT-CW}\atom3{PROT-NA}\atom4{PROT-CR}\pot_type{power}
+              \p0{1509.668678807121}\p1{0}\p2{-1509.668678807121}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CC}\atom2{PROT-CW}\atom3{PROT-NA}\atom4{PROT-H}\pot_type{power}
+              \p0{1509.668678807121}\p1{0}\p2{-1509.668678807121}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CC}\atom2{PROT-NA}\atom3{PROT-CR}\atom4{PROT-H5}\pot_type{power}
+              \p0{2339.986452151037}\p1{0}\p2{-2339.986452151037}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CC}\atom2{PROT-NA}\atom3{PROT-CR}\atom4{PROT-NA}\pot_type{power}
+              \p0{2339.986452151037}\p1{0}\p2{-2339.986452151037}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CC}\atom2{PROT-NA}\atom3{PROT-CR}\atom4{PROT-NB}\pot_type{power}
+              \p0{2339.986452151037}\p1{0}\p2{-2339.986452151037}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CC}\atom2{PROT-NA}\atom3{PROT-CW}\atom4{PROT-H4}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CC}\atom2{PROT-NB}\atom3{PROT-CR}\atom4{PROT-H5}\pot_type{power}
+              \p0{5032.228929357068}\p1{0}\p2{-5032.228929357068}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CC}\atom2{PROT-NB}\atom3{PROT-CR}\atom4{PROT-NA}\pot_type{power}
+              \p0{5032.228929357068}\p1{0}\p2{-5032.228929357068}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CC}\atom2{PROT-NB}\atom3{PROT-CV}\atom4{PROT-H4}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CN}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-CA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CN}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-HA}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CN}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-HA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CN}\atom2{PROT-CB}\atom3{PROT-CA}\atom4{PROT-CA}\pot_type{power}
+              \p0{3522.560250549948}\p1{0}\p2{-3522.560250549948}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CN}\atom2{PROT-CB}\atom3{PROT-CA}\atom4{PROT-HA}\pot_type{power}
+              \p0{3522.560250549948}\p1{0}\p2{-3522.560250549948}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CO}\atom2{PROT-2C}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{859.5047011341874}\p1{125.8057232339267}\p2{-1081.92921981177}\p3{116.747711161084}
+              \p4{619.9706040967908}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CR}\atom2{PROT-CW}\atom3{PROT-NA}\atom4{PROT-H}\pot_type{power}
+              \p0{1006.445785871414}\p1{0}\p2{-1006.445785871414}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CR}\atom2{PROT-NA}\atom3{PROT-CC}\atom4{PROT-CV}\pot_type{power}
+              \p0{1409.024100219979}\p1{0}\p2{-1409.024100219979}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CR}\atom2{PROT-NA}\atom3{PROT-CC}\atom4{PROT-CW}\pot_type{power}
+              \p0{1409.024100219979}\p1{0}\p2{-1409.024100219979}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CR}\atom2{PROT-NA}\atom3{PROT-CW}\atom4{PROT-H4}\pot_type{power}
+              \p0{1509.668678807121}\p1{0}\p2{-1509.668678807121}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CR}\atom2{PROT-NB}\atom3{PROT-CC}\atom4{PROT-CW}\pot_type{power}
+              \p0{2415.469886091393}\p1{0}\p2{-2415.469886091393}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CR}\atom2{PROT-NB}\atom3{PROT-CV}\atom4{PROT-H4}\pot_type{power}
+              \p0{2415.469886091393}\p1{0}\p2{-2415.469886091393}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-2C}\atom3{PROT-3C}\atom4{PROT-HC}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-3C}\atom3{PROT-2C}\atom4{PROT-CT}\pot_type{power}
+              \p0{458.4360554644289}\p1{-59.88352425934913}\p2{-979.2717496528855}\p3{215.3793981764825}
+              \p4{901.7754241407868}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-3C}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-3C}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-3C}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{682.3702428208185}\p1{-427.7394589953508}\p2{-741.750544187232}\p3{297.9079526179385}
+              \p4{450.8877120703934}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-3C}\atom3{PROT-OH}\atom4{PROT-HO}\pot_type{power}
+              \p0{570.1515376961559}\p1{-32.70948804082093}\p2{-272.7468079711531}\p3{475.0424109313072}
+              \p4{193.2375908873114}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-C}\atom3{PROT-N}\atom4{PROT-CX}\pot_type{power}
+              \p0{2516.114464678534}\p1{0}\p2{-2516.114464678534}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-C}\atom3{PROT-N}\atom4{PROT-H}\pot_type{power}
+              \p0{2516.114464678534}\p1{0}\p2{-2516.114464678534}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-C*}\atom3{PROT-CB}\atom4{PROT-CA}\pot_type{power}
+              \p0{1685.796691334618}\p1{0}\p2{-1685.796691334618}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-C*}\atom3{PROT-CB}\atom4{PROT-CN}\pot_type{power}
+              \p0{1685.796691334618}\p1{0}\p2{-1685.796691334618}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-C*}\atom3{PROT-CW}\atom4{PROT-H4}\pot_type{power}
+              \p0{6567.058752810975}\p1{0}\p2{-6567.058752810975}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-C*}\atom3{PROT-CW}\atom4{PROT-NA}\pot_type{power}
+              \p0{6567.058752810975}\p1{0}\p2{-6567.058752810975}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-CA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-HA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CC}\atom3{PROT-CV}\atom4{PROT-H4}\pot_type{power}
+              \p0{5183.195797237781}\p1{0}\p2{-5183.195797237781}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CC}\atom3{PROT-CV}\atom4{PROT-NB}\pot_type{power}
+              \p0{5183.195797237781}\p1{0}\p2{-5183.195797237781}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CC}\atom3{PROT-CW}\atom4{PROT-H4}\pot_type{power}
+              \p0{5409.646099058848}\p1{0}\p2{-5409.646099058848}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CC}\atom3{PROT-CW}\atom4{PROT-NA}\pot_type{power}
+              \p0{5409.646099058848}\p1{0}\p2{-5409.646099058848}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CC}\atom3{PROT-NA}\atom4{PROT-CR}\pot_type{power}
+              \p0{1409.024100219979}\p1{0}\p2{-1409.024100219979}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CC}\atom3{PROT-NA}\atom4{PROT-H}\pot_type{power}
+              \p0{1409.024100219979}\p1{0}\p2{-1409.024100219979}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CC}\atom3{PROT-NB}\atom4{PROT-CR}\pot_type{power}
+              \p0{2415.469886091393}\p1{0}\p2{-2415.469886091393}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-C}\atom4{PROT-N}\pot_type{power}
+              \p0{301.9337357614241}\p1{-503.2228929357069}\p2{201.2891571742828}\p3{805.1566286971311}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-CT}\pot_type{power}
+              \p0{442.836145783422}\p1{-372.3849407724231}\p2{-251.6114464678534}\p3{362.3204829137089}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-CX}\pot_type{power}
+              \p0{442.836145783422}\p1{-372.3849407724231}\p2{-251.6114464678534}\p3{362.3204829137089}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-HP}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-N3}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-CX}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-CX}\atom4{PROT-HP}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-N}\atom4{PROT-C}\pot_type{power}
+              \p0{1207.734943045697}\p1{402.5783143485654}\p2{2012.891571742827}\p3{805.1566286971311}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-N3}\atom4{PROT-CX}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-N3}\atom4{PROT-H}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-OH}\atom4{PROT-HO}\pot_type{power}
+              \p0{206.3213861036398}\p1{-115.7412653752126}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CV}\atom3{PROT-CC}\atom4{PROT-NA}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CW}\atom3{PROT-CC}\atom4{PROT-NA}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CW}\atom3{PROT-CC}\atom4{PROT-NB}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CX}\atom3{PROT-C}\atom4{PROT-N}\pot_type{power}
+              \p0{301.9337357614241}\p1{-503.2228929357069}\p2{201.2891571742828}\p3{805.1566286971311}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-CX}\atom3{PROT-N}\atom4{PROT-C}\pot_type{power}
+              \p0{1409.024100219979}\p1{-201.2891571742829}\p2{1811.602414568545}\p3{1610.313257394262}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-N}\atom3{PROT-C}\atom4{PROT-O}\pot_type{power}
+              \p0{10567.68075164984}\p1{0}\p2{-10567.68075164984}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167640691908e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-N3}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-N3}\atom3{PROT-CX}\atom4{PROT-CT}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-N3}\atom3{PROT-CX}\atom4{PROT-HP}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CT}\atom2{PROT-S}\atom3{PROT-S}\atom4{PROT-CT}\pot_type{power}
+              \p0{301.9337357614243}\p1{-905.8012072842723}\p2{3522.560250549948}\p3{1207.734943045696}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CV}\atom2{PROT-CC}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CW}\atom2{PROT-C*}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CW}\atom2{PROT-C*}\atom3{PROT-CB}\atom4{PROT-CA}\pot_type{power}
+              \p0{1685.796691334618}\p1{0}\p2{-1685.796691334618}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CW}\atom2{PROT-C*}\atom3{PROT-CB}\atom4{PROT-CN}\pot_type{power}
+              \p0{1685.796691334618}\p1{0}\p2{-1685.796691334618}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CW}\atom2{PROT-CC}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CW}\atom2{PROT-CN}\atom3{PROT-NA}\atom4{PROT-H}\pot_type{power}
+              \p0{1006.445785871414}\p1{0}\p2{-1006.445785871414}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CW}\atom2{PROT-NA}\atom3{PROT-CN}\atom4{PROT-CA}\pot_type{power}
+              \p0{1534.829823453906}\p1{0}\p2{-1534.829823453906}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CW}\atom2{PROT-NA}\atom3{PROT-CN}\atom4{PROT-CB}\pot_type{power}
+              \p0{1534.829823453906}\p1{0}\p2{-1534.829823453906}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-2C}\atom4{PROT-C}\pot_type{power}
+              \p0{444.8490373551649}\p1{523.3518086531351}\p2{-472.0230735736931}\p3{-829.3113275580448}
+              \p4{555.5580738010204}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-2C}\atom4{PROT-CO}\pot_type{power}
+              \p0{1217.296178011475}\p1{229.972862071618}\p2{2.012891571742841}\p3{-1223.838075619639}
+              \p4{-225.4438560351967}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-2C}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-2C}\atom4{PROT-S}\pot_type{power}
+              \p0{246.0759946455606}\p1{185.6892474932758}\p2{133.857289520898}\p3{32.20626514788524}
+              \p4{112.7219280175983}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-3C}\atom4{PROT-CT}\pot_type{power}
+              \p0{469.5069591090145}\p1{-23.6514759679782}\p2{-747.7892189024603}\p3{285.8306031874815}
+              \p4{720.6151826839322}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-3C}\atom4{PROT-HC}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-C}\atom4{PROT-N}\pot_type{power}
+              \p0{1064.31641855902}\p1{37.74171697017806}\p2{-520.3324712955209}\p3{-605.8803630945911}
+              \p4{32.20626514788524}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-C}\atom4{PROT-O}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-C}\atom4{PROT-OH}\pot_type{power}
+              \p0{1186.096358649461}\p1{-615.4415980603695}\p2{222.4245186775826}\p3{16.10313257394262}
+              \p4{-801.1308455536454}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-CO}\atom4{PROT-O2}\pot_type{power}
+              \p0{773.9568093351171}\p1{0}\p2{-649.1575318870619}\p3{0}
+              \p4{-124.7992774480553}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-OH}\atom4{PROT-HO}\pot_type{power}
+              \p0{247.5856633243678}\p1{-296.9015068320671}\p2{418.6814469225081}\p3{537.4420496553349}
+              \p4{28.18048200439959}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-S}\atom4{PROT-S}\pot_type{power}
+              \p0{180.1537956709831}\p1{-427.7394589953508}\p2{1213.773617760925}\p3{607.8932546663339}
+              \p4{-543.4807243705634}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-SH}\atom4{PROT-HS}\pot_type{power}
+              \p0{203.3020487460255}\p1{-334.1400009093094}\p2{495.1713266487356}\p3{507.2486760791925}
+              \p4{120.7734943045696}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-3C}\atom3{PROT-2C}\atom4{PROT-CT}\pot_type{power}
+              \p0{510.2680134368068}\p1{63.40608450989905}\p2{-872.5884963505157}\p3{215.3793981764825}
+              \p4{925.9301230017006}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-3C}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-3C}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-3C}\atom3{PROT-OH}\atom4{PROT-HO}\pot_type{power}
+              \p0{134.8637353067694}\p1{-359.3011455560947}\p2{200.2827113884113}\p3{475.0424109313072}
+              \p4{52.33518086531351}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-C}\atom3{PROT-N}\atom4{PROT-CT}\pot_type{power}
+              \p0{2516.114464678534}\p1{0}\p2{-2516.114464678534}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-C}\atom3{PROT-N}\atom4{PROT-CX}\pot_type{power}
+              \p0{2516.114464678534}\p1{0}\p2{-2516.114464678534}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-C}\atom3{PROT-N}\atom4{PROT-H}\pot_type{power}
+              \p0{2516.114464678534}\p1{0}\p2{-2516.114464678534}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-C8}\atom3{PROT-C8}\atom4{PROT-C8}\pot_type{power}
+              \p0{442.836145783422}\p1{-372.3849407724231}\p2{-251.6114464678534}\p3{362.3204829137089}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-C8}\atom3{PROT-C8}\atom4{PROT-HC}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-CT}\atom3{PROT-C}\atom4{PROT-N}\pot_type{power}
+              \p0{301.9337357614241}\p1{-503.2228929357069}\p2{201.2891571742828}\p3{805.1566286971311}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-CT}\atom3{PROT-C*}\atom4{PROT-CB}\pot_type{power}
+              \p0{595.8159052358769}\p1{-1052.742292021499}\p2{793.079279266674}\p3{1648.558197257375}
+              \p4{-382.4493986311372}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-CT}\atom3{PROT-C*}\atom4{PROT-CW}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-CT}\atom3{PROT-CA}\atom4{PROT-CA}\pot_type{power}
+              \p0{69.44475922512756}\p1{0}\p2{123.7928316621839}\p3{0}
+              \p4{-193.2375908873114}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-CT}\atom3{PROT-CC}\atom4{PROT-CV}\pot_type{power}
+              \p0{400.5654227768226}\p1{-154.9926510241978}\p2{795.0921708384169}\p3{-245.5727717526249}
+              \p4{-40.25783143485655}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-CT}\atom3{PROT-CC}\atom4{PROT-NA}\pot_type{power}
+              \p0{820.2533154852022}\p1{-1116.148376531398}\p2{-245.5727717526249}\p3{1380.84361821558}
+              \p4{-148.9539763089692}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-CT}\atom3{PROT-CC}\atom4{PROT-NB}\pot_type{power}
+              \p0{719.6087368980608}\p1{-769.9310261916315}\p2{394.5267480615942}\p3{1489.539763089692}
+              \p4{-189.2118077438258}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-CT}\pot_type{power}
+              \p0{442.836145783422}\p1{-372.3849407724231}\p2{-251.6114464678534}\p3{362.3204829137089}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-N}\atom3{PROT-C}\atom4{PROT-O}\pot_type{power}
+              \p0{10567.68075164984}\p1{0}\p2{-10567.68075164984}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167640691908e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-CX}\atom2{PROT-O2}\atom3{PROT-C}\atom4{PROT-O2}\pot_type{power}
+              \p0{10567.68075164984}\p1{0}\p2{-10567.68075164984}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167640691908e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-N}\atom3{PROT-C}\atom4{PROT-O}\pot_type{power}
+              \p0{3522.560250549948}\p1{1006.445785871414}\p2{-2516.114464678534}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-N2}\atom3{PROT-CA}\atom4{PROT-N2}\pot_type{power}
+              \p0{2415.469886091393}\p1{0}\p2{-2415.469886091393}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-N3}\atom3{PROT-CT}\atom4{PROT-CT}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-N3}\atom3{PROT-CT}\atom4{PROT-HP}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-N3}\atom3{PROT-CX}\atom4{PROT-2C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-N3}\atom3{PROT-CX}\atom4{PROT-3C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-N3}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-N3}\atom3{PROT-CX}\atom4{PROT-C8}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-N3}\atom3{PROT-CX}\atom4{PROT-CT}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-N3}\atom3{PROT-CX}\atom4{PROT-HP}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-NA}\atom3{PROT-CC}\atom4{PROT-CV}\pot_type{power}
+              \p0{1409.024100219979}\p1{0}\p2{-1409.024100219979}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-NA}\atom3{PROT-CC}\atom4{PROT-CW}\pot_type{power}
+              \p0{1409.024100219979}\p1{0}\p2{-1409.024100219979}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-NA}\atom3{PROT-CN}\atom4{PROT-CA}\pot_type{power}
+              \p0{1534.829823453906}\p1{0}\p2{-1534.829823453906}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-NA}\atom3{PROT-CN}\atom4{PROT-CB}\pot_type{power}
+              \p0{1534.829823453906}\p1{0}\p2{-1534.829823453906}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-NA}\atom3{PROT-CR}\atom4{PROT-H5}\pot_type{power}
+              \p0{2339.986452151037}\p1{0}\p2{-2339.986452151037}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-NA}\atom3{PROT-CR}\atom4{PROT-NA}\pot_type{power}
+              \p0{2339.986452151037}\p1{0}\p2{-2339.986452151037}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-NA}\atom3{PROT-CR}\atom4{PROT-NB}\pot_type{power}
+              \p0{2339.986452151037}\p1{0}\p2{-2339.986452151037}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H}\atom2{PROT-NA}\atom3{PROT-CW}\atom4{PROT-H4}\pot_type{power}
+              \p0{1509.668678807121}\p1{0}\p2{-1509.668678807121}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-2C}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-2C}\atom3{PROT-OH}\atom4{PROT-HO}\pot_type{power}
+              \p0{83.87048215595114}\p1{-251.6114464678534}\p2{0}\p3{335.4819286238045}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-2C}\atom3{PROT-S}\atom4{PROT-CT}\pot_type{power}
+              \p0{167.7409643119023}\p1{-503.2228929357068}\p2{0}\p3{670.9638572476091}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-2C}\atom3{PROT-S}\atom4{PROT-S}\pot_type{power}
+              \p0{167.7409643119023}\p1{-503.2228929357068}\p2{0}\p3{670.9638572476091}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-2C}\atom3{PROT-SH}\atom4{PROT-HS}\pot_type{power}
+              \p0{125.8057232339267}\p1{-377.4171697017802}\p2{0}\p3{503.2228929357069}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-3C}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-3C}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-3C}\atom3{PROT-OH}\atom4{PROT-HO}\pot_type{power}
+              \p0{83.87048215595114}\p1{-251.6114464678534}\p2{0}\p3{335.4819286238045}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CT}\atom3{PROT-C}\atom4{PROT-O}\pot_type{power}
+              \p0{442.8361457834221}\p1{523.3518086531352}\p2{0}\p3{-161.0313257394262}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-CT}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-CX}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-OH}\pot_type{power}
+              \p0{125.8057232339267}\p1{125.8057232339267}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CT}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CT}\atom3{PROT-OH}\atom4{PROT-HO}\pot_type{power}
+              \p0{83.87048215595114}\p1{-251.6114464678534}\p2{0}\p3{335.4819286238045}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CT}\atom3{PROT-S}\atom4{PROT-2C}\pot_type{power}
+              \p0{167.7409643119023}\p1{-503.2228929357068}\p2{0}\p3{670.9638572476091}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-2C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-3C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-CO}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-OH}\pot_type{power}
+              \p0{125.8057232339267}\p1{125.8057232339267}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-S}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-SH}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-2C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-CT}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-OH}\pot_type{power}
+              \p0{125.8057232339267}\p1{125.8057232339267}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-C}\atom4{PROT-O}\pot_type{power}
+              \p0{442.8361457834221}\p1{523.3518086531352}\p2{0}\p3{-161.0313257394262}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-C8}\atom4{PROT-C8}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-C8}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-C*}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-CA}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-CC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-CT}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-OH}\pot_type{power}
+              \p0{125.8057232339267}\p1{125.8057232339267}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-SH}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H4}\atom2{PROT-CW}\atom3{PROT-C*}\atom4{PROT-CB}\pot_type{power}
+              \p0{6567.058752810975}\p1{0}\p2{-6567.058752810975}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H4}\atom2{PROT-CW}\atom3{PROT-NA}\atom4{PROT-CN}\pot_type{power}
+              \p0{1509.668678807121}\p1{0}\p2{-1509.668678807121}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H4}\atom2{PROT-CW}\atom3{PROT-NA}\atom4{PROT-H}\pot_type{power}
+              \p0{1509.668678807121}\p1{0}\p2{-1509.668678807121}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H5}\atom2{PROT-CR}\atom3{PROT-NA}\atom4{PROT-CW}\pot_type{power}
+              \p0{2339.986452151037}\p1{0}\p2{-2339.986452151037}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H5}\atom2{PROT-CR}\atom3{PROT-NA}\atom4{PROT-H}\pot_type{power}
+              \p0{2339.986452151037}\p1{0}\p2{-2339.986452151037}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-H5}\atom2{PROT-CR}\atom3{PROT-NB}\atom4{PROT-CV}\pot_type{power}
+              \p0{5032.228929357068}\p1{0}\p2{-5032.228929357068}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HA}\atom2{PROT-CA}\atom3{PROT-C}\atom4{PROT-CA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HA}\atom2{PROT-CA}\atom3{PROT-C}\atom4{PROT-OH}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HA}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-C}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HA}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-CA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HA}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-CB}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HA}\atom2{PROT-CA}\atom3{PROT-CA}\atom4{PROT-HA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HA}\atom2{PROT-CA}\atom3{PROT-CN}\atom4{PROT-CB}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-2C}\atom3{PROT-2C}\atom4{PROT-C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-2C}\atom3{PROT-2C}\atom4{PROT-CO}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-2C}\atom3{PROT-2C}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-2C}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{75.48343394035602}\p1{-226.4503018210681}\p2{0}\p3{301.9337357614241}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-2C}\atom3{PROT-2C}\atom4{PROT-S}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-2C}\atom3{PROT-3C}\atom4{PROT-CT}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-2C}\atom3{PROT-3C}\atom4{PROT-CX}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-2C}\atom3{PROT-3C}\atom4{PROT-HC}\pot_type{power}
+              \p0{75.48343394035602}\p1{-226.4503018210681}\p2{0}\p3{301.9337357614241}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-2C}\atom3{PROT-C}\atom4{PROT-O}\pot_type{power}
+              \p0{442.8361457834221}\p1{523.3518086531352}\p2{0}\p3{-161.0313257394262}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-2C}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{75.48343394035602}\p1{-226.4503018210681}\p2{0}\p3{301.9337357614241}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-2C}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-3C}\atom3{PROT-2C}\atom4{PROT-CT}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-3C}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{75.48343394035602}\p1{-226.4503018210681}\p2{0}\p3{301.9337357614241}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-3C}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{75.48343394035602}\p1{-226.4503018210681}\p2{0}\p3{301.9337357614241}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-3C}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-C8}\atom3{PROT-C8}\atom4{PROT-C8}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-C8}\atom3{PROT-C8}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-C8}\atom3{PROT-C8}\atom4{PROT-HC}\pot_type{power}
+              \p0{75.48343394035602}\p1{-226.4503018210681}\p2{0}\p3{301.9337357614241}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-C8}\atom3{PROT-C8}\atom4{PROT-HP}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-C8}\atom3{PROT-C8}\atom4{PROT-N2}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-C8}\atom3{PROT-C8}\atom4{PROT-N3}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-C8}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-2C}\atom4{PROT-3C}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{75.48343394035602}\p1{-226.4503018210681}\p2{0}\p3{301.9337357614241}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-3C}\atom4{PROT-2C}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-3C}\atom4{PROT-CT}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-3C}\atom4{PROT-CX}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-3C}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-3C}\atom4{PROT-HC}\pot_type{power}
+              \p0{75.48343394035602}\p1{-226.4503018210681}\p2{0}\p3{301.9337357614241}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-3C}\atom4{PROT-OH}\pot_type{power}
+              \p0{125.8057232339267}\p1{125.8057232339267}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-C}\atom4{PROT-O}\pot_type{power}
+              \p0{442.8361457834221}\p1{523.3518086531352}\p2{0}\p3{-161.0313257394262}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-CT}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-CX}\pot_type{power}
+              \p0{80.5156628697131}\p1{-241.5469886091393}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{75.48343394035602}\p1{-226.4503018210681}\p2{0}\p3{301.9337357614241}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-HP}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-N3}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-OH}\pot_type{power}
+              \p0{125.8057232339267}\p1{125.8057232339267}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-CX}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-CX}\atom4{PROT-HP}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HO}\atom2{PROT-OH}\atom3{PROT-2C}\atom4{PROT-H1}\pot_type{power}
+              \p0{83.87048215595114}\p1{-251.6114464678534}\p2{0}\p3{335.4819286238045}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HO}\atom2{PROT-OH}\atom3{PROT-3C}\atom4{PROT-H1}\pot_type{power}
+              \p0{83.87048215595114}\p1{-251.6114464678534}\p2{0}\p3{335.4819286238045}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HO}\atom2{PROT-OH}\atom3{PROT-C}\atom4{PROT-CA}\pot_type{power}
+              \p0{954.1106050061003}\p1{0}\p2{-1150.367533251026}\p3{0}
+              \p4{261.6759043265675}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HO}\atom2{PROT-OH}\atom3{PROT-C}\atom4{PROT-O}\pot_type{power}
+              \p0{3270.948804082094}\p1{956.123496577843}\p2{-2314.825307504251}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HO}\atom2{PROT-OH}\atom3{PROT-CT}\atom4{PROT-CT}\pot_type{power}
+              \p0{206.3213861036398}\p1{-115.7412653752126}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HO}\atom2{PROT-OH}\atom3{PROT-CT}\atom4{PROT-CX}\pot_type{power}
+              \p0{206.3213861036398}\p1{-115.7412653752126}\p2{0}\p3{322.0626514788524}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-C8}\atom3{PROT-N3}\atom4{PROT-H}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-CT}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CT}\atom3{PROT-N3}\atom4{PROT-CX}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CT}\atom3{PROT-N3}\atom4{PROT-H}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-2C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-3C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-CO}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-OH}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-S}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-SH}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-2C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-CT}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-OH}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-C8}\atom4{PROT-C8}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-C8}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-C*}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-CA}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-CC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-HP}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-C}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-C}\atom3{PROT-CT}\atom4{PROT-H}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-C}\atom3{PROT-CT}\atom4{PROT-O}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-C}\atom3{PROT-CX}\atom4{PROT-2C}\pot_type{power}
+              \p0{301.9337357614241}\p1{-503.2228929357069}\p2{201.2891571742828}\p3{805.1566286971311}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-C}\atom3{PROT-CX}\atom4{PROT-3C}\pot_type{power}
+              \p0{301.9337357614241}\p1{-503.2228929357069}\p2{201.2891571742828}\p3{805.1566286971311}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-C}\atom3{PROT-CX}\atom4{PROT-C8}\pot_type{power}
+              \p0{301.9337357614241}\p1{-503.2228929357069}\p2{201.2891571742828}\p3{805.1566286971311}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-C}\atom3{PROT-CX}\atom4{PROT-H}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-CT}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-OH}\pot_type{power}
+              \p0{78.5027712979703}\p1{-235.5083138939108}\p2{1499.604220948406}\p3{314.0110851918811}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-2C}\pot_type{power}
+              \p0{386.4751817746229}\p1{-267.714579041796}\p2{-499.1971097922212}\p3{289.8563863309671}
+              \p4{314.0110851918811}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-3C}\pot_type{power}
+              \p0{455.9199409997504}\p1{-168.0764462405261}\p2{-554.5516280151489}\p3{289.8563863309671}
+              \p4{293.8821694744528}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-C}\pot_type{power}
+              \p0{721.1184055768679}\p1{-396.0364167404013}\p2{-536.4356038694634}\p3{66.42542186751331}
+              \p4{237.5212054656536}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-CO}\pot_type{power}
+              \p0{1853.873137575144}\p1{-1171.502894754326}\p2{-1009.465123229028}\p3{116.747711161084}
+              \p4{358.2946997702232}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-OH}\pot_type{power}
+              \p0{945.5558158261932}\p1{-270.2306935064746}\p2{-891.7109662820725}\p3{807.1695202688738}
+              \p4{644.1253029577048}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-S}\pot_type{power}
+              \p0{484.10042300415}\p1{-251.6114464678534}\p2{-278.7854826863816}\p3{650.1639776729332}
+              \p4{257.6501211830819}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-SH}\pot_type{power}
+              \p0{726.1506345062249}\p1{-301.4305128684884}\p2{-621.9834956685336}\p3{505.2357845074497}
+              \p4{132.8508437350266}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-2C}\pot_type{power}
+              \p0{357.7914768772876}\p1{-14.5934638951355}\p2{245.572771752625}\p3{227.4567476069395}
+              \p4{-390.5009649181085}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-CT}\pot_type{power}
+              \p0{461.4553928220432}\p1{-53.84484954412062}\p2{-213.3665066047397}\p3{297.9079526179385}
+              \p4{-4.025783143485655}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-OH}\pot_type{power}
+              \p0{593.2997907711984}\p1{-136.3734039855765}\p2{-376.4107239159088}\p3{634.0608450989906}
+              \p4{382.4493986311372}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-C}\atom4{PROT-N}\pot_type{power}
+              \p0{2093.40723461254}\p1{603.8674715228483}\p2{-1590.184341676834}\p3{-1107.090364458555}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-C8}\atom4{PROT-C8}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-C8}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-C*}\pot_type{power}
+              \p0{503.7261158286425}\p1{-313.5078622989454}\p2{-439.8168084258078}\p3{471.0166277878216}
+              \p4{124.7992774480553}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-CA}\pot_type{power}
+              \p0{394.5267480615942}\p1{-295.8950610461956}\p2{-263.6887958983103}\p3{386.4751817746229}
+              \p4{-28.18048200439959}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-CC}\pot_type{power}
+              \p0{576.1902124113844}\p1{-484.6036458970857}\p2{-580.7192184478057}\p3{440.8232542116792}
+              \p4{358.2946997702232}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-CT}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-SH}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N2}\atom2{PROT-CA}\atom3{PROT-N2}\atom4{PROT-H}\pot_type{power}
+              \p0{2415.469886091393}\p1{0}\p2{-2415.469886091393}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N2}\atom2{PROT-N2}\atom3{PROT-CA}\atom4{PROT-N2}\pot_type{power}
+              \p0{10567.68075164984}\p1{0}\p2{-10567.68075164984}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167640691908e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-CT}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-2C}\pot_type{power}
+              \p0{386.4751817746229}\p1{-267.714579041796}\p2{-499.1971097922212}\p3{289.8563863309671}
+              \p4{314.0110851918811}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-3C}\pot_type{power}
+              \p0{455.9199409997504}\p1{-168.0764462405261}\p2{-554.5516280151489}\p3{289.8563863309671}
+              \p4{293.8821694744528}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-C}\pot_type{power}
+              \p0{721.1184055768679}\p1{-396.0364167404013}\p2{-536.4356038694634}\p3{66.42542186751331}
+              \p4{237.5212054656536}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-CO}\pot_type{power}
+              \p0{1853.873137575144}\p1{-1171.502894754326}\p2{-1009.465123229028}\p3{116.747711161084}
+              \p4{358.2946997702232}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-OH}\pot_type{power}
+              \p0{945.5558158261932}\p1{-270.2306935064746}\p2{-891.7109662820725}\p3{807.1695202688738}
+              \p4{644.1253029577048}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-S}\pot_type{power}
+              \p0{484.10042300415}\p1{-251.6114464678534}\p2{-278.7854826863816}\p3{650.1639776729332}
+              \p4{257.6501211830819}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-2C}\atom4{PROT-SH}\pot_type{power}
+              \p0{726.1506345062249}\p1{-301.4305128684884}\p2{-621.9834956685336}\p3{505.2357845074497}
+              \p4{132.8508437350266}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-2C}\pot_type{power}
+              \p0{357.7914768772876}\p1{-14.5934638951355}\p2{245.572771752625}\p3{227.4567476069395}
+              \p4{-390.5009649181085}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-CT}\pot_type{power}
+              \p0{461.4553928220432}\p1{-53.84484954412062}\p2{-213.3665066047397}\p3{297.9079526179385}
+              \p4{-4.025783143485655}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-H1}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-3C}\atom4{PROT-OH}\pot_type{power}
+              \p0{593.2997907711984}\p1{-136.3734039855765}\p2{-376.4107239159088}\p3{634.0608450989906}
+              \p4{382.4493986311372}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-C8}\atom4{PROT-C8}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-C8}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-C*}\pot_type{power}
+              \p0{503.7261158286425}\p1{-313.5078622989454}\p2{-439.8168084258078}\p3{471.0166277878216}
+              \p4{124.7992774480553}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-CA}\pot_type{power}
+              \p0{394.5267480615942}\p1{-295.8950610461956}\p2{-263.6887958983103}\p3{386.4751817746229}
+              \p4{-28.18048200439959}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-CC}\pot_type{power}
+              \p0{576.1902124113844}\p1{-484.6036458970857}\p2{-580.7192184478057}\p3{440.8232542116792}
+              \p4{358.2946997702232}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-CT}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-N3}\atom2{PROT-CX}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NA}\atom2{PROT-CC}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NA}\atom2{PROT-CC}\atom3{PROT-CV}\atom4{PROT-H4}\pot_type{power}
+              \p0{5183.195797237781}\p1{0}\p2{-5183.195797237781}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NA}\atom2{PROT-CC}\atom3{PROT-CV}\atom4{PROT-NB}\pot_type{power}
+              \p0{5183.195797237781}\p1{0}\p2{-5183.195797237781}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NA}\atom2{PROT-CC}\atom3{PROT-CW}\atom4{PROT-H4}\pot_type{power}
+              \p0{5409.646099058848}\p1{0}\p2{-5409.646099058848}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NA}\atom2{PROT-CC}\atom3{PROT-CW}\atom4{PROT-NA}\pot_type{power}
+              \p0{5409.646099058848}\p1{0}\p2{-5409.646099058848}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NA}\atom2{PROT-CN}\atom3{PROT-CA}\atom4{PROT-CA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NA}\atom2{PROT-CN}\atom3{PROT-CA}\atom4{PROT-HA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NA}\atom2{PROT-CN}\atom3{PROT-CB}\atom4{PROT-CA}\pot_type{power}
+              \p0{3019.337357614241}\p1{0}\p2{-3019.337357614241}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NA}\atom2{PROT-CR}\atom3{PROT-NA}\atom4{PROT-CW}\pot_type{power}
+              \p0{2339.986452151037}\p1{0}\p2{-2339.986452151037}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NA}\atom2{PROT-CR}\atom3{PROT-NA}\atom4{PROT-H}\pot_type{power}
+              \p0{2339.986452151037}\p1{0}\p2{-2339.986452151037}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NA}\atom2{PROT-CR}\atom3{PROT-NB}\atom4{PROT-CV}\pot_type{power}
+              \p0{5032.228929357068}\p1{0}\p2{-5032.228929357068}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NA}\atom2{PROT-CW}\atom3{PROT-C*}\atom4{PROT-CB}\pot_type{power}
+              \p0{6567.058752810975}\p1{0}\p2{-6567.058752810975}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NA}\atom2{PROT-NA}\atom3{PROT-CR}\atom4{PROT-H5}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-NA}\atom2{PROT-NB}\atom3{PROT-CR}\atom4{PROT-H5}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-NB}\atom2{PROT-CC}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NB}\atom2{PROT-CC}\atom3{PROT-CW}\atom4{PROT-H4}\pot_type{power}
+              \p0{5409.646099058848}\p1{0}\p2{-5409.646099058848}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NB}\atom2{PROT-CC}\atom3{PROT-CW}\atom4{PROT-NA}\pot_type{power}
+              \p0{5409.646099058848}\p1{0}\p2{-5409.646099058848}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NB}\atom2{PROT-CR}\atom3{PROT-NA}\atom4{PROT-CW}\pot_type{power}
+              \p0{2339.986452151037}\p1{0}\p2{-2339.986452151037}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NB}\atom2{PROT-CR}\atom3{PROT-NA}\atom4{PROT-H}\pot_type{power}
+              \p0{2339.986452151037}\p1{0}\p2{-2339.986452151037}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-NB}\atom2{PROT-NA}\atom3{PROT-CR}\atom4{PROT-H5}\pot_type{power}
+              \p0{1107.090364458555}\p1{0}\p2{-1107.090364458555}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{PROT-O}\atom2{PROT-C}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{442.8361457834221}\p1{523.3518086531352}\p2{0}\p3{-161.0313257394262}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-O}\atom2{PROT-C}\atom3{PROT-N}\atom4{PROT-CT}\pot_type{power}
+              \p0{2516.114464678534}\p1{0}\p2{-2516.114464678534}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-O}\atom2{PROT-C}\atom3{PROT-N}\atom4{PROT-CX}\pot_type{power}
+              \p0{2516.114464678534}\p1{0}\p2{-2516.114464678534}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-O}\atom2{PROT-C}\atom3{PROT-N}\atom4{PROT-H}\pot_type{power}
+              \p0{3522.560250549948}\p1{1006.445785871414}\p2{-2516.114464678534}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-O}\atom2{PROT-C}\atom3{PROT-OH}\atom4{PROT-HO}\pot_type{power}
+              \p0{3270.948804082094}\p1{956.123496577843}\p2{-2314.825307504251}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-O2}\atom2{PROT-CO}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-OH}\atom2{PROT-2C}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{883.6593999951012}\p1{-938.0074724321576}\p2{-738.7312068296177}\p3{807.1695202688738}
+              \p4{519.3260255096495}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-OH}\atom2{PROT-3C}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{786.0341587655741}\p1{-826.2919902004305}\p2{-747.7892189024603}\p3{634.0608450989906}
+              \p4{628.0221703837622}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-OH}\atom2{PROT-C}\atom3{PROT-2C}\atom4{PROT-HC}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-OH}\atom2{PROT-C}\atom3{PROT-CA}\atom4{PROT-CA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-OH}\atom2{PROT-C}\atom3{PROT-CA}\atom4{PROT-HA}\pot_type{power}
+              \p0{3648.365973783875}\p1{0}\p2{-3648.365973783875}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-OH}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-CX}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-OH}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-HC}\pot_type{power}
+              \p0{125.8057232339267}\p1{125.8057232339267}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-OH}\atom2{PROT-CT}\atom3{PROT-CT}\atom4{PROT-OH}\pot_type{power}
+              \p0{72.46409658274183}\p1{-217.3922897482253}\p2{1182.573798398911}\p3{289.8563863309671}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-S}\atom2{PROT-2C}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{1141.812744071119}\p1{-184.6828017074044}\p2{-1515.707353522349}\p3{650.1639776729332}
+              \p4{1119.167713889012}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-S}\atom2{PROT-S}\atom3{PROT-2C}\atom4{PROT-CX}\pot_type{power}
+              \p0{180.1537956709831}\p1{-427.7394589953508}\p2{1213.773617760925}\p3{607.8932546663339}
+              \p4{-543.4807243705634}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-S}\atom2{PROT-S}\atom3{PROT-2C}\atom4{PROT-H1}\pot_type{power}
+              \p0{167.7409643119023}\p1{-503.2228929357068}\p2{0}\p3{670.9638572476091}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-SH}\atom2{PROT-2C}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{676.3315681055901}\p1{-514.2937965802923}\p2{-641.1059656000905}\p3{505.2357845074497}
+              \p4{301.9337357614241}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{PROT-SH}\atom2{PROT-CT}\atom3{PROT-CX}\atom4{PROT-C}\pot_type{power}
+              \p0{78.27911667888773}\p1{-234.8373500366632}\p2{0}\p3{313.1164667155509}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]

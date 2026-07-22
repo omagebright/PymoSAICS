@@ -1,34 +1,35 @@
 # Architecture
 
-## Dependency boundary
+## Core and GUI
 
-`pymosaics.core` uses only the Python standard library. It contains all file,
-path, configuration, validation, and command-construction logic. Importing it
-does not require PyMOL or Qt.
+`pymosaics.core` contains catalog, input generation, project preparation,
+structure/topology validation, output discovery, and analysis code. Most of the
+core uses only the Python standard library; structural landscape projection
+uses NumPy supplied by normal PyMOL distributions.
 
-The GUI imports Qt only through `pymol.Qt`. This lets PyMOL select its bundled
-Qt binding and avoids asking users to install PyQt or PySide separately.
+The interface imports Qt only through `pymol.Qt`, so PyMOL chooses its bundled
+Qt binding. PyMOL coordinates are read through `cmd.get_pdbstr`; structures and
+trajectory states are returned through `cmd.load` and `cmd.frame`.
 
 ## Process boundary
 
-The GUI starts MOSAICS with `QProcess.setProgram` and `setArguments`. No shell,
-redirection operator, Perl interpreter, `chmod`, `rm`, `zip`, or `unzip` command
-is used. Standard output and standard error are merged, shown live, and written
-to a per-run log.
+MOSAICS starts through `QProcess.setProgram` and `setArguments`. No shell string
+is constructed. Standard output and standard error are merged, displayed live,
+and written to a timestamped log.
 
-## Filesystem boundary
+## Scientific assets
 
-The plugin writes only to:
+The plugin carries authorized compiled Apple-Silicon executables and validated
+force-field/topology profiles. It carries no MOSAICS source. Runtime hashes and
+provenance are recorded in `pymosaics/assets/ASSET_NOTICE.md`.
 
-- the operating system's per-user configuration directory; and
-- `.pymosaics` inside the selected project directory.
-
-It does not write into the PyMOL application, its plugin installation directory,
-the MOSAICS installation, or the force-field directory.
+Each generated input references only its selected six-file force-field profile.
+Short relative paths avoid legacy MOSAICS parser limits and make the exact run
+deck portable and inspectable. Restaging never deletes unrelated user files.
 
 ## Scientific boundary
 
-The legacy plugin embedded a dated AMBER 99-bs0 parameter generator and made
-scientific choices while building input. This redesign excludes that generator
-from the public core. Reintroducing a profile requires a versioned template,
-provenance, regression fixtures, and comparison against an accepted manual run.
+Presets are explicit starting points, not automatic scientific conclusions.
+PymoSAICS checks file compatibility and reproduces configured calculations; it
+does not establish equilibration, convergence, force-field suitability, a
+global energy minimum, or a thermodynamic free-energy landscape.

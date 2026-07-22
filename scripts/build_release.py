@@ -6,7 +6,7 @@ import zipfile
 from pathlib import Path
 
 
-VERSION = "0.1.1"
+VERSION = "0.2.0"
 ROOT = Path(__file__).resolve().parents[1]
 INCLUDED_ROOT_FILES = ("README.md", "LICENSE", "CHANGELOG.md")
 
@@ -27,7 +27,9 @@ def build(destination: Path) -> Path:
             relative = path.relative_to(ROOT).as_posix()
             info = zipfile.ZipInfo(relative, date_time=(2026, 7, 21, 0, 0, 0))
             info.compress_type = zipfile.ZIP_DEFLATED
-            info.external_attr = 0o644 << 16
+            info.create_system = 3
+            mode = 0o755 if relative.startswith("pymosaics/assets/runtimes/") else 0o644
+            info.external_attr = mode << 16
             bundle.writestr(info, path.read_bytes())
     return archive
 

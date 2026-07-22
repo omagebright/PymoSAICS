@@ -1,0 +1,12 @@
+preset	ff14sb
+source_prmtops	cap_ala_ff14sb.prmtop;tax_capped_ff14sb.prmtop
+atom_types	14
+bonds	27
+bends	62
+torsion_entries	99
+nonbonded_types	14
+coulomb14scale	0.8333333333333334
+lj14scale	0.5
+generation_method	resolved_amber_prmtop_extraction
+added_prmtop_proper_overlays	99
+added_rtf_improper_aliases	0

@@ -1,0 +1,3409 @@
+~torsion_parm[\atom1{DNA-C}\atom2{X}\atom3{X}\atom4{DNA-O}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C1}\atom2{X}\atom3{X}\atom4{DNA-H4}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C1}\atom2{X}\atom3{X}\atom4{DNA-HA}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C2}\atom2{X}\atom3{X}\atom4{DNA-H5}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CA}\atom2{X}\atom3{X}\atom4{DNA-H4}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CA}\atom2{X}\atom3{X}\atom4{DNA-H5}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CA}\atom2{X}\atom3{X}\atom4{DNA-HA}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CK}\atom2{X}\atom3{X}\atom4{DNA-H5}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CM}\atom2{X}\atom3{X}\atom4{DNA-H4}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CM}\atom2{X}\atom3{X}\atom4{DNA-HA}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CQ}\atom2{X}\atom3{X}\atom4{DNA-H5}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-N2}\atom2{X}\atom3{X}\atom4{DNA-H}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-NA}\atom2{X}\atom3{X}\atom4{DNA-H}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C}\atom2{X}\atom3{X}\atom4{RNA-O}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C4}\atom2{X}\atom3{X}\atom4{RNA-H4}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C4}\atom2{X}\atom3{X}\atom4{RNA-HA}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C5}\atom2{X}\atom3{X}\atom4{RNA-H5}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CA}\atom2{X}\atom3{X}\atom4{RNA-H4}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CA}\atom2{X}\atom3{X}\atom4{RNA-H5}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CA}\atom2{X}\atom3{X}\atom4{RNA-HA}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CP}\atom2{X}\atom3{X}\atom4{RNA-H5}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CQ}\atom2{X}\atom3{X}\atom4{RNA-H5}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CS}\atom2{X}\atom3{X}\atom4{RNA-H4}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CS}\atom2{X}\atom3{X}\atom4{RNA-HA}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-N2}\atom2{X}\atom3{X}\atom4{RNA-H}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-NA}\atom2{X}\atom3{X}\atom4{RNA-H}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{DNA-C}\atom3{DNA-C}\atom4{X}\pot_type{power}
+              \p0{3648.365974}\p1{0}\p2{-3648.365974}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C}\atom3{DNA-C1}\atom4{X}\pot_type{power}
+              \p0{2189.019584}\p1{0}\p2{-2189.019584}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C}\atom3{DNA-CA}\atom4{X}\pot_type{power}
+              \p0{3648.365974}\p1{0}\p2{-3648.365974}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C}\atom3{DNA-CB}\atom4{X}\pot_type{power}
+              \p0{3019.337358}\p1{0}\p2{-3019.337358}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C}\atom3{DNA-CM}\atom4{X}\pot_type{power}
+              \p0{2189.019584}\p1{0}\p2{-2189.019584}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C}\atom3{DNA-CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C}\atom3{DNA-N*}\atom4{X}\pot_type{power}
+              \p0{1459.34639}\p1{0}\p2{-1459.34639}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C}\atom3{DNA-NA}\atom4{X}\pot_type{power}
+              \p0{1358.701811}\p1{0}\p2{-1358.701811}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C}\atom3{DNA-NC}\atom4{X}\pot_type{power}
+              \p0{4025.783143}\p1{0}\p2{-4025.783143}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C}\atom3{DNA-O}\atom4{X}\pot_type{power}
+              \p0{2818.0482}\p1{0}\p2{-2818.0482}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C}\atom3{DNA-OH}\atom4{X}\pot_type{power}
+              \p0{2314.825308}\p1{0}\p2{-2314.825308}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C}\atom3{DNA-OS}\atom4{X}\pot_type{power}
+              \p0{2717.403622}\p1{0}\p2{-2717.403622}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C1}\atom3{DNA-C1}\atom4{X}\pot_type{power}
+              \p0{6692.864476}\p1{0}\p2{-6692.864476}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C1}\atom3{DNA-CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C1}\atom3{DNA-N*}\atom4{X}\pot_type{power}
+              \p0{1861.924704}\p1{0}\p2{-1861.924704}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C2}\atom3{DNA-N*}\atom4{X}\pot_type{power}
+              \p0{1710.957836}\p1{0}\p2{-1710.957836}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C2}\atom3{DNA-NB}\atom4{X}\pot_type{power}
+              \p0{10064.45786}\p1{0}\p2{-10064.45786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.23254061e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C7}\atom3{DNA-CT}\atom4{X}\pot_type{power}
+              \p0{78.27911668}\p1{-234.83735}\p2{0}\p3{313.1164667}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C7}\atom3{DNA-OH}\atom4{X}\pot_type{power}
+              \p0{83.87048216}\p1{-251.6114465}\p2{0}\p3{335.4819286}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-C7}\atom3{DNA-OS}\atom4{X}\pot_type{power}
+              \p0{192.902109}\p1{-578.7063269}\p2{0}\p3{771.6084358}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CA}\atom3{DNA-C1}\atom4{X}\pot_type{power}
+              \p0{2566.436754}\p1{0}\p2{-2566.436754}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CA}\atom3{DNA-CA}\atom4{X}\pot_type{power}
+              \p0{3648.365974}\p1{0}\p2{-3648.365974}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CA}\atom3{DNA-CB}\atom4{X}\pot_type{power}
+              \p0{3522.560251}\p1{0}\p2{-3522.560251}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CA}\atom3{DNA-CM}\atom4{X}\pot_type{power}
+              \p0{2566.436754}\p1{0}\p2{-2566.436754}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CA}\atom3{DNA-CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CA}\atom3{DNA-N2}\atom4{X}\pot_type{power}
+              \p0{2415.469886}\p1{0}\p2{-2415.469886}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CA}\atom3{DNA-NA}\atom4{X}\pot_type{power}
+              \p0{1509.668679}\p1{0}\p2{-1509.668679}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CA}\atom3{DNA-NC}\atom4{X}\pot_type{power}
+              \p0{4830.939772}\p1{0}\p2{-4830.939772}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CA}\atom3{DNA-OH}\atom4{X}\pot_type{power}
+              \p0{905.8012073}\p1{0}\p2{-905.8012073}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CB}\atom3{DNA-CB}\atom4{X}\pot_type{power}
+              \p0{5485.129533}\p1{0}\p2{-5485.129533}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CB}\atom3{DNA-N*}\atom4{X}\pot_type{power}
+              \p0{1660.635547}\p1{0}\p2{-1660.635547}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CB}\atom3{DNA-NB}\atom4{X}\pot_type{power}
+              \p0{2566.436754}\p1{0}\p2{-2566.436754}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CB}\atom3{DNA-NC}\atom4{X}\pot_type{power}
+              \p0{4176.750011}\p1{0}\p2{-4176.750011}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CJ}\atom3{DNA-CT}\atom4{X}\pot_type{power}
+              \p0{78.27911668}\p1{-234.83735}\p2{0}\p3{313.1164667}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CJ}\atom3{DNA-OH}\atom4{X}\pot_type{power}
+              \p0{83.87048216}\p1{-251.6114465}\p2{0}\p3{335.4819286}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CJ}\atom3{DNA-OS}\atom4{X}\pot_type{power}
+              \p0{192.902109}\p1{-578.7063269}\p2{0}\p3{771.6084358}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CK}\atom3{DNA-N*}\atom4{X}\pot_type{power}
+              \p0{1710.957836}\p1{0}\p2{-1710.957836}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CK}\atom3{DNA-NB}\atom4{X}\pot_type{power}
+              \p0{10064.45786}\p1{0}\p2{-10064.45786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.23254061e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CM}\atom3{DNA-CM}\atom4{X}\pot_type{power}
+              \p0{6692.864476}\p1{0}\p2{-6692.864476}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CM}\atom3{DNA-CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CM}\atom3{DNA-N*}\atom4{X}\pot_type{power}
+              \p0{1861.924704}\p1{0}\p2{-1861.924704}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CM}\atom3{DNA-OS}\atom4{X}\pot_type{power}
+              \p0{1056.768075}\p1{0}\p2{-1056.768075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CQ}\atom3{DNA-NC}\atom4{X}\pot_type{power}
+              \p0{6843.831344}\p1{0}\p2{-6843.831344}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{X}\pot_type{power}
+              \p0{78.27911668}\p1{-234.83735}\p2{0}\p3{313.1164667}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CT}\atom3{DNA-N*}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CT}\atom3{DNA-N2}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CT}\atom3{DNA-OH}\atom4{X}\pot_type{power}
+              \p0{83.87048216}\p1{-251.6114465}\p2{0}\p3{335.4819286}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-CT}\atom3{DNA-OS}\atom4{X}\pot_type{power}
+              \p0{192.902109}\p1{-578.7063269}\p2{0}\p3{771.6084358}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-OH}\atom3{DNA-P}\atom4{X}\pot_type{power}
+              \p0{125.8057232}\p1{-377.4171697}\p2{0}\p3{503.2228929}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{DNA-OS}\atom3{DNA-P}\atom4{X}\pot_type{power}
+              \p0{125.8057232}\p1{-377.4171697}\p2{0}\p3{503.2228929}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C}\atom3{RNA-C}\atom4{X}\pot_type{power}
+              \p0{3648.365974}\p1{0}\p2{-3648.365974}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C}\atom3{RNA-C4}\atom4{X}\pot_type{power}
+              \p0{2189.019584}\p1{0}\p2{-2189.019584}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C}\atom3{RNA-CA}\atom4{X}\pot_type{power}
+              \p0{3648.365974}\p1{0}\p2{-3648.365974}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C}\atom3{RNA-CB}\atom4{X}\pot_type{power}
+              \p0{3019.337358}\p1{0}\p2{-3019.337358}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C}\atom3{RNA-CS}\atom4{X}\pot_type{power}
+              \p0{2189.019584}\p1{0}\p2{-2189.019584}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C}\atom3{RNA-CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C}\atom3{RNA-N*}\atom4{X}\pot_type{power}
+              \p0{1459.34639}\p1{0}\p2{-1459.34639}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C}\atom3{RNA-NA}\atom4{X}\pot_type{power}
+              \p0{1358.701811}\p1{0}\p2{-1358.701811}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C}\atom3{RNA-NC}\atom4{X}\pot_type{power}
+              \p0{4025.783143}\p1{0}\p2{-4025.783143}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C}\atom3{RNA-O}\atom4{X}\pot_type{power}
+              \p0{2818.0482}\p1{0}\p2{-2818.0482}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C}\atom3{RNA-OH}\atom4{X}\pot_type{power}
+              \p0{2314.825308}\p1{0}\p2{-2314.825308}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C}\atom3{RNA-OS}\atom4{X}\pot_type{power}
+              \p0{2717.403622}\p1{0}\p2{-2717.403622}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C4}\atom3{RNA-C4}\atom4{X}\pot_type{power}
+              \p0{6692.864476}\p1{0}\p2{-6692.864476}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C4}\atom3{RNA-CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C4}\atom3{RNA-N*}\atom4{X}\pot_type{power}
+              \p0{1861.924704}\p1{0}\p2{-1861.924704}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C5}\atom3{RNA-N*}\atom4{X}\pot_type{power}
+              \p0{1710.957836}\p1{0}\p2{-1710.957836}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-C5}\atom3{RNA-NB}\atom4{X}\pot_type{power}
+              \p0{10064.45786}\p1{0}\p2{-10064.45786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.23254061e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CA}\atom3{RNA-C4}\atom4{X}\pot_type{power}
+              \p0{2566.436754}\p1{0}\p2{-2566.436754}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CA}\atom3{RNA-CA}\atom4{X}\pot_type{power}
+              \p0{3648.365974}\p1{0}\p2{-3648.365974}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CA}\atom3{RNA-CB}\atom4{X}\pot_type{power}
+              \p0{3522.560251}\p1{0}\p2{-3522.560251}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CA}\atom3{RNA-CS}\atom4{X}\pot_type{power}
+              \p0{2566.436754}\p1{0}\p2{-2566.436754}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CA}\atom3{RNA-CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CA}\atom3{RNA-N2}\atom4{X}\pot_type{power}
+              \p0{2415.469886}\p1{0}\p2{-2415.469886}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CA}\atom3{RNA-NA}\atom4{X}\pot_type{power}
+              \p0{1509.668679}\p1{0}\p2{-1509.668679}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CA}\atom3{RNA-NC}\atom4{X}\pot_type{power}
+              \p0{4830.939772}\p1{0}\p2{-4830.939772}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CA}\atom3{RNA-OH}\atom4{X}\pot_type{power}
+              \p0{905.8012073}\p1{0}\p2{-905.8012073}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CB}\atom3{RNA-CB}\atom4{X}\pot_type{power}
+              \p0{5485.129533}\p1{0}\p2{-5485.129533}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CB}\atom3{RNA-N*}\atom4{X}\pot_type{power}
+              \p0{1660.635547}\p1{0}\p2{-1660.635547}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CB}\atom3{RNA-NB}\atom4{X}\pot_type{power}
+              \p0{2566.436754}\p1{0}\p2{-2566.436754}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CB}\atom3{RNA-NC}\atom4{X}\pot_type{power}
+              \p0{4176.750011}\p1{0}\p2{-4176.750011}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CI}\atom3{RNA-CT}\atom4{X}\pot_type{power}
+              \p0{78.27911668}\p1{-234.83735}\p2{0}\p3{313.1164667}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CI}\atom3{RNA-OH}\atom4{X}\pot_type{power}
+              \p0{83.87048216}\p1{-251.6114465}\p2{0}\p3{335.4819286}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CI}\atom3{RNA-OS}\atom4{X}\pot_type{power}
+              \p0{192.902109}\p1{-578.7063269}\p2{0}\p3{771.6084358}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CP}\atom3{RNA-N*}\atom4{X}\pot_type{power}
+              \p0{1710.957836}\p1{0}\p2{-1710.957836}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CP}\atom3{RNA-NB}\atom4{X}\pot_type{power}
+              \p0{10064.45786}\p1{0}\p2{-10064.45786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.23254061e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CQ}\atom3{RNA-NC}\atom4{X}\pot_type{power}
+              \p0{6843.831344}\p1{0}\p2{-6843.831344}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CS}\atom3{RNA-CS}\atom4{X}\pot_type{power}
+              \p0{6692.864476}\p1{0}\p2{-6692.864476}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CS}\atom3{RNA-CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CS}\atom3{RNA-N*}\atom4{X}\pot_type{power}
+              \p0{1861.924704}\p1{0}\p2{-1861.924704}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CS}\atom3{RNA-OS}\atom4{X}\pot_type{power}
+              \p0{1056.768075}\p1{0}\p2{-1056.768075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{X}\pot_type{power}
+              \p0{78.27911668}\p1{-234.83735}\p2{0}\p3{313.1164667}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CT}\atom3{RNA-N*}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CT}\atom3{RNA-N2}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CT}\atom3{RNA-OH}\atom4{X}\pot_type{power}
+              \p0{83.87048216}\p1{-251.6114465}\p2{0}\p3{335.4819286}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-CT}\atom3{RNA-OS}\atom4{X}\pot_type{power}
+              \p0{192.902109}\p1{-578.7063269}\p2{0}\p3{771.6084358}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-OH}\atom3{RNA-P}\atom4{X}\pot_type{power}
+              \p0{125.8057232}\p1{-377.4171697}\p2{0}\p3{503.2228929}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{RNA-OS}\atom3{RNA-P}\atom4{X}\pot_type{power}
+              \p0{125.8057232}\p1{-377.4171697}\p2{0}\p3{503.2228929}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-C}\atom2{X}\atom3{DNA-O2}\atom4{DNA-O2}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CA}\atom2{X}\atom3{DNA-N2}\atom4{DNA-N2}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C}\atom2{X}\atom3{RNA-O2}\atom4{RNA-O2}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CA}\atom2{X}\atom3{RNA-N2}\atom4{RNA-N2}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C}\atom2{DNA-C}\atom3{DNA-NA}\atom4{DNA-H}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C}\atom2{DNA-CA}\atom3{DNA-CA}\atom4{DNA-OH}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C}\atom2{DNA-CA}\atom3{DNA-CA}\atom4{DNA-OS}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C}\atom2{DNA-CA}\atom3{DNA-NA}\atom4{DNA-H}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C}\atom2{DNA-CB}\atom3{DNA-CB}\atom4{DNA-N*}\pot_type{power}
+              \p0{5485.129533}\p1{0}\p2{-5485.129533}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.007385234389}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-C}\atom2{DNA-CB}\atom3{DNA-NB}\atom4{DNA-CK}\pot_type{power}
+              \p0{2566.436754}\p1{0}\p2{-2566.436754}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.003455476641}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-C}\atom2{DNA-CM}\atom3{DNA-CM}\atom4{DNA-CT}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C}\atom2{DNA-CM}\atom3{DNA-H4}\atom4{DNA-O}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C}\atom2{DNA-CT}\atom3{DNA-O}\atom4{DNA-OH}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C}\atom2{DNA-H5}\atom3{DNA-O}\atom4{DNA-OH}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C}\atom2{DNA-H5}\atom3{DNA-O}\atom4{DNA-OS}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C1}\atom2{DNA-C}\atom3{DNA-C1}\atom4{DNA-CT}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C1}\atom2{DNA-C}\atom3{DNA-N*}\atom4{DNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C1}\atom2{DNA-C1}\atom3{DNA-C}\atom4{DNA-O}\pot_type{power}
+              \p0{2339.986452}\p1{-452.9006036}\p2{-2189.019584}\p3{603.8674715}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-C1}\atom2{DNA-CA}\atom3{DNA-C1}\atom4{DNA-HA}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C2}\atom2{DNA-CB}\atom3{DNA-N*}\atom4{DNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-C2}\atom2{DNA-N*}\atom3{DNA-CT}\atom4{DNA-H2}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-C2}\atom2{DNA-N*}\atom3{DNA-CT}\atom4{DNA-OS}\pot_type{power}
+              \p0{1067.937228}\p1{1456.55954}\p2{1837.040091}\p3{-1154.903662}
+              \p4{0}\p5{0}\p6{0}
+              \s1{520.9189788}\s2{-111.6034417}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{-20.05051064}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-C7}\atom2{DNA-CT}\atom3{DNA-CJ}\atom4{DNA-H1}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-C7}\atom2{DNA-CT}\atom3{DNA-CJ}\atom4{DNA-OH}\pot_type{power}
+              \p0{1103.632473}\p1{-2004.262878}\p2{40.10031275}\p3{1896.388809}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-412.7207858}\s2{-83.5730346}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{399.7925469}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-C7}\atom2{DNA-CT}\atom3{DNA-CJ}\atom4{DNA-OS}\pot_type{power}
+              \p0{1103.632381}\p1{-2004.263497}\p2{40.10049725}\p3{1896.389849}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-412.7179163}\s2{-83.57294607}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{399.7876132}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-C7}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-H2}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-C7}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-N*}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-C7}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-OS}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-C7}\atom2{DNA-CT}\atom3{DNA-OS}\atom4{DNA-CT}\pot_type{power}
+              \p0{293.3789466}\p1{-578.203104}\p2{-100.6445786}\p3{770.937472}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.0001355088879}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-C7}\atom2{DNA-OS}\atom3{DNA-P}\atom4{DNA-O2}\pot_type{power}
+              \p0{147.9827561}\p1{-443.7492096}\p2{0}\p3{591.6656128}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-13.29300587}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{17.72400783}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-C7}\atom2{DNA-OS}\atom3{DNA-P}\atom4{DNA-OS}\pot_type{power}
+              \p0{621.6061532}\p1{23.46060287}\p2{968.1403098}\p3{591.6656128}
+              \p4{0}\p5{0}\p6{0}
+              \s1{1.008485598}\s2{-155.3803165}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{17.72400783}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CA}\atom2{DNA-C1}\atom3{DNA-N2}\atom4{DNA-NC}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CA}\atom2{DNA-CA}\atom3{DNA-CA}\atom4{DNA-CT}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CA}\atom2{DNA-CA}\atom3{DNA-CA}\atom4{DNA-OH}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CA}\atom2{DNA-CB}\atom3{DNA-CB}\atom4{DNA-N*}\pot_type{power}
+              \p0{5485.129533}\p1{0}\p2{-5485.129533}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.007385234389}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CA}\atom2{DNA-CB}\atom3{DNA-N2}\atom4{DNA-NC}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CA}\atom2{DNA-CB}\atom3{DNA-NB}\atom4{DNA-C2}\pot_type{power}
+              \p0{2566.436754}\p1{0}\p2{-2566.436754}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.003455476641}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CA}\atom2{DNA-CM}\atom3{DNA-N2}\atom4{DNA-NC}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CA}\atom2{DNA-H}\atom3{DNA-N2}\atom4{DNA-H}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CA}\atom2{DNA-N2}\atom3{DNA-NA}\atom4{DNA-NC}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CA}\atom2{DNA-NA}\atom3{DNA-C}\atom4{DNA-CB}\pot_type{power}
+              \p0{1358.701811}\p1{0}\p2{-1358.701811}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001829369986}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CA}\atom2{DNA-NA}\atom3{DNA-C}\atom4{DNA-O}\pot_type{power}
+              \p0{1358.701811}\p1{0}\p2{-1358.701811}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001829369986}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CA}\atom2{DNA-NC}\atom3{DNA-CB}\atom4{DNA-CB}\pot_type{power}
+              \p0{4176.750011}\p1{0}\p2{-4176.750011}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.005623618846}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CA}\atom2{DNA-NC}\atom3{DNA-CB}\atom4{DNA-N*}\pot_type{power}
+              \p0{4176.750011}\p1{0}\p2{-4176.750011}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.005623618846}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-CB}\atom3{DNA-C}\atom4{DNA-NA}\pot_type{power}
+              \p0{3019.337358}\p1{0}\p2{-3019.337358}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.004065266636}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-CB}\atom3{DNA-C}\atom4{DNA-O}\pot_type{power}
+              \p0{3019.337358}\p1{0}\p2{-3019.337358}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.004065266636}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-CB}\atom3{DNA-CA}\atom4{DNA-N2}\pot_type{power}
+              \p0{3522.560251}\p1{0}\p2{-3522.560251}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.004742811075}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-CB}\atom3{DNA-CA}\atom4{DNA-NC}\pot_type{power}
+              \p0{3522.560251}\p1{0}\p2{-3522.560251}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.004742811075}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-CB}\atom3{DNA-N*}\atom4{DNA-C2}\pot_type{power}
+              \p0{1660.635547}\p1{0}\p2{-1660.635547}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.00223589665}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-CB}\atom3{DNA-N*}\atom4{DNA-CK}\pot_type{power}
+              \p0{1660.635547}\p1{0}\p2{-1660.635547}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.00223589665}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-CB}\atom3{DNA-N*}\atom4{DNA-CT}\pot_type{power}
+              \p0{1660.635547}\p1{0}\p2{-1660.635547}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.00223589665}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-CB}\atom3{DNA-NB}\atom4{DNA-C2}\pot_type{power}
+              \p0{2566.436754}\p1{0}\p2{-2566.436754}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.003455476641}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-CB}\atom3{DNA-NB}\atom4{DNA-CK}\pot_type{power}
+              \p0{2566.436754}\p1{0}\p2{-2566.436754}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.003455476641}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-N*}\atom3{DNA-C2}\atom4{DNA-H5}\pot_type{power}
+              \p0{1710.957836}\p1{0}\p2{-1710.957836}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002303651094}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-N*}\atom3{DNA-C2}\atom4{DNA-NB}\pot_type{power}
+              \p0{1710.957836}\p1{0}\p2{-1710.957836}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002303651094}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-N*}\atom3{DNA-CK}\atom4{DNA-H5}\pot_type{power}
+              \p0{1710.957836}\p1{0}\p2{-1710.957836}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002303651094}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-N*}\atom3{DNA-CK}\atom4{DNA-NB}\pot_type{power}
+              \p0{1710.957836}\p1{0}\p2{-1710.957836}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002303651094}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-N*}\atom3{DNA-CT}\atom4{DNA-H2}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-N*}\atom3{DNA-CT}\atom4{DNA-OS}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-NA}\atom3{DNA-C}\atom4{DNA-O}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-NB}\atom3{DNA-C2}\atom4{DNA-H5}\pot_type{power}
+              \p0{10064.45786}\p1{0}\p2{-10064.45786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.01355088879}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-NB}\atom3{DNA-C2}\atom4{DNA-N*}\pot_type{power}
+              \p0{10064.45786}\p1{0}\p2{-10064.45786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.01355088879}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-NB}\atom3{DNA-CK}\atom4{DNA-H5}\pot_type{power}
+              \p0{10064.45786}\p1{0}\p2{-10064.45786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.01355088879}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-NB}\atom3{DNA-CK}\atom4{DNA-N*}\pot_type{power}
+              \p0{10064.45786}\p1{0}\p2{-10064.45786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.01355088879}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-NC}\atom3{DNA-CA}\atom4{DNA-N2}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-NC}\atom3{DNA-CA}\atom4{DNA-N2}\pot_type{power}
+              \p0{4830.939772}\p1{0}\p2{-4830.939772}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.006504426618}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-NC}\atom3{DNA-CA}\atom4{DNA-NA}\pot_type{power}
+              \p0{4830.939772}\p1{0}\p2{-4830.939772}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.006504426618}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-NC}\atom3{DNA-CQ}\atom4{DNA-H5}\pot_type{power}
+              \p0{6843.831344}\p1{0}\p2{-6843.831344}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.009214604375}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CB}\atom2{DNA-NC}\atom3{DNA-CQ}\atom4{DNA-NC}\pot_type{power}
+              \p0{6843.831344}\p1{0}\p2{-6843.831344}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.009214604375}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CJ}\atom2{DNA-CT}\atom3{DNA-C7}\atom4{DNA-CT}\pot_type{power}
+              \p0{442.8361458}\p1{-372.3849408}\p2{-251.6114465}\p3{362.3204829}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CJ}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-CT}\pot_type{power}
+              \p0{442.8361458}\p1{-372.3849408}\p2{-251.6114465}\p3{362.3204829}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CJ}\atom2{DNA-OS}\atom3{DNA-P}\atom4{DNA-O2}\pot_type{power}
+              \p0{125.8057232}\p1{-377.4171697}\p2{0}\p3{503.2228929}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CK}\atom2{DNA-CB}\atom3{DNA-N*}\atom4{DNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CK}\atom2{DNA-N*}\atom3{DNA-CT}\atom4{DNA-H2}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CK}\atom2{DNA-N*}\atom3{DNA-CT}\atom4{DNA-OS}\pot_type{power}
+              \p0{943.6740077}\p1{1431.719504}\p2{1817.640598}\p3{-1335.558124}
+              \p4{0}\p5{0}\p6{0}
+              \s1{494.4950791}\s2{-291.648075}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{-107.0441416}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CM}\atom2{DNA-C}\atom3{DNA-CM}\atom4{DNA-CT}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CM}\atom2{DNA-C}\atom3{DNA-N*}\atom4{DNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CM}\atom2{DNA-CM}\atom3{DNA-C}\atom4{DNA-O}\pot_type{power}
+              \p0{2339.986452}\p1{-452.9006036}\p2{-2189.019584}\p3{603.8674715}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CM}\atom2{DNA-CM}\atom3{DNA-CT}\atom4{DNA-HA}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CM}\atom2{DNA-NA}\atom3{DNA-C}\atom4{DNA-O}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-CQ}\atom2{DNA-NC}\atom3{DNA-CA}\atom4{DNA-CB}\pot_type{power}
+              \p0{4830.939772}\p1{0}\p2{-4830.939772}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.006504426618}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CQ}\atom2{DNA-NC}\atom3{DNA-CA}\atom4{DNA-N2}\pot_type{power}
+              \p0{4830.939772}\p1{0}\p2{-4830.939772}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.006504426618}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CQ}\atom2{DNA-NC}\atom3{DNA-CB}\atom4{DNA-CB}\pot_type{power}
+              \p0{4176.750011}\p1{0}\p2{-4176.750011}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.005623618846}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CQ}\atom2{DNA-NC}\atom3{DNA-CB}\atom4{DNA-N*}\pot_type{power}
+              \p0{4176.750011}\p1{0}\p2{-4176.750011}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.005623618846}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-C7}\atom3{DNA-CT}\atom4{DNA-CJ}\pot_type{power}
+              \p0{442.8361458}\p1{-372.3849408}\p2{-251.6114465}\p3{362.3204829}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-0.0001355088879}\s2{-0.0003387722197}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-C7}\atom3{DNA-CT}\atom4{DNA-H1}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-C7}\atom3{DNA-CT}\atom4{DNA-OS}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-C7}\atom3{DNA-OS}\atom4{DNA-P}\pot_type{power}
+              \p0{1544.16987}\p1{-583.6232104}\p2{-497.4664824}\p3{-292.9262112}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-321.1213661}\s2{419.8821455}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{-92.37743841}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-CJ}\atom3{DNA-OS}\atom4{DNA-P}\pot_type{power}
+              \p0{621.6682835}\p1{1051.658973}\p2{195.9723579}\p3{-1077.549865}
+              \p4{-262.4433064}\p5{0}\p6{0}
+              \s1{83.59636285}\s2{-155.9078041}\s3{0}
+              \s4{185.0039183}\s5{0}\s6{0}
+              \sp2{0}\sp3{30.23228281}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-CM}\atom3{DNA-CM}\atom4{DNA-CT}\pot_type{power}
+              \p0{7648.987973}\p1{-956.1234966}\p2{-6692.864476}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-CT}\atom3{DNA-C7}\atom4{DNA-CT}\pot_type{power}
+              \p0{442.8361458}\p1{-372.3849408}\p2{-251.6114465}\p3{362.3204829}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-0.0001355088879}\s2{-0.0003387722197}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-CT}\atom3{DNA-CJ}\atom4{DNA-OH}\pot_type{power}
+              \p0{1103.632473}\p1{-2004.262878}\p2{40.10031275}\p3{1896.388809}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-412.7207858}\s2{-83.5730346}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{399.7925469}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-CT}\atom3{DNA-CJ}\atom4{DNA-OS}\pot_type{power}
+              \p0{1103.632473}\p1{-2004.262878}\p2{40.10031275}\p3{1896.388809}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-412.7207858}\s2{-83.5730346}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{399.7925469}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-CT}\pot_type{power}
+              \p0{442.8361458}\p1{-372.3849408}\p2{-251.6114465}\p3{362.3204829}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-CT}\atom3{DNA-N*}\atom4{DNA-C2}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-CT}\atom3{DNA-N*}\atom4{DNA-CB}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-CT}\atom3{DNA-N*}\atom4{DNA-CK}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-CT}\atom3{DNA-OS}\atom4{DNA-C}\pot_type{power}
+              \p0{595.3126823}\p1{-980.7814183}\p2{0}\p3{770.937472}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-CT}\atom3{DNA-OS}\atom4{DNA-CT}\pot_type{power}
+              \p0{293.3789466}\p1{-578.203104}\p2{-100.6445786}\p3{770.937472}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.0001355088879}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-OS}\atom3{DNA-CT}\atom4{DNA-CJ}\pot_type{power}
+              \p0{293.3789466}\p1{-578.203104}\p2{-100.6445786}\p3{770.937472}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.0001355088879}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-OS}\atom3{DNA-CT}\atom4{DNA-H1}\pot_type{power}
+              \p0{192.9021088}\p1{-578.7063264}\p2{0}\p3{771.6084352}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-OS}\atom3{DNA-CT}\atom4{DNA-N*}\pot_type{power}
+              \p0{192.734368}\p1{-578.203104}\p2{654.1897608}\p3{770.937472}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-CT}\atom2{DNA-OS}\atom3{DNA-CT}\atom4{DNA-OS}\pot_type{power}
+              \p0{1585.152113}\p1{-830.3177733}\p2{-855.478918}\p3{201.2891572}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H}\atom2{DNA-N2}\atom3{DNA-CA}\atom4{DNA-CB}\pot_type{power}
+              \p0{2415.469886}\p1{0}\p2{-2415.469886}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.003252213309}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H}\atom2{DNA-N2}\atom3{DNA-CA}\atom4{DNA-NA}\pot_type{power}
+              \p0{2415.469886}\p1{0}\p2{-2415.469886}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.003252213309}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H}\atom2{DNA-NA}\atom3{DNA-C}\atom4{DNA-CB}\pot_type{power}
+              \p0{1358.701811}\p1{0}\p2{-1358.701811}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001829369986}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H}\atom2{DNA-NA}\atom3{DNA-C}\atom4{DNA-O}\pot_type{power}
+              \p0{1358.701811}\p1{0}\p2{-1358.701811}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001829369986}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-C7}\atom3{DNA-CT}\atom4{DNA-CJ}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-C7}\atom3{DNA-CT}\atom4{DNA-CT}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-C7}\atom3{DNA-CT}\atom4{DNA-H1}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-C7}\atom3{DNA-CT}\atom4{DNA-OH}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-C7}\atom3{DNA-CT}\atom4{DNA-OS}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-C7}\atom3{DNA-OS}\atom4{DNA-P}\pot_type{power}
+              \p0{192.9021088}\p1{-578.7063264}\p2{0}\p3{771.6084352}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-CJ}\atom3{DNA-CT}\atom4{DNA-OH}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-CJ}\atom3{DNA-CT}\atom4{DNA-OS}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-CJ}\atom3{DNA-OS}\atom4{DNA-P}\pot_type{power}
+              \p0{192.9021088}\p1{-578.7063264}\p2{0}\p3{771.6084352}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-CT}\atom3{DNA-C}\atom4{DNA-O}\pot_type{power}
+              \p0{442.8361458}\p1{523.3518087}\p2{0}\p3{-161.0313257}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-CT}\atom3{DNA-C7}\atom4{DNA-OH}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-CT}\atom3{DNA-C7}\atom4{DNA-OS}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-CT}\atom3{DNA-CJ}\atom4{DNA-H1}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-CT}\atom3{DNA-CJ}\atom4{DNA-OH}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-CT}\atom3{DNA-CJ}\atom4{DNA-OS}\pot_type{power}
+              \p0{204.0848401}\p1{-109.0316275}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-OH}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H1}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-OS}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H2}\atom2{DNA-CT}\atom3{DNA-OS}\atom4{DNA-CT}\pot_type{power}
+              \p0{192.9021088}\p1{-578.7063264}\p2{0}\p3{771.6084352}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H5}\atom2{DNA-C2}\atom3{DNA-N*}\atom4{DNA-CT}\pot_type{power}
+              \p0{1710.957836}\p1{0}\p2{-1710.957836}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002303651094}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H5}\atom2{DNA-CK}\atom3{DNA-N*}\atom4{DNA-CT}\pot_type{power}
+              \p0{1710.957836}\p1{0}\p2{-1710.957836}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002303651094}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-H5}\atom2{DNA-CQ}\atom3{DNA-NC}\atom4{DNA-CA}\pot_type{power}
+              \p0{6843.831344}\p1{0}\p2{-6843.831344}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.009214604375}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HC}\atom2{DNA-CT}\atom3{DNA-C}\atom4{DNA-O}\pot_type{power}
+              \p0{442.8361458}\p1{523.3518087}\p2{0}\p3{-161.0313257}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HC}\atom2{DNA-CT}\atom3{DNA-C1}\atom4{DNA-C1}\pot_type{power}
+              \p0{769.9310262}\p1{1152.380425}\p2{0}\p3{-764.8987973}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HC}\atom2{DNA-CT}\atom3{DNA-C7}\atom4{DNA-CT}\pot_type{power}
+              \p0{80.51566287}\p1{-241.5469886}\p2{0}\p3{322.0626515}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HC}\atom2{DNA-CT}\atom3{DNA-C7}\atom4{DNA-H1}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HC}\atom2{DNA-CT}\atom3{DNA-C7}\atom4{DNA-OH}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HC}\atom2{DNA-CT}\atom3{DNA-C7}\atom4{DNA-OS}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HC}\atom2{DNA-CT}\atom3{DNA-CM}\atom4{DNA-CM}\pot_type{power}
+              \p0{769.9310262}\p1{1152.380425}\p2{0}\p3{-764.8987973}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HC}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-CT}\pot_type{power}
+              \p0{80.51566287}\p1{-241.5469886}\p2{0}\p3{322.0626515}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HC}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-H2}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HC}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-HC}\pot_type{power}
+              \p0{75.48343394}\p1{-226.4503018}\p2{0}\p3{301.9337358}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HC}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-N*}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HC}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-OH}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HC}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-OS}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HO}\atom2{DNA-OH}\atom3{DNA-C}\atom4{DNA-O}\pot_type{power}
+              \p0{3270.948804}\p1{956.1234966}\p2{-2314.825308}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HO}\atom2{DNA-OH}\atom3{DNA-C7}\atom4{DNA-CT}\pot_type{power}
+              \p0{206.3213861}\p1{-115.7412654}\p2{0}\p3{322.0626515}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-HO}\atom2{DNA-OH}\atom3{DNA-CT}\atom4{DNA-CT}\pot_type{power}
+              \p0{206.3213861}\p1{-115.7412654}\p2{0}\p3{322.0626515}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-N*}\atom2{DNA-C}\atom3{DNA-C1}\atom4{DNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-N*}\atom2{DNA-C}\atom3{DNA-CM}\atom4{DNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-N*}\atom2{DNA-C1}\atom3{DNA-C1}\atom4{DNA-H4}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-N*}\atom2{DNA-C2}\atom3{DNA-CB}\atom4{DNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-N*}\atom2{DNA-CB}\atom3{DNA-CK}\atom4{DNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-N*}\atom2{DNA-CM}\atom3{DNA-CM}\atom4{DNA-H4}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-N*}\atom2{DNA-CT}\atom3{DNA-OS}\atom4{DNA-CT}\pot_type{power}
+              \p0{192.734368}\p1{-578.203104}\p2{654.1897608}\p3{770.937472}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-N*}\atom2{DNA-NA}\atom3{DNA-C}\atom4{DNA-O}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-N*}\atom2{DNA-NC}\atom3{DNA-C}\atom4{DNA-O}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-N2}\atom2{DNA-CA}\atom3{DNA-CB}\atom4{DNA-NB}\pot_type{power}
+              \p0{3522.560251}\p1{0}\p2{-3522.560251}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.004742811075}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-N2}\atom2{DNA-CA}\atom3{DNA-NA}\atom4{DNA-C}\pot_type{power}
+              \p0{1509.668679}\p1{0}\p2{-1509.668679}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002032633318}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-N2}\atom2{DNA-CA}\atom3{DNA-NA}\atom4{DNA-H}\pot_type{power}
+              \p0{1509.668679}\p1{0}\p2{-1509.668679}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002032633318}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NA}\atom2{DNA-C}\atom3{DNA-CB}\atom4{DNA-NB}\pot_type{power}
+              \p0{3019.337358}\p1{0}\p2{-3019.337358}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.004065266636}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NA}\atom2{DNA-NC}\atom3{DNA-CA}\atom4{DNA-N2}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-NB}\atom2{DNA-C2}\atom3{DNA-N*}\atom4{DNA-CT}\pot_type{power}
+              \p0{1710.957836}\p1{0}\p2{-1710.957836}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002303651094}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NB}\atom2{DNA-CB}\atom3{DNA-CB}\atom4{DNA-N*}\pot_type{power}
+              \p0{5485.129533}\p1{0}\p2{-5485.129533}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.007385234389}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NB}\atom2{DNA-CK}\atom3{DNA-N*}\atom4{DNA-CT}\pot_type{power}
+              \p0{1710.957836}\p1{0}\p2{-1710.957836}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002303651094}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NB}\atom2{DNA-N*}\atom3{DNA-C2}\atom4{DNA-H5}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-NB}\atom2{DNA-N*}\atom3{DNA-CK}\atom4{DNA-H5}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-NC}\atom2{DNA-C1}\atom3{DNA-CA}\atom4{DNA-N2}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-NC}\atom2{DNA-CA}\atom3{DNA-CB}\atom4{DNA-NB}\pot_type{power}
+              \p0{3522.560251}\p1{0}\p2{-3522.560251}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.004742811075}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NC}\atom2{DNA-CA}\atom3{DNA-N2}\atom4{DNA-H}\pot_type{power}
+              \p0{2415.469886}\p1{0}\p2{-2415.469886}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.003252213309}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NC}\atom2{DNA-CA}\atom3{DNA-NA}\atom4{DNA-C}\pot_type{power}
+              \p0{1509.668679}\p1{0}\p2{-1509.668679}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002032633318}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NC}\atom2{DNA-CA}\atom3{DNA-NA}\atom4{DNA-H}\pot_type{power}
+              \p0{1509.668679}\p1{0}\p2{-1509.668679}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002032633318}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NC}\atom2{DNA-CB}\atom3{DNA-CB}\atom4{DNA-C}\pot_type{power}
+              \p0{5485.129533}\p1{0}\p2{-5485.129533}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.007385234389}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NC}\atom2{DNA-CB}\atom3{DNA-CB}\atom4{DNA-CA}\pot_type{power}
+              \p0{5485.129533}\p1{0}\p2{-5485.129533}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.007385234389}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NC}\atom2{DNA-CB}\atom3{DNA-CB}\atom4{DNA-NB}\pot_type{power}
+              \p0{5485.129533}\p1{0}\p2{-5485.129533}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.007385234389}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NC}\atom2{DNA-CB}\atom3{DNA-N*}\atom4{DNA-C2}\pot_type{power}
+              \p0{1660.635547}\p1{0}\p2{-1660.635547}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.00223589665}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NC}\atom2{DNA-CB}\atom3{DNA-N*}\atom4{DNA-CK}\pot_type{power}
+              \p0{1660.635547}\p1{0}\p2{-1660.635547}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.00223589665}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NC}\atom2{DNA-CB}\atom3{DNA-N*}\atom4{DNA-CT}\pot_type{power}
+              \p0{1660.635547}\p1{0}\p2{-1660.635547}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.00223589665}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NC}\atom2{DNA-CQ}\atom3{DNA-NC}\atom4{DNA-CA}\pot_type{power}
+              \p0{6843.831344}\p1{0}\p2{-6843.831344}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.009214604375}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-NC}\atom2{DNA-NC}\atom3{DNA-CQ}\atom4{DNA-H5}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{DNA-O}\atom2{DNA-C}\atom3{DNA-CB}\atom4{DNA-NB}\pot_type{power}
+              \p0{3019.337358}\p1{0}\p2{-3019.337358}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.004065266636}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-O}\atom2{DNA-C}\atom3{DNA-OS}\atom4{DNA-CT}\pot_type{power}
+              \p0{3421.915672}\p1{-704.5120501}\p2{-2717.403622}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-O2}\atom2{DNA-P}\atom3{DNA-OS}\atom4{DNA-CJ}\pot_type{power}
+              \p0{125.8057232}\p1{-377.4171697}\p2{0}\p3{503.2228929}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OH}\atom2{DNA-CT}\atom3{DNA-C7}\atom4{DNA-OH}\pot_type{power}
+              \p0{72.46409658}\p1{-217.3922897}\p2{1182.573798}\p3{289.8563863}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OH}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-OH}\pot_type{power}
+              \p0{72.46409658}\p1{-217.3922897}\p2{1182.573798}\p3{289.8563863}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OH}\atom2{DNA-P}\atom3{DNA-OS}\atom4{DNA-C7}\pot_type{power}
+              \p0{621.6063571}\p1{23.46063872}\p2{968.1399021}\p3{591.6655652}
+              \p4{0}\p5{0}\p6{0}
+              \s1{1.007288982}\s2{-155.3828569}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{17.72559514}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OH}\atom2{DNA-P}\atom3{DNA-OS}\atom4{DNA-CJ}\pot_type{power}
+              \p0{277.9758421}\p1{-455.8964994}\p2{1252.198621}\p3{713.4665826}
+              \p4{0}\p5{0}\p6{0}
+              \s1{23.37251415}\s2{-176.88551}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{34.30170985}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OH}\atom2{DNA-P}\atom3{DNA-OS}\atom4{DNA-CT}\pot_type{power}
+              \p0{125.8057232}\p1{-377.4171697}\p2{1207.734943}\p3{503.2228929}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-C7}\atom3{DNA-CT}\atom4{DNA-CJ}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-C7}\atom3{DNA-CT}\atom4{DNA-CT}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-C7}\atom3{DNA-CT}\atom4{DNA-H1}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-C7}\atom3{DNA-CT}\atom4{DNA-HC}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-C7}\atom3{DNA-CT}\atom4{DNA-OH}\pot_type{power}
+              \p0{72.46409658}\p1{-217.3922897}\p2{1182.573798}\p3{289.8563863}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-C7}\atom3{DNA-CT}\atom4{DNA-OS}\pot_type{power}
+              \p0{72.46409658}\p1{-217.3922897}\p2{1182.573798}\p3{289.8563863}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-CT}\atom3{DNA-C7}\atom4{DNA-OH}\pot_type{power}
+              \p0{72.46409658}\p1{-217.3922897}\p2{1182.573798}\p3{289.8563863}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-CT}\atom3{DNA-CJ}\atom4{DNA-H1}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-CT}\atom3{DNA-CJ}\atom4{DNA-OS}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-OH}\pot_type{power}
+              \p0{72.46409658}\p1{-217.3922897}\p2{1182.573798}\p3{289.8563863}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-CT}\atom3{DNA-CT}\atom4{DNA-OS}\pot_type{power}
+              \p0{72.46409658}\p1{-217.3922897}\p2{1182.573798}\p3{289.8563863}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-CT}\atom3{DNA-N*}\atom4{DNA-C1}\pot_type{power}
+              \p0{1074.246088}\p1{1670.912795}\p2{2230.664491}\p3{-2395.585611}
+              \p4{-76.42324086}\p5{0}\p6{0}
+              \s1{618.4538823}\s2{532.449814}\s3{0}
+              \s4{-1043.829203}\s5{0}\s6{0}
+              \sp2{0}\sp3{-394.8599654}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-CT}\atom3{DNA-N*}\atom4{DNA-C2}\pot_type{power}
+              \p0{1067.937377}\p1{1456.559674}\p2{1837.039793}\p3{-1154.903635}
+              \p4{0}\p5{0}\p6{0}
+              \s1{520.9199569}\s2{-111.6083373}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{-20.05205415}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-CT}\atom3{DNA-N*}\atom4{DNA-CK}\pot_type{power}
+              \p0{943.6743908}\p1{1431.719535}\p2{1817.639832}\p3{-1335.557984}
+              \p4{0}\p5{0}\p6{0}
+              \s1{494.4962494}\s2{-291.6528495}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{-107.0458904}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-CT}\atom3{DNA-N*}\atom4{DNA-CM}\pot_type{power}
+              \p0{700.068566}\p1{999.2945503}\p2{2145.814487}\p3{-1363.398623}
+              \p4{44.80487486}\p5{0}\p6{0}
+              \s1{309.5064227}\s2{194.1244536}\s3{0}
+              \s4{-552.5771049}\s5{0}\s6{0}
+              \sp2{0}\sp3{-36.04236485}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-P}\atom3{DNA-OS}\atom4{DNA-C7}\pot_type{power}
+              \p0{621.6063571}\p1{23.46063872}\p2{968.1399021}\p3{591.6655652}
+              \p4{0}\p5{0}\p6{0}
+              \s1{1.007288982}\s2{-155.3828569}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{17.72559514}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-P}\atom3{DNA-OS}\atom4{DNA-CJ}\pot_type{power}
+              \p0{277.975609}\p1{-455.8965798}\p2{1252.199088}\p3{713.4666742}
+              \p4{0}\p5{0}\p6{0}
+              \s1{23.37396148}\s2{-176.8822092}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{34.29980522}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-OS}\atom2{DNA-P}\atom3{DNA-OS}\atom4{DNA-CT}\pot_type{power}
+              \p0{125.8057232}\p1{-377.4171697}\p2{1207.734943}\p3{503.2228929}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-P}\atom2{DNA-OS}\atom3{DNA-CJ}\atom4{DNA-CT}\pot_type{power}
+              \p0{621.6682835}\p1{1051.658973}\p2{195.9723579}\p3{-1077.549865}
+              \p4{-262.4433064}\p5{0}\p6{0}
+              \s1{83.59636285}\s2{-155.9078041}\s3{0}
+              \s4{185.0039183}\s5{0}\s6{0}
+              \sp2{0}\sp3{30.23228281}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{DNA-P}\atom2{DNA-OS}\atom3{DNA-CJ}\atom4{DNA-H1}\pot_type{power}
+              \p0{192.9021088}\p1{-578.7063264}\p2{0}\p3{771.6084352}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-C}\atom3{RNA-NA}\atom4{RNA-H}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-CA}\atom3{RNA-CA}\atom4{RNA-OH}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-CA}\atom3{RNA-CA}\atom4{RNA-OS}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-CA}\atom3{RNA-NA}\atom4{RNA-H}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-CS}\atom3{RNA-CS}\atom4{RNA-H4}\pot_type{power}
+              \p0{6692.864476}\p1{0}\p2{-6692.864476}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.009011341043}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-CS}\atom3{RNA-CS}\atom4{RNA-HA}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-CS}\atom3{RNA-CS}\atom4{RNA-N*}\pot_type{power}
+              \p0{6692.864476}\p1{0}\p2{-6692.864476}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.009011341043}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-CS}\atom3{RNA-H4}\atom4{RNA-O}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-CT}\atom3{RNA-O}\atom4{RNA-OH}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-H5}\atom3{RNA-O}\atom4{RNA-OH}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-H5}\atom3{RNA-O}\atom4{RNA-OS}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-N*}\atom3{RNA-C4}\atom4{RNA-C4}\pot_type{power}
+              \p0{1861.924704}\p1{0}\p2{-1861.924704}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002506914425}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-N*}\atom3{RNA-C4}\atom4{RNA-H4}\pot_type{power}
+              \p0{1861.924704}\p1{0}\p2{-1861.924704}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002506914425}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-N*}\atom3{RNA-CS}\atom4{RNA-CS}\pot_type{power}
+              \p0{1861.924704}\p1{0}\p2{-1861.924704}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002506914425}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-N*}\atom3{RNA-CS}\atom4{RNA-H4}\pot_type{power}
+              \p0{1861.924704}\p1{0}\p2{-1861.924704}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002506914425}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-N*}\atom3{RNA-CT}\atom4{RNA-H2}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-N*}\atom3{RNA-CT}\atom4{RNA-OS}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-NA}\atom3{RNA-C}\atom4{RNA-CS}\pot_type{power}
+              \p0{1358.701811}\p1{0}\p2{-1358.701811}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001829369986}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-NA}\atom3{RNA-C}\atom4{RNA-N*}\pot_type{power}
+              \p0{1358.701811}\p1{0}\p2{-1358.701811}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001829369986}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-NA}\atom3{RNA-C}\atom4{RNA-O}\pot_type{power}
+              \p0{1358.701811}\p1{0}\p2{-1358.701811}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001829369986}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-NC}\atom3{RNA-CA}\atom4{RNA-C4}\pot_type{power}
+              \p0{4830.939772}\p1{0}\p2{-4830.939772}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.006504426618}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C}\atom2{RNA-NC}\atom3{RNA-CA}\atom4{RNA-N2}\pot_type{power}
+              \p0{4830.939772}\p1{0}\p2{-4830.939772}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.006504426618}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C4}\atom2{RNA-C}\atom3{RNA-C4}\atom4{RNA-CT}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C4}\atom2{RNA-C}\atom3{RNA-N*}\atom4{RNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C4}\atom2{RNA-C4}\atom3{RNA-C}\atom4{RNA-O}\pot_type{power}
+              \p0{2339.986452}\p1{-452.9006036}\p2{-2189.019584}\p3{603.8674715}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C4}\atom2{RNA-C4}\atom3{RNA-N*}\atom4{RNA-CT}\pot_type{power}
+              \p0{1861.924704}\p1{0}\p2{-1861.924704}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002506914425}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C4}\atom2{RNA-CA}\atom3{RNA-C4}\atom4{RNA-HA}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-C4}\atom2{RNA-N*}\atom3{RNA-CT}\atom4{RNA-H2}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C4}\atom2{RNA-N*}\atom3{RNA-CT}\atom4{RNA-OS}\pot_type{power}
+              \p0{1410.383198}\p1{890.8700058}\p2{519.9270287}\p3{-1877.105638}
+              \p4{1057.64309}\p5{0}\p6{0}
+              \s1{190.9292312}\s2{799.0856647}\s3{0}
+              \s4{-664.9772643}\s5{0}\s6{0}
+              \sp2{0}\sp3{193.2343538}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-C5}\atom2{RNA-CB}\atom3{RNA-N*}\atom4{RNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CA}\atom2{RNA-C4}\atom3{RNA-C4}\atom4{RNA-H4}\pot_type{power}
+              \p0{6692.864476}\p1{0}\p2{-6692.864476}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.009011341043}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CA}\atom2{RNA-C4}\atom3{RNA-C4}\atom4{RNA-N*}\pot_type{power}
+              \p0{6692.864476}\p1{0}\p2{-6692.864476}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.009011341043}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CA}\atom2{RNA-C4}\atom3{RNA-N2}\atom4{RNA-NC}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CA}\atom2{RNA-CA}\atom3{RNA-CA}\atom4{RNA-CT}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CA}\atom2{RNA-CA}\atom3{RNA-CA}\atom4{RNA-OH}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CA}\atom2{RNA-CB}\atom3{RNA-N2}\atom4{RNA-NC}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CA}\atom2{RNA-CS}\atom3{RNA-N2}\atom4{RNA-NC}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CA}\atom2{RNA-H}\atom3{RNA-N2}\atom4{RNA-H}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CA}\atom2{RNA-N2}\atom3{RNA-NA}\atom4{RNA-NC}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CA}\atom2{RNA-NC}\atom3{RNA-C}\atom4{RNA-N*}\pot_type{power}
+              \p0{4025.783143}\p1{0}\p2{-4025.783143}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.005420355515}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CB}\atom2{RNA-NA}\atom3{RNA-C}\atom4{RNA-O}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CB}\atom2{RNA-NC}\atom3{RNA-CA}\atom4{RNA-N2}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CI}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-CT}\pot_type{power}
+              \p0{442.8361458}\p1{-372.3849408}\p2{-251.6114465}\p3{362.3204829}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CI}\atom2{RNA-OS}\atom3{RNA-P}\atom4{RNA-O2}\pot_type{power}
+              \p0{125.8057232}\p1{-377.4171697}\p2{0}\p3{503.2228929}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CP}\atom2{RNA-CB}\atom3{RNA-N*}\atom4{RNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CS}\atom2{RNA-C}\atom3{RNA-CS}\atom4{RNA-CT}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CS}\atom2{RNA-C}\atom3{RNA-N*}\atom4{RNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CS}\atom2{RNA-CS}\atom3{RNA-C}\atom4{RNA-O}\pot_type{power}
+              \p0{2339.986452}\p1{-452.9006036}\p2{-2189.019584}\p3{603.8674715}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CS}\atom2{RNA-CS}\atom3{RNA-CT}\atom4{RNA-HA}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CS}\atom2{RNA-CS}\atom3{RNA-N*}\atom4{RNA-CT}\pot_type{power}
+              \p0{1861.924704}\p1{0}\p2{-1861.924704}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002506914425}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CS}\atom2{RNA-N*}\atom3{RNA-CT}\atom4{RNA-H2}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CS}\atom2{RNA-N*}\atom3{RNA-CT}\atom4{RNA-OS}\pot_type{power}
+              \p0{1192.79393}\p1{431.6944763}\p2{325.0679134}\p3{-1170.420542}
+              \p4{1360.157308}\p5{0}\p6{0}
+              \s1{269.0381485}\s2{702.7002862}\s3{0}
+              \s4{-390.0601138}\s5{0}\s6{0}
+              \sp2{0}\sp3{-13.33011383}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CS}\atom2{RNA-NA}\atom3{RNA-C}\atom4{RNA-O}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CI}\atom3{RNA-OS}\atom4{RNA-P}\pot_type{power}
+              \p0{192.9021088}\p1{-578.7063264}\p2{0}\p3{771.6084352}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CS}\atom3{RNA-CS}\atom4{RNA-CT}\pot_type{power}
+              \p0{7648.987973}\p1{-956.1234966}\p2{-6692.864476}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-CI}\atom4{RNA-H1}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-CI}\atom4{RNA-OH}\pot_type{power}
+              \p0{1103.632473}\p1{-2004.262878}\p2{40.10031275}\p3{1896.388809}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-412.7207858}\s2{-83.5730346}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{399.7925469}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-CI}\atom4{RNA-OS}\pot_type{power}
+              \p0{1103.632381}\p1{-2004.263497}\p2{40.10049725}\p3{1896.389849}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-412.7179163}\s2{-83.57294607}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{399.7876132}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-CI}\pot_type{power}
+              \p0{442.8361458}\p1{-372.3849408}\p2{-251.6114465}\p3{362.3204829}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-0.0001355088879}\s2{-0.0003387722197}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-CT}\pot_type{power}
+              \p0{442.8361458}\p1{-372.3849408}\p2{-251.6114465}\p3{362.3204829}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-0.0001355088879}\s2{-0.0003387722197}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-H1}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-H2}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-N*}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-OS}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-N*}\atom4{RNA-C}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-N*}\atom4{RNA-C4}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-N*}\atom4{RNA-CS}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-OS}\atom4{RNA-C}\pot_type{power}
+              \p0{595.3126823}\p1{-980.7814183}\p2{0}\p3{770.937472}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-OS}\atom4{RNA-CT}\pot_type{power}
+              \p0{293.3789466}\p1{-578.203104}\p2{-100.6445786}\p3{770.937472}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.0001355088879}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-CT}\atom3{RNA-OS}\atom4{RNA-P}\pot_type{power}
+              \p0{192.9021088}\p1{-578.7063264}\p2{0}\p3{771.6084352}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-OS}\atom3{RNA-CT}\atom4{RNA-CI}\pot_type{power}
+              \p0{293.3789466}\p1{-578.203104}\p2{-100.6445786}\p3{770.937472}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.0001355088879}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-OS}\atom3{RNA-CT}\atom4{RNA-H1}\pot_type{power}
+              \p0{192.9021088}\p1{-578.7063264}\p2{0}\p3{771.6084352}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-OS}\atom3{RNA-CT}\atom4{RNA-N*}\pot_type{power}
+              \p0{192.734368}\p1{-578.203104}\p2{654.1897608}\p3{770.937472}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-OS}\atom3{RNA-CT}\atom4{RNA-OS}\pot_type{power}
+              \p0{1585.152113}\p1{-830.3177733}\p2{-855.478918}\p3{201.2891572}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-OS}\atom3{RNA-P}\atom4{RNA-O2}\pot_type{power}
+              \p0{125.8057232}\p1{-377.4171697}\p2{0}\p3{503.2228929}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-CT}\atom2{RNA-OS}\atom3{RNA-P}\atom4{RNA-OS}\pot_type{power}
+              \p0{125.8057232}\p1{-377.4171697}\p2{1207.734943}\p3{503.2228929}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H}\atom2{RNA-N2}\atom3{RNA-CA}\atom4{RNA-C4}\pot_type{power}
+              \p0{2415.469886}\p1{0}\p2{-2415.469886}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.003252213309}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H}\atom2{RNA-NA}\atom3{RNA-C}\atom4{RNA-CS}\pot_type{power}
+              \p0{1358.701811}\p1{0}\p2{-1358.701811}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001829369986}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H}\atom2{RNA-NA}\atom3{RNA-C}\atom4{RNA-N*}\pot_type{power}
+              \p0{1358.701811}\p1{0}\p2{-1358.701811}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001829369986}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H}\atom2{RNA-NA}\atom3{RNA-C}\atom4{RNA-O}\pot_type{power}
+              \p0{1358.701811}\p1{0}\p2{-1358.701811}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001829369986}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H1}\atom2{RNA-CI}\atom3{RNA-CT}\atom4{RNA-OH}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H1}\atom2{RNA-CI}\atom3{RNA-CT}\atom4{RNA-OS}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H1}\atom2{RNA-CI}\atom3{RNA-OS}\atom4{RNA-P}\pot_type{power}
+              \p0{192.9021088}\p1{-578.7063264}\p2{0}\p3{771.6084352}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H1}\atom2{RNA-CT}\atom3{RNA-C}\atom4{RNA-O}\pot_type{power}
+              \p0{442.8361458}\p1{523.3518087}\p2{0}\p3{-161.0313257}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H1}\atom2{RNA-CT}\atom3{RNA-CI}\atom4{RNA-H1}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H1}\atom2{RNA-CT}\atom3{RNA-CI}\atom4{RNA-OH}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H1}\atom2{RNA-CT}\atom3{RNA-CI}\atom4{RNA-OS}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H1}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-CI}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H1}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-CT}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H1}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-H1}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H1}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-H2}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H1}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-N*}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H1}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-OH}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H1}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-OS}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H1}\atom2{RNA-CT}\atom3{RNA-OS}\atom4{RNA-P}\pot_type{power}
+              \p0{192.9021088}\p1{-578.7063264}\p2{0}\p3{771.6084352}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H2}\atom2{RNA-CT}\atom3{RNA-OS}\atom4{RNA-CT}\pot_type{power}
+              \p0{192.9021088}\p1{-578.7063264}\p2{0}\p3{771.6084352}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H4}\atom2{RNA-C4}\atom3{RNA-N*}\atom4{RNA-CT}\pot_type{power}
+              \p0{1861.924704}\p1{0}\p2{-1861.924704}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002506914425}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-H4}\atom2{RNA-CS}\atom3{RNA-N*}\atom4{RNA-CT}\pot_type{power}
+              \p0{1861.924704}\p1{0}\p2{-1861.924704}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002506914425}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-HA}\atom2{RNA-C4}\atom3{RNA-C4}\atom4{RNA-H4}\pot_type{power}
+              \p0{6692.864476}\p1{0}\p2{-6692.864476}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.009011341043}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-HA}\atom2{RNA-C4}\atom3{RNA-C4}\atom4{RNA-N*}\pot_type{power}
+              \p0{6692.864476}\p1{0}\p2{-6692.864476}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.009011341043}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-HA}\atom2{RNA-CS}\atom3{RNA-CS}\atom4{RNA-H4}\pot_type{power}
+              \p0{6692.864476}\p1{0}\p2{-6692.864476}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.009011341043}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-HA}\atom2{RNA-CS}\atom3{RNA-CS}\atom4{RNA-N*}\pot_type{power}
+              \p0{6692.864476}\p1{0}\p2{-6692.864476}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.009011341043}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-HO}\atom2{RNA-OH}\atom3{RNA-C}\atom4{RNA-O}\pot_type{power}
+              \p0{3270.948804}\p1{956.1234966}\p2{-2314.825308}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-HO}\atom2{RNA-OH}\atom3{RNA-CT}\atom4{RNA-CT}\pot_type{power}
+              \p0{206.3213861}\p1{-115.7412654}\p2{0}\p3{322.0626515}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-HO}\atom2{RNA-OH}\atom3{RNA-CT}\atom4{RNA-H1}\pot_type{power}
+              \p0{83.87048232}\p1{-251.611447}\p2{0}\p3{335.4819293}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-N*}\atom2{RNA-C}\atom3{RNA-C4}\atom4{RNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-N*}\atom2{RNA-C}\atom3{RNA-CS}\atom4{RNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-N*}\atom2{RNA-C4}\atom3{RNA-C4}\atom4{RNA-H4}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-N*}\atom2{RNA-C5}\atom3{RNA-CB}\atom4{RNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-N*}\atom2{RNA-CB}\atom3{RNA-CP}\atom4{RNA-CT}\pot_type{power}
+              \p0{1006.445786}\p1{0}\p2{-1006.445786}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-N*}\atom2{RNA-CS}\atom3{RNA-CS}\atom4{RNA-H4}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-N*}\atom2{RNA-CT}\atom3{RNA-OS}\atom4{RNA-CT}\pot_type{power}
+              \p0{192.734368}\p1{-578.203104}\p2{654.1897608}\p3{770.937472}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-N*}\atom2{RNA-NA}\atom3{RNA-C}\atom4{RNA-O}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-N*}\atom2{RNA-NC}\atom3{RNA-C}\atom4{RNA-O}\pot_type{power}
+              \p0{10567.68075}\p1{0}\p2{-10567.68075}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294167641e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-N2}\atom2{RNA-CA}\atom3{RNA-C4}\atom4{RNA-C4}\pot_type{power}
+              \p0{2566.436754}\p1{0}\p2{-2566.436754}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.003455476641}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-N2}\atom2{RNA-CA}\atom3{RNA-C4}\atom4{RNA-HA}\pot_type{power}
+              \p0{2566.436754}\p1{0}\p2{-2566.436754}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.003455476641}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-NA}\atom2{RNA-C}\atom3{RNA-CS}\atom4{RNA-CS}\pot_type{power}
+              \p0{2189.019584}\p1{0}\p2{-2189.019584}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002947318311}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-NA}\atom2{RNA-C}\atom3{RNA-CS}\atom4{RNA-HA}\pot_type{power}
+              \p0{2189.019584}\p1{0}\p2{-2189.019584}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002947318311}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-NA}\atom2{RNA-C}\atom3{RNA-N*}\atom4{RNA-CS}\pot_type{power}
+              \p0{1459.34639}\p1{0}\p2{-1459.34639}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001964878874}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-NA}\atom2{RNA-C}\atom3{RNA-N*}\atom4{RNA-CT}\pot_type{power}
+              \p0{1459.34639}\p1{0}\p2{-1459.34639}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001964878874}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-NA}\atom2{RNA-NC}\atom3{RNA-CA}\atom4{RNA-N2}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-NB}\atom2{RNA-N*}\atom3{RNA-C5}\atom4{RNA-H5}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-NB}\atom2{RNA-N*}\atom3{RNA-CP}\atom4{RNA-H5}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-NC}\atom2{RNA-C}\atom3{RNA-N*}\atom4{RNA-C4}\pot_type{power}
+              \p0{1459.34639}\p1{0}\p2{-1459.34639}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001964878874}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-NC}\atom2{RNA-C}\atom3{RNA-N*}\atom4{RNA-CT}\pot_type{power}
+              \p0{1459.34639}\p1{0}\p2{-1459.34639}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001964878874}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-NC}\atom2{RNA-C4}\atom3{RNA-CA}\atom4{RNA-N2}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-NC}\atom2{RNA-CA}\atom3{RNA-C4}\atom4{RNA-C4}\pot_type{power}
+              \p0{2566.436754}\p1{0}\p2{-2566.436754}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.003455476641}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-NC}\atom2{RNA-CA}\atom3{RNA-C4}\atom4{RNA-HA}\pot_type{power}
+              \p0{2566.436754}\p1{0}\p2{-2566.436754}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.003455476641}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-NC}\atom2{RNA-CA}\atom3{RNA-N2}\atom4{RNA-H}\pot_type{power}
+              \p0{2415.469886}\p1{0}\p2{-2415.469886}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.003252213309}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-NC}\atom2{RNA-NC}\atom3{RNA-CQ}\atom4{RNA-H5}\pot_type{power}
+              \p0{1107.090364}\p1{0}\p2{-1107.090364}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{RNA-O}\atom2{RNA-C}\atom3{RNA-CS}\atom4{RNA-CS}\pot_type{power}
+              \p0{2339.986452}\p1{-452.9006036}\p2{-2189.019584}\p3{603.8674715}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002947318311}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-O}\atom2{RNA-C}\atom3{RNA-CS}\atom4{RNA-HA}\pot_type{power}
+              \p0{2189.019584}\p1{0}\p2{-2189.019584}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.002947318311}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-O}\atom2{RNA-C}\atom3{RNA-N*}\atom4{RNA-C4}\pot_type{power}
+              \p0{1459.34639}\p1{0}\p2{-1459.34639}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001964878874}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-O}\atom2{RNA-C}\atom3{RNA-N*}\atom4{RNA-CS}\pot_type{power}
+              \p0{1459.34639}\p1{0}\p2{-1459.34639}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001964878874}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-O}\atom2{RNA-C}\atom3{RNA-N*}\atom4{RNA-CT}\pot_type{power}
+              \p0{1459.34639}\p1{0}\p2{-1459.34639}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001964878874}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-O}\atom2{RNA-C}\atom3{RNA-NA}\atom4{RNA-C}\pot_type{power}
+              \p0{1358.701811}\p1{0}\p2{-1358.701811}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001829369986}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-O}\atom2{RNA-C}\atom3{RNA-NA}\atom4{RNA-H}\pot_type{power}
+              \p0{1358.701811}\p1{0}\p2{-1358.701811}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.001829369986}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-O}\atom2{RNA-C}\atom3{RNA-NC}\atom4{RNA-CA}\pot_type{power}
+              \p0{4025.783143}\p1{0}\p2{-4025.783143}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{-0.005420355515}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-O}\atom2{RNA-C}\atom3{RNA-OS}\atom4{RNA-CT}\pot_type{power}
+              \p0{3421.915672}\p1{-704.5120501}\p2{-2717.403622}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OH}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-CT}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OH}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-H1}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OH}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-H2}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OH}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-N*}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OH}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-OH}\pot_type{power}
+              \p0{72.46409658}\p1{-217.3922897}\p2{1182.573798}\p3{289.8563863}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OH}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-OS}\pot_type{power}
+              \p0{72.46409658}\p1{-217.3922897}\p2{1182.573798}\p3{289.8563863}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OH}\atom2{RNA-P}\atom3{RNA-OS}\atom4{RNA-CI}\pot_type{power}
+              \p0{277.9758421}\p1{-455.8964994}\p2{1252.198621}\p3{713.4665826}
+              \p4{0}\p5{0}\p6{0}
+              \s1{23.37251415}\s2{-176.88551}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{34.30170985}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OH}\atom2{RNA-P}\atom3{RNA-OS}\atom4{RNA-CT}\pot_type{power}
+              \p0{125.8057232}\p1{-377.4171697}\p2{1207.734943}\p3{503.2228929}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OS}\atom2{RNA-CT}\atom3{RNA-CI}\atom4{RNA-H1}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OS}\atom2{RNA-CT}\atom3{RNA-CI}\atom4{RNA-OS}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OS}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-CI}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OS}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-CT}\pot_type{power}
+              \p0{78.2791169}\p1{-234.8373507}\p2{0}\p3{313.1164676}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OS}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-H1}\pot_type{power}
+              \p0{125.8057232}\p1{125.8057232}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OS}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-OH}\pot_type{power}
+              \p0{72.46409658}\p1{-217.3922897}\p2{1182.573798}\p3{289.8563863}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OS}\atom2{RNA-CT}\atom3{RNA-CT}\atom4{RNA-OS}\pot_type{power}
+              \p0{72.46409658}\p1{-217.3922897}\p2{1182.573798}\p3{289.8563863}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OS}\atom2{RNA-CT}\atom3{RNA-N*}\atom4{RNA-C4}\pot_type{power}
+              \p0{1410.38319}\p1{890.8705758}\p2{519.9269261}\p3{-1877.105908}
+              \p4{1057.64325}\p5{0}\p6{0}
+              \s1{190.9317612}\s2{799.0853426}\s3{0}
+              \s4{-664.9770095}\s5{0}\s6{0}
+              \sp2{0}\sp3{193.2317353}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OS}\atom2{RNA-CT}\atom3{RNA-N*}\atom4{RNA-C5}\pot_type{power}
+              \p0{1038.767787}\p1{859.0833182}\p2{-135.2375228}\p3{-911.0483814}
+              \p4{1176.188106}\p5{0}\p6{0}
+              \s1{554.1604848}\s2{494.8988029}\s3{0}
+              \s4{-407.1100376}\s5{0}\s6{0}
+              \sp2{0}\sp3{-134.8780116}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OS}\atom2{RNA-CT}\atom3{RNA-N*}\atom4{RNA-CP}\pot_type{power}
+              \p0{838.1397313}\p1{748.5998038}\p2{37.79561712}\p3{-873.7400997}
+              \p4{1028.202085}\p5{0}\p6{0}
+              \s1{473.8717636}\s2{152.0632575}\s3{0}
+              \s4{-71.44086318}\s5{0}\s6{0}
+              \sp2{0}\sp3{-175.3788057}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OS}\atom2{RNA-CT}\atom3{RNA-N*}\atom4{RNA-CS}\pot_type{power}
+              \p0{1192.793904}\p1{431.6947539}\p2{325.0679305}\p3{-1170.420524}
+              \p4{1360.157354}\p5{0}\p6{0}
+              \s1{269.0398305}\s2{702.6999934}\s3{0}
+              \s4{-390.0599514}\s5{0}\s6{0}
+              \sp2{0}\sp3{-13.33168818}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OS}\atom2{RNA-P}\atom3{RNA-OS}\atom4{RNA-CI}\pot_type{power}
+              \p0{277.975609}\p1{-455.8965798}\p2{1252.199088}\p3{713.4666742}
+              \p4{0}\p5{0}\p6{0}
+              \s1{23.37396148}\s2{-176.8822092}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{34.29980522}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{RNA-OS}\atom2{RNA-P}\atom3{RNA-OS}\atom4{RNA-CT}\pot_type{power}
+              \p0{125.8057232}\p1{-377.4171697}\p2{1207.734943}\p3{503.2228929}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]

@@ -1,0 +1,794 @@
+! =================================================================
+! Terminal-variant residues (2026-05-13)
+! 5'-OH and 3'-OH terminals for all 8 nucleotides.
+! Extracted from AMBER parmBSC1.lib with MOSAICS atom-name / type aliases.
+! Bug H respected: RNA C3' stays CT in MOSAICS hybrid RTF.
+! =================================================================
+
+RESI AD5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  HO     0.4422
+ATOM  O5'   OH    -0.6318
+ATOM  C5'   CI    -0.0069
+ATOM  H5'   H1     0.0754
+ATOM  H5''  H1     0.0754
+ATOM  C4'   CT     0.1629
+ATOM  H4'   H1     0.1176
+ATOM  O4'   OS    -0.3691
+ATOM  C1'   CT     0.0431
+ATOM  H1'   H2     0.1838
+ATOM  N9    NS    -0.0268
+ATOM  C8    C1     0.1607
+ATOM  H8    H5     0.1877
+ATOM  N7    NB    -0.6175
+ATOM  C5    CB     0.0725
+ATOM  C6    CA     0.6897
+ATOM  N6    N2    -0.9123
+ATOM  H61   H      0.4167
+ATOM  H62   H      0.4167
+ATOM  N1    NC    -0.7624
+ATOM  C2    CQ     0.5716
+ATOM  H2    H5     0.0598
+ATOM  N3    NC    -0.7417
+ATOM  C4    CB     0.3800
+ATOM  C3'   CE     0.0713
+ATOM  H3'   H1     0.0985
+ATOM  C2'   CT    -0.0854
+ATOM  H2'   HC     0.0718
+ATOM  H2''  HC     0.0718
+ATOM  O3'   OS    -0.5232
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N9        C1'  C2'
+BOND N9   C8        N9   C4        C8   H8        C8   N7
+BOND N7   C5        C5   C6        C5   C4        C6   N6
+BOND C6   N1        N6   H61       N6   H62       N1   C2
+BOND C2   H2        C2   N3        N3   C4        C3'  H3'
+BOND C3'  C2'       C3'  O3'       C2'  H2'       C2'  H2''
+BOND O3'  +P
+IMPROPER   C8   C4   N9   C1'
+IMPROPER   C6   H61  N6   H62
+IMPROPER   N7   N9   C8   H8
+IMPROPER   N1   N3   C2   H2
+IMPROPER   C5   N1   C6   N6
+
+RESI AD3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     P      1.1659
+ATOM  O1P   O2    -0.7761
+ATOM  O2P   O2    -0.7761
+ATOM  O5'   OS    -0.4954
+ATOM  C5'   CI    -0.0069
+ATOM  H5'   H1     0.0754
+ATOM  H5''  H1     0.0754
+ATOM  C4'   CT     0.1629
+ATOM  H4'   H1     0.1176
+ATOM  O4'   OS    -0.3691
+ATOM  C1'   CT     0.0431
+ATOM  H1'   H2     0.1838
+ATOM  N9    NS    -0.0268
+ATOM  C8    C1     0.1607
+ATOM  H8    H5     0.1877
+ATOM  N7    NB    -0.6175
+ATOM  C5    CB     0.0725
+ATOM  C6    CA     0.6897
+ATOM  N6    N2    -0.9123
+ATOM  H61   H      0.4167
+ATOM  H62   H      0.4167
+ATOM  N1    NC    -0.7624
+ATOM  C2    CQ     0.5716
+ATOM  H2    H5     0.0598
+ATOM  N3    NC    -0.7417
+ATOM  C4    CB     0.3800
+ATOM  C3'   CE     0.0713
+ATOM  H3'   H1     0.0985
+ATOM  C2'   CT    -0.0854
+ATOM  H2'   HC     0.0718
+ATOM  H2''  HC     0.0718
+ATOM  O3'   OH    -0.6549
+ATOM  HO3'  HO     0.4396
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N9        C1'  C2'       N9   C8        N9   C4
+BOND C8   H8        C8   N7        N7   C5        C5   C6
+BOND C5   C4        C6   N6        C6   N1        N6   H61
+BOND N6   H62       N1   C2        C2   H2        C2   N3
+BOND N3   C4        C3'  H3'       C3'  C2'       C3'  O3'
+BOND C2'  H2'       C2'  H2''      O3'  HO3'
+IMPROPER   C8   C4   N9   C1'
+IMPROPER   C6   H61  N6   H62
+IMPROPER   N7   N9   C8   H8
+IMPROPER   N1   N3   C2   H2
+IMPROPER   C5   N1   C6   N6
+
+RESI GD5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  HO     0.4422
+ATOM  O5'   OH    -0.6318
+ATOM  C5'   CI    -0.0069
+ATOM  H5'   H1     0.0754
+ATOM  H5''  H1     0.0754
+ATOM  C4'   CT     0.1629
+ATOM  H4'   H1     0.1176
+ATOM  O4'   OS    -0.3691
+ATOM  C1'   CT     0.0358
+ATOM  H1'   H2     0.1746
+ATOM  N9    NS     0.0577
+ATOM  C8    CK     0.0736
+ATOM  H8    H5     0.1997
+ATOM  N7    NB    -0.5725
+ATOM  C5    CB     0.1991
+ATOM  C6    C      0.4918
+ATOM  O6    O     -0.5699
+ATOM  N1    NA    -0.5053
+ATOM  H1    H      0.3520
+ATOM  C2    CA     0.7432
+ATOM  N2    N2    -0.9230
+ATOM  H21   H      0.4235
+ATOM  H22   H      0.4235
+ATOM  N3    NC    -0.6636
+ATOM  C4    CB     0.1814
+ATOM  C3'   CE     0.0713
+ATOM  H3'   H1     0.0985
+ATOM  C2'   CT    -0.0854
+ATOM  H2'   HC     0.0718
+ATOM  H2''  HC     0.0718
+ATOM  O3'   OS    -0.5232
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N9        C1'  C2'
+BOND N9   C8        N9   C4        C8   H8        C8   N7
+BOND N7   C5        C5   C6        C5   C4        C6   O6
+BOND C6   N1        N1   H1        N1   C2        C2   N2
+BOND C2   N3        N2   H21       N2   H22       N3   C4
+BOND C3'  H3'       C3'  C2'       C3'  O3'       C2'  H2'
+BOND C2'  H2''
+BOND O3'  +P
+IMPROPER  C8   C4   N9   C1'
+IMPROPER  C5   N1   C6   O6
+IMPROPER  C6   C2   N1   H1
+IMPROPER  C2   H21  N2   H22
+IMPROPER  N7   N9   C8   H8
+IMPROPER  N1   N3   C2   N2
+
+RESI GD3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     P      1.1659
+ATOM  O1P   O2    -0.7761
+ATOM  O2P   O2    -0.7761
+ATOM  O5'   OS    -0.4954
+ATOM  C5'   CI    -0.0069
+ATOM  H5'   H1     0.0754
+ATOM  H5''  H1     0.0754
+ATOM  C4'   CT     0.1629
+ATOM  H4'   H1     0.1176
+ATOM  O4'   OS    -0.3691
+ATOM  C1'   CT     0.0358
+ATOM  H1'   H2     0.1746
+ATOM  N9    NS     0.0577
+ATOM  C8    CK     0.0736
+ATOM  H8    H5     0.1997
+ATOM  N7    NB    -0.5725
+ATOM  C5    CB     0.1991
+ATOM  C6    C      0.4918
+ATOM  O6    O     -0.5699
+ATOM  N1    NA    -0.5053
+ATOM  H1    H      0.3520
+ATOM  C2    CA     0.7432
+ATOM  N2    N2    -0.9230
+ATOM  H21   H      0.4235
+ATOM  H22   H      0.4235
+ATOM  N3    NC    -0.6636
+ATOM  C4    CB     0.1814
+ATOM  C3'   CE     0.0713
+ATOM  H3'   H1     0.0985
+ATOM  C2'   CT    -0.0854
+ATOM  H2'   HC     0.0718
+ATOM  H2''  HC     0.0718
+ATOM  O3'   OH    -0.6549
+ATOM  HO3'  HO     0.4396
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N9        C1'  C2'       N9   C8        N9   C4
+BOND C8   H8        C8   N7        N7   C5        C5   C6
+BOND C5   C4        C6   O6        C6   N1        N1   H1
+BOND N1   C2        C2   N2        C2   N3        N2   H21
+BOND N2   H22       N3   C4        C3'  H3'       C3'  C2'
+BOND C3'  O3'       C2'  H2'       C2'  H2''      O3'  HO3'
+IMPROPER  C8   C4   N9   C1'
+IMPROPER  C5   N1   C6   O6
+IMPROPER  C6   C2   N1   H1
+IMPROPER  C2   H21  N2   H22
+IMPROPER  N7   N9   C8   H8
+IMPROPER  N1   N3   C2   N2
+
+RESI CD5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  HO     0.4422
+ATOM  O5'   OH    -0.6318
+ATOM  C5'   CI    -0.0069
+ATOM  H5'   H1     0.0754
+ATOM  H5''  H1     0.0754
+ATOM  C4'   CT     0.1629
+ATOM  H4'   H1     0.1176
+ATOM  O4'   OS    -0.3691
+ATOM  C1'   CT    -0.0116
+ATOM  H1'   H2     0.1963
+ATOM  N1    NS    -0.0339
+ATOM  C6    CM    -0.0183
+ATOM  H6    H4     0.2293
+ATOM  C5    CM    -0.5222
+ATOM  H5    HA     0.1863
+ATOM  C4    CA     0.8439
+ATOM  N4    N2    -0.9773
+ATOM  H41   H      0.4314
+ATOM  H42   H      0.4314
+ATOM  N3    NC    -0.7748
+ATOM  C2    C      0.7959
+ATOM  O2    O     -0.6548
+ATOM  C3'   CE     0.0713
+ATOM  H3'   H1     0.0985
+ATOM  C2'   CT    -0.0854
+ATOM  H2'   HC     0.0718
+ATOM  H2''  HC     0.0718
+ATOM  O3'   OS    -0.5232
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N1        C1'  C2'
+BOND N1   C6        N1   C2        C6   H6        C6   C5
+BOND C5   H5        C5   C4        C4   N4        C4   N3
+BOND N4   H41       N4   H42       N3   C2        C2   O2
+BOND C3'  H3'       C3'  C2'       C3'  O3'       C2'  H2'
+BOND C2'  H2''
+BOND O3'  +P
+IMPROPER  C6   C2   N1   C1'
+IMPROPER  N1   N3   C2   O2
+IMPROPER  C4   H41  N4   H42
+IMPROPER  N1   C5   C6   H6
+IMPROPER  C6   C4   C5   H5
+IMPROPER  N3   C5   C4   N4
+
+RESI CD3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     P      1.1659
+ATOM  O1P   O2    -0.7761
+ATOM  O2P   O2    -0.7761
+ATOM  O5'   OS    -0.4954
+ATOM  C5'   CI    -0.0069
+ATOM  H5'   H1     0.0754
+ATOM  H5''  H1     0.0754
+ATOM  C4'   CT     0.1629
+ATOM  H4'   H1     0.1176
+ATOM  O4'   OS    -0.3691
+ATOM  C1'   CT    -0.0116
+ATOM  H1'   H2     0.1963
+ATOM  N1    NS    -0.0339
+ATOM  C6    CM    -0.0183
+ATOM  H6    H4     0.2293
+ATOM  C5    CM    -0.5222
+ATOM  H5    HA     0.1863
+ATOM  C4    CA     0.8439
+ATOM  N4    N2    -0.9773
+ATOM  H41   H      0.4314
+ATOM  H42   H      0.4314
+ATOM  N3    NC    -0.7748
+ATOM  C2    C      0.7959
+ATOM  O2    O     -0.6548
+ATOM  C3'   CE     0.0713
+ATOM  H3'   H1     0.0985
+ATOM  C2'   CT    -0.0854
+ATOM  H2'   HC     0.0718
+ATOM  H2''  HC     0.0718
+ATOM  O3'   OH    -0.6549
+ATOM  HO3'  HO     0.4396
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N1        C1'  C2'       N1   C6        N1   C2
+BOND C6   H6        C6   C5        C5   H5        C5   C4
+BOND C4   N4        C4   N3        N4   H41       N4   H42
+BOND N3   C2        C2   O2        C3'  H3'       C3'  C2'
+BOND C3'  O3'       C2'  H2'       C2'  H2''      O3'  HO3'
+IMPROPER  C6   C2   N1   C1'
+IMPROPER  N1   N3   C2   O2
+IMPROPER  C4   H41  N4   H42
+IMPROPER  N1   C5   C6   H6
+IMPROPER  C6   C4   C5   H5
+IMPROPER  N3   C5   C4   N4
+
+RESI TD5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  HO     0.4422
+ATOM  O5'   OH    -0.6318
+ATOM  C5'   CI    -0.0069
+ATOM  H5'   H1     0.0754
+ATOM  H5''  H1     0.0754
+ATOM  C4'   CT     0.1629
+ATOM  H4'   H1     0.1176
+ATOM  O4'   OS    -0.3691
+ATOM  C1'   CT     0.0680
+ATOM  H1'   H2     0.1804
+ATOM  N1    NS    -0.0239
+ATOM  C6    C2    -0.2209
+ATOM  H6    H4     0.2607
+ATOM  C5    C2     0.0025
+ATOM  C5M   CT    -0.2269
+ATOM  H51   HC     0.0770
+ATOM  H52   HC     0.0770
+ATOM  H53   HC     0.0770
+ATOM  C4    C      0.5194
+ATOM  O4    O     -0.5563
+ATOM  N3    NA    -0.4340
+ATOM  H3    H      0.3420
+ATOM  C2    C      0.5677
+ATOM  O2    O     -0.5881
+ATOM  C3'   CE     0.0713
+ATOM  H3'   H1     0.0985
+ATOM  C2'   CT    -0.0854
+ATOM  H2'   HC     0.0718
+ATOM  H2''  HC     0.0718
+ATOM  O3'   OS    -0.5232
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N1        C1'  C2'
+BOND N1   C6        N1   C2        C6   H6        C6   C5
+BOND C5   C5M       C5   C4        C5M  H51       C5M  H52
+BOND C5M  H53       C4   O4        C4   N3        N3   H3
+BOND N3   C2        C2   O2        C3'  H3'       C3'  C2'
+BOND C3'  O3'       C2'  H2'       C2'  H2''
+BOND O3'  +P
+IMPROPER  C6   C2   N1   C1'
+IMPROPER  C4   C6   C5   C5M
+IMPROPER  N1   N3   C2   O2
+IMPROPER  C5   N3   C4   O4
+IMPROPER  C2   C4   N3   H3
+IMPROPER  N1   C5   C6   H6
+
+RESI TD3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     P      1.1659
+ATOM  O1P   O2    -0.7761
+ATOM  O2P   O2    -0.7761
+ATOM  O5'   OS    -0.4954
+ATOM  C5'   CI    -0.0069
+ATOM  H5'   H1     0.0754
+ATOM  H5''  H1     0.0754
+ATOM  C4'   CT     0.1629
+ATOM  H4'   H1     0.1176
+ATOM  O4'   OS    -0.3691
+ATOM  C1'   CT     0.0680
+ATOM  H1'   H2     0.1804
+ATOM  N1    NS    -0.0239
+ATOM  C6    C2    -0.2209
+ATOM  H6    H4     0.2607
+ATOM  C5    C2     0.0025
+ATOM  C5M   CT    -0.2269
+ATOM  H51   HC     0.0770
+ATOM  H52   HC     0.0770
+ATOM  H53   HC     0.0770
+ATOM  C4    C      0.5194
+ATOM  O4    O     -0.5563
+ATOM  N3    NA    -0.4340
+ATOM  H3    H      0.3420
+ATOM  C2    C      0.5677
+ATOM  O2    O     -0.5881
+ATOM  C3'   CE     0.0713
+ATOM  H3'   H1     0.0985
+ATOM  C2'   CT    -0.0854
+ATOM  H2'   HC     0.0718
+ATOM  H2''  HC     0.0718
+ATOM  O3'   OH    -0.6549
+ATOM  HO3'  HO     0.4396
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N1        C1'  C2'       N1   C6        N1   C2
+BOND C6   H6        C6   C5        C5   C5M       C5   C4
+BOND C5M  H51       C5M  H52       C5M  H53       C4   O4
+BOND C4   N3        N3   H3        N3   C2        C2   O2
+BOND C3'  H3'       C3'  C2'       C3'  O3'       C2'  H2'
+BOND C2'  H2''      O3'  HO3'
+IMPROPER  C6   C2   N1   C1'
+IMPROPER  C4   C6   C5   C5M
+IMPROPER  N1   N3   C2   O2
+IMPROPER  C5   N3   C4   O4
+IMPROPER  C2   C4   N3   H3
+IMPROPER  N1   C5   C6   H6
+
+RESI AR5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  HO     0.4295
+ATOM  O5'   OH    -0.6223
+ATOM  C5'   CI     0.0558
+ATOM  H5'   H1     0.0679
+ATOM  H5''  H1     0.0679
+ATOM  C4'   CT     0.1065
+ATOM  H4'   H1     0.1174
+ATOM  O4'   OS    -0.3548
+ATOM  C1'   CT     0.0394
+ATOM  H1'   H2     0.2007
+ATOM  N9    NS    -0.0251
+ATOM  C8    CK     0.2006
+ATOM  H8    H5     0.1553
+ATOM  N7    NB    -0.6073
+ATOM  C5    CB     0.0515
+ATOM  C6    CA     0.7009
+ATOM  N6    N2    -0.9019
+ATOM  H61   H      0.4115
+ATOM  H62   H      0.4115
+ATOM  N1    NC    -0.7615
+ATOM  C2    CQ     0.5875
+ATOM  H2    H5     0.0473
+ATOM  N3    NC    -0.6997
+ATOM  C4    CB     0.3053
+ATOM  C3'   CT     0.2022
+ATOM  H3'   H1     0.0615
+ATOM  C2'   CT     0.0670
+ATOM  H2''  H1     0.0972
+ATOM  O2'   OH    -0.6139
+ATOM  H2'   HO     0.4186
+ATOM  O3'   OS    -0.5246
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N9        C1'  C2'
+BOND N9   C8        N9   C4        C8   H8        C8   N7
+BOND N7   C5        C5   C6        C5   C4        C6   N6
+BOND C6   N1        N6   H61       N6   H62       N1   C2
+BOND C2   H2        C2   N3        N3   C4        C3'  H3'
+BOND C3'  C2'       C3'  O3'       C2'  H2''      C2'  O2'
+BOND O2'  H2'
+BOND O3'  +P
+IMPROPER   C8   C4   N9   C1'
+IMPROPER   C6   H61  N6   H62
+IMPROPER   N7   N9   C8   H8
+IMPROPER   N1   N3   C2   H2
+IMPROPER   C5   N1   C6   N6
+
+RESI AR3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     P      1.1662
+ATOM  O1P   O2    -0.7760
+ATOM  O2P   O2    -0.7760
+ATOM  O5'   OS    -0.4989
+ATOM  C5'   CI     0.0558
+ATOM  H5'   H1     0.0679
+ATOM  H5''  H1     0.0679
+ATOM  C4'   CT     0.1065
+ATOM  H4'   H1     0.1174
+ATOM  O4'   OS    -0.3548
+ATOM  C1'   CT     0.0394
+ATOM  H1'   H2     0.2007
+ATOM  N9    NS    -0.0251
+ATOM  C8    CK     0.2006
+ATOM  H8    H5     0.1553
+ATOM  N7    NB    -0.6073
+ATOM  C5    CB     0.0515
+ATOM  C6    CA     0.7009
+ATOM  N6    N2    -0.9019
+ATOM  H61   H      0.4115
+ATOM  H62   H      0.4115
+ATOM  N1    NC    -0.7615
+ATOM  C2    CQ     0.5875
+ATOM  H2    H5     0.0473
+ATOM  N3    NC    -0.6997
+ATOM  C4    CB     0.3053
+ATOM  C3'   CT     0.2022
+ATOM  H3'   H1     0.0615
+ATOM  C2'   CT     0.0670
+ATOM  H2''  H1     0.0972
+ATOM  O2'   OH    -0.6139
+ATOM  H2'   HO     0.4186
+ATOM  O3'   OH    -0.6541
+ATOM  HO3'  HO     0.4376
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N9        C1'  C2'       N9   C8        N9   C4
+BOND C8   H8        C8   N7        N7   C5        C5   C6
+BOND C5   C4        C6   N6        C6   N1        N6   H61
+BOND N6   H62       N1   C2        C2   H2        C2   N3
+BOND N3   C4        C3'  H3'       C3'  C2'       C3'  O3'
+BOND C2'  H2''      C2'  O2'       O2'  H2'       O3'  HO3'
+IMPROPER   C8   C4   N9   C1'
+IMPROPER   C6   H61  N6   H62
+IMPROPER   N7   N9   C8   H8
+IMPROPER   N1   N3   C2   H2
+IMPROPER   C5   N1   C6   N6
+
+RESI GR5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  HO     0.4295
+ATOM  O5'   OH    -0.6223
+ATOM  C5'   CI     0.0558
+ATOM  H5'   H1     0.0679
+ATOM  H5''  H1     0.0679
+ATOM  C4'   CT     0.1065
+ATOM  H4'   H1     0.1174
+ATOM  O4'   OS    -0.3548
+ATOM  C1'   CT     0.0191
+ATOM  H1'   H2     0.2006
+ATOM  N9    NS     0.0492
+ATOM  C8    CK     0.1374
+ATOM  H8    H5     0.1640
+ATOM  N7    NB    -0.5709
+ATOM  C5    CB     0.1744
+ATOM  C6    C      0.4770
+ATOM  O6    O     -0.5597
+ATOM  N1    NA    -0.4787
+ATOM  H1    H      0.3424
+ATOM  C2    CA     0.7657
+ATOM  N2    N2    -0.9672
+ATOM  H21   H      0.4364
+ATOM  H22   H      0.4364
+ATOM  N3    NC    -0.6323
+ATOM  C4    CB     0.1222
+ATOM  C3'   CT     0.2022
+ATOM  H3'   H1     0.0615
+ATOM  C2'   CT     0.0670
+ATOM  H2''  H1     0.0972
+ATOM  O2'   OH    -0.6139
+ATOM  H2'   HO     0.4186
+ATOM  O3'   OS    -0.5246
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N9        C1'  C2'
+BOND N9   C8        N9   C4        C8   H8        C8   N7
+BOND N7   C5        C5   C6        C5   C4        C6   O6
+BOND C6   N1        N1   H1        N1   C2        C2   N2
+BOND C2   N3        N2   H21       N2   H22       N3   C4
+BOND C3'  H3'       C3'  C2'       C3'  O3'       C2'  H2''
+BOND C2'  O2'       O2'  H2'
+BOND O3'  +P
+IMPROPER  C8   C4   N9   C1'
+IMPROPER  C5   N1   C6   O6
+IMPROPER  C6   C2   N1   H1
+IMPROPER  C2   H21  N2   H22
+IMPROPER  N7   N9   C8   H8
+IMPROPER  N1   N3   C2   N2
+
+RESI GR3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     P      1.1662
+ATOM  O1P   O2    -0.7760
+ATOM  O2P   O2    -0.7760
+ATOM  O5'   OS    -0.4989
+ATOM  C5'   CI     0.0558
+ATOM  H5'   H1     0.0679
+ATOM  H5''  H1     0.0679
+ATOM  C4'   CT     0.1065
+ATOM  H4'   H1     0.1174
+ATOM  O4'   OS    -0.3548
+ATOM  C1'   CT     0.0191
+ATOM  H1'   H2     0.2006
+ATOM  N9    NS     0.0492
+ATOM  C8    CK     0.1374
+ATOM  H8    H5     0.1640
+ATOM  N7    NB    -0.5709
+ATOM  C5    CB     0.1744
+ATOM  C6    C      0.4770
+ATOM  O6    O     -0.5597
+ATOM  N1    NA    -0.4787
+ATOM  H1    H      0.3424
+ATOM  C2    CA     0.7657
+ATOM  N2    N2    -0.9672
+ATOM  H21   H      0.4364
+ATOM  H22   H      0.4364
+ATOM  N3    NC    -0.6323
+ATOM  C4    CB     0.1222
+ATOM  C3'   CT     0.2022
+ATOM  H3'   H1     0.0615
+ATOM  C2'   CT     0.0670
+ATOM  H2''  H1     0.0972
+ATOM  O2'   OH    -0.6139
+ATOM  H2'   HO     0.4186
+ATOM  O3'   OH    -0.6541
+ATOM  HO3'  HO     0.4376
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N9        C1'  C2'       N9   C8        N9   C4
+BOND C8   H8        C8   N7        N7   C5        C5   C6
+BOND C5   C4        C6   O6        C6   N1        N1   H1
+BOND N1   C2        C2   N2        C2   N3        N2   H21
+BOND N2   H22       N3   C4        C3'  H3'       C3'  C2'
+BOND C3'  O3'       C2'  H2''      C2'  O2'       O2'  H2'
+BOND O3'  HO3'
+IMPROPER  C8   C4   N9   C1'
+IMPROPER  C5   N1   C6   O6
+IMPROPER  C6   C2   N1   H1
+IMPROPER  C2   H21  N2   H22
+IMPROPER  N7   N9   C8   H8
+IMPROPER  N1   N3   C2   N2
+
+RESI CR5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  HO     0.4295
+ATOM  O5'   OH    -0.6223
+ATOM  C5'   CI     0.0558
+ATOM  H5'   H1     0.0679
+ATOM  H5''  H1     0.0679
+ATOM  C4'   CT     0.1065
+ATOM  H4'   H1     0.1174
+ATOM  O4'   OS    -0.3548
+ATOM  C1'   CT     0.0066
+ATOM  H1'   H2     0.2029
+ATOM  N1    NS    -0.0484
+ATOM  C6    CM     0.0053
+ATOM  H6    H4     0.1958
+ATOM  C5    CM    -0.5215
+ATOM  H5    HA     0.1928
+ATOM  C4    CA     0.8185
+ATOM  N4    N2    -0.9530
+ATOM  H41   H      0.4234
+ATOM  H42   H      0.4234
+ATOM  N3    NC    -0.7584
+ATOM  C2    C      0.7538
+ATOM  O2    O     -0.6252
+ATOM  C3'   CT     0.2022
+ATOM  H3'   H1     0.0615
+ATOM  C2'   CT     0.0670
+ATOM  H2''  H1     0.0972
+ATOM  O2'   OH    -0.6139
+ATOM  H2'   HO     0.4186
+ATOM  O3'   OS    -0.5246
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N1        C1'  C2'
+BOND N1   C6        N1   C2        C6   H6        C6   C5
+BOND C5   H5        C5   C4        C4   N4        C4   N3
+BOND N4   H41       N4   H42       N3   C2        C2   O2
+BOND C3'  H3'       C3'  C2'       C3'  O3'       C2'  H2''
+BOND C2'  O2'       O2'  H2'
+BOND O3'  +P
+IMPROPER  C6   C2   N1   C1'
+IMPROPER  N1   N3   C2   O2
+IMPROPER  C4   H41  N4   H42
+IMPROPER  N1   C5   C6   H6
+IMPROPER  C6   C4   C5   H5
+IMPROPER  N3   C5   C4   N4
+
+RESI CR3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     P      1.1662
+ATOM  O1P   O2    -0.7760
+ATOM  O2P   O2    -0.7760
+ATOM  O5'   OS    -0.4989
+ATOM  C5'   CI     0.0558
+ATOM  H5'   H1     0.0679
+ATOM  H5''  H1     0.0679
+ATOM  C4'   CT     0.1065
+ATOM  H4'   H1     0.1174
+ATOM  O4'   OS    -0.3548
+ATOM  C1'   CT     0.0066
+ATOM  H1'   H2     0.2029
+ATOM  N1    NS    -0.0484
+ATOM  C6    CM     0.0053
+ATOM  H6    H4     0.1958
+ATOM  C5    CM    -0.5215
+ATOM  H5    HA     0.1928
+ATOM  C4    CA     0.8185
+ATOM  N4    N2    -0.9530
+ATOM  H41   H      0.4234
+ATOM  H42   H      0.4234
+ATOM  N3    NC    -0.7584
+ATOM  C2    C      0.7538
+ATOM  O2    O     -0.6252
+ATOM  C3'   CT     0.2022
+ATOM  H3'   H1     0.0615
+ATOM  C2'   CT     0.0670
+ATOM  H2''  H1     0.0972
+ATOM  O2'   OH    -0.6139
+ATOM  H2'   HO     0.4186
+ATOM  O3'   OH    -0.6541
+ATOM  HO3'  HO     0.4376
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N1        C1'  C2'       N1   C6        N1   C2
+BOND C6   H6        C6   C5        C5   H5        C5   C4
+BOND C4   N4        C4   N3        N4   H41       N4   H42
+BOND N3   C2        C2   O2        C3'  H3'       C3'  C2'
+BOND C3'  O3'       C2'  H2''      C2'  O2'       O2'  H2'
+BOND O3'  HO3'
+IMPROPER  C6   C2   N1   C1'
+IMPROPER  N1   N3   C2   O2
+IMPROPER  C4   H41  N4   H42
+IMPROPER  N1   C5   C6   H6
+IMPROPER  C6   C4   C5   H5
+IMPROPER  N3   C5   C4   N4
+
+RESI UR5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  HO     0.4295
+ATOM  O5'   OH    -0.6223
+ATOM  C5'   CI     0.0558
+ATOM  H5'   H1     0.0679
+ATOM  H5''  H1     0.0679
+ATOM  C4'   CT     0.1065
+ATOM  H4'   H1     0.1174
+ATOM  O4'   OS    -0.3548
+ATOM  C1'   CT     0.0674
+ATOM  H1'   H2     0.1824
+ATOM  N1    NS     0.0418
+ATOM  C6    CM    -0.1126
+ATOM  H6    H4     0.2188
+ATOM  C5    CM    -0.3635
+ATOM  H5    HA     0.1811
+ATOM  C4    C      0.5952
+ATOM  O4    O     -0.5761
+ATOM  N3    NA    -0.3549
+ATOM  H3    H      0.3154
+ATOM  C2    C      0.4687
+ATOM  O2    O     -0.5477
+ATOM  C3'   CT     0.2022
+ATOM  H3'   H1     0.0615
+ATOM  C2'   CT     0.0670
+ATOM  H2''  H1     0.0972
+ATOM  O2'   OH    -0.6139
+ATOM  H2'   HO     0.4186
+ATOM  O3'   OS    -0.5246
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N1        C1'  C2'
+BOND N1   C6        N1   C2        C6   H6        C6   C5
+BOND C5   H5        C5   C4        C4   O4        C4   N3
+BOND N3   H3        N3   C2        C2   O2        C3'  H3'
+BOND C3'  C2'       C3'  O3'       C2'  H2''      C2'  O2'
+BOND O2'  H2'
+BOND O3'  +P
+IMPROPER  C6   C2   N1   C1'
+IMPROPER  C4   C6   C5   H5
+IMPROPER  N1   N3   C2   O2
+IMPROPER  C5   N3   C4   O4
+IMPROPER  C2   C4   N3   H3
+IMPROPER  N1   C5   C6   H6
+
+RESI UR3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     P      1.1662
+ATOM  O1P   O2    -0.7760
+ATOM  O2P   O2    -0.7760
+ATOM  O5'   OS    -0.4989
+ATOM  C5'   CI     0.0558
+ATOM  H5'   H1     0.0679
+ATOM  H5''  H1     0.0679
+ATOM  C4'   CT     0.1065
+ATOM  H4'   H1     0.1174
+ATOM  O4'   OS    -0.3548
+ATOM  C1'   CT     0.0674
+ATOM  H1'   H2     0.1824
+ATOM  N1    NS     0.0418
+ATOM  C6    CM    -0.1126
+ATOM  H6    H4     0.2188
+ATOM  C5    CM    -0.3635
+ATOM  H5    HA     0.1811
+ATOM  C4    C      0.5952
+ATOM  O4    O     -0.5761
+ATOM  N3    NA    -0.3549
+ATOM  H3    H      0.3154
+ATOM  C2    C      0.4687
+ATOM  O2    O     -0.5477
+ATOM  C3'   CT     0.2022
+ATOM  H3'   H1     0.0615
+ATOM  C2'   CT     0.0670
+ATOM  H2''  H1     0.0972
+ATOM  O2'   OH    -0.6139
+ATOM  H2'   HO     0.4186
+ATOM  O3'   OH    -0.6541
+ATOM  HO3'  HO     0.4376
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N1        C1'  C2'       N1   C6        N1   C2
+BOND C6   H6        C6   C5        C5   H5        C5   C4
+BOND C4   O4        C4   N3        N3   H3        N3   C2
+BOND C2   O2        C3'  H3'       C3'  C2'       C3'  O3'
+BOND C2'  H2''      C2'  O2'       O2'  H2'       O3'  HO3'
+IMPROPER  C6   C2   N1   C1'
+IMPROPER  C4   C6   C5   H5
+IMPROPER  N1   N3   C2   O2
+IMPROPER  C5   N3   C4   O4
+IMPROPER  C2   C4   N3   H3
+IMPROPER  N1   C5   C6   H6

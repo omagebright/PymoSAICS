@@ -1,0 +1,1404 @@
+*  AMBER Cornell et al. (parm94 & parm99) force field conversion
+*  Hybrid RNA:DNA topology for heteroduplex simulations
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+23    1
+
+! HYBRID TOPOLOGY FOR RNA:DNA HETERODUPLEX SIMULATIONS
+! RNA RESIDUES: ADE, URA, CYT, GUA (with O2' hydroxyl)
+! DNA RESIDUES: ADD, THD, CYD, GUD (deoxyribose, no O2')
+
+MASS    1  DNA-C        12.0100
+MASS    2  DNA-C1       12.0100
+MASS    3  DNA-C2       12.0100
+MASS    4  DNA-C7       12.0100
+MASS    5  DNA-CA       12.0100
+MASS    6  DNA-CB       12.0100
+MASS    7  DNA-CJ       12.0100
+MASS    8  DNA-CK       12.0100
+MASS    9  DNA-CM       12.0100
+MASS   10  DNA-CQ       12.0100
+MASS   11  DNA-CT       12.0100
+MASS   12  DNA-H         1.0080
+MASS   13  DNA-H1        1.0080
+MASS   14  DNA-H2        1.0080
+MASS   15  DNA-H4        1.0080
+MASS   16  DNA-H5        1.0080
+MASS   17  DNA-HA        1.0080
+MASS   18  DNA-HC        1.0080
+MASS   19  DNA-HO        1.0080
+MASS   20  DNA-N*       14.0100
+MASS   21  DNA-N2       14.0100
+MASS   22  DNA-NA       14.0100
+MASS   23  DNA-NB       14.0100
+MASS   24  DNA-NC       14.0100
+MASS   25  DNA-O        16.0000
+MASS   26  DNA-O2       16.0000
+MASS   27  DNA-OH       16.0000
+MASS   28  DNA-OS       16.0000
+MASS   29  DNA-P        30.9700
+MASS   30  RNA-C        12.0100
+MASS   31  RNA-C4       12.0100
+MASS   32  RNA-C5       12.0100
+MASS   33  RNA-CA       12.0100
+MASS   34  RNA-CB       12.0100
+MASS   35  RNA-CI       12.0100
+MASS   36  RNA-CP       12.0100
+MASS   37  RNA-CQ       12.0100
+MASS   38  RNA-CS       12.0100
+MASS   39  RNA-CT       12.0100
+MASS   40  RNA-H         1.0080
+MASS   41  RNA-H1        1.0080
+MASS   42  RNA-H2        1.0080
+MASS   43  RNA-H4        1.0080
+MASS   44  RNA-H5        1.0080
+MASS   45  RNA-HA        1.0080
+MASS   46  RNA-HO        1.0080
+MASS   47  RNA-N*       14.0100
+MASS   48  RNA-N2       14.0100
+MASS   49  RNA-NA       14.0100
+MASS   50  RNA-NB       14.0100
+MASS   51  RNA-NC       14.0100
+MASS   52  RNA-O        16.0000
+MASS   53  RNA-O2       16.0000
+MASS   54  RNA-OH       16.0000
+MASS   55  RNA-OS       16.0000
+MASS   56  RNA-P        30.9700
+
+DECL  -CA
+DECL  -C
+DECL  -O
+DECL  +N
+DECL  +H
+DECL  +CA
+DECL  +P
+DECL  +O1P
+DECL  +O2P
+DECL  +O5'
+DECL  -O3'
+
+DEFAULT FIRST NTER LAST CTER
+AUTOGENERATE ANGLES DIHEDRAL
+
+! ================================================================
+! RNA RESIDUES (ribose with O2' hydroxyl)
+! ================================================================
+
+RESI ADE -1.0            ! note: this is RNA (RA); patches to make
+GROUP                       ! terminal or deoxyribose are required
+ATOM  P     RNA-P       1.1662
+ATOM  O1P   RNA-O2     -0.7760
+ATOM  O2P   RNA-O2     -0.7760
+ATOM  O5'   RNA-OS     -0.4989
+ATOM  C5'   RNA-CI      0.0558
+ATOM  H5'   RNA-H1      0.0679     ! note: type is H5'1  --> this should be checked
+ATOM  H5''  RNA-H1      0.0679     ! note: type is H5'2
+ATOM  C4'   RNA-CT      0.1065
+ATOM  H4'   RNA-H1      0.1174
+ATOM  O4'   RNA-OS     -0.3548
+ATOM  C1'   RNA-CT      0.0394
+ATOM  H1'   RNA-H2      0.2007
+ATOM  N9    RNA-N*     -0.0251     ! note: type is N*
+ATOM  C8    RNA-C5      0.2006
+ATOM  H8    RNA-H5      0.1553
+ATOM  N7    RNA-NB     -0.6073
+ATOM  C5    RNA-CB      0.0515
+ATOM  C6    RNA-CA      0.7009
+ATOM  N6    RNA-N2     -0.9019
+ATOM  H61   RNA-H       0.4115
+ATOM  H62   RNA-H       0.4115
+ATOM  N1    RNA-NC     -0.7615
+ATOM  C2    RNA-CQ      0.5875
+ATOM  H2    RNA-H5      0.0473
+ATOM  N3    RNA-NC     -0.6997
+ATOM  C4    RNA-CB      0.3053
+ATOM  C3'   RNA-CT      0.2022     ! BUG H FIX (2026-05-12): RNA C3' stays CT; parmbsc1 CE rename is DNA-only
+ATOM  H3'   RNA-H1      0.0615
+ATOM  C2'   RNA-CT      0.0670
+ATOM  H2''  RNA-H1      0.0972     ! note: this is H2'1
+ATOM  O2'   RNA-OH     -0.6139
+ATOM  H2'   RNA-HO      0.4186     ! note: this is HO'2
+ATOM  O3'   RNA-OS     -0.5246
+
+!  using charmm bond lists (top_all22_na.inp)
+BOND C2'  O2'       O2'  H2'
+BOND P    O1P       P    O2P       P    O5'
+BOND O5'  C5'       C5'  C4'       C4'  O4'       C4'  C3'       O4'  C1'
+BOND C1'  N9        C1'  C2'       N9   C4        N9   C8        C4   N3
+BOND C4   C5        N3   C2        C2   N1        N1   C6        C6   N6
+BOND N6   H61       N6   H62       C6   C5        C5   N7        N7   C8
+BOND C2'  C3'       C3'  O3'       O3'  +P
+BOND C1'  H1'       C2'  H2''      C3'  H3'       C4'  H4'       C5'  H5'
+BOND C5'  H5''      C8   H8        C2   H2
+
+IMPROPER  C8    C4    N9    C1'
+IMPROPER  C6    H61   N6    H62
+IMPROPER  N7    N9    C8    H8
+IMPROPER  N1    N3    C2    H2
+IMPROPER  C5    N1    C6    N6
+
+DONO H61  N6
+DONO H62  N6
+DONO H2'  O2'
+ACCE N3
+ACCE N7
+ACCE N1
+ACCE O1P  P
+ACCE O2P  P
+ACCE O2'
+ACCE O3'
+ACCE O4'
+ACCE O5'
+
+PATCH FIRST ADE5 LAST ADE3
+
+RESI URA -1.0            ! note: this is RNA (RA); patches to make
+GROUP                       ! terminal are required.
+ATOM  P     RNA-P       1.1662
+ATOM  O1P   RNA-O2     -0.7760
+ATOM  O2P   RNA-O2     -0.7760
+ATOM  O5'   RNA-OS     -0.4989
+ATOM  C5'   RNA-CI      0.0558
+ATOM  H5'   RNA-H1      0.0679     ! note: name is H5'1
+ATOM  H5''  RNA-H1      0.0679     ! note: name is H5'2
+ATOM  C4'   RNA-CT      0.1065
+ATOM  H4'   RNA-H1      0.1174
+ATOM  O4'   RNA-OS     -0.3548
+ATOM  C1'   RNA-CT      0.0674
+ATOM  H1'   RNA-H2      0.1824
+ATOM  N1    RNA-N*      0.0418     ! note: type is N*
+ATOM  C6    RNA-CS     -0.1126
+ATOM  H6    RNA-H4      0.2188
+ATOM  C5    RNA-CS     -0.3635
+ATOM  H5    RNA-HA      0.1811
+ATOM  C4    RNA-C       0.5952
+ATOM  O4    RNA-O      -0.5761
+ATOM  N3    RNA-NA     -0.3549
+ATOM  H3    RNA-H       0.3154
+ATOM  C2    RNA-C       0.4687
+ATOM  O2    RNA-O      -0.5477
+ATOM  C3'   RNA-CT      0.2022    ! BUG H FIX (2026-05-12): RNA C3' stays CT; parmbsc1 CE rename is DNA-only
+ATOM  H3'   RNA-H1      0.0615
+ATOM  C2'   RNA-CT      0.0670
+ATOM  H2''  RNA-H1      0.0972    ! note: name is H2'1
+ATOM  O2'   RNA-OH     -0.6139
+ATOM  H2'   RNA-HO      0.4186    ! note: name is HO'2
+ATOM  O3'   RNA-OS     -0.5246
+
+BOND P    O1P       P    O2P       P     O5'
+BOND O5'  C5'       C5'  C4'       C4'  O4'       C4'  C3'       O4'  C1'
+BOND C1'  N1        C1'  C2'       N1   C2        N1   C6        C2   O2
+BOND C2   N3        N3   H3        N3   C4        C4   O4        C4   C5
+BOND C5   C6        C2'  C3'       C3'  O3'       O3'  +P
+BOND C2'  O2'       O2'  H2'
+BOND C1'  H1'       C2'  H2''      C3'  H3'       C4'  H4'       C5'  H5'
+BOND C5'  H5''      C5   H5        C6   H6
+
+IMPROPER  C2    C6    N1    C1'
+IMPROPER  C6    C4    C5    H5
+IMPROPER  N1    N3    C2    O2
+IMPROPER  C5    N3    C4    O4
+IMPROPER  C4    C2    N3    H3
+IMPROPER  N1    C5    C6    H6
+
+DONO H3   N3
+DONO H2'  O2'
+ACCE O2   C2
+ACCE O4   C4
+ACCE O1P  P
+ACCE O2P  P
+ACCE O2'
+ACCE O3'
+ACCE O4'
+ACCE O5'
+
+PATCH FIRST URA5 LAST URA3
+
+RESI CYT  -1.0              ! note: this is RNA (RC); patches to make
+GROUP                       ! terminal or deoxyribose are required
+ATOM  P     RNA-P       1.1662
+ATOM  O1P   RNA-O2     -0.7760
+ATOM  O2P   RNA-O2     -0.7760
+ATOM  O5'   RNA-OS     -0.4989
+ATOM  C5'   RNA-CI      0.0558
+ATOM  H5'   RNA-H1      0.0679    ! this is H5'1
+ATOM  H5''  RNA-H1      0.0679    ! this is H5'2
+ATOM  C4'   RNA-CT      0.1065
+ATOM  H4'   RNA-H1      0.1174
+ATOM  O4'   RNA-OS     -0.3548
+ATOM  C1'   RNA-CT      0.0066
+ATOM  H1'   RNA-H2      0.2029
+ATOM  N1    RNA-N*     -0.0484    ! this is type N*
+ATOM  C6    RNA-C4      0.0053
+ATOM  H6    RNA-H4      0.1958
+ATOM  C5    RNA-C4     -0.5215
+ATOM  H5    RNA-HA      0.1928
+ATOM  C4    RNA-CA      0.8185
+ATOM  N4    RNA-N2     -0.9530
+ATOM  H41   RNA-H       0.4234
+ATOM  H42   RNA-H       0.4234
+ATOM  N3    RNA-NC     -0.7584
+ATOM  C2    RNA-C       0.7538
+ATOM  O2    RNA-O      -0.6252
+ATOM  C3'   RNA-CT      0.2022    ! BUG H FIX (2026-05-12): RNA C3' stays CT; parmbsc1 CE rename is DNA-only
+ATOM  H3'   RNA-H1      0.0615
+ATOM  C2'   RNA-CT      0.0670
+ATOM  H2''  RNA-H1      0.0972    ! this is H2'1
+ATOM  O2'   RNA-OH     -0.6139
+ATOM  H2'   RNA-HO      0.4186    ! this is HO'2
+ATOM  O3'   RNA-OS     -0.5246
+
+BOND C2'  O2'       O2'  H2'
+BOND P    O1P       P    O2P       P     O5'
+BOND O5'  C5'       C5'  C4'       C4'  O4'       C4'  C3'       O4'  C1'
+BOND C1'  N1        C1'  C2'       N1   C2        N1   C6        C2   O2
+BOND C2   N3        N3   C4        C4   N4        N4   H41       N4   H42
+BOND C4   C5        C5   C6        C2'  C3'       C3'  O3'       O3'  +P
+BOND C1'  H1'       C2'  H2''      C3'  H3'       C4'  H4'       C5'  H5'
+BOND C5'  H5''      C5   H5        C6   H6
+
+IMPROPER  C2    C6    N1    C1'
+IMPROPER  N1    N3    C2    O2
+IMPROPER  C4    H41   N4    H42
+IMPROPER  N1    C5    C6    H6
+IMPROPER  C6    C4    C5    H5
+IMPROPER  C5    N4    C4    N3
+
+DONO H42  N4
+DONO H2'  O2'
+DONO H41  N4
+ACCE O2   C2
+ACCE N3
+ACCE O1P  P
+ACCE O2P  P
+ACCE O2'
+ACCE O3'
+ACCE O4'
+ACCE O5'
+
+PATCH FIRST CYT5 LAST CYT3
+
+RESI GUA  -1.0              ! note: this is GUA (RG); patches to make
+GROUP                       ! terminal or deoxyribose are required
+ATOM  P     RNA-P       1.1662
+ATOM  O1P   RNA-O2     -0.7760
+ATOM  O2P   RNA-O2     -0.7760
+ATOM  O5'   RNA-OS     -0.4989
+ATOM  C5'   RNA-CI      0.0558
+ATOM  H5'   RNA-H1      0.0679    ! this is H5'1
+ATOM  H5''  RNA-H1      0.0679    ! this is H5'2
+ATOM  C4'   RNA-CT      0.1065
+ATOM  H4'   RNA-H1      0.1174
+ATOM  O4'   RNA-OS     -0.3548
+ATOM  C1'   RNA-CT      0.0191
+ATOM  H1'   RNA-H2      0.2006
+ATOM  N9    RNA-N*      0.0492    ! this is type N*
+ATOM  C8    RNA-CP      0.1374
+ATOM  H8    RNA-H5      0.1640
+ATOM  N7    RNA-NB     -0.5709
+ATOM  C5    RNA-CB      0.1744
+ATOM  C6    RNA-C       0.4770
+ATOM  O6    RNA-O      -0.5597
+ATOM  N1    RNA-NA     -0.4787
+ATOM  H1    RNA-H       0.3424
+ATOM  C2    RNA-CA      0.7657
+ATOM  N2    RNA-N2     -0.9672
+ATOM  H21   RNA-H       0.4364
+ATOM  H22   RNA-H       0.4364
+ATOM  N3    RNA-NC     -0.6323
+ATOM  C4    RNA-CB      0.1222
+ATOM  C3'   RNA-CT      0.2022    ! BUG H FIX (2026-05-12): RNA C3' stays CT; parmbsc1 CE rename is DNA-only
+ATOM  H3'   RNA-H1      0.0615
+ATOM  C2'   RNA-CT      0.0670
+ATOM  H2''  RNA-H1      0.0972    ! this is H2'1
+ATOM  O2'   RNA-OH     -0.6139
+ATOM  H2'   RNA-HO      0.4186    ! this is HO'2
+ATOM  O3'   RNA-OS     -0.5246
+
+BOND C2'  O2'       O2'  H2'
+BOND P    O1P       P    O2P       P     O5'
+BOND O5'  C5'       C5'  C4'       C4'  O4'       C4'  C3'       O4'  C1'
+BOND C1'  N9        C1'  C2'       N9   C4        N9   C8        C4   N3
+BOND C4   C5        N3   C2        C2   N2        C2   N1        N2   H21
+BOND N2   H22       N1   H1        N1   C6        C6   O6        C6   C5
+BOND C5   N7        N7   C8        C2'  C3'       C3'  O3'       O3'  +P
+BOND C1'  H1'       C2'  H2''      C3'  H3'       C4'  H4'       C5'  H5'
+BOND C5'  H5''      C8   H8
+
+IMPROPER  C8    C4    N9    C1'
+IMPROPER  C5    N1    C6    O6
+IMPROPER  C6    C2    N1    H1
+IMPROPER  C2    H21   N2    H22
+IMPROPER  N7    N9    C8    H8
+IMPROPER  N1    N3    C2    N2
+
+DONO H21  N2
+DONO H22  N2
+DONO H1   N1
+DONO H2'  O2'
+ACCE O6   C6
+ACCE N3
+ACCE N7
+ACCE O1P  P
+ACCE O2P  P
+ACCE O2'
+ACCE O3'
+ACCE O4'
+ACCE O5'
+
+PATCH FIRST GUA5 LAST GUA3
+
+! ================================================================
+! DNA RESIDUES (deoxyribose without O2' hydroxyl)
+! ================================================================
+
+RESI ADD -1.0            ! DNA adenine (renamed from ADE)
+GROUP                    ! deoxyribose - no O2' hydroxyl
+ATOM  P     DNA-P       1.1659
+ATOM  O1P   DNA-O2     -0.7761
+ATOM  O2P   DNA-O2     -0.7761
+ATOM  O5'   DNA-OS     -0.4954
+ATOM  C5'   DNA-CJ     -0.0069
+ATOM  H5'   DNA-H1      0.0754     ! note: type is H5'1  --> this should be checked
+ATOM  H5''  DNA-H1      0.0754     ! note: type is H5'2
+ATOM  C4'   DNA-CT      0.1629
+ATOM  H4'   DNA-H1      0.1176
+ATOM  O4'   DNA-OS     -0.3691
+ATOM  C1'   DNA-CT      0.0431
+ATOM  H1'   DNA-H2      0.1838
+ATOM  N9    DNA-N*     -0.0268     ! note: type is N*
+ATOM  C8    DNA-C2      0.1607
+ATOM  H8    DNA-H5      0.1877
+ATOM  N7    DNA-NB     -0.6175
+ATOM  C5    DNA-CB      0.0725
+ATOM  C6    DNA-CA      0.6897
+ATOM  N6    DNA-N2     -0.9123
+ATOM  H61   DNA-H       0.4167
+ATOM  H62   DNA-H       0.4167
+ATOM  N1    DNA-NC     -0.7624
+ATOM  C2    DNA-CQ      0.5716
+ATOM  H2    DNA-H5      0.0598
+ATOM  N3    DNA-NC     -0.7417
+ATOM  C4    DNA-CB      0.3800
+ATOM  C3'   DNA-C7      0.0713
+ATOM  H3'   DNA-H1      0.0985
+ATOM  C2'   DNA-CT     -0.0854
+ATOM  H2'   DNA-HC      0.0718     ! note: this is H2'1
+ATOM  H2''  DNA-HC      0.0718     ! note: this is H2'2
+ATOM  O3'   DNA-OS     -0.5232
+
+BOND C2'  H2'       C2'  H2''
+BOND P    O1P       P    O2P       P    O5'
+BOND O5'  C5'       C5'  C4'       C4'  O4'       C4'  C3'       O4'  C1'
+BOND C1'  N9        C1'  C2'       N9   C4        N9   C8        C4   N3
+BOND C4   C5        N3   C2        C2   N1        N1   C6        C6   N6
+BOND N6   H61       N6   H62       C6   C5        C5   N7        N7   C8
+BOND C2'  C3'       C3'  O3'       O3'  +P
+BOND C1'  H1'       C3'  H3'       C4'  H4'       C5'  H5'
+BOND C5'  H5''      C8   H8        C2   H2
+
+IMPROPER  C8    C4    N9    C1'
+IMPROPER  C6    H61   N6    H62
+IMPROPER  N9    N7    C8    H8
+IMPROPER  N1    N3    C2    H2
+IMPROPER  C5    N6    C6    N1
+
+DONO H61  N6
+DONO H62  N6
+ACCE N3
+ACCE N7
+ACCE N1
+ACCE O1P  P
+ACCE O2P  P
+ACCE O3'
+ACCE O4'
+ACCE O5'
+
+PATCH FIRST ADE5 LAST ADE3
+
+
+RESI THD -1.0            ! DNA thymine (renamed from THY)
+GROUP                    ! deoxyribose - no O2' hydroxyl
+ATOM  P     DNA-P       1.1659
+ATOM  O1P   DNA-O2     -0.7761
+ATOM  O2P   DNA-O2     -0.7761
+ATOM  O5'   DNA-OS     -0.4954
+ATOM  C5'   DNA-CJ     -0.0069
+ATOM  H5'   DNA-H1      0.0754    ! this is H5'1
+ATOM  H5''  DNA-H1      0.0754    ! this is H5'2
+ATOM  C4'   DNA-CT      0.1629
+ATOM  H4'   DNA-H1      0.1176
+ATOM  O4'   DNA-OS     -0.3691
+ATOM  C1'   DNA-CT      0.0680
+ATOM  H1'   DNA-H2      0.1804
+ATOM  N1    DNA-N*     -0.0239    ! this is atom type N*
+ATOM  C6    DNA-CM     -0.2209
+ATOM  H6    DNA-H4      0.2607
+ATOM  C5    DNA-CM      0.0025
+ATOM  C5M   DNA-CT     -0.2269
+ATOM  H51   DNA-HC      0.0770
+ATOM  H52   DNA-HC      0.0770
+ATOM  H53   DNA-HC      0.0770
+ATOM  C4    DNA-C       0.5194
+ATOM  O4    DNA-O      -0.5563
+ATOM  N3    DNA-NA     -0.4340
+ATOM  H3    DNA-H       0.3420
+ATOM  C2    DNA-C       0.5677
+ATOM  O2    DNA-O      -0.5881
+ATOM  C3'   DNA-C7      0.0713
+ATOM  H3'   DNA-H1      0.0985
+ATOM  C2'   DNA-CT     -0.0854
+ATOM  H2'   DNA-HC      0.0718    ! this is H2'1
+ATOM  H2''  DNA-HC      0.0718    ! this is H2'2
+ATOM  O3'   DNA-OS     -0.5232
+
+BOND C2'  H2'       C2'  H2''
+BOND P    O1P       P    O2P       P     O5'
+BOND O5'  C5'       C5'  C4'       C4'  O4'       C4'  C3'       O4'  C1'
+BOND C1'  N1        C1'  C2'       N1   C2        N1   C6        C2   O2
+BOND C2   N3        N3   H3        N3   C4        C4   O4        C4   C5
+BOND C5   C5M       C5   C6        C2'  C3'       C3'  O3'       O3'  +P
+BOND C1'  H1'       C3'  H3'       C4'  H4'       C5'  H5'
+BOND C5'  H5''      C6   H6        C5M  H51       C5M  H52       C5M  H53
+
+IMPROPER  C6    C2    N1    C1'
+IMPROPER  C4    C6    C5    C5M
+IMPROPER  N1    N3    C2    O2
+IMPROPER  C5    N3    C4    O4
+IMPROPER  C2    C4    N3    H3
+IMPROPER  N1    C5    C6    H6
+
+DONO H3   N3
+ACCE O2   C2
+ACCE O4   C4
+ACCE O1P  P
+ACCE O2P  P
+ACCE O3'
+ACCE O4'
+ACCE O5'
+
+PATCH FIRST THY5 LAST THY3
+
+
+RESI CYD -1.0              ! DNA cytosine (renamed from CYT)
+GROUP                      ! deoxyribose - no O2' hydroxyl
+ATOM  P     DNA-P       1.1659
+ATOM  O1P   DNA-O2     -0.7761
+ATOM  O2P   DNA-O2     -0.7761
+ATOM  O5'   DNA-OS     -0.4954
+ATOM  C5'   DNA-CJ     -0.0069
+ATOM  H5'   DNA-H1      0.0754    ! this is H5'1
+ATOM  H5''  DNA-H1      0.0754    ! this is H5'2
+ATOM  C4'   DNA-CT      0.1629
+ATOM  H4'   DNA-H1      0.1176
+ATOM  O4'   DNA-OS     -0.3691
+ATOM  C1'   DNA-CT     -0.0116
+ATOM  H1'   DNA-H2      0.1963
+ATOM  N1    DNA-N*     -0.0339    ! this is type N*
+ATOM  C6    DNA-C1     -0.0183
+ATOM  H6    DNA-H4      0.2293
+ATOM  C5    DNA-C1     -0.5222
+ATOM  H5    DNA-HA      0.1863
+ATOM  C4    DNA-CA      0.8439
+ATOM  N4    DNA-N2     -0.9773
+ATOM  H41   DNA-H       0.4314
+ATOM  H42   DNA-H       0.4314
+ATOM  N3    DNA-NC     -0.7748
+ATOM  C2    DNA-C       0.7959
+ATOM  O2    DNA-O      -0.6548
+ATOM  C3'   DNA-C7      0.0713
+ATOM  H3'   DNA-H1      0.0985
+ATOM  C2'   DNA-CT     -0.0854
+ATOM  H2''  DNA-HC      0.0718    ! this is H2'2
+ATOM  H2'   DNA-HC      0.0718    ! this is H2'1
+ATOM  O3'   DNA-OS     -0.5232
+
+BOND C2'  H2'       C2'  H2''
+BOND P    O1P       P    O2P       P     O5'
+BOND O5'  C5'       C5'  C4'       C4'  O4'       C4'  C3'       O4'  C1'
+BOND C1'  N1        C1'  C2'       N1   C2        N1   C6        C2   O2
+BOND C2   N3        N3   C4        C4   N4        N4   H41       N4   H42
+BOND C4   C5        C5   C6        C2'  C3'       C3'  O3'       O3'  +P
+BOND C1'  H1'       C3'  H3'       C4'  H4'       C5'  H5'
+BOND C5'  H5''      C5   H5        C6   H6
+
+IMPROPER  C6    C2    N1    C1'
+IMPROPER  N1    N3    C2    O2
+IMPROPER  C4    H41   N4    H42
+IMPROPER  N1    C5    C6    H6
+IMPROPER  C6    C4    C5    H5
+IMPROPER  N3    C5    C4    N4
+
+DONO H42  N4
+DONO H41  N4
+ACCE O2   C2
+ACCE N3
+ACCE O1P  P
+ACCE O2P  P
+ACCE O3'
+ACCE O4'
+ACCE O5'
+
+PATCH FIRST CYT5 LAST CYT3
+
+
+RESI GUD -1.0              ! DNA guanine (renamed from GUA)
+GROUP                      ! deoxyribose - no O2' hydroxyl
+ATOM  P     DNA-P       1.1659
+ATOM  O1P   DNA-O2     -0.7761
+ATOM  O2P   DNA-O2     -0.7761
+ATOM  O5'   DNA-OS     -0.4954
+ATOM  C5'   DNA-CJ     -0.0069
+ATOM  H5'   DNA-H1      0.0754    ! this is H5'1
+ATOM  H5''  DNA-H1      0.0754    ! this is H5'2
+ATOM  C4'   DNA-CT      0.1629
+ATOM  H4'   DNA-H1      0.1176
+ATOM  O4'   DNA-OS     -0.3691
+ATOM  C1'   DNA-CT      0.0358
+ATOM  H1'   DNA-H2      0.1746
+ATOM  N9    DNA-N*      0.0577    ! this is type N*
+ATOM  C8    DNA-CK      0.0736
+ATOM  H8    DNA-H5      0.1997
+ATOM  N7    DNA-NB     -0.5725
+ATOM  C5    DNA-CB      0.1991
+ATOM  C6    DNA-C       0.4918
+ATOM  O6    DNA-O      -0.5699
+ATOM  N1    DNA-NA     -0.5053
+ATOM  H1    DNA-H       0.3520
+ATOM  C2    DNA-CA      0.7432
+ATOM  N2    DNA-N2     -0.9230
+ATOM  H21   DNA-H       0.4235
+ATOM  H22   DNA-H       0.4235
+ATOM  N3    DNA-NC     -0.6636
+ATOM  C4    DNA-CB      0.1814
+ATOM  C3'   DNA-C7      0.0713
+ATOM  H3'   DNA-H1      0.0985
+ATOM  C2'   DNA-CT     -0.0854
+ATOM  H2''  DNA-HC      0.0718    ! this is H2'2
+ATOM  H2'   DNA-HC      0.0718    ! this is H2'1
+ATOM  O3'   DNA-OS     -0.5232
+
+BOND C2'  H2'       C2'  H2''
+BOND P    O1P       P    O2P       P     O5'
+BOND O5'  C5'       C5'  C4'       C4'  O4'       C4'  C3'       O4'  C1'
+BOND C1'  N9        C1'  C2'       N9   C4        N9   C8        C4   N3
+BOND C4   C5        N3   C2        C2   N2        C2   N1        N2   H21
+BOND N2   H22       N1   H1        N1   C6        C6   O6        C6   C5
+BOND C5   N7        N7   C8        C2'  C3'       C3'  O3'       O3'  +P
+BOND C1'  H1'       C3'  H3'       C4'  H4'       C5'  H5'
+BOND C5'  H5''      C8   H8
+
+IMPROPER  C4    C8    N9    C1'
+IMPROPER  C5    N1    C6    O6
+IMPROPER  C6    C2    N1    H1
+IMPROPER  C2    H21   N2    H22
+IMPROPER  N9    N7    C8    H8
+IMPROPER  N2    N1    C2    N3
+
+DONO H21  N2
+DONO H22  N2
+DONO H1   N1
+ACCE O6   C6
+ACCE N3
+ACCE N7
+ACCE O1P  P
+ACCE O2P  P
+ACCE O3'
+ACCE O4'
+ACCE O5'
+
+PATCH FIRST GUA5 LAST GUA3
+
+! =================================================================
+! Terminal-variant residues (2026-05-13)
+! 5'-OH and 3'-OH terminals for all 8 nucleotides.
+! Extracted from AMBER parmBSC1.lib with MOSAICS atom-name / type aliases.
+! Bug H respected: RNA C3' stays CT in MOSAICS hybrid RTF.
+! =================================================================
+
+RESI AD5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  DNA-HO      0.4422
+ATOM  O5'   DNA-OH     -0.6318
+ATOM  C5'   DNA-CJ     -0.0069
+ATOM  H5'   DNA-H1      0.0754
+ATOM  H5''  DNA-H1      0.0754
+ATOM  C4'   DNA-CT      0.1629
+ATOM  H4'   DNA-H1      0.1176
+ATOM  O4'   DNA-OS     -0.3691
+ATOM  C1'   DNA-CT      0.0431
+ATOM  H1'   DNA-H2      0.1838
+ATOM  N9    DNA-N*     -0.0268
+ATOM  C8    DNA-C2      0.1607
+ATOM  H8    DNA-H5      0.1877
+ATOM  N7    DNA-NB     -0.6175
+ATOM  C5    DNA-CB      0.0725
+ATOM  C6    DNA-CA      0.6897
+ATOM  N6    DNA-N2     -0.9123
+ATOM  H61   DNA-H       0.4167
+ATOM  H62   DNA-H       0.4167
+ATOM  N1    DNA-NC     -0.7624
+ATOM  C2    DNA-CQ      0.5716
+ATOM  H2    DNA-H5      0.0598
+ATOM  N3    DNA-NC     -0.7417
+ATOM  C4    DNA-CB      0.3800
+ATOM  C3'   DNA-C7      0.0713
+ATOM  H3'   DNA-H1      0.0985
+ATOM  C2'   DNA-CT     -0.0854
+ATOM  H2'   DNA-HC      0.0718
+ATOM  H2''  DNA-HC      0.0718
+ATOM  O3'   DNA-OS     -0.5232
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N9        C1'  C2'
+BOND N9   C8        N9   C4        C8   H8        C8   N7
+BOND N7   C5        C5   C6        C5   C4        C6   N6
+BOND C6   N1        N6   H61       N6   H62       N1   C2
+BOND C2   H2        C2   N3        N3   C4        C3'  H3'
+BOND C3'  C2'       C3'  O3'       C2'  H2'       C2'  H2''
+BOND O3'  +P
+IMPROPER  C8    C4    N9    C1'
+IMPROPER  C6    H61   N6    H62
+IMPROPER  N7    N9    C8    H8
+IMPROPER  N1    N3    C2    H2
+IMPROPER  C5    N1    C6    N6
+
+RESI AD3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     DNA-P       1.1659
+ATOM  O1P   DNA-O2     -0.7761
+ATOM  O2P   DNA-O2     -0.7761
+ATOM  O5'   DNA-OS     -0.4954
+ATOM  C5'   DNA-CJ     -0.0069
+ATOM  H5'   DNA-H1      0.0754
+ATOM  H5''  DNA-H1      0.0754
+ATOM  C4'   DNA-CT      0.1629
+ATOM  H4'   DNA-H1      0.1176
+ATOM  O4'   DNA-OS     -0.3691
+ATOM  C1'   DNA-CT      0.0431
+ATOM  H1'   DNA-H2      0.1838
+ATOM  N9    DNA-N*     -0.0268
+ATOM  C8    DNA-C2      0.1607
+ATOM  H8    DNA-H5      0.1877
+ATOM  N7    DNA-NB     -0.6175
+ATOM  C5    DNA-CB      0.0725
+ATOM  C6    DNA-CA      0.6897
+ATOM  N6    DNA-N2     -0.9123
+ATOM  H61   DNA-H       0.4167
+ATOM  H62   DNA-H       0.4167
+ATOM  N1    DNA-NC     -0.7624
+ATOM  C2    DNA-CQ      0.5716
+ATOM  H2    DNA-H5      0.0598
+ATOM  N3    DNA-NC     -0.7417
+ATOM  C4    DNA-CB      0.3800
+ATOM  C3'   DNA-C7      0.0713
+ATOM  H3'   DNA-H1      0.0985
+ATOM  C2'   DNA-CT     -0.0854
+ATOM  H2'   DNA-HC      0.0718
+ATOM  H2''  DNA-HC      0.0718
+ATOM  O3'   DNA-OH     -0.6549
+ATOM  HO3'  DNA-HO      0.4396
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N9        C1'  C2'       N9   C8        N9   C4
+BOND C8   H8        C8   N7        N7   C5        C5   C6
+BOND C5   C4        C6   N6        C6   N1        N6   H61
+BOND N6   H62       N1   C2        C2   H2        C2   N3
+BOND N3   C4        C3'  H3'       C3'  C2'       C3'  O3'
+BOND C2'  H2'       C2'  H2''      O3'  HO3'
+IMPROPER  C8    C4    N9    C1'
+IMPROPER  C6    H61   N6    H62
+IMPROPER  N7    N9    C8    H8
+IMPROPER  N1    N3    C2    H2
+IMPROPER  C5    N1    C6    N6
+
+RESI GD5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  DNA-HO      0.4422
+ATOM  O5'   DNA-OH     -0.6318
+ATOM  C5'   DNA-CJ     -0.0069
+ATOM  H5'   DNA-H1      0.0754
+ATOM  H5''  DNA-H1      0.0754
+ATOM  C4'   DNA-CT      0.1629
+ATOM  H4'   DNA-H1      0.1176
+ATOM  O4'   DNA-OS     -0.3691
+ATOM  C1'   DNA-CT      0.0358
+ATOM  H1'   DNA-H2      0.1746
+ATOM  N9    DNA-N*      0.0577
+ATOM  C8    DNA-CK      0.0736
+ATOM  H8    DNA-H5      0.1997
+ATOM  N7    DNA-NB     -0.5725
+ATOM  C5    DNA-CB      0.1991
+ATOM  C6    DNA-C       0.4918
+ATOM  O6    DNA-O      -0.5699
+ATOM  N1    DNA-NA     -0.5053
+ATOM  H1    DNA-H       0.3520
+ATOM  C2    DNA-CA      0.7432
+ATOM  N2    DNA-N2     -0.9230
+ATOM  H21   DNA-H       0.4235
+ATOM  H22   DNA-H       0.4235
+ATOM  N3    DNA-NC     -0.6636
+ATOM  C4    DNA-CB      0.1814
+ATOM  C3'   DNA-C7      0.0713
+ATOM  H3'   DNA-H1      0.0985
+ATOM  C2'   DNA-CT     -0.0854
+ATOM  H2'   DNA-HC      0.0718
+ATOM  H2''  DNA-HC      0.0718
+ATOM  O3'   DNA-OS     -0.5232
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N9        C1'  C2'
+BOND N9   C8        N9   C4        C8   H8        C8   N7
+BOND N7   C5        C5   C6        C5   C4        C6   O6
+BOND C6   N1        N1   H1        N1   C2        C2   N2
+BOND C2   N3        N2   H21       N2   H22       N3   C4
+BOND C3'  H3'       C3'  C2'       C3'  O3'       C2'  H2'
+BOND C2'  H2''
+BOND O3'  +P
+IMPROPER  C8    C4    N9    C1'
+IMPROPER  C5    N1    C6    O6
+IMPROPER  C6    C2    N1    H1
+IMPROPER  C2    H21   N2    H22
+IMPROPER  N7    N9    C8    H8
+IMPROPER  N1    N3    C2    N2
+
+RESI GD3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     DNA-P       1.1659
+ATOM  O1P   DNA-O2     -0.7761
+ATOM  O2P   DNA-O2     -0.7761
+ATOM  O5'   DNA-OS     -0.4954
+ATOM  C5'   DNA-CJ     -0.0069
+ATOM  H5'   DNA-H1      0.0754
+ATOM  H5''  DNA-H1      0.0754
+ATOM  C4'   DNA-CT      0.1629
+ATOM  H4'   DNA-H1      0.1176
+ATOM  O4'   DNA-OS     -0.3691
+ATOM  C1'   DNA-CT      0.0358
+ATOM  H1'   DNA-H2      0.1746
+ATOM  N9    DNA-N*      0.0577
+ATOM  C8    DNA-CK      0.0736
+ATOM  H8    DNA-H5      0.1997
+ATOM  N7    DNA-NB     -0.5725
+ATOM  C5    DNA-CB      0.1991
+ATOM  C6    DNA-C       0.4918
+ATOM  O6    DNA-O      -0.5699
+ATOM  N1    DNA-NA     -0.5053
+ATOM  H1    DNA-H       0.3520
+ATOM  C2    DNA-CA      0.7432
+ATOM  N2    DNA-N2     -0.9230
+ATOM  H21   DNA-H       0.4235
+ATOM  H22   DNA-H       0.4235
+ATOM  N3    DNA-NC     -0.6636
+ATOM  C4    DNA-CB      0.1814
+ATOM  C3'   DNA-C7      0.0713
+ATOM  H3'   DNA-H1      0.0985
+ATOM  C2'   DNA-CT     -0.0854
+ATOM  H2'   DNA-HC      0.0718
+ATOM  H2''  DNA-HC      0.0718
+ATOM  O3'   DNA-OH     -0.6549
+ATOM  HO3'  DNA-HO      0.4396
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N9        C1'  C2'       N9   C8        N9   C4
+BOND C8   H8        C8   N7        N7   C5        C5   C6
+BOND C5   C4        C6   O6        C6   N1        N1   H1
+BOND N1   C2        C2   N2        C2   N3        N2   H21
+BOND N2   H22       N3   C4        C3'  H3'       C3'  C2'
+BOND C3'  O3'       C2'  H2'       C2'  H2''      O3'  HO3'
+IMPROPER  C8    C4    N9    C1'
+IMPROPER  C5    N1    C6    O6
+IMPROPER  C6    C2    N1    H1
+IMPROPER  C2    H21   N2    H22
+IMPROPER  N7    N9    C8    H8
+IMPROPER  N1    N3    C2    N2
+
+RESI CD5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  DNA-HO      0.4422
+ATOM  O5'   DNA-OH     -0.6318
+ATOM  C5'   DNA-CJ     -0.0069
+ATOM  H5'   DNA-H1      0.0754
+ATOM  H5''  DNA-H1      0.0754
+ATOM  C4'   DNA-CT      0.1629
+ATOM  H4'   DNA-H1      0.1176
+ATOM  O4'   DNA-OS     -0.3691
+ATOM  C1'   DNA-CT     -0.0116
+ATOM  H1'   DNA-H2      0.1963
+ATOM  N1    DNA-N*     -0.0339
+ATOM  C6    DNA-C1     -0.0183
+ATOM  H6    DNA-H4      0.2293
+ATOM  C5    DNA-C1     -0.5222
+ATOM  H5    DNA-HA      0.1863
+ATOM  C4    DNA-CA      0.8439
+ATOM  N4    DNA-N2     -0.9773
+ATOM  H41   DNA-H       0.4314
+ATOM  H42   DNA-H       0.4314
+ATOM  N3    DNA-NC     -0.7748
+ATOM  C2    DNA-C       0.7959
+ATOM  O2    DNA-O      -0.6548
+ATOM  C3'   DNA-C7      0.0713
+ATOM  H3'   DNA-H1      0.0985
+ATOM  C2'   DNA-CT     -0.0854
+ATOM  H2'   DNA-HC      0.0718
+ATOM  H2''  DNA-HC      0.0718
+ATOM  O3'   DNA-OS     -0.5232
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N1        C1'  C2'
+BOND N1   C6        N1   C2        C6   H6        C6   C5
+BOND C5   H5        C5   C4        C4   N4        C4   N3
+BOND N4   H41       N4   H42       N3   C2        C2   O2
+BOND C3'  H3'       C3'  C2'       C3'  O3'       C2'  H2'
+BOND C2'  H2''
+BOND O3'  +P
+IMPROPER  C6    C2    N1    C1'
+IMPROPER  N1    N3    C2    O2
+IMPROPER  C4    H41   N4    H42
+IMPROPER  N1    C5    C6    H6
+IMPROPER  C6    C4    C5    H5
+IMPROPER  N3    C5    C4    N4
+
+RESI CD3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     DNA-P       1.1659
+ATOM  O1P   DNA-O2     -0.7761
+ATOM  O2P   DNA-O2     -0.7761
+ATOM  O5'   DNA-OS     -0.4954
+ATOM  C5'   DNA-CJ     -0.0069
+ATOM  H5'   DNA-H1      0.0754
+ATOM  H5''  DNA-H1      0.0754
+ATOM  C4'   DNA-CT      0.1629
+ATOM  H4'   DNA-H1      0.1176
+ATOM  O4'   DNA-OS     -0.3691
+ATOM  C1'   DNA-CT     -0.0116
+ATOM  H1'   DNA-H2      0.1963
+ATOM  N1    DNA-N*     -0.0339
+ATOM  C6    DNA-C1     -0.0183
+ATOM  H6    DNA-H4      0.2293
+ATOM  C5    DNA-C1     -0.5222
+ATOM  H5    DNA-HA      0.1863
+ATOM  C4    DNA-CA      0.8439
+ATOM  N4    DNA-N2     -0.9773
+ATOM  H41   DNA-H       0.4314
+ATOM  H42   DNA-H       0.4314
+ATOM  N3    DNA-NC     -0.7748
+ATOM  C2    DNA-C       0.7959
+ATOM  O2    DNA-O      -0.6548
+ATOM  C3'   DNA-C7      0.0713
+ATOM  H3'   DNA-H1      0.0985
+ATOM  C2'   DNA-CT     -0.0854
+ATOM  H2'   DNA-HC      0.0718
+ATOM  H2''  DNA-HC      0.0718
+ATOM  O3'   DNA-OH     -0.6549
+ATOM  HO3'  DNA-HO      0.4396
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N1        C1'  C2'       N1   C6        N1   C2
+BOND C6   H6        C6   C5        C5   H5        C5   C4
+BOND C4   N4        C4   N3        N4   H41       N4   H42
+BOND N3   C2        C2   O2        C3'  H3'       C3'  C2'
+BOND C3'  O3'       C2'  H2'       C2'  H2''      O3'  HO3'
+IMPROPER  C6    C2    N1    C1'
+IMPROPER  N1    N3    C2    O2
+IMPROPER  C4    H41   N4    H42
+IMPROPER  N1    C5    C6    H6
+IMPROPER  C6    C4    C5    H5
+IMPROPER  N3    C5    C4    N4
+
+RESI TD5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  DNA-HO      0.4422
+ATOM  O5'   DNA-OH     -0.6318
+ATOM  C5'   DNA-CJ     -0.0069
+ATOM  H5'   DNA-H1      0.0754
+ATOM  H5''  DNA-H1      0.0754
+ATOM  C4'   DNA-CT      0.1629
+ATOM  H4'   DNA-H1      0.1176
+ATOM  O4'   DNA-OS     -0.3691
+ATOM  C1'   DNA-CT      0.0680
+ATOM  H1'   DNA-H2      0.1804
+ATOM  N1    DNA-N*     -0.0239
+ATOM  C6    DNA-CM     -0.2209
+ATOM  H6    DNA-H4      0.2607
+ATOM  C5    DNA-CM      0.0025
+ATOM  C5M   DNA-CT     -0.2269
+ATOM  H51   DNA-HC      0.0770
+ATOM  H52   DNA-HC      0.0770
+ATOM  H53   DNA-HC      0.0770
+ATOM  C4    DNA-C       0.5194
+ATOM  O4    DNA-O      -0.5563
+ATOM  N3    DNA-NA     -0.4340
+ATOM  H3    DNA-H       0.3420
+ATOM  C2    DNA-C       0.5677
+ATOM  O2    DNA-O      -0.5881
+ATOM  C3'   DNA-C7      0.0713
+ATOM  H3'   DNA-H1      0.0985
+ATOM  C2'   DNA-CT     -0.0854
+ATOM  H2'   DNA-HC      0.0718
+ATOM  H2''  DNA-HC      0.0718
+ATOM  O3'   DNA-OS     -0.5232
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N1        C1'  C2'
+BOND N1   C6        N1   C2        C6   H6        C6   C5
+BOND C5   C5M       C5   C4        C5M  H51       C5M  H52
+BOND C5M  H53       C4   O4        C4   N3        N3   H3
+BOND N3   C2        C2   O2        C3'  H3'       C3'  C2'
+BOND C3'  O3'       C2'  H2'       C2'  H2''
+BOND O3'  +P
+IMPROPER  C6    C2    N1    C1'
+IMPROPER  C4    C6    C5    C5M
+IMPROPER  N1    N3    C2    O2
+IMPROPER  C5    N3    C4    O4
+IMPROPER  C2    C4    N3    H3
+IMPROPER  N1    C5    C6    H6
+
+RESI TD3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     DNA-P       1.1659
+ATOM  O1P   DNA-O2     -0.7761
+ATOM  O2P   DNA-O2     -0.7761
+ATOM  O5'   DNA-OS     -0.4954
+ATOM  C5'   DNA-CJ     -0.0069
+ATOM  H5'   DNA-H1      0.0754
+ATOM  H5''  DNA-H1      0.0754
+ATOM  C4'   DNA-CT      0.1629
+ATOM  H4'   DNA-H1      0.1176
+ATOM  O4'   DNA-OS     -0.3691
+ATOM  C1'   DNA-CT      0.0680
+ATOM  H1'   DNA-H2      0.1804
+ATOM  N1    DNA-N*     -0.0239
+ATOM  C6    DNA-CM     -0.2209
+ATOM  H6    DNA-H4      0.2607
+ATOM  C5    DNA-CM      0.0025
+ATOM  C5M   DNA-CT     -0.2269
+ATOM  H51   DNA-HC      0.0770
+ATOM  H52   DNA-HC      0.0770
+ATOM  H53   DNA-HC      0.0770
+ATOM  C4    DNA-C       0.5194
+ATOM  O4    DNA-O      -0.5563
+ATOM  N3    DNA-NA     -0.4340
+ATOM  H3    DNA-H       0.3420
+ATOM  C2    DNA-C       0.5677
+ATOM  O2    DNA-O      -0.5881
+ATOM  C3'   DNA-C7      0.0713
+ATOM  H3'   DNA-H1      0.0985
+ATOM  C2'   DNA-CT     -0.0854
+ATOM  H2'   DNA-HC      0.0718
+ATOM  H2''  DNA-HC      0.0718
+ATOM  O3'   DNA-OH     -0.6549
+ATOM  HO3'  DNA-HO      0.4396
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N1        C1'  C2'       N1   C6        N1   C2
+BOND C6   H6        C6   C5        C5   C5M       C5   C4
+BOND C5M  H51       C5M  H52       C5M  H53       C4   O4
+BOND C4   N3        N3   H3        N3   C2        C2   O2
+BOND C3'  H3'       C3'  C2'       C3'  O3'       C2'  H2'
+BOND C2'  H2''      O3'  HO3'
+IMPROPER  C6    C2    N1    C1'
+IMPROPER  C4    C6    C5    C5M
+IMPROPER  N1    N3    C2    O2
+IMPROPER  C5    N3    C4    O4
+IMPROPER  C2    C4    N3    H3
+IMPROPER  N1    C5    C6    H6
+
+RESI AR5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  RNA-HO      0.4295
+ATOM  O5'   RNA-OH     -0.6223
+ATOM  C5'   RNA-CI      0.0558
+ATOM  H5'   RNA-H1      0.0679
+ATOM  H5''  RNA-H1      0.0679
+ATOM  C4'   RNA-CT      0.1065
+ATOM  H4'   RNA-H1      0.1174
+ATOM  O4'   RNA-OS     -0.3548
+ATOM  C1'   RNA-CT      0.0394
+ATOM  H1'   RNA-H2      0.2007
+ATOM  N9    RNA-N*     -0.0251
+ATOM  C8    RNA-C5      0.2006
+ATOM  H8    RNA-H5      0.1553
+ATOM  N7    RNA-NB     -0.6073
+ATOM  C5    RNA-CB      0.0515
+ATOM  C6    RNA-CA      0.7009
+ATOM  N6    RNA-N2     -0.9019
+ATOM  H61   RNA-H       0.4115
+ATOM  H62   RNA-H       0.4115
+ATOM  N1    RNA-NC     -0.7615
+ATOM  C2    RNA-CQ      0.5875
+ATOM  H2    RNA-H5      0.0473
+ATOM  N3    RNA-NC     -0.6997
+ATOM  C4    RNA-CB      0.3053
+ATOM  C3'   RNA-CT      0.2022
+ATOM  H3'   RNA-H1      0.0615
+ATOM  C2'   RNA-CT      0.0670
+ATOM  H2''  RNA-H1      0.0972
+ATOM  O2'   RNA-OH     -0.6139
+ATOM  H2'   RNA-HO      0.4186
+ATOM  O3'   RNA-OS     -0.5246
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N9        C1'  C2'
+BOND N9   C8        N9   C4        C8   H8        C8   N7
+BOND N7   C5        C5   C6        C5   C4        C6   N6
+BOND C6   N1        N6   H61       N6   H62       N1   C2
+BOND C2   H2        C2   N3        N3   C4        C3'  H3'
+BOND C3'  C2'       C3'  O3'       C2'  H2''      C2'  O2'
+BOND O2'  H2'
+BOND O3'  +P
+IMPROPER  C8    C4    N9    C1'
+IMPROPER  C6    H61   N6    H62
+IMPROPER  N7    N9    C8    H8
+IMPROPER  N1    N3    C2    H2
+IMPROPER  C5    N1    C6    N6
+
+RESI AR3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     RNA-P       1.1662
+ATOM  O1P   RNA-O2     -0.7760
+ATOM  O2P   RNA-O2     -0.7760
+ATOM  O5'   RNA-OS     -0.4989
+ATOM  C5'   RNA-CI      0.0558
+ATOM  H5'   RNA-H1      0.0679
+ATOM  H5''  RNA-H1      0.0679
+ATOM  C4'   RNA-CT      0.1065
+ATOM  H4'   RNA-H1      0.1174
+ATOM  O4'   RNA-OS     -0.3548
+ATOM  C1'   RNA-CT      0.0394
+ATOM  H1'   RNA-H2      0.2007
+ATOM  N9    RNA-N*     -0.0251
+ATOM  C8    RNA-C5      0.2006
+ATOM  H8    RNA-H5      0.1553
+ATOM  N7    RNA-NB     -0.6073
+ATOM  C5    RNA-CB      0.0515
+ATOM  C6    RNA-CA      0.7009
+ATOM  N6    RNA-N2     -0.9019
+ATOM  H61   RNA-H       0.4115
+ATOM  H62   RNA-H       0.4115
+ATOM  N1    RNA-NC     -0.7615
+ATOM  C2    RNA-CQ      0.5875
+ATOM  H2    RNA-H5      0.0473
+ATOM  N3    RNA-NC     -0.6997
+ATOM  C4    RNA-CB      0.3053
+ATOM  C3'   RNA-CT      0.2022
+ATOM  H3'   RNA-H1      0.0615
+ATOM  C2'   RNA-CT      0.0670
+ATOM  H2''  RNA-H1      0.0972
+ATOM  O2'   RNA-OH     -0.6139
+ATOM  H2'   RNA-HO      0.4186
+ATOM  O3'   RNA-OH     -0.6541
+ATOM  HO3'  RNA-HO      0.4376
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N9        C1'  C2'       N9   C8        N9   C4
+BOND C8   H8        C8   N7        N7   C5        C5   C6
+BOND C5   C4        C6   N6        C6   N1        N6   H61
+BOND N6   H62       N1   C2        C2   H2        C2   N3
+BOND N3   C4        C3'  H3'       C3'  C2'       C3'  O3'
+BOND C2'  H2''      C2'  O2'       O2'  H2'       O3'  HO3'
+IMPROPER  C8    C4    N9    C1'
+IMPROPER  C6    H61   N6    H62
+IMPROPER  N7    N9    C8    H8
+IMPROPER  N1    N3    C2    H2
+IMPROPER  C5    N1    C6    N6
+
+RESI GR5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  RNA-HO      0.4295
+ATOM  O5'   RNA-OH     -0.6223
+ATOM  C5'   RNA-CI      0.0558
+ATOM  H5'   RNA-H1      0.0679
+ATOM  H5''  RNA-H1      0.0679
+ATOM  C4'   RNA-CT      0.1065
+ATOM  H4'   RNA-H1      0.1174
+ATOM  O4'   RNA-OS     -0.3548
+ATOM  C1'   RNA-CT      0.0191
+ATOM  H1'   RNA-H2      0.2006
+ATOM  N9    RNA-N*      0.0492
+ATOM  C8    RNA-CP      0.1374
+ATOM  H8    RNA-H5      0.1640
+ATOM  N7    RNA-NB     -0.5709
+ATOM  C5    RNA-CB      0.1744
+ATOM  C6    RNA-C       0.4770
+ATOM  O6    RNA-O      -0.5597
+ATOM  N1    RNA-NA     -0.4787
+ATOM  H1    RNA-H       0.3424
+ATOM  C2    RNA-CA      0.7657
+ATOM  N2    RNA-N2     -0.9672
+ATOM  H21   RNA-H       0.4364
+ATOM  H22   RNA-H       0.4364
+ATOM  N3    RNA-NC     -0.6323
+ATOM  C4    RNA-CB      0.1222
+ATOM  C3'   RNA-CT      0.2022
+ATOM  H3'   RNA-H1      0.0615
+ATOM  C2'   RNA-CT      0.0670
+ATOM  H2''  RNA-H1      0.0972
+ATOM  O2'   RNA-OH     -0.6139
+ATOM  H2'   RNA-HO      0.4186
+ATOM  O3'   RNA-OS     -0.5246
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N9        C1'  C2'
+BOND N9   C8        N9   C4        C8   H8        C8   N7
+BOND N7   C5        C5   C6        C5   C4        C6   O6
+BOND C6   N1        N1   H1        N1   C2        C2   N2
+BOND C2   N3        N2   H21       N2   H22       N3   C4
+BOND C3'  H3'       C3'  C2'       C3'  O3'       C2'  H2''
+BOND C2'  O2'       O2'  H2'
+BOND O3'  +P
+IMPROPER  C8    C4    N9    C1'
+IMPROPER  C5    N1    C6    O6
+IMPROPER  C6    C2    N1    H1
+IMPROPER  C2    H21   N2    H22
+IMPROPER  N7    N9    C8    H8
+IMPROPER  N1    N3    C2    N2
+
+RESI GR3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     RNA-P       1.1662
+ATOM  O1P   RNA-O2     -0.7760
+ATOM  O2P   RNA-O2     -0.7760
+ATOM  O5'   RNA-OS     -0.4989
+ATOM  C5'   RNA-CI      0.0558
+ATOM  H5'   RNA-H1      0.0679
+ATOM  H5''  RNA-H1      0.0679
+ATOM  C4'   RNA-CT      0.1065
+ATOM  H4'   RNA-H1      0.1174
+ATOM  O4'   RNA-OS     -0.3548
+ATOM  C1'   RNA-CT      0.0191
+ATOM  H1'   RNA-H2      0.2006
+ATOM  N9    RNA-N*      0.0492
+ATOM  C8    RNA-CP      0.1374
+ATOM  H8    RNA-H5      0.1640
+ATOM  N7    RNA-NB     -0.5709
+ATOM  C5    RNA-CB      0.1744
+ATOM  C6    RNA-C       0.4770
+ATOM  O6    RNA-O      -0.5597
+ATOM  N1    RNA-NA     -0.4787
+ATOM  H1    RNA-H       0.3424
+ATOM  C2    RNA-CA      0.7657
+ATOM  N2    RNA-N2     -0.9672
+ATOM  H21   RNA-H       0.4364
+ATOM  H22   RNA-H       0.4364
+ATOM  N3    RNA-NC     -0.6323
+ATOM  C4    RNA-CB      0.1222
+ATOM  C3'   RNA-CT      0.2022
+ATOM  H3'   RNA-H1      0.0615
+ATOM  C2'   RNA-CT      0.0670
+ATOM  H2''  RNA-H1      0.0972
+ATOM  O2'   RNA-OH     -0.6139
+ATOM  H2'   RNA-HO      0.4186
+ATOM  O3'   RNA-OH     -0.6541
+ATOM  HO3'  RNA-HO      0.4376
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N9        C1'  C2'       N9   C8        N9   C4
+BOND C8   H8        C8   N7        N7   C5        C5   C6
+BOND C5   C4        C6   O6        C6   N1        N1   H1
+BOND N1   C2        C2   N2        C2   N3        N2   H21
+BOND N2   H22       N3   C4        C3'  H3'       C3'  C2'
+BOND C3'  O3'       C2'  H2''      C2'  O2'       O2'  H2'
+BOND O3'  HO3'
+IMPROPER  C8    C4    N9    C1'
+IMPROPER  C5    N1    C6    O6
+IMPROPER  C6    C2    N1    H1
+IMPROPER  C2    H21   N2    H22
+IMPROPER  N7    N9    C8    H8
+IMPROPER  N1    N3    C2    N2
+
+RESI CR5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  RNA-HO      0.4295
+ATOM  O5'   RNA-OH     -0.6223
+ATOM  C5'   RNA-CI      0.0558
+ATOM  H5'   RNA-H1      0.0679
+ATOM  H5''  RNA-H1      0.0679
+ATOM  C4'   RNA-CT      0.1065
+ATOM  H4'   RNA-H1      0.1174
+ATOM  O4'   RNA-OS     -0.3548
+ATOM  C1'   RNA-CT      0.0066
+ATOM  H1'   RNA-H2      0.2029
+ATOM  N1    RNA-N*     -0.0484
+ATOM  C6    RNA-C4      0.0053
+ATOM  H6    RNA-H4      0.1958
+ATOM  C5    RNA-C4     -0.5215
+ATOM  H5    RNA-HA      0.1928
+ATOM  C4    RNA-CA      0.8185
+ATOM  N4    RNA-N2     -0.9530
+ATOM  H41   RNA-H       0.4234
+ATOM  H42   RNA-H       0.4234
+ATOM  N3    RNA-NC     -0.7584
+ATOM  C2    RNA-C       0.7538
+ATOM  O2    RNA-O      -0.6252
+ATOM  C3'   RNA-CT      0.2022
+ATOM  H3'   RNA-H1      0.0615
+ATOM  C2'   RNA-CT      0.0670
+ATOM  H2''  RNA-H1      0.0972
+ATOM  O2'   RNA-OH     -0.6139
+ATOM  H2'   RNA-HO      0.4186
+ATOM  O3'   RNA-OS     -0.5246
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N1        C1'  C2'
+BOND N1   C6        N1   C2        C6   H6        C6   C5
+BOND C5   H5        C5   C4        C4   N4        C4   N3
+BOND N4   H41       N4   H42       N3   C2        C2   O2
+BOND C3'  H3'       C3'  C2'       C3'  O3'       C2'  H2''
+BOND C2'  O2'       O2'  H2'
+BOND O3'  +P
+IMPROPER  C6    C2    N1    C1'
+IMPROPER  N1    N3    C2    O2
+IMPROPER  C4    H41   N4    H42
+IMPROPER  N1    C5    C6    H6
+IMPROPER  C6    C4    C5    H5
+IMPROPER  N3    C5    C4    N4
+
+RESI CR3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     RNA-P       1.1662
+ATOM  O1P   RNA-O2     -0.7760
+ATOM  O2P   RNA-O2     -0.7760
+ATOM  O5'   RNA-OS     -0.4989
+ATOM  C5'   RNA-CI      0.0558
+ATOM  H5'   RNA-H1      0.0679
+ATOM  H5''  RNA-H1      0.0679
+ATOM  C4'   RNA-CT      0.1065
+ATOM  H4'   RNA-H1      0.1174
+ATOM  O4'   RNA-OS     -0.3548
+ATOM  C1'   RNA-CT      0.0066
+ATOM  H1'   RNA-H2      0.2029
+ATOM  N1    RNA-N*     -0.0484
+ATOM  C6    RNA-C4      0.0053
+ATOM  H6    RNA-H4      0.1958
+ATOM  C5    RNA-C4     -0.5215
+ATOM  H5    RNA-HA      0.1928
+ATOM  C4    RNA-CA      0.8185
+ATOM  N4    RNA-N2     -0.9530
+ATOM  H41   RNA-H       0.4234
+ATOM  H42   RNA-H       0.4234
+ATOM  N3    RNA-NC     -0.7584
+ATOM  C2    RNA-C       0.7538
+ATOM  O2    RNA-O      -0.6252
+ATOM  C3'   RNA-CT      0.2022
+ATOM  H3'   RNA-H1      0.0615
+ATOM  C2'   RNA-CT      0.0670
+ATOM  H2''  RNA-H1      0.0972
+ATOM  O2'   RNA-OH     -0.6139
+ATOM  H2'   RNA-HO      0.4186
+ATOM  O3'   RNA-OH     -0.6541
+ATOM  HO3'  RNA-HO      0.4376
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N1        C1'  C2'       N1   C6        N1   C2
+BOND C6   H6        C6   C5        C5   H5        C5   C4
+BOND C4   N4        C4   N3        N4   H41       N4   H42
+BOND N3   C2        C2   O2        C3'  H3'       C3'  C2'
+BOND C3'  O3'       C2'  H2''      C2'  O2'       O2'  H2'
+BOND O3'  HO3'
+IMPROPER  C6    C2    N1    C1'
+IMPROPER  N1    N3    C2    O2
+IMPROPER  C4    H41   N4    H42
+IMPROPER  N1    C5    C6    H6
+IMPROPER  C6    C4    C5    H5
+IMPROPER  N3    C5    C4    N4
+
+RESI UR5 -0.3            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  HO5'  RNA-HO      0.4295
+ATOM  O5'   RNA-OH     -0.6223
+ATOM  C5'   RNA-CI      0.0558
+ATOM  H5'   RNA-H1      0.0679
+ATOM  H5''  RNA-H1      0.0679
+ATOM  C4'   RNA-CT      0.1065
+ATOM  H4'   RNA-H1      0.1174
+ATOM  O4'   RNA-OS     -0.3548
+ATOM  C1'   RNA-CT      0.0674
+ATOM  H1'   RNA-H2      0.1824
+ATOM  N1    RNA-N*      0.0418
+ATOM  C6    RNA-CS     -0.1126
+ATOM  H6    RNA-H4      0.2188
+ATOM  C5    RNA-CS     -0.3635
+ATOM  H5    RNA-HA      0.1811
+ATOM  C4    RNA-C       0.5952
+ATOM  O4    RNA-O      -0.5761
+ATOM  N3    RNA-NA     -0.3549
+ATOM  H3    RNA-H       0.3154
+ATOM  C2    RNA-C       0.4687
+ATOM  O2    RNA-O      -0.5477
+ATOM  C3'   RNA-CT      0.2022
+ATOM  H3'   RNA-H1      0.0615
+ATOM  C2'   RNA-CT      0.0670
+ATOM  H2''  RNA-H1      0.0972
+ATOM  O2'   RNA-OH     -0.6139
+ATOM  H2'   RNA-HO      0.4186
+ATOM  O3'   RNA-OS     -0.5246
+BOND HO5' O5'       O5'  C5'       C5'  H5'       C5'  H5''
+BOND C5'  C4'       C4'  H4'       C4'  O4'       C4'  C3'
+BOND O4'  C1'       C1'  H1'       C1'  N1        C1'  C2'
+BOND N1   C6        N1   C2        C6   H6        C6   C5
+BOND C5   H5        C5   C4        C4   O4        C4   N3
+BOND N3   H3        N3   C2        C2   O2        C3'  H3'
+BOND C3'  C2'       C3'  O3'       C2'  H2''      C2'  O2'
+BOND O2'  H2'
+BOND O3'  +P
+IMPROPER  C6    C2    N1    C1'
+IMPROPER  C4    C6    C5    H5
+IMPROPER  N1    N3    C2    O2
+IMPROPER  C5    N3    C4    O4
+IMPROPER  C2    C4    N3    H3
+IMPROPER  N1    C5    C6    H6
+
+RESI UR3 -0.7            ! terminal variant (auto-generated 2026-05-13)
+GROUP
+ATOM  P     RNA-P       1.1662
+ATOM  O1P   RNA-O2     -0.7760
+ATOM  O2P   RNA-O2     -0.7760
+ATOM  O5'   RNA-OS     -0.4989
+ATOM  C5'   RNA-CI      0.0558
+ATOM  H5'   RNA-H1      0.0679
+ATOM  H5''  RNA-H1      0.0679
+ATOM  C4'   RNA-CT      0.1065
+ATOM  H4'   RNA-H1      0.1174
+ATOM  O4'   RNA-OS     -0.3548
+ATOM  C1'   RNA-CT      0.0674
+ATOM  H1'   RNA-H2      0.1824
+ATOM  N1    RNA-N*      0.0418
+ATOM  C6    RNA-CS     -0.1126
+ATOM  H6    RNA-H4      0.2188
+ATOM  C5    RNA-CS     -0.3635
+ATOM  H5    RNA-HA      0.1811
+ATOM  C4    RNA-C       0.5952
+ATOM  O4    RNA-O      -0.5761
+ATOM  N3    RNA-NA     -0.3549
+ATOM  H3    RNA-H       0.3154
+ATOM  C2    RNA-C       0.4687
+ATOM  O2    RNA-O      -0.5477
+ATOM  C3'   RNA-CT      0.2022
+ATOM  H3'   RNA-H1      0.0615
+ATOM  C2'   RNA-CT      0.0670
+ATOM  H2''  RNA-H1      0.0972
+ATOM  O2'   RNA-OH     -0.6139
+ATOM  H2'   RNA-HO      0.4186
+ATOM  O3'   RNA-OH     -0.6541
+ATOM  HO3'  RNA-HO      0.4376
+BOND P    O1P       P    O2P       P    O5'       O5'  C5'
+BOND C5'  H5'       C5'  H5''      C5'  C4'       C4'  H4'
+BOND C4'  O4'       C4'  C3'       O4'  C1'       C1'  H1'
+BOND C1'  N1        C1'  C2'       N1   C6        N1   C2
+BOND C6   H6        C6   C5        C5   H5        C5   C4
+BOND C4   O4        C4   N3        N3   H3        N3   C2
+BOND C2   O2        C3'  H3'       C3'  C2'       C3'  O3'
+BOND C2'  H2''      C2'  O2'       O2'  H2'       O3'  HO3'
+IMPROPER  C6    C2    N1    C1'
+IMPROPER  C4    C6    C5    H5
+IMPROPER  N1    N3    C2    O2
+IMPROPER  C5    N3    C4    O4
+IMPROPER  C2    C4    N3    H3
+IMPROPER  N1    C5    C6    H6

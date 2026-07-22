@@ -7,11 +7,13 @@ from typing import Optional, Tuple
 
 @dataclass(frozen=True)
 class RuntimeConfig:
-    """Locations supplied by the user for an external MOSAICS installation."""
+    """Selected runtime, bundled force-field root, and workspace."""
 
     executable: Path
     forcefield_directory: Path
     default_workspace: Optional[Path] = None
+    runtime_id: str = "custom"
+    force_field_id: str = "ol24-ol3-standard"
 
 
 @dataclass(frozen=True)

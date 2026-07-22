@@ -1,0 +1,3434 @@
+~torsion_parm[\atom1{X}\atom2{C}\atom3{C}\atom4{X}\pot_type{power}
+              \p0{3648.366}\p1{0}\p2{-3648.366}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{4.46796e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C}\atom3{CA}\atom4{X}\pot_type{power}
+              \p0{3648.366}\p1{0}\p2{-3648.366}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{4.46796e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C}\atom3{CB}\atom4{X}\pot_type{power}
+              \p0{3019.337}\p1{0}\p2{-3019.337}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{3.697622e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C}\atom3{CM}\atom4{X}\pot_type{power}
+              \p0{2189.02}\p1{0}\p2{-2189.02}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.680776e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C}\atom3{CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C}\atom3{N}\atom4{X}\pot_type{power}
+              \p0{2516.114}\p1{0}\p2{-2516.114}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{3.081352e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C}\atom3{NS}\atom4{X}\pot_type{power}
+              \p0{1459.346}\p1{0}\p2{-1459.346}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.787184e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C}\atom3{NA}\atom4{X}\pot_type{power}
+              \p0{1358.702}\p1{0}\p2{-1358.702}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.66393e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C}\atom3{NC}\atom4{X}\pot_type{power}
+              \p0{4025.783}\p1{0}\p2{-4025.783}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{4.930162e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C}\atom3{O}\atom4{X}\pot_type{power}
+              \p0{2818.048}\p1{0}\p2{-2818.048}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{3.451114e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C}\atom3{OH}\atom4{X}\pot_type{power}
+              \p0{2314.825}\p1{0}\p2{-2314.825}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.834843e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C}\atom3{OS}\atom4{X}\pot_type{power}
+              \p0{2717.404}\p1{0}\p2{-2717.404}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{3.32786e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CA}\atom3{CA}\atom4{X}\pot_type{power}
+              \p0{3648.366}\p1{0}\p2{-3648.366}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{4.46796e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CA}\atom3{CB}\atom4{X}\pot_type{power}
+              \p0{3522.56}\p1{0}\p2{-3522.56}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{4.313892e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CA}\atom3{CM}\atom4{X}\pot_type{power}
+              \p0{2566.437}\p1{0}\p2{-2566.437}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{3.142979e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CA}\atom3{CN}\atom4{X}\pot_type{power}
+              \p0{3648.366}\p1{0}\p2{-3648.366}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{4.46796e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CA}\atom3{CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CA}\atom3{N2}\atom4{X}\pot_type{power}
+              \p0{2415.47}\p1{0}\p2{-2415.47}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.958097e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CA}\atom3{NA}\atom4{X}\pot_type{power}
+              \p0{1509.669}\p1{0}\p2{-1509.669}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.848811e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CA}\atom3{NC}\atom4{X}\pot_type{power}
+              \p0{4830.94}\p1{0}\p2{-4830.94}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{5.916195e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CA}\atom3{OH}\atom4{X}\pot_type{power}
+              \p0{905.8012}\p1{0}\p2{-905.8012}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.109287e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CB}\atom3{CB}\atom4{X}\pot_type{power}
+              \p0{5485.13}\p1{0}\p2{-5485.13}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{6.717346e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CB}\atom3{CN}\atom4{X}\pot_type{power}
+              \p0{3019.337}\p1{0}\p2{-3019.337}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{3.697622e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CB}\atom3{NS}\atom4{X}\pot_type{power}
+              \p0{1660.636}\p1{0}\p2{-1660.636}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.033692e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CB}\atom3{NB}\atom4{X}\pot_type{power}
+              \p0{2566.437}\p1{0}\p2{-2566.437}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{3.142979e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CB}\atom3{NC}\atom4{X}\pot_type{power}
+              \p0{4176.75}\p1{0}\p2{-4176.75}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{5.115044e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CC}\atom3{CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CC}\atom3{CV}\atom4{X}\pot_type{power}
+              \p0{5183.196}\p1{0}\p2{-5183.196}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{6.347584e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CC}\atom3{CW}\atom4{X}\pot_type{power}
+              \p0{5409.646}\p1{0}\p2{-5409.646}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{6.624906e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CC}\atom3{NA}\atom4{X}\pot_type{power}
+              \p0{1409.024}\p1{0}\p2{-1409.024}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.725557e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CC}\atom3{NB}\atom4{X}\pot_type{power}
+              \p0{2415.47}\p1{0}\p2{-2415.47}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.958097e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CD}\atom3{CD}\atom4{X}\pot_type{power}
+              \p0{1006.446}\p1{0}\p2{-1006.446}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.232541e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CD}\atom3{CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CD}\atom3{CM}\atom4{X}\pot_type{power}
+              \p0{6692.864}\p1{0}\p2{-6692.864}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{8.196395e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CK}\atom3{NS}\atom4{X}\pot_type{power}
+              \p0{1710.958}\p1{0}\p2{-1710.958}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.095319e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CK}\atom3{NB}\atom4{X}\pot_type{power}
+              \p0{10064.46}\p1{0}\p2{-10064.46}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.232541e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CM}\atom3{CM}\atom4{X}\pot_type{power}
+              \p0{6692.864}\p1{0}\p2{-6692.864}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{8.196395e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CM}\atom3{CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CM}\atom3{NS}\atom4{X}\pot_type{power}
+              \p0{1861.925}\p1{0}\p2{-1861.925}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.2802e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CM}\atom3{OS}\atom4{X}\pot_type{power}
+              \p0{1056.768}\p1{0}\p2{-1056.768}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.294168e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CN}\atom3{NA}\atom4{X}\pot_type{power}
+              \p0{1534.83}\p1{0}\p2{-1534.83}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.879624e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CQ}\atom3{NC}\atom4{X}\pot_type{power}
+              \p0{6843.831}\p1{0}\p2{-6843.831}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{8.381276e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CT}\atom3{CT}\atom4{X}\pot_type{power}
+              \p0{78.27912}\p1{-234.8374}\p2{0}\p3{313.1165}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CT}\atom3{CY}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CT}\atom3{CZ}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CT}\atom3{N}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CT}\atom3{NS}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CT}\atom3{N2}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CT}\atom3{NT}\atom4{X}\pot_type{power}
+              \p0{150.9669}\p1{-452.9006}\p2{0}\p3{603.8675}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CT}\atom3{N3}\atom4{X}\pot_type{power}
+              \p0{78.27912}\p1{-234.8374}\p2{0}\p3{313.1165}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CT}\atom3{OH}\atom4{X}\pot_type{power}
+              \p0{83.87048}\p1{-251.6115}\p2{0}\p3{335.4819}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CT}\atom3{OS}\atom4{X}\pot_type{power}
+              \p0{192.9021}\p1{-578.7063}\p2{0}\p3{771.6084}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CT}\atom3{S}\atom4{X}\pot_type{power}
+              \p0{167.741}\p1{-503.2229}\p2{0}\p3{670.9639}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CT}\atom3{SH}\atom4{X}\pot_type{power}
+              \p0{125.8057}\p1{-377.4172}\p2{0}\p3{503.2229}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CS}\atom3{CB}\atom4{X}\pot_type{power}
+              \p0{1685.797}\p1{0}\p2{-1685.797}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.064506e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CS}\atom3{CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CS}\atom3{CW}\atom4{X}\pot_type{power}
+              \p0{6567.059}\p1{0}\p2{-6567.059}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{8.042327e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CR}\atom3{NA}\atom4{X}\pot_type{power}
+              \p0{2339.986}\p1{0}\p2{-2339.986}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.865657e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CR}\atom3{NB}\atom4{X}\pot_type{power}
+              \p0{5032.229}\p1{0}\p2{-5032.229}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{6.162703e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CV}\atom3{NB}\atom4{X}\pot_type{power}
+              \p0{2415.47}\p1{0}\p2{-2415.47}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.958097e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CW}\atom3{NA}\atom4{X}\pot_type{power}
+              \p0{1509.669}\p1{0}\p2{-1509.669}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.848811e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{OH}\atom3{P}\atom4{X}\pot_type{power}
+              \p0{125.8057}\p1{-377.4172}\p2{0}\p3{503.2229}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{OS}\atom3{P}\atom4{X}\pot_type{power}
+              \p0{125.8057}\p1{-377.4172}\p2{0}\p3{503.2229}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{N}\atom2{CT}\atom3{C}\atom4{N}\pot_type{power}
+              \p0{2868.37}\p1{-855.4789}\p2{-2012.892}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{1.04766e-13}\s2{2.465081e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{C}\atom2{N}\atom3{CT}\atom4{C}\pot_type{power}
+              \p0{1258.057}\p1{402.5783}\p2{-855.4789}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.04766e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{N}\atom4{C}\pot_type{power}
+              \p0{342.1916}\p1{493.1584}\p2{2012.892}\p3{-301.9337}
+              \p4{-2012.892}\p5{0}\p6{0}
+              \s1{2.773216e-14}\s2{1.232541e-13}\s3{0}
+              \s4{-2.465081e-13}\s5{0}\s6{0}
+              \sp2{0}\sp3{-3.697622e-14}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{C}\atom4{N}\pot_type{power}
+              \p0{100.6446}\p1{0}\p2{-332.1271}\p3{0}
+              \p4{402.5783}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H}\atom2{N}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{3522.56}\p1{1006.446}\p2{-2516.114}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{3.081352e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{S}\atom3{S}\atom4{CT}\pot_type{power}
+              \p0{301.9337}\p1{-905.8012}\p2{3522.56}\p3{1207.735}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OH}\atom2{P}\atom3{OS}\atom4{CT}\pot_type{power}
+              \p0{125.8057}\p1{-377.4172}\p2{1207.735}\p3{503.2229}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OS}\atom2{P}\atom3{OS}\atom4{CT}\pot_type{power}
+              \p0{125.8057}\p1{-377.4172}\p2{1207.735}\p3{503.2229}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{442.8361}\p1{523.3518}\p2{0}\p3{-161.0313}
+              \p4{0}\p5{0}\p6{0}
+              \s1{1.479049e-14}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{-1.972065e-14}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{HC}\atom2{CT}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{442.8361}\p1{523.3518}\p2{0}\p3{-161.0313}
+              \p4{0}\p5{0}\p6{0}
+              \s1{1.479049e-14}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{-1.972065e-14}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{HC}\atom2{CT}\atom3{CT}\atom4{HC}\pot_type{power}
+              \p0{75.48343}\p1{-226.4503}\p2{0}\p3{301.9337}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{HC}\atom2{CT}\atom3{CT}\atom4{CT}\pot_type{power}
+              \p0{80.51566}\p1{-241.547}\p2{0}\p3{322.0627}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{HC}\atom2{CT}\atom3{CM}\atom4{CM}\pot_type{power}
+              \p0{769.931}\p1{1152.38}\p2{0}\p3{-764.8988}
+              \p4{0}\p5{0}\p6{0}
+              \s1{7.025481e-14}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{-9.367309e-14}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{HO}\atom2{OH}\atom3{CT}\atom4{CT}\pot_type{power}
+              \p0{206.3214}\p1{-115.7413}\p2{0}\p3{322.0627}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{HO}\atom2{OH}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{3270.949}\p1{956.1235}\p2{-2314.825}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.834843e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CM}\atom2{CM}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{2339.986}\p1{-452.9006}\p2{-2189.02}\p3{603.8675}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.680776e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{CM}\atom3{CM}\atom4{CT}\pot_type{power}
+              \p0{7648.988}\p1{-956.1235}\p2{-6692.864}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{1.170914e-13}\s2{8.196395e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{CT}\atom4{CT}\pot_type{power}
+              \p0{442.8361}\p1{-372.3849}\p2{-251.6114}\p3{362.3205}
+              \p4{0}\p5{0}\p6{0}
+              \s1{1.232541e-14}\s2{3.081352e-14}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{NT}\atom4{CT}\pot_type{power}
+              \p0{634.0608}\p1{-452.9006}\p2{-483.094}\p3{603.8675}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{5.916195e-14}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{OS}\atom4{CT}\pot_type{power}
+              \p0{293.3789}\p1{-578.2031}\p2{-100.6446}\p3{770.9375}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.232541e-14}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{OS}\atom4{C}\pot_type{power}
+              \p0{595.3127}\p1{-980.7814}\p2{0}\p3{770.9375}
+              \p4{0}\p5{0}\p6{0}
+              \s1{4.930162e-14}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{OS}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{1585.152}\p1{-830.3178}\p2{-855.4789}\p3{201.2892}
+              \p4{0}\p5{0}\p6{0}
+              \s1{8.319649e-14}\s2{1.04766e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{OS}\atom3{CT}\atom4{NS}\pot_type{power}
+              \p0{192.7344}\p1{-578.2031}\p2{654.1898}\p3{770.9375}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{CZ}\atom3{CZ}\atom4{HZ}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{O}\atom2{C}\atom3{OS}\atom4{CT}\pot_type{power}
+              \p0{3421.916}\p1{-704.5121}\p2{-2717.404}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{8.627784e-14}\s2{3.32786e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OS}\atom2{CT}\atom3{NS}\atom4{CK}\pot_type{power}
+              \p0{1258.057}\p1{1258.057}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OS}\atom2{CT}\atom3{NS}\atom4{CM}\pot_type{power}
+              \p0{1258.057}\p1{1258.057}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OS}\atom2{CT}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{72.4641}\p1{-217.3923}\p2{1182.574}\p3{289.8564}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OS}\atom2{CT}\atom3{CT}\atom4{OH}\pot_type{power}
+              \p0{72.4641}\p1{-217.3923}\p2{1182.574}\p3{289.8564}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OH}\atom2{CT}\atom3{CT}\atom4{OH}\pot_type{power}
+              \p0{72.4641}\p1{-217.3923}\p2{1182.574}\p3{289.8564}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{F}\atom2{CT}\atom3{CT}\atom4{F}\pot_type{power}
+              \p0{603.8675}\p1{-603.8675}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{7.395244e-14}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{Cl}\atom2{CT}\atom3{CT}\atom4{Cl}\pot_type{power}
+              \p0{226.4503}\p1{-226.4503}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{2.773216e-14}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{Br}\atom2{CT}\atom3{CT}\atom4{Br}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{125.8057}\p1{125.8057}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{CT}\atom4{OH}\pot_type{power}
+              \p0{125.8057}\p1{125.8057}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{CT}\atom4{F}\pot_type{power}
+              \p0{95.61235}\p1{95.61235}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{CT}\atom4{Cl}\pot_type{power}
+              \p0{125.8057}\p1{125.8057}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{CT}\atom4{Br}\pot_type{power}
+              \p0{276.7726}\p1{276.7726}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{HC}\atom2{CT}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{125.8057}\p1{125.8057}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{HC}\atom2{CT}\atom3{CT}\atom4{OH}\pot_type{power}
+              \p0{125.8057}\p1{125.8057}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{HC}\atom2{CT}\atom3{CT}\atom4{F}\pot_type{power}
+              \p0{95.61235}\p1{95.61235}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{HC}\atom2{CT}\atom3{CT}\atom4{Cl}\pot_type{power}
+              \p0{125.8057}\p1{125.8057}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{HC}\atom2{CT}\atom3{CT}\atom4{Br}\pot_type{power}
+              \p0{276.7726}\p1{276.7726}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{NT}\atom4{LP}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{NT}\atom4{LP}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{C}\atom3{N}\atom4{LP}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{O}\atom2{C}\atom3{N}\atom4{LP}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{OH}\atom4{LP}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{OH}\atom4{LP}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{OS}\atom4{LP}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H2}\atom2{CT}\atom3{OS}\atom4{LP}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{OS}\atom4{LP}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CM}\atom2{CM}\atom3{OS}\atom4{LP}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{HA}\atom2{CM}\atom3{OS}\atom4{LP}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H4}\atom2{CM}\atom3{OS}\atom4{LP}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CI}\atom3{OS}\atom4{X}\pot_type{power}
+              \p0{192.8853}\p1{-578.656}\p2{0}\p3{771.5413}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CI}\atom3{OH}\atom4{X}\pot_type{power}
+              \p0{83.88726}\p1{-251.6618}\p2{0}\p3{335.549}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CI}\atom3{CT}\atom4{X}\pot_type{power}
+              \p0{78.30148}\p1{-234.9044}\p2{0}\p3{313.2059}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{OS}\atom3{CT}\atom4{CI}\pot_type{power}
+              \p0{293.3789}\p1{-578.2031}\p2{-100.6446}\p3{770.9375}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.232541e-14}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H1}\atom2{CI}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{125.8057}\p1{125.8057}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H1}\atom2{CI}\atom3{CT}\atom4{OH}\pot_type{power}
+              \p0{125.8057}\p1{125.8057}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{CI}\atom4{OS}\pot_type{power}
+              \p0{125.8057}\p1{125.8057}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{CI}\atom4{OH}\pot_type{power}
+              \p0{125.8057}\p1{125.8057}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CI}\atom2{CT}\atom3{CT}\atom4{CT}\pot_type{power}
+              \p0{442.8361}\p1{-372.3849}\p2{-251.6114}\p3{362.3205}
+              \p4{0}\p5{0}\p6{0}
+              \s1{1.232541e-14}\s2{3.081352e-14}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OS}\atom2{P}\atom3{OS}\atom4{CI}\pot_type{power}
+              \p0{277.9758}\p1{-455.8965}\p2{1252.199}\p3{713.4666}
+              \p4{0}\p5{0}\p6{0}
+              \s1{23.37251}\s2{-176.8855}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{34.30171}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OH}\atom2{P}\atom3{OS}\atom4{CI}\pot_type{power}
+              \p0{277.9758}\p1{-455.8965}\p2{1252.199}\p3{713.4666}
+              \p4{0}\p5{0}\p6{0}
+              \s1{23.37251}\s2{-176.8855}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{34.30171}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{CI}\atom4{OS}\pot_type{power}
+              \p0{1103.632}\p1{-2004.263}\p2{40.10031}\p3{1896.389}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-412.7208}\s2{-83.57303}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{399.7925}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{CI}\atom4{OH}\pot_type{power}
+              \p0{1103.632}\p1{-2004.263}\p2{40.10031}\p3{1896.389}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-412.7208}\s2{-83.57303}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{399.7925}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CE}\atom3{OS}\atom4{X}\pot_type{power}
+              \p0{192.9021}\p1{-578.7063}\p2{0}\p3{771.6084}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CE}\atom3{OH}\atom4{X}\pot_type{power}
+              \p0{83.87048}\p1{-251.6114}\p2{0}\p3{335.4819}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{CE}\atom3{CT}\atom4{X}\pot_type{power}
+              \p0{78.27912}\p1{-234.8374}\p2{0}\p3{313.1165}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C1}\atom3{NS}\atom4{X}\pot_type{power}
+              \p0{1710.958}\p1{0}\p2{-1710.958}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.095319e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C1}\atom3{NB}\atom4{X}\pot_type{power}
+              \p0{10064.46}\p1{0}\p2{-10064.46}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.232541e-12}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C}\atom3{C2}\atom4{X}\pot_type{power}
+              \p0{2189.02}\p1{0}\p2{-2189.02}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.680776e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C2}\atom3{C2}\atom4{X}\pot_type{power}
+              \p0{6692.864}\p1{0}\p2{-6692.864}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{8.196395e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C2}\atom3{CT}\atom4{X}\pot_type{power}
+              \p0{0}\p1{0}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{C2}\atom3{NS}\atom4{X}\pot_type{power}
+              \p0{1861.925}\p1{0}\p2{-1861.925}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.2802e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{HC}\atom2{CT}\atom3{C2}\atom4{C2}\pot_type{power}
+              \p0{769.931}\p1{1152.38}\p2{0}\p3{-764.8988}
+              \p4{0}\p5{0}\p6{0}
+              \s1{7.025481e-14}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{-9.367309e-14}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{C2}\atom2{C2}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{2339.986}\p1{-452.9006}\p2{-2189.02}\p3{603.8675}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{2.680776e-13}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CE}\atom2{CT}\atom3{CI}\atom4{OS}\pot_type{power}
+              \p0{1103.632}\p1{-2004.263}\p2{40.10031}\p3{1896.389}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-412.7208}\s2{-83.57303}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{399.7925}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CE}\atom2{CT}\atom3{CI}\atom4{OH}\pot_type{power}
+              \p0{1103.632}\p1{-2004.263}\p2{40.10031}\p3{1896.389}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-412.7208}\s2{-83.57303}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{399.7925}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{H1}\atom2{CI}\atom3{CT}\atom4{CE}\pot_type{power}
+              \p0{80.51566}\p1{-241.547}\p2{0}\p3{322.0627}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CE}\atom2{CT}\atom3{OS}\atom4{CT}\pot_type{power}
+              \p0{293.5299}\p1{-578.656}\p2{-100.6446}\p3{771.5413}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{1.232541e-14}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OS}\atom2{CE}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{72.4641}\p1{-217.3923}\p2{1182.574}\p3{289.8564}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OH}\atom2{CE}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{72.4641}\p1{-217.3923}\p2{1182.574}\p3{289.8564}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{P}\atom2{OS}\atom3{CE}\atom4{CT}\pot_type{power}
+              \p0{881.84}\p1{326.0022}\p2{-300.5231}\p3{-97.11901}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-441.5371}\s2{-113.0218}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{-52.45384}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{HO}\atom2{OH}\atom3{CE}\atom4{CT}\pot_type{power}
+              \p0{881.84}\p1{326.0022}\p2{-300.5231}\p3{-97.11901}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-441.5371}\s2{-113.0218}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{-52.45384}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OS}\atom2{P}\atom3{OS}\atom4{CE}\pot_type{power}
+              \p0{564.3536}\p1{-451.0976}\p2{545.6191}\p3{689.5897}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-938.7512}\s2{52.19952}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{1448.825}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{CE}\atom4{CT}\pot_type{power}
+              \p0{1056.768}\p1{-884.7534}\p2{0}\p3{1810.23}
+              \p4{0}\p5{0}\p6{0}
+              \s1{322.6353}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{70.49129}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{CT}\atom2{CE}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{603.8675}\p1{478.5022}\p2{0}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-368.3633}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OS}\atom2{CT}\atom3{NS}\atom4{C1}\pot_type{power}
+              \p0{664.326}\p1{204.9493}\p2{1922.168}\p3{-579.4768}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-44.53736}\s2{23.48488}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{587.6248}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OS}\atom2{CT}\atom3{NS}\atom4{CK}\pot_type{power}
+              \p0{631.1493}\p1{528.1153}\p2{1736.91}\p3{-680.4474}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-17.97298}\s2{121.4566}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{566.9274}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OS}\atom2{CT}\atom3{NS}\atom4{C2}\pot_type{power}
+              \p0{586.5644}\p1{-273.1254}\p2{1675.113}\p3{-293.6226}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-201.1319}\s2{137.7193}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{175.7295}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{OS}\atom2{CT}\atom3{NS}\atom4{CM}\pot_type{power}
+              \p0{656.2345}\p1{-175.213}\p2{1515.644}\p3{-455.0517}
+              \p4{0}\p5{0}\p6{0}
+              \s1{-237.2509}\s2{207.6174}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{258.5054}\sp4{0}
+              \sp5{0}\sp6{0}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{10567.68}\p1{0}\p2{-10567.68}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{O2}\atom3{C}\atom4{O2}\pot_type{power}
+              \p0{10567.68}\p1{0}\p2{-10567.68}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{N}\atom4{H}\pot_type{power}
+              \p0{1006.446}\p1{0}\p2{-1006.446}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{N2}\atom4{H}\pot_type{power}
+              \p0{1006.446}\p1{0}\p2{-1006.446}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{NA}\atom4{H}\pot_type{power}
+              \p0{1006.446}\p1{0}\p2{-1006.446}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{N2}\atom3{CA}\atom4{N2}\pot_type{power}
+              \p0{10567.68}\p1{0}\p2{-10567.68}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{CT}\atom3{N}\atom4{CT}\pot_type{power}
+              \p0{1006.446}\p1{0}\p2{-1006.446}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CA}\atom4{HA}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CW}\atom4{H4}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CR}\atom4{H5}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CV}\atom4{H4}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CQ}\atom4{H5}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CK}\atom4{H5}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{C1}\atom4{H5}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CM}\atom4{H4}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CM}\atom4{HA}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CA}\atom4{H4}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CA}\atom4{H5}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{CK}\atom2{CB}\atom3{NS}\atom4{CT}\pot_type{power}
+              \p0{1006.446}\p1{0}\p2{-1006.446}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{C1}\atom2{CB}\atom3{NS}\atom4{CT}\pot_type{power}
+              \p0{1006.446}\p1{0}\p2{-1006.446}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{CM}\atom2{C}\atom3{NS}\atom4{CT}\pot_type{power}
+              \p0{1006.446}\p1{0}\p2{-1006.446}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{CM}\atom2{C}\atom3{CM}\atom4{CT}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{CT}\atom2{O}\atom3{C}\atom4{OH}\pot_type{power}
+              \p0{10567.68}\p1{0}\p2{-10567.68}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{NA}\atom2{CV}\atom3{CC}\atom4{CT}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{NB}\atom2{CW}\atom3{CC}\atom4{CT}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{NA}\atom2{CW}\atom3{CC}\atom4{CT}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{CW}\atom2{CB}\atom3{CS}\atom4{CT}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{CA}\atom2{CA}\atom3{CA}\atom4{CT}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{C}\atom2{CM}\atom3{CM}\atom4{CT}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{NC}\atom2{CM}\atom3{CA}\atom4{N2}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{CB}\atom2{NC}\atom3{CA}\atom4{N2}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{NA}\atom2{NC}\atom3{CA}\atom4{N2}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{CA}\atom2{CA}\atom3{C}\atom4{OH}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{CA}\atom2{CA}\atom3{CA}\atom4{OH}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{H5}\atom2{O}\atom3{C}\atom4{OH}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{H5}\atom2{O}\atom3{C}\atom4{OS}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{CM}\atom2{CT}\atom3{CM}\atom4{HA}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{CA}\atom2{CA}\atom3{CA}\atom4{Br}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{CM}\atom2{H4}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{C}\atom2{CT}\atom3{N}\atom4{H}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+~torsion_parm[\atom1{C}\atom2{CT}\atom3{N}\atom4{O}\pot_type{power}
+              \p0{1107.09}\p1{0}\p2{-1107.09}\p3{0}
+              \p4{0}\p5{0}\p6{0}
+              \s1{0}\s2{0}\s3{0}
+              \s4{0}\s5{0}\s6{0}
+              \sp2{0}\sp3{0}\sp4{0}
+              \sp5{0}\sp6{0}\label{improper}]
+
+
+
+# === SURGICAL DECK AUGMENTATION 2026-05-13 (bsc1) ===
+# Adds ONLY atom-type quads MISSING from the deck
+# Does not override existing entries (preserves parmbsc1 corrections)
+
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{C}\atom2{C}\atom3{NA}\atom4{H}\pot_type{power}
+              \p0{1006.445786}\p1{0.000000}\p2{-1006.445786}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.007394}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C}\atom2{C2}\atom3{C2}\atom4{CT}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C}\atom2{C2}\atom3{C2}\atom4{H4}\pot_type{power}
+              \p0{6692.864476}\p1{0.000000}\p2{-6692.864476}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.049169}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C}\atom2{C2}\atom3{C2}\atom4{NS}\pot_type{power}
+              \p0{6692.864476}\p1{0.000000}\p2{-6692.864476}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.049169}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{C}\atom2{C2}\atom3{CT}\atom4{HC}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C}\atom2{C2}\atom3{NS}\atom4{CT}\pot_type{power}
+              \p0{1006.445786}\p1{0.000000}\p2{-1006.445786}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.007394}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{C}\atom2{C4}\atom3{NS}\atom4{CT}\pot_type{power}
+              \p0{1006.445786}\p1{0.000000}\p2{-1006.445786}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.007394}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{C}\atom2{CA}\atom3{NA}\atom4{H}\pot_type{power}
+              \p0{1006.445786}\p1{0.000000}\p2{-1006.445786}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.007394}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{C}\atom2{CB}\atom3{CB}\atom4{NB}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{C}\atom2{CB}\atom3{CB}\atom4{NC}\pot_type{power}
+              \p0{5485.129533}\p1{0.000000}\p2{-5485.129533}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.040296}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{C}\atom2{CB}\atom3{CB}\atom4{NS}\pot_type{power}
+              \p0{5485.129533}\p1{0.000000}\p2{-5485.129533}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.040296}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{C}\atom2{CB}\atom3{NB}\atom4{CK}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C}\atom2{CB}\atom3{NB}\atom4{CP}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 7 instances
+~torsion_parm[\atom1{C}\atom2{CM}\atom3{CM}\atom4{H4}\pot_type{power}
+              \p0{6692.864476}\p1{0.000000}\p2{-6692.864476}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.049169}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 7 instances
+~torsion_parm[\atom1{C}\atom2{CM}\atom3{CM}\atom4{NS}\pot_type{power}
+              \p0{6692.864476}\p1{0.000000}\p2{-6692.864476}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.049169}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 13 instances
+~torsion_parm[\atom1{C}\atom2{CM}\atom3{NS}\atom4{CT}\pot_type{power}
+              \p0{1006.445786}\p1{0.000000}\p2{-1006.445786}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.007394}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C}\atom2{NA}\atom3{C}\atom4{C2}\pot_type{power}
+              \p0{1358.701811}\p1{0.000000}\p2{-1358.701811}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.009982}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 7 instances
+~torsion_parm[\atom1{C}\atom2{NA}\atom3{C}\atom4{CM}\pot_type{power}
+              \p0{1358.701811}\p1{0.000000}\p2{-1358.701811}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.009982}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{C}\atom2{NA}\atom3{C}\atom4{NS}\pot_type{power}
+              \p0{1358.701811}\p1{0.000000}\p2{-1358.701811}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.009982}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 20 instances
+~torsion_parm[\atom1{C}\atom2{NA}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{1358.701811}\p1{0.000000}\p2{-1358.701811}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.009982}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{C}\atom2{NA}\atom3{CA}\atom4{N2}\pot_type{power}
+              \p0{1509.668679}\p1{0.000000}\p2{-1509.668679}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.011091}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{C}\atom2{NA}\atom3{CA}\atom4{NC}\pot_type{power}
+              \p0{1509.668679}\p1{0.000000}\p2{-1509.668679}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.011091}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{C}\atom2{NC}\atom3{CA}\atom4{C4}\pot_type{power}
+              \p0{4830.939772}\p1{0.000000}\p2{-4830.939772}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.035490}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{C}\atom2{NC}\atom3{CA}\atom4{CM}\pot_type{power}
+              \p0{4830.939772}\p1{0.000000}\p2{-4830.939772}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.035490}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 8 instances
+~torsion_parm[\atom1{C}\atom2{NC}\atom3{CA}\atom4{N2}\pot_type{power}
+              \p0{4830.939772}\p1{0.000000}\p2{-4830.939772}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.035490}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C}\atom2{NS}\atom3{C2}\atom4{C2}\pot_type{power}
+              \p0{1861.924704}\p1{0.000000}\p2{-1861.924704}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.013678}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C}\atom2{NS}\atom3{C2}\atom4{H4}\pot_type{power}
+              \p0{1861.924704}\p1{0.000000}\p2{-1861.924704}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.013678}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{C}\atom2{NS}\atom3{C4}\atom4{C4}\pot_type{power}
+              \p0{1861.924704}\p1{0.000000}\p2{-1861.924704}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.013678}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{C}\atom2{NS}\atom3{C4}\atom4{H4}\pot_type{power}
+              \p0{1861.924704}\p1{0.000000}\p2{-1861.924704}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.013678}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 13 instances
+~torsion_parm[\atom1{C}\atom2{NS}\atom3{CM}\atom4{CM}\pot_type{power}
+              \p0{1861.924704}\p1{0.000000}\p2{-1861.924704}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.013678}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 13 instances
+~torsion_parm[\atom1{C}\atom2{NS}\atom3{CM}\atom4{H4}\pot_type{power}
+              \p0{1861.924704}\p1{0.000000}\p2{-1861.924704}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.013678}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 18 instances
+~torsion_parm[\atom1{C}\atom2{NS}\atom3{CT}\atom4{CT}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 18 instances
+~torsion_parm[\atom1{C}\atom2{NS}\atom3{CT}\atom4{H2}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 18 instances
+~torsion_parm[\atom1{C}\atom2{NS}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{C1}\atom2{NB}\atom3{CB}\atom4{CA}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{C1}\atom2{NB}\atom3{CB}\atom4{CB}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{C1}\atom2{NS}\atom3{CB}\atom4{CB}\pot_type{power}
+              \p0{1660.635547}\p1{0.000000}\p2{-1660.635547}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012200}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{C1}\atom2{NS}\atom3{CB}\atom4{NC}\pot_type{power}
+              \p0{1660.635547}\p1{0.000000}\p2{-1660.635547}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012200}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{C1}\atom2{NS}\atom3{CT}\atom4{CT}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{C1}\atom2{NS}\atom3{CT}\atom4{H2}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C2}\atom2{C}\atom3{NA}\atom4{H}\pot_type{power}
+              \p0{1358.701811}\p1{0.000000}\p2{-1358.701811}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.009982}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C2}\atom2{C2}\atom3{C}\atom4{NA}\pot_type{power}
+              \p0{2189.019584}\p1{0.000000}\p2{-2189.019584}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.016081}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C2}\atom2{C2}\atom3{NS}\atom4{CT}\pot_type{power}
+              \p0{1861.924704}\p1{0.000000}\p2{-1861.924704}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.013678}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C2}\atom2{NA}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{10567.680752}\p1{0.000000}\p2{-10567.680751}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.077635}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C2}\atom2{NS}\atom3{C}\atom4{NA}\pot_type{power}
+              \p0{1459.346389}\p1{0.000000}\p2{-1459.346389}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.010721}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C2}\atom2{NS}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{1459.346389}\p1{0.000000}\p2{-1459.346389}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.010721}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C2}\atom2{NS}\atom3{CT}\atom4{CT}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{C2}\atom2{NS}\atom3{CT}\atom4{H2}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{C4}\atom2{C4}\atom3{CA}\atom4{N2}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{C4}\atom2{C4}\atom3{CA}\atom4{NC}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{C4}\atom2{C4}\atom3{NS}\atom4{CT}\pot_type{power}
+              \p0{1861.924704}\p1{0.000000}\p2{-1861.924704}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.013678}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{C4}\atom2{CA}\atom3{C4}\atom4{HA}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 4 instances
+~torsion_parm[\atom1{C4}\atom2{CA}\atom3{N2}\atom4{H}\pot_type{power}
+              \p0{2415.469886}\p1{0.000000}\p2{-2415.469886}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.017745}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{C4}\atom2{N2}\atom3{CA}\atom4{NC}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{C4}\atom2{NS}\atom3{C}\atom4{NC}\pot_type{power}
+              \p0{1459.346389}\p1{0.000000}\p2{-1459.346389}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.010721}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{C4}\atom2{NS}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{1459.346389}\p1{0.000000}\p2{-1459.346389}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.010721}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{C4}\atom2{NS}\atom3{CT}\atom4{CT}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{C4}\atom2{NS}\atom3{CT}\atom4{H2}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 4 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{C4}\atom2{NS}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{1410.395903}\p1{890.910066}\p2{520.038261}\p3{-1877.160689}
+              \p4{1057.527997}\p5{0.000000}\p6{0.000000}
+              \s1{190.923088}\s2{799.112277}\s3{0.000000}
+              \s4{-664.933417}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{193.289287}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{C5}\atom2{NB}\atom3{CB}\atom4{CA}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{C5}\atom2{NB}\atom3{CB}\atom4{CB}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{C5}\atom2{NS}\atom3{CB}\atom4{CB}\pot_type{power}
+              \p0{1660.635547}\p1{0.000000}\p2{-1660.635547}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012200}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{C5}\atom2{NS}\atom3{CB}\atom4{NC}\pot_type{power}
+              \p0{1660.635547}\p1{0.000000}\p2{-1660.635547}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012200}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{C5}\atom2{NS}\atom3{CT}\atom4{CT}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{C5}\atom2{NS}\atom3{CT}\atom4{H2}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 4 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{C5}\atom2{NS}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{1038.772495}\p1{859.027436}\p2{-135.388967}\p3{-910.966948}
+              \p4{1176.310382}\p5{0.000000}\p6{0.000000}
+              \s1{554.153275}\s2{494.898981}\s3{0.000000}
+              \s4{-407.126008}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{-134.878282}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{CA}\atom2{C4}\atom3{C4}\atom4{H4}\pot_type{power}
+              \p0{6692.864476}\p1{0.000000}\p2{-6692.864476}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.049169}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{CA}\atom2{C4}\atom3{C4}\atom4{NS}\pot_type{power}
+              \p0{6692.864476}\p1{0.000000}\p2{-6692.864476}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.049169}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{CA}\atom2{CB}\atom3{CB}\atom4{NB}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{CA}\atom2{CB}\atom3{CB}\atom4{NC}\pot_type{power}
+              \p0{5485.129533}\p1{0.000000}\p2{-5485.129533}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.040296}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{CA}\atom2{CB}\atom3{CB}\atom4{NS}\pot_type{power}
+              \p0{5485.129533}\p1{0.000000}\p2{-5485.129533}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.040296}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CA}\atom2{CM}\atom3{CM}\atom4{H4}\pot_type{power}
+              \p0{6692.864476}\p1{0.000000}\p2{-6692.864476}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.049169}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CA}\atom2{CM}\atom3{CM}\atom4{NS}\pot_type{power}
+              \p0{6692.864476}\p1{0.000000}\p2{-6692.864476}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.049169}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 28 instances
+~torsion_parm[\atom1{CA}\atom2{H}\atom3{N2}\atom4{H}\pot_type{power}
+              \p0{1006.445786}\p1{0.000000}\p2{-1006.445786}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.007394}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{CA}\atom2{NA}\atom3{C}\atom4{CB}\pot_type{power}
+              \p0{1358.701811}\p1{0.000000}\p2{-1358.701811}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.009982}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{CA}\atom2{NA}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{1358.701811}\p1{0.000000}\p2{-1358.701811}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.009982}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 8 instances
+~torsion_parm[\atom1{CA}\atom2{NC}\atom3{C}\atom4{NS}\pot_type{power}
+              \p0{4025.783143}\p1{0.000000}\p2{-4025.783143}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.029575}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 8 instances
+~torsion_parm[\atom1{CA}\atom2{NC}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{4025.783143}\p1{0.000000}\p2{-4025.783143}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.029575}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{CA}\atom2{NC}\atom3{CB}\atom4{CB}\pot_type{power}
+              \p0{4176.750011}\p1{0.000000}\p2{-4176.750011}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.030684}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{CA}\atom2{NC}\atom3{CB}\atom4{NS}\pot_type{power}
+              \p0{4176.750011}\p1{0.000000}\p2{-4176.750011}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.030684}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{CA}\atom2{NC}\atom3{CQ}\atom4{H5}\pot_type{power}
+              \p0{6843.831344}\p1{0.000000}\p2{-6843.831344}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.050278}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{CA}\atom2{NC}\atom3{CQ}\atom4{NC}\pot_type{power}
+              \p0{6843.831344}\p1{0.000000}\p2{-6843.831344}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.050278}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{CB}\atom2{C}\atom3{NA}\atom4{H}\pot_type{power}
+              \p0{1358.701811}\p1{0.000000}\p2{-1358.701811}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.009982}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{CB}\atom2{C1}\atom3{NS}\atom4{CT}\pot_type{power}
+              \p0{1006.445786}\p1{0.000000}\p2{-1006.445786}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.007394}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{CB}\atom2{C5}\atom3{NS}\atom4{CT}\pot_type{power}
+              \p0{1006.445786}\p1{0.000000}\p2{-1006.445786}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.007394}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 22 instances
+~torsion_parm[\atom1{CB}\atom2{CA}\atom3{N2}\atom4{H}\pot_type{power}
+              \p0{2415.469886}\p1{0.000000}\p2{-2415.469886}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.017745}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{CB}\atom2{CA}\atom3{NC}\atom4{CQ}\pot_type{power}
+              \p0{4830.939772}\p1{0.000000}\p2{-4830.939772}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.035490}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{CB}\atom2{CB}\atom3{C}\atom4{NA}\pot_type{power}
+              \p0{3019.337358}\p1{0.000000}\p2{-3019.337358}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.022181}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{CB}\atom2{CB}\atom3{C}\atom4{NB}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{CB}\atom2{CB}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{3019.337358}\p1{0.000000}\p2{-3019.337358}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.022181}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{CB}\atom2{CB}\atom3{CA}\atom4{N2}\pot_type{power}
+              \p0{3522.560251}\p1{0.000000}\p2{-3522.560250}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.025878}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{CB}\atom2{CB}\atom3{CA}\atom4{NB}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{CB}\atom2{CB}\atom3{CA}\atom4{NC}\pot_type{power}
+              \p0{3522.560251}\p1{0.000000}\p2{-3522.560250}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.025878}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CB}\atom2{CB}\atom3{NB}\atom4{CK}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CB}\atom2{CB}\atom3{NB}\atom4{CP}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{CB}\atom2{CB}\atom3{NC}\atom4{CQ}\pot_type{power}
+              \p0{4176.750011}\p1{0.000000}\p2{-4176.750011}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.030684}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CB}\atom2{CB}\atom3{NS}\atom4{CK}\pot_type{power}
+              \p0{1660.635547}\p1{0.000000}\p2{-1660.635547}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012200}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CB}\atom2{CB}\atom3{NS}\atom4{CP}\pot_type{power}
+              \p0{1660.635547}\p1{0.000000}\p2{-1660.635547}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012200}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 20 instances
+~torsion_parm[\atom1{CB}\atom2{CB}\atom3{NS}\atom4{CT}\pot_type{power}
+              \p0{1660.635547}\p1{0.000000}\p2{-1660.635547}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012200}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CB}\atom2{CK}\atom3{NS}\atom4{CT}\pot_type{power}
+              \p0{1006.445786}\p1{0.000000}\p2{-1006.445786}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.007394}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CB}\atom2{CP}\atom3{NS}\atom4{CT}\pot_type{power}
+              \p0{1006.445786}\p1{0.000000}\p2{-1006.445786}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.007394}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{CB}\atom2{N2}\atom3{CA}\atom4{NC}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{CB}\atom2{NA}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{10567.680752}\p1{0.000000}\p2{-10567.680751}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.077635}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{CB}\atom2{NB}\atom3{C1}\atom4{H5}\pot_type{power}
+              \p0{10064.457859}\p1{0.000000}\p2{-10064.457858}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.073938}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{CB}\atom2{NB}\atom3{C1}\atom4{NS}\pot_type{power}
+              \p0{10064.457859}\p1{0.000000}\p2{-10064.457858}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.073938}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{CB}\atom2{NB}\atom3{C5}\atom4{H5}\pot_type{power}
+              \p0{10064.457859}\p1{0.000000}\p2{-10064.457858}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.073938}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{CB}\atom2{NB}\atom3{C5}\atom4{NS}\pot_type{power}
+              \p0{10064.457859}\p1{0.000000}\p2{-10064.457858}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.073938}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CB}\atom2{NB}\atom3{CK}\atom4{H5}\pot_type{power}
+              \p0{10064.457859}\p1{0.000000}\p2{-10064.457858}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.073938}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CB}\atom2{NB}\atom3{CK}\atom4{NS}\pot_type{power}
+              \p0{10064.457859}\p1{0.000000}\p2{-10064.457858}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.073938}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CB}\atom2{NB}\atom3{CP}\atom4{H5}\pot_type{power}
+              \p0{10064.457859}\p1{0.000000}\p2{-10064.457858}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.073938}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CB}\atom2{NB}\atom3{CP}\atom4{NS}\pot_type{power}
+              \p0{10064.457859}\p1{0.000000}\p2{-10064.457858}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.073938}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{CB}\atom2{NC}\atom3{CA}\atom4{NA}\pot_type{power}
+              \p0{4830.939772}\p1{0.000000}\p2{-4830.939772}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.035490}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{CB}\atom2{NC}\atom3{CQ}\atom4{H5}\pot_type{power}
+              \p0{6843.831344}\p1{0.000000}\p2{-6843.831344}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.050278}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{CB}\atom2{NC}\atom3{CQ}\atom4{NC}\pot_type{power}
+              \p0{6843.831344}\p1{0.000000}\p2{-6843.831344}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.050278}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{CB}\atom2{NS}\atom3{C1}\atom4{H5}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{CB}\atom2{NS}\atom3{C1}\atom4{NB}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{CB}\atom2{NS}\atom3{C5}\atom4{H5}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{CB}\atom2{NS}\atom3{C5}\atom4{NB}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 5 instances
+~torsion_parm[\atom1{CB}\atom2{NS}\atom3{CB}\atom4{NC}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CB}\atom2{NS}\atom3{CK}\atom4{H5}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CB}\atom2{NS}\atom3{CK}\atom4{NB}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CB}\atom2{NS}\atom3{CP}\atom4{H5}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CB}\atom2{NS}\atom3{CP}\atom4{NB}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 20 instances
+~torsion_parm[\atom1{CB}\atom2{NS}\atom3{CT}\atom4{CT}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 20 instances
+~torsion_parm[\atom1{CB}\atom2{NS}\atom3{CT}\atom4{H2}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 20 instances
+~torsion_parm[\atom1{CB}\atom2{NS}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{CE}\atom2{CT}\atom3{CT}\atom4{H2}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{CE}\atom2{CT}\atom3{CT}\atom4{NS}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{CE}\atom2{CT}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 32 instances
+~torsion_parm[\atom1{CE}\atom2{OS}\atom3{P}\atom4{O2}\pot_type{power}
+              \p0{125.805723}\p1{-377.417170}\p2{0.000000}\p3{503.222893}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{CI}\atom2{CT}\atom3{CE}\atom4{CT}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{CI}\atom2{CT}\atom3{CE}\atom4{H1}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{CI}\atom2{CT}\atom3{CE}\atom4{OH}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 17 instances
+~torsion_parm[\atom1{CI}\atom2{CT}\atom3{CE}\atom4{OS}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{CI}\atom2{CT}\atom3{CT}\atom4{H1}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{CI}\atom2{CT}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 72 instances
+~torsion_parm[\atom1{CI}\atom2{OS}\atom3{P}\atom4{O2}\pot_type{power}
+              \p0{125.805723}\p1{-377.417170}\p2{0.000000}\p3{503.222893}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CK}\atom2{NS}\atom3{CB}\atom4{NC}\pot_type{power}
+              \p0{1660.635547}\p1{0.000000}\p2{-1660.635547}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012200}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CK}\atom2{NS}\atom3{CT}\atom4{CT}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CK}\atom2{NS}\atom3{CT}\atom4{H2}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 7 instances
+~torsion_parm[\atom1{CM}\atom2{C}\atom3{CM}\atom4{HA}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 7 instances
+~torsion_parm[\atom1{CM}\atom2{C}\atom3{NA}\atom4{H}\pot_type{power}
+              \p0{1358.701811}\p1{0.000000}\p2{-1358.701811}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.009982}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CM}\atom2{CA}\atom3{CM}\atom4{HA}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 12 instances
+~torsion_parm[\atom1{CM}\atom2{CA}\atom3{N2}\atom4{H}\pot_type{power}
+              \p0{2415.469886}\p1{0.000000}\p2{-2415.469886}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.017745}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 7 instances
+~torsion_parm[\atom1{CM}\atom2{CM}\atom3{C}\atom4{NA}\pot_type{power}
+              \p0{2189.019584}\p1{0.000000}\p2{-2189.019584}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.016081}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CM}\atom2{CM}\atom3{CA}\atom4{N2}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CM}\atom2{CM}\atom3{CA}\atom4{NC}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 13 instances
+~torsion_parm[\atom1{CM}\atom2{CM}\atom3{NS}\atom4{CT}\pot_type{power}
+              \p0{1861.924704}\p1{0.000000}\p2{-1861.924704}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.013678}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CM}\atom2{N2}\atom3{CA}\atom4{NC}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 7 instances
+~torsion_parm[\atom1{CM}\atom2{NA}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{10567.680752}\p1{0.000000}\p2{-10567.680751}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.077635}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 7 instances
+~torsion_parm[\atom1{CM}\atom2{NS}\atom3{C}\atom4{NA}\pot_type{power}
+              \p0{1459.346389}\p1{0.000000}\p2{-1459.346389}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.010721}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CM}\atom2{NS}\atom3{C}\atom4{NC}\pot_type{power}
+              \p0{1459.346389}\p1{0.000000}\p2{-1459.346389}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.010721}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 13 instances
+~torsion_parm[\atom1{CM}\atom2{NS}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{1459.346389}\p1{0.000000}\p2{-1459.346389}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.010721}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 13 instances
+~torsion_parm[\atom1{CM}\atom2{NS}\atom3{CT}\atom4{CT}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 13 instances
+~torsion_parm[\atom1{CM}\atom2{NS}\atom3{CT}\atom4{H2}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CP}\atom2{NS}\atom3{CB}\atom4{NC}\pot_type{power}
+              \p0{1660.635547}\p1{0.000000}\p2{-1660.635547}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012200}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CP}\atom2{NS}\atom3{CT}\atom4{CT}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CP}\atom2{NS}\atom3{CT}\atom4{H2}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 4 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CP}\atom2{NS}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{838.103822}\p1{748.566931}\p2{37.919227}\p3{-873.680364}
+              \p4{1028.119609}\p5{0.000000}\p6{0.000000}
+              \s1{473.861578}\s2{152.070120}\s3{0.000000}
+              \s4{-71.466274}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{-175.369560}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{CQ}\atom2{NC}\atom3{CA}\atom4{N2}\pot_type{power}
+              \p0{4830.939772}\p1{0.000000}\p2{-4830.939772}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.035490}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{CQ}\atom2{NC}\atom3{CB}\atom4{NS}\pot_type{power}
+              \p0{4176.750011}\p1{0.000000}\p2{-4176.750011}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.030684}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CT}\atom2{C2}\atom3{C}\atom4{NA}\pot_type{power}
+              \p0{2189.019584}\p1{0.000000}\p2{-2189.019584}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.016081}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CT}\atom2{C2}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{2189.019584}\p1{0.000000}\p2{-2189.019584}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.016081}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CT}\atom2{C2}\atom3{C2}\atom4{H4}\pot_type{power}
+              \p0{6692.864476}\p1{0.000000}\p2{-6692.864476}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.049169}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CT}\atom2{C2}\atom3{C2}\atom4{NS}\pot_type{power}
+              \p0{6692.864476}\p1{0.000000}\p2{-6692.864476}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.049169}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{CT}\atom2{CE}\atom3{CT}\atom4{H1}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 38 instances
+~torsion_parm[\atom1{CT}\atom2{CE}\atom3{CT}\atom4{HC}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{CT}\atom2{CI}\atom3{OH}\atom4{HO}\pot_type{power}
+              \p0{83.887256}\p1{-251.661769}\p2{0.000000}\p3{335.549025}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 36 instances
+~torsion_parm[\atom1{CT}\atom2{CI}\atom3{OS}\atom4{P}\pot_type{power}
+              \p0{192.885335}\p1{-578.656005}\p2{0.000000}\p3{771.541339}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{CE}\atom4{H1}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{CE}\atom4{OH}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 17 instances
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{CE}\atom4{OS}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 38 instances
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{CI}\atom4{H1}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 57 instances
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{CT}\atom4{H1}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{CT}\atom4{H2}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{CT}\atom4{NS}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{CT}\atom4{OH}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 57 instances
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 34 instances
+~torsion_parm[\atom1{CT}\atom2{CT}\atom3{OS}\atom4{P}\pot_type{power}
+              \p0{192.885335}\p1{-578.656005}\p2{0.000000}\p3{771.541339}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{CT}\atom2{NS}\atom3{C}\atom4{NA}\pot_type{power}
+              \p0{1459.346389}\p1{0.000000}\p2{-1459.346389}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.010721}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 8 instances
+~torsion_parm[\atom1{CT}\atom2{NS}\atom3{C}\atom4{NC}\pot_type{power}
+              \p0{1459.346389}\p1{0.000000}\p2{-1459.346389}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.010721}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 18 instances
+~torsion_parm[\atom1{CT}\atom2{NS}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{1459.346389}\p1{0.000000}\p2{-1459.346389}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.010721}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{CT}\atom2{NS}\atom3{C1}\atom4{H5}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{CT}\atom2{NS}\atom3{C1}\atom4{NB}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CT}\atom2{NS}\atom3{C2}\atom4{H4}\pot_type{power}
+              \p0{1861.924704}\p1{0.000000}\p2{-1861.924704}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.013678}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{CT}\atom2{NS}\atom3{C4}\atom4{H4}\pot_type{power}
+              \p0{1861.924704}\p1{0.000000}\p2{-1861.924704}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.013678}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{CT}\atom2{NS}\atom3{C5}\atom4{H5}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{CT}\atom2{NS}\atom3{C5}\atom4{NB}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 20 instances
+~torsion_parm[\atom1{CT}\atom2{NS}\atom3{CB}\atom4{NC}\pot_type{power}
+              \p0{1660.635547}\p1{0.000000}\p2{-1660.635547}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012200}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CT}\atom2{NS}\atom3{CK}\atom4{H5}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{CT}\atom2{NS}\atom3{CK}\atom4{NB}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 13 instances
+~torsion_parm[\atom1{CT}\atom2{NS}\atom3{CM}\atom4{H4}\pot_type{power}
+              \p0{1861.924704}\p1{0.000000}\p2{-1861.924704}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.013678}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CT}\atom2{NS}\atom3{CP}\atom4{H5}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{CT}\atom2{NS}\atom3{CP}\atom4{NB}\pot_type{power}
+              \p0{1710.957836}\p1{0.000000}\p2{-1710.957836}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.012569}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 38 instances
+~torsion_parm[\atom1{CT}\atom2{OS}\atom3{CT}\atom4{H1}\pot_type{power}
+              \p0{192.885335}\p1{-578.656005}\p2{0.000000}\p3{771.541339}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 38 instances
+~torsion_parm[\atom1{CT}\atom2{OS}\atom3{CT}\atom4{H2}\pot_type{power}
+              \p0{192.885335}\p1{-578.656005}\p2{0.000000}\p3{771.541339}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 34 instances
+~torsion_parm[\atom1{CT}\atom2{OS}\atom3{P}\atom4{O2}\pot_type{power}
+              \p0{125.805723}\p1{-377.417170}\p2{0.000000}\p3{503.222893}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 18 instances
+~torsion_parm[\atom1{H}\atom2{N2}\atom3{CA}\atom4{NA}\pot_type{power}
+              \p0{2415.469886}\p1{0.000000}\p2{-2415.469886}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.017745}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 56 instances
+~torsion_parm[\atom1{H}\atom2{N2}\atom3{CA}\atom4{NC}\pot_type{power}
+              \p0{2415.469886}\p1{0.000000}\p2{-2415.469886}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.017745}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{H}\atom2{NA}\atom3{C}\atom4{NS}\pot_type{power}
+              \p0{1358.701811}\p1{0.000000}\p2{-1358.701811}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.009982}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 29 instances
+~torsion_parm[\atom1{H}\atom2{NA}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{1358.701811}\p1{0.000000}\p2{-1358.701811}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.009982}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{H}\atom2{NA}\atom3{CA}\atom4{N2}\pot_type{power}
+              \p0{1509.668679}\p1{0.000000}\p2{-1509.668679}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.011091}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{H}\atom2{NA}\atom3{CA}\atom4{NC}\pot_type{power}
+              \p0{1509.668679}\p1{0.000000}\p2{-1509.668679}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.011091}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{H1}\atom2{CE}\atom3{CT}\atom4{H1}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 38 instances
+~torsion_parm[\atom1{H1}\atom2{CE}\atom3{CT}\atom4{HC}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{H1}\atom2{CE}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{H1}\atom2{CE}\atom3{OH}\atom4{HO}\pot_type{power}
+              \p0{83.887256}\p1{-251.661769}\p2{0.000000}\p3{335.549025}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 16 instances
+~torsion_parm[\atom1{H1}\atom2{CE}\atom3{OS}\atom4{P}\pot_type{power}
+              \p0{192.885335}\p1{-578.656005}\p2{0.000000}\p3{771.541339}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 76 instances
+~torsion_parm[\atom1{H1}\atom2{CI}\atom3{CT}\atom4{H1}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 4 instances
+~torsion_parm[\atom1{H1}\atom2{CI}\atom3{OH}\atom4{HO}\pot_type{power}
+              \p0{83.887256}\p1{-251.661769}\p2{0.000000}\p3{335.549025}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 72 instances
+~torsion_parm[\atom1{H1}\atom2{CI}\atom3{OS}\atom4{P}\pot_type{power}
+              \p0{192.885335}\p1{-578.656005}\p2{0.000000}\p3{771.541339}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{CE}\atom4{OH}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 17 instances
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{CE}\atom4{OS}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 38 instances
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{CT}\atom4{H1}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{CT}\atom4{H2}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{CT}\atom4{NS}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{OH}\atom4{HO}\pot_type{power}
+              \p0{83.887256}\p1{-251.661769}\p2{0.000000}\p3{335.549025}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 17 instances
+~torsion_parm[\atom1{H1}\atom2{CT}\atom3{OS}\atom4{P}\pot_type{power}
+              \p0{192.885335}\p1{-578.656005}\p2{0.000000}\p3{771.541339}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 38 instances
+~torsion_parm[\atom1{H2}\atom2{CT}\atom3{CT}\atom4{HC}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{H2}\atom2{CT}\atom3{CT}\atom4{OH}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{H4}\atom2{C2}\atom3{C2}\atom4{NS}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{H4}\atom2{C4}\atom3{C4}\atom4{HA}\pot_type{power}
+              \p0{6692.864476}\p1{0.000000}\p2{-6692.864476}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.049169}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{H4}\atom2{C4}\atom3{C4}\atom4{NS}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 13 instances
+~torsion_parm[\atom1{H4}\atom2{CM}\atom3{CM}\atom4{HA}\pot_type{power}
+              \p0{6692.864476}\p1{0.000000}\p2{-6692.864476}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.049169}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 13 instances
+~torsion_parm[\atom1{H4}\atom2{CM}\atom3{CM}\atom4{NS}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{H5}\atom2{C1}\atom3{NB}\atom4{NS}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 1 instances
+~torsion_parm[\atom1{H5}\atom2{C5}\atom3{NB}\atom4{NS}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{H5}\atom2{CK}\atom3{NB}\atom4{NS}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 3 instances
+~torsion_parm[\atom1{H5}\atom2{CP}\atom3{NB}\atom4{NS}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{H5}\atom2{CQ}\atom3{NC}\atom4{NC}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{HA}\atom2{C4}\atom3{C4}\atom4{NS}\pot_type{power}
+              \p0{6692.864476}\p1{0.000000}\p2{-6692.864476}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.049169}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{HA}\atom2{C4}\atom3{CA}\atom4{N2}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{HA}\atom2{C4}\atom3{CA}\atom4{NC}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 7 instances
+~torsion_parm[\atom1{HA}\atom2{CM}\atom3{C}\atom4{NA}\pot_type{power}
+              \p0{2189.019584}\p1{0.000000}\p2{-2189.019584}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.016081}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 7 instances
+~torsion_parm[\atom1{HA}\atom2{CM}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{2189.019584}\p1{0.000000}\p2{-2189.019584}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.016081}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{HA}\atom2{CM}\atom3{CA}\atom4{N2}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 6 instances
+~torsion_parm[\atom1{HA}\atom2{CM}\atom3{CA}\atom4{NC}\pot_type{power}
+              \p0{2566.436754}\p1{0.000000}\p2{-2566.436754}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.018854}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 13 instances
+~torsion_parm[\atom1{HA}\atom2{CM}\atom3{CM}\atom4{NS}\pot_type{power}
+              \p0{6692.864476}\p1{0.000000}\p2{-6692.864476}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.049169}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 4 instances
+~torsion_parm[\atom1{HC}\atom2{CT}\atom3{CE}\atom4{OH}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 34 instances
+~torsion_parm[\atom1{HC}\atom2{CT}\atom3{CE}\atom4{OS}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 38 instances
+~torsion_parm[\atom1{HC}\atom2{CT}\atom3{CT}\atom4{NS}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{N2}\atom2{CA}\atom3{CB}\atom4{NB}\pot_type{power}
+              \p0{3522.560251}\p1{0.000000}\p2{-3522.560250}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.025878}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{N2}\atom2{NA}\atom3{CA}\atom4{NC}\pot_type{power}
+              \p0{1107.090364}\p1{0.000000}\p2{-1107.090364}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.008133}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{NA}\atom2{C}\atom3{CB}\atom4{NB}\pot_type{power}
+              \p0{3019.337358}\p1{0.000000}\p2{-3019.337358}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.022181}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 9 instances
+~torsion_parm[\atom1{NB}\atom2{CB}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{3019.337358}\p1{0.000000}\p2{-3019.337358}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.022181}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 11 instances
+~torsion_parm[\atom1{NB}\atom2{CB}\atom3{CA}\atom4{NC}\pot_type{power}
+              \p0{3522.560251}\p1{0.000000}\p2{-3522.560250}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.025878}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 20 instances
+~torsion_parm[\atom1{NB}\atom2{CB}\atom3{CB}\atom4{NC}\pot_type{power}
+              \p0{5485.129533}\p1{0.000000}\p2{-5485.129533}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.040296}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 20 instances
+~torsion_parm[\atom1{NB}\atom2{CB}\atom3{CB}\atom4{NS}\pot_type{power}
+              \p0{5485.129533}\p1{0.000000}\p2{-5485.129533}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.040296}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{NC}\atom2{CB}\atom3{CB}\atom4{NS}\pot_type{power}
+              \p0{0.000000}\p1{0.000000}\p2{0.000000}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 19 instances
+~torsion_parm[\atom1{NS}\atom2{CT}\atom3{CT}\atom4{OH}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 10 instances
+~torsion_parm[\atom1{NS}\atom2{NA}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{10567.680752}\p1{0.000000}\p2{-10567.680751}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.077635}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 8 instances
+~torsion_parm[\atom1{NS}\atom2{NC}\atom3{C}\atom4{O}\pot_type{power}
+              \p0{10567.680752}\p1{0.000000}\p2{-10567.680751}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{-0.077635}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]
+# Source: 1 Fourier terms, 1 distinct Fourier sets across 2 instances
+~torsion_parm[\atom1{OH}\atom2{CI}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+# Source: 1 Fourier terms, 2 distinct Fourier sets across 36 instances
+~torsion_parm[\atom1{OS}\atom2{CI}\atom3{CT}\atom4{OS}\pot_type{power}
+              \p0{78.301482}\p1{-234.904446}\p2{0.000000}\p3{313.205929}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}]
+
+# Test: add C2-C-NS-CT improper with same Fourier as C-C2-NS-CT (alternate atom1/atom2 order)
+~torsion_parm[\atom1{C2}\atom2{C}\atom3{NS}\atom4{CT}\pot_type{power}
+              \p0{1006.445786}\p1{0.000000}\p2{-1006.445786}\p3{0.000000}
+              \p4{0.000000}\p5{0.000000}\p6{0.000000}
+              \s1{0.000000}\s2{0.000000}\s3{0.000000}
+              \s4{0.000000}\s5{0.000000}\s6{0.000000}
+              \sp2{0.000000}\sp3{0.000000}\sp4{0.000000}
+              \sp5{0.000000}\sp6{0.000000}\label{improper}]

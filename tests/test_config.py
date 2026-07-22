@@ -40,7 +40,25 @@ class ConfigStoreTests(unittest.TestCase):
                     expected.default_workspace.resolve(),
                 ),
             )
-            self.assertEqual(json.loads(path.read_text())["schema_version"], 1)
+            self.assertEqual(json.loads(path.read_text())["schema_version"], 2)
+
+    def test_schema_one_is_migrated_with_safe_defaults(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "config.json"
+            path.write_text(
+                json.dumps(
+                    {
+                        "schema_version": 1,
+                        "executable": "/tmp/mosaics",
+                        "forcefield_directory": "/tmp/forcefields",
+                        "default_workspace": "",
+                    }
+                ),
+                encoding="utf-8",
+            )
+            loaded = ConfigStore(path).load()
+            self.assertEqual(loaded.runtime_id, "custom")
+            self.assertEqual(loaded.force_field_id, "ol24-ol3-standard")
 
     def test_invalid_json_is_reported(self):
         with tempfile.TemporaryDirectory() as temporary:

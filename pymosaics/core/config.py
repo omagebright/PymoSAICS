@@ -40,7 +40,7 @@ def config_directory(
 class ConfigStore:
     """Read and atomically write the plugin's JSON configuration."""
 
-    SCHEMA_VERSION = 1
+    SCHEMA_VERSION = 2
 
     def __init__(self, path: Optional[Path] = None) -> None:
         override = os.environ.get("PYMOSAICS_CONFIG_FILE")
@@ -54,7 +54,8 @@ class ConfigStore:
         except (OSError, UnicodeError, json.JSONDecodeError) as exc:
             raise ConfigError("Cannot read PymoSAICS configuration: {}".format(exc)) from exc
 
-        if payload.get("schema_version") != self.SCHEMA_VERSION:
+        schema_version = payload.get("schema_version")
+        if schema_version not in (1, self.SCHEMA_VERSION):
             raise ConfigError("Unsupported PymoSAICS configuration version")
 
         try:
@@ -63,6 +64,8 @@ class ConfigStore:
                 executable=Path(payload["executable"]).expanduser(),
                 forcefield_directory=Path(payload["forcefield_directory"]).expanduser(),
                 default_workspace=Path(workspace).expanduser() if workspace else None,
+                runtime_id=payload.get("runtime_id", "custom"),
+                force_field_id=payload.get("force_field_id", "ol24-ol3-standard"),
             )
         except (KeyError, TypeError) as exc:
             raise ConfigError("PymoSAICS configuration is incomplete") from exc
@@ -78,6 +81,8 @@ class ConfigStore:
                 if config.default_workspace is not None
                 else ""
             ),
+            "runtime_id": config.runtime_id,
+            "force_field_id": config.force_field_id,
         }
 
         temporary_name = None

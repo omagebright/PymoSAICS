@@ -1,0 +1,12 @@
+preset	ol24_ol3_terminal
+source_prmtops	dna_acgt_ol24_ol3_terminal.prmtop;dna_cgta_ol24_ol3_terminal.prmtop;dna_gtac_ol24_ol3_terminal.prmtop;dna_tacg_ol24_ol3_terminal.prmtop;rna_acgu_ol24_ol3_terminal.prmtop;rna_cgua_ol24_ol3_terminal.prmtop;rna_guac_ol24_ol3_terminal.prmtop;rna_uacg_ol24_ol3_terminal.prmtop
+atom_types	56
+bonds	107
+bends	208
+torsion_entries	1154
+nonbonded_types	56
+coulomb14scale	0.8333333333333334
+lj14scale	0.5
+generation_method	resolved_amber_prmtop_extraction
+added_prmtop_proper_overlays	1112
+added_rtf_improper_aliases	42

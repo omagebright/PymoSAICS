@@ -1,0 +1,124 @@
+~bend_parm[\atom1{PROT-2C}\atom2{PROT-3C}\atom3{PROT-CT}
+           \pot_type_bend{harm}\fk_bend{40257.83143485655}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-2C}\atom2{PROT-3C}\atom3{PROT-HC}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-2C}\atom2{PROT-CX}\atom3{PROT-C}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{111.100047614758}]
+~bend_parm[\atom1{PROT-3C}\atom2{PROT-CT}\atom3{PROT-HC}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-3C}\atom2{PROT-CX}\atom3{PROT-C}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{111.100047614758}]
+~bend_parm[\atom1{PROT-C}\atom2{PROT-CA}\atom3{PROT-CA}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{120.0000514290816}]
+~bend_parm[\atom1{PROT-C}\atom2{PROT-CA}\atom3{PROT-HA}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{120.0000514290816}]
+~bend_parm[\atom1{PROT-C}\atom2{PROT-N}\atom3{PROT-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{121.9000522433754}]
+~bend_parm[\atom1{PROT-C}\atom2{PROT-N}\atom3{PROT-CX}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{121.9000522433754}]
+~bend_parm[\atom1{PROT-C}\atom2{PROT-N}\atom3{PROT-H}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{120.0000514290816}]
+~bend_parm[\atom1{PROT-C}\atom2{PROT-OH}\atom3{PROT-HO}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{113.0000484290518}]
+~bend_parm[\atom1{PROT-CA}\atom2{PROT-C}\atom3{PROT-CA}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{120.0000514290816}]
+~bend_parm[\atom1{PROT-CA}\atom2{PROT-C}\atom3{PROT-OH}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{120.0000514290816}]
+~bend_parm[\atom1{PROT-CA}\atom2{PROT-CA}\atom3{PROT-C}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{120.0000514290816}]
+~bend_parm[\atom1{PROT-CA}\atom2{PROT-CA}\atom3{PROT-CA}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{120.0000514290816}]
+~bend_parm[\atom1{PROT-CA}\atom2{PROT-CA}\atom3{PROT-HA}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{120.0000514290816}]
+~bend_parm[\atom1{PROT-CT}\atom2{PROT-3C}\atom3{PROT-CT}
+           \pot_type_bend{harm}\fk_bend{40257.83143485655}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-CT}\atom2{PROT-C}\atom3{PROT-N}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{116.6000499719242}]
+~bend_parm[\atom1{PROT-CT}\atom2{PROT-C}\atom3{PROT-O}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{120.4000516005118}]
+~bend_parm[\atom1{PROT-CT}\atom2{PROT-CA}\atom3{PROT-CA}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{120.0000514290816}]
+~bend_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-CT}
+           \pot_type_bend{harm}\fk_bend{40257.83143485655}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-CX}
+           \pot_type_bend{harm}\fk_bend{40257.83143485655}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-CT}\atom2{PROT-CT}\atom3{PROT-HC}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-CT}\atom2{PROT-CX}\atom3{PROT-C}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{111.100047614758}]
+~bend_parm[\atom1{PROT-CT}\atom2{PROT-CX}\atom3{PROT-H1}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-CT}\atom2{PROT-N}\atom3{PROT-CX}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{118.0000505719302}]
+~bend_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-3C}
+           \pot_type_bend{harm}\fk_bend{40257.83143485655}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-CX}\atom2{PROT-2C}\atom3{PROT-HC}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-CX}\atom2{PROT-3C}\atom3{PROT-CT}
+           \pot_type_bend{harm}\fk_bend{40257.83143485655}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-CX}\atom2{PROT-3C}\atom3{PROT-HC}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-CX}\atom2{PROT-C}\atom3{PROT-N}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{116.6000499719242}]
+~bend_parm[\atom1{PROT-CX}\atom2{PROT-C}\atom3{PROT-O}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{120.4000516005118}]
+~bend_parm[\atom1{PROT-CX}\atom2{PROT-CT}\atom3{PROT-CA}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{114.0000488576275}]
+~bend_parm[\atom1{PROT-CX}\atom2{PROT-CT}\atom3{PROT-HC}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-H}\atom2{PROT-N}\atom3{PROT-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{118.0400504744817}]
+~bend_parm[\atom1{PROT-H}\atom2{PROT-N}\atom3{PROT-CX}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{118.0400504744817}]
+~bend_parm[\atom1{PROT-H1}\atom2{PROT-CT}\atom3{PROT-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-H1}\atom2{PROT-CT}\atom3{PROT-H1}
+           \pot_type_bend{harm}\fk_bend{35225.60250549948}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-2C}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-3C}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-C}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-H1}\atom2{PROT-CX}\atom3{PROT-H1}
+           \pot_type_bend{harm}\fk_bend{35225.60250549948}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-HA}\atom2{PROT-CA}\atom3{PROT-C}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{120.0000514290816}]
+~bend_parm[\atom1{PROT-HA}\atom2{PROT-CA}\atom3{PROT-CA}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{120.0000514290816}]
+~bend_parm[\atom1{PROT-HC}\atom2{PROT-2C}\atom3{PROT-3C}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-HC}\atom2{PROT-2C}\atom3{PROT-HC}
+           \pot_type_bend{harm}\fk_bend{35225.60250549948}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-HC}\atom2{PROT-3C}\atom3{PROT-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-C}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-CA}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-CT}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-CX}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-HC}\atom2{PROT-CT}\atom3{PROT-HC}
+           \pot_type_bend{harm}\fk_bend{35225.60250549948}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-N}\atom2{PROT-CT}\atom3{PROT-CT}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{109.7000470147521}]
+~bend_parm[\atom1{PROT-N}\atom2{PROT-CT}\atom3{PROT-H1}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-2C}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{109.7000470147521}]
+~bend_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-3C}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{109.7000470147521}]
+~bend_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-C}
+           \pot_type_bend{harm}\fk_bend{63406.08450989906}\eq_bend{110.1000471861823}]
+~bend_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-CT}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{109.7000470147521}]
+~bend_parm[\atom1{PROT-N}\atom2{PROT-CX}\atom3{PROT-H1}
+           \pot_type_bend{harm}\fk_bend{50322.28929357068}\eq_bend{109.5000469290369}]
+~bend_parm[\atom1{PROT-O}\atom2{PROT-C}\atom3{PROT-N}
+           \pot_type_bend{harm}\fk_bend{80515.66286971309}\eq_bend{122.900052671951}]
+~bend_parm[\atom1{PROT-OH}\atom2{PROT-C}\atom3{PROT-CA}
+           \pot_type_bend{harm}\fk_bend{70451.20501099897}\eq_bend{120.0000514290816}]

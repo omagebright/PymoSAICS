@@ -24,4 +24,4 @@ jobs:
       - name: Build Plugin Manager archive
         run: python scripts/build_release.py
       - name: Inspect archive
-        run: python -m zipfile -l dist/PymoSAICS-0.1.1.zip
+        run: python -m zipfile -l dist/PymoSAICS-0.2.0.zip
