@@ -26,6 +26,7 @@ from .core.builder import (
     stage_force_field,
     write_mcmc_input,
 )
+from .core.coarse_grain import prepare_three_point_structure, write_chain_regions
 from .core.catalog import (
     ANALYSIS_PRESETS,
     FORCEFIELD_ROOT,
@@ -41,8 +42,11 @@ from .core.config import ConfigError, ConfigStore
 from .core.landscape import LandscapeResult, build_landscape, write_landscape_table
 from .core.models import PreparedRun, RuntimeConfig
 from .core.project import (
+    MosaicsInputDocument,
     PreparationError,
     format_diagnostics,
+    import_project_input,
+    make_portable_input,
     planned_parameter_input,
     prepare_run,
     validate_project,
@@ -995,6 +999,8 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         self._landscape_path: Optional[Path] = None
         self._landscape_object = ""
         self._preview_signature = None
+        self._synchronized_input_path: Optional[Path] = None
+        self._loading_input = False
 
         self.tabs = QtWidgets.QTabWidget()
         self.build_tab = QtWidgets.QWidget()
@@ -1435,10 +1441,22 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         buttons = QtWidgets.QHBoxLayout()
         generate = QtWidgets.QPushButton("Generate from visible settings")
         generate.clicked.connect(self._generate_preview)
+        load_input = QtWidgets.QPushButton("Load selected input")
+        load_input.setToolTip("Load the Run-tab input without regenerating or discarding unsupported directives.")
+        load_input.clicked.connect(self._load_current_input_into_build)
+        apply_settings = QtWidgets.QPushButton("Apply visible settings")
+        apply_settings.setToolTip("Update only the displayed scalar settings; preserve every other input directive.")
+        apply_settings.clicked.connect(self._apply_visible_settings_to_input)
+        save_input = QtWidgets.QPushButton("Save input")
+        save_input.setToolTip("Save the synchronized input text to its visible project file.")
+        save_input.clicked.connect(self._save_synchronized_input)
         prepare = QtWidgets.QPushButton("Prepare project")
         prepare.setObjectName("primaryAction")
         prepare.clicked.connect(self._prepare_project)
         buttons.addWidget(generate)
+        buttons.addWidget(load_input)
+        buttons.addWidget(apply_settings)
+        buttons.addWidget(save_input)
         buttons.addWidget(prepare)
         right_layout.addLayout(buttons)
         self.build_status = QtWidgets.QPlainTextEdit()
@@ -1480,9 +1498,13 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         scan.clicked.connect(self._scan_inputs)
         view_input = QtWidgets.QPushButton("View / edit")
         view_input.clicked.connect(self._view_run_input)
+        import_input = QtWidgets.QPushButton("Make portable")
+        import_input.setToolTip("Create mcmc.input with local project paths while preserving the original deck.")
+        import_input.clicked.connect(self._import_selected_input)
         input_layout.addWidget(browse)
         input_layout.addWidget(scan)
         input_layout.addWidget(view_input)
+        input_layout.addWidget(import_input)
         form.addRow("Input file:", input_row)
         form.addRow("Specific output PDB (optional):", self._path_row(self.output_edit, "Browse…", self._browse_output))
         view_structure = QtWidgets.QPushButton("View / edit input PDB")
@@ -1970,7 +1992,11 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             if item is not None:
                 item.setEnabled(preset.chemistry in ("any", profile.chemistry))
         current = self._current_preset()
-        if current.chemistry not in ("any", profile.chemistry):
+        if profile.topology_profile == "kb_3pt" and current.identifier != "three-point-natural-moves":
+            target = self.preset_combo.findData("three-point-natural-moves")
+            if target >= 0:
+                self.preset_combo.setCurrentIndex(target)
+        elif current.chemistry not in ("any", profile.chemistry):
             first = next(index for index in compatible if index >= 0)
             self.preset_combo.setCurrentIndex(first)
         self._refresh_disulfides()
@@ -2043,6 +2069,8 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             self._apply_landscape_suggestion()
         else:
             self._update_ladder()
+        if preset.identifier == "three-point-natural-moves":
+            self.use_region.setChecked(True)
         index = self.header_combo.findData(preset.recommended_header)
         if index >= 0:
             self.header_combo.setCurrentIndex(index)
@@ -2367,12 +2395,17 @@ class PymoSAICSDialog(QtWidgets.QDialog):
     def _regenerate_unedited_preview(self, *_args):
         if not hasattr(self, "input_preview"):
             return
+        if self._loading_input or self._synchronized_input_path is not None:
+            self._mark_preview_stale()
+            return
         if self.input_preview.document().isModified():
             self._mark_preview_stale()
             return
         self._generate_preview()
 
     def _generate_preview(self, checked=False):
+        if self._loading_input:
+            return
         try:
             signature = self._preview_settings_signature()
             content = generate_mcmc_input(
@@ -2388,8 +2421,179 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             return
         self.input_preview.setPlainText(content)
         self.input_preview.document().setModified(False)
+        self._synchronized_input_path = None
         self._preview_signature = signature
         self.build_status.setPlainText("Generated from the displayed settings. Review and edit before preparing the project.")
+
+    @staticmethod
+    def _document_float(document, key, default=None):
+        value = document.value(key)
+        if value is None:
+            return default
+        try:
+            return float(value)
+        except ValueError:
+            return default
+
+    @staticmethod
+    def _document_int(document, key, default=None):
+        value = document.value(key)
+        if value is None:
+            return default
+        try:
+            return int(value)
+        except ValueError:
+            return default
+
+    def _load_current_input_into_build(self, checked=False):
+        text = self.input_combo.currentText().strip()
+        if not text:
+            QtWidgets.QMessageBox.information(self, "PymoSAICS", "Select a MOSAICS input first.")
+            return
+        path = Path(text).expanduser()
+        if not path.is_file():
+            QtWidgets.QMessageBox.warning(self, "PymoSAICS", "Input file does not exist: {}".format(path))
+            return
+        try:
+            source = path.read_text(encoding="utf-8")
+        except (OSError, UnicodeError) as exc:
+            QtWidgets.QMessageBox.warning(self, "PymoSAICS", "Cannot read input: {}".format(exc))
+            return
+        document = MosaicsInputDocument(source)
+        self._loading_input = True
+        try:
+            cgres_model = (document.value("cgres_model") or "").upper()
+            topology_name = Path(document.value("mol_parm_file") or "").name
+            force_field_id = None
+            if cgres_model == "KB_3PT" or topology_name == "top_3pt_prot_na.rtf":
+                force_field_id = "kb-3pt-protein"
+                runtime_index = self.runtime_combo.findData("mosaics-3.9.1")
+                if runtime_index >= 0:
+                    self.runtime_combo.setCurrentIndex(runtime_index)
+                preset_index = self.preset_combo.findData("three-point-natural-moves")
+                if preset_index >= 0:
+                    self.preset_combo.setCurrentIndex(preset_index)
+            else:
+                for profile in FORCE_FIELD_PROFILES:
+                    if Path(profile.rtf).name == topology_name:
+                        force_field_id = profile.identifier
+                        break
+            if force_field_id:
+                index = self.forcefield_combo.findData(force_field_id)
+                if index >= 0:
+                    self.forcefield_combo.setCurrentIndex(index)
+
+            temperature = self._document_float(document, "temperature")
+            total_steps = self._document_int(document, "total_step_mc")
+            statistics = self._document_int(document, "statistics_freq")
+            seed = document.value("random_seed")
+            closure = document.value("prop_clos_sig")
+            replica_number = self._document_int(document, "replica_number")
+            energy_gap = self._document_float(document, "energy_gap")
+            if temperature is not None and temperature > 0:
+                self.temperature.setValue(temperature)
+            if total_steps is not None and total_steps >= 0:
+                self.steps.setValue(total_steps)
+            if statistics is not None and statistics > 0:
+                self.statistics.setValue(statistics)
+            if seed is not None:
+                self.seed.setText(seed)
+            if closure is not None:
+                self.closure_sigma.setText(closure)
+            if replica_number is not None and replica_number >= 0:
+                count = min(self.replica_count.maximum(), replica_number + 1)
+                self.replica_count.setValue(count)
+                if energy_gap is not None and energy_gap >= 1 and temperature is not None:
+                    self.top_temperature.setValue(temperature * energy_gap ** replica_number)
+
+            output_value = document.value("pos_out_file") or document.value("atom_pos_file")
+            if output_value:
+                output_name = Path(output_value).name
+                self.output_stem_edit.setText(output_name.split(".", 1)[0])
+            self.input_name_edit.setText(path.name)
+            region_value = document.value("region_database_file")
+            self.use_region.setChecked(bool(region_value))
+        finally:
+            self._loading_input = False
+
+        self.input_preview.setPlainText(source)
+        self.input_preview.document().setModified(True)
+        self._synchronized_input_path = path.resolve()
+        self._preview_signature = None
+        self.build_status.setPlainText(
+            "Loaded {} without regeneration. Visible scalar values are synchronized; "
+            "all other MOSAICS directives remain unchanged. Use Apply visible settings, review the diff in the editor, then Save input.".format(path)
+        )
+
+        structure_value = document.value("pos_init_file")
+        if structure_value:
+            resolved_value = structure_value.replace("${PROJECT_DIR}", str(path.parent.resolve()))
+            structure_path = Path(resolved_value).expanduser()
+            if not structure_path.is_absolute():
+                structure_path = path.parent / structure_path
+            if structure_path.is_file():
+                self._loaded_input_structure = structure_path.resolve()
+
+    @staticmethod
+    def _replace_output_prefix(value: str, prefix: str) -> str:
+        normalized = value.replace("\\", "/")
+        directory, separator, filename = normalized.rpartition("/")
+        suffix = filename[filename.find(".") :] if "." in filename else ""
+        replacement = prefix + suffix
+        return (directory + separator + replacement) if separator else replacement
+
+    def _apply_visible_settings_to_input(self, checked=False):
+        if self._synchronized_input_path is None:
+            QtWidgets.QMessageBox.information(
+                self, "PymoSAICS", "Load a project input before applying settings."
+            )
+            return
+        try:
+            document = MosaicsInputDocument(self.input_preview.toPlainText())
+            settings = self._current_input_settings()
+            candidates = {
+                "temperature": "{:g}".format(settings.temperature),
+                "total_step_mc": settings.total_steps,
+                "statistics_freq": settings.statistics_frequency,
+                "random_seed": settings.random_seed,
+                "prop_clos_sig": settings.closure_sigma,
+                "replica_number": settings.replica_number,
+                "energy_gap": "{:.8g}".format(settings.energy_gap),
+            }
+            changes = {key: value for key, value in candidates.items() if document.value(key) is not None}
+            output_prefix = self.output_stem_edit.text().strip()
+            if not output_prefix or any(character in output_prefix for character in "/\\{}\r\n"):
+                raise ValueError("output prefix must be a simple filename prefix")
+            for key in (
+                "pos_out_file", "atom_pos_file", "param_out_file", "epot_file",
+                "einter_file", "tors_pos_file", "hessian_file", "eighess_file",
+            ):
+                value = document.value(key)
+                if value is not None:
+                    changes[key] = self._replace_output_prefix(value, output_prefix)
+            updated = document.updated(changes)
+        except (KeyError, ValueError) as exc:
+            QtWidgets.QMessageBox.warning(self, "PymoSAICS", "Cannot synchronize input: {}".format(exc))
+            return
+        self.input_preview.setPlainText(updated)
+        self.input_preview.document().setModified(True)
+        self.build_status.setPlainText(
+            "Applied {} visible value(s) in memory. Unknown and repeated scientific directives were preserved; review, then choose Save input.".format(len(changes))
+        )
+
+    def _save_synchronized_input(self, checked=False):
+        path = self._synchronized_input_path
+        if path is None:
+            QtWidgets.QMessageBox.information(self, "PymoSAICS", "Load a project input before saving.")
+            return
+        try:
+            write_mcmc_input(path, self.input_preview.toPlainText())
+        except OSError as exc:
+            QtWidgets.QMessageBox.warning(self, "PymoSAICS", "Cannot save input: {}".format(exc))
+            return
+        self.input_preview.document().setModified(False)
+        self.build_status.setPlainText("Saved synchronized input: {}".format(path))
+        self._scan_inputs(preferred=path)
 
     def _project_directory(self) -> Optional[Path]:
         text = self.project_edit.text().strip()
@@ -2470,16 +2674,24 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             staged_force_field = stage_force_field(project, force_field)
             selected_chains = self._selected_chains()
             selected_disulfides = self._selected_disulfides()
-            prepared = prepare_structure(
-                source,
-                project / "structure.pdb",
-                self.model_combo.currentText(),
-                selected_chains,
-                force_field.chemistry,
-                force_field.topology_profile,
-                self.header_combo.currentData(),
-                selected_disulfides,
-            )
+            if force_field.topology_profile == "kb_3pt":
+                prepared = prepare_three_point_structure(
+                    source,
+                    project / "structure.pdb",
+                    self.model_combo.currentText(),
+                    selected_chains,
+                )
+            else:
+                prepared = prepare_structure(
+                    source,
+                    project / "structure.pdb",
+                    self.model_combo.currentText(),
+                    selected_chains,
+                    force_field.chemistry,
+                    force_field.topology_profile,
+                    self.header_combo.currentData(),
+                    selected_disulfides,
+                )
             topology_issues = validate_pdb_against_rtf(
                 prepared.pdb_path,
                 staged_force_field / Path(force_field.rtf).name,
@@ -2547,10 +2759,13 @@ class PymoSAICSDialog(QtWidgets.QDialog):
                     )
                 )
             if self.use_region.isChecked():
-                if self._region_settings is None:
-                    residues = self._available_residues()
-                    self._region_settings = RegionSettings(residues, residues[:1], ())
-                write_region_file(project / "region" / "region.data", self._region_settings)
+                if force_field.topology_profile == "kb_3pt":
+                    write_chain_regions(project / "region" / "region.data", prepared.pdb_path)
+                else:
+                    if self._region_settings is None:
+                        residues = self._available_residues()
+                        self._region_settings = RegionSettings(residues, residues[:1], ())
+                    write_region_file(project / "region" / "region.data", self._region_settings)
             if not self.input_preview.toPlainText().strip():
                 self._generate_preview()
             if not self.input_preview.toPlainText().strip():
@@ -2598,11 +2813,34 @@ class PymoSAICSDialog(QtWidgets.QDialog):
         paths = sorted(
             (
                 path.resolve()
-                for path in project.iterdir()
-                if path.is_file() and path.suffix.lower() in (".input", ".inp")
+                for path in project.rglob("*")
+                if path.is_file()
+                and path.suffix.lower() in (".input", ".inp")
+                and ".pymosaics" not in path.parts
+                and "output" not in path.parts
             ),
             key=lambda path: path.name.lower(),
         )
+        canonical = (project / "mcmc.input").resolve()
+        if canonical not in paths and len(paths) == 1:
+            try:
+                portable = make_portable_input(
+                    paths[0].read_text(encoding="utf-8"),
+                    project,
+                    source_directory=paths[0].parent,
+                )
+                if portable.rewrites and not portable.unresolved:
+                    imported = import_project_input(paths[0], canonical, project_directory=project)
+                    paths.append(imported.input_path)
+                    paths.sort(key=lambda path: path.name.lower())
+                    preferred = imported.input_path
+                    self.build_status.setPlainText(
+                        "Automatically created portable {} from {} ({} path rewrite(s)); the original was preserved.".format(
+                            imported.input_path.name, imported.source_path.name, len(imported.rewrites)
+                        )
+                    )
+            except (OSError, PreparationError):
+                pass
         current_text = self.input_combo.currentText().strip()
         current_path = Path(current_text).expanduser().resolve() if current_text else None
         preferred_path = Path(preferred).expanduser().resolve() if preferred else None
@@ -2611,7 +2849,6 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             self.input_combo.addItem(str(path))
 
         candidates = set(paths)
-        canonical = (project / "mcmc.input").resolve()
         if preferred_path in candidates:
             selected = preferred_path
         elif current_path in candidates:
@@ -2645,10 +2882,40 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             self.project_edit.setText(str(Path(path).parent))
             self._scan_inputs(preferred=Path(path))
 
+    def _import_selected_input(self, checked=False):
+        text = self.input_combo.currentText().strip()
+        if not text:
+            QtWidgets.QMessageBox.information(self, "PymoSAICS", "Select a MOSAICS input first.")
+            return
+        source = Path(text).expanduser()
+        if not source.is_file():
+            QtWidgets.QMessageBox.warning(self, "PymoSAICS", "Input file does not exist: {}".format(source))
+            return
+        project = self._project_directory() or source.parent.resolve()
+        canonical = project / "mcmc.input"
+        destination = canonical if source.resolve() != canonical.resolve() else source.parent / "mcmc.portable.input"
+        try:
+            imported = import_project_input(
+                source, destination, project_directory=project
+            )
+        except (OSError, PreparationError, UnicodeError) as exc:
+            QtWidgets.QMessageBox.warning(self, "PymoSAICS", str(exc))
+            return
+        self.project_edit.setText(str(project))
+        self._scan_inputs(preferred=imported.input_path)
+        self.build_status.setPlainText(
+            "Created {} with {} portable path rewrite(s). Original preserved at {}.".format(
+                imported.input_path, len(imported.rewrites), imported.source_path
+            )
+        )
+        self.tabs.setCurrentWidget(self.build_tab)
+
     def _run_input_changed(self, text):
         value = text.strip()
         if value and Path(value).expanduser().is_file():
             self._validate_current_project()
+            if not self._loading_input:
+                self._load_current_input_into_build()
 
     def _browse_output(self, checked=False):
         start = str(self._project_directory() or Path.home())
@@ -2672,6 +2939,7 @@ class PymoSAICSDialog(QtWidgets.QDialog):
             return
         self._show_text_file(Path(text), editable=True)
         self._validate_current_project()
+        self._load_current_input_into_build()
 
     def _view_prepared_structure(self, checked=False):
         project = self._project_directory()

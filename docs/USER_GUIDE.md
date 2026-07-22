@@ -78,6 +78,44 @@ within three seconds.
 Use **View / edit** for `mcmc.input`, **View / edit input PDB** for the prepared
 structure, and **View latest log** for the newest run record.
 
+## Portable import and two-way input synchronization
+
+Project scanning is recursive. If a directory contains one legacy input with
+foreign absolute paths, PymoSAICS creates a portable `mcmc.input` when every
+referenced filename has one unique match under that project. The original is
+never overwritten. Use **Make portable** for an explicit import. Missing or
+duplicate basename matches stop the import and are reported for manual choice.
+
+Selecting an input loads its supported scalar values into Build without
+regenerating the deck. **Apply visible settings** updates those existing
+directives in the preview; **Save input** persists the reviewed text. Options
+without a corresponding control—including repeated energy terms, segment
+regions, and MOSAICS-EM settings—are retained exactly. Direct edits in the
+text viewer are reloaded into Build when it closes.
+
+## KB_3pt protein projects
+
+The **MOSAICS KB_3pt** profile is compatible with the bundled stable 3.9.1 and
+experimental runtimes. It stages the historical topology and parameter pair.
+The **Three-point protein natural moves** preset generates a visible
+temperature-modulated input with `cgres_model{KB_3pt}` and all five required
+energy terms.
+
+For an ordinary protein PDB, preparation selects CA and carbonyl O and computes
+the geometric centroid of side-chain heavy atoms as CMA. Chains are relabeled
+A, B, C… in selected PDB order and residues are renumbered from one; the exact
+mapping and centroid method are written to `structure.mapping.tsv`. Glycine
+uses CA plus a 0.01 Å x-offset. Non-polymer HETATM records are ignored.
+Incomplete residues lacking CA or O are omitted and explicitly recorded rather
+than silently repaired.
+
+With regions enabled, PymoSAICS writes one whole-chain segment region per chain.
+This is a runnable baseline, not an inferred biological hierarchy. Edit STRIDE
+and `region.data` to encode domain boundaries, flexible closure loops, TCR CDRs,
+Mm-cpn refinement levels, or other system-specific hypotheses. Exact historical
+MOSAICS-EM reproduction additionally requires the original image,
+`orientation.data`, region levels, and other experimental inputs.
+
 ## Analysis
 
 - **Energy & acceptance** places the selected energy trace and complete-log

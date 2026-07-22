@@ -1,6 +1,6 @@
 # Release validation
 
-Validation was performed on 2026-07-21 and repeated for the 0.2.4 interface on
+Validation was performed on 2026-07-21 and repeated for the 0.3.0 interface on
 2026-07-22 on Apple Silicon macOS. These checks
 establish software/runtime compatibility; they do not establish scientific
 convergence for a production study.
@@ -14,7 +14,7 @@ convergence for a production study.
 - The Qt plugin loaded under PyMOL's bundled Python 3.10 / Qt 5.15 runtime.
 - All tabs rendered without native light-background leakage under forced light
   and dark host palettes; the minimum-width Build form retained every control.
-- Build and Setup exposed the same nine profiles. Selecting each profile
+- Build and Setup exposed the same ten profiles. Selecting each profile
   populated all six corresponding force-field directives in `mcmc.input`.
 - Every combo popup used an explicit dark Qt view with readable active,
   selected, and disabled text under the PyMOL runtime.
@@ -39,7 +39,8 @@ Each check used a prepared all-atom structure, the exact six selected files in
 | MOSAICS 3.9.1 | bsc1/OL3 standard | Completed |
 | MOSAICS 3.9.1 | bsc0 standard | Completed |
 | MOSAICS 3.9.1 | OL15/OL3 standard | Completed |
-| Experimental validated stack | All nine selectable profiles | Completed |
+| MOSAICS 3.9.1 | KB_3pt | Completed |
+| Experimental validated stack | All ten selectable profiles | Completed |
 
 The measured 3.9.1 incompatibilities with terminal, OL21/OL24, and ff14SB
 decks are encoded in the selector and validator.
@@ -61,6 +62,28 @@ must still be run and assessed for move/exchange acceptance and convergence.
 
 The graphical `region.data` path completed a two-step CBLC run with residue
 centers and paired residues.
+
+## Portable and three-point workflow checks
+
+Tom's original 7QPJ directory was copied to an isolated project and imported
+without manual path editing. PymoSAICS made 14 compatibility/path rewrites,
+preserved the original input, validated every reference, and completed a
+one-step MOSAICS 3.9.1 run. The run produced the requested PDB, trajectory,
+torsion, potential-energy, and interaction-energy files under `output/`, plus
+the runtime-owned `sim_param.out` in the project directory.
+
+Starting independently from the RCSB 7QPJ PDB, PymoSAICS generated 2,466 sites
+for 822 residues across five relabeled chains, exactly matching the site and
+residue counts of Tom's supplied three-point structure. All 822 CA and 822 O
+coordinates matched Tom's file exactly. One RCSB residue lacking carbonyl O was
+omitted and recorded in `structure.mapping.tsv`. A generated whole-chain region
+deck then completed a one-step MOSAICS 3.9.1 KB_3pt run.
+
+The generated CMA coordinates use a transparent geometric side-chain centroid
+and are not asserted to reproduce Tom's separate side-chain preparation. Tom's
+exact CMA coordinates, STRIDE boundaries, and 17 custom regions are preserved
+when his original project is imported. Likewise, a fetched Mm-cpn PDB cannot
+replace missing historical 2D image, orientation, or three-level region files.
 
 ## End-to-end PyMOL check
 

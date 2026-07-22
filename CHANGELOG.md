@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.0 — 2026-07-22
+
+- Added lossless MOSAICS input parsing and surgical scalar-setting updates that preserve repeated, unknown, region, and cryo-EM directives.
+- Added recursive project discovery and safe portable import of foreign absolute paths into a managed `mcmc.input`, with ambiguity detection and preservation of the source deck.
+- Added the historical KB_3pt topology/parameter profile to the stable and experimental runtime matrices.
+- Added automatic canonical-protein conversion to CA/O/CMA coordinates, deterministic chain relabeling and residue numbering, an auditable mapping table, and explicit handling of incomplete residues.
+- Added conservative whole-chain segment-region generation and a temperature-modulated three-point natural-move preset.
+- Added direct UI controls to load an existing input into Build, apply visible values without regeneration, save reviewed changes, and make a project portable on demand.
+- Completed one-step MOSAICS 3.9.1 runs for both Tom's imported 7QPJ deck and a fresh 7QPJ project generated from the RCSB PDB.
+
 ## 0.2.4 — 2026-07-22
 
 - Moved new MOSAICS run logs from hidden application state into the visible project `logs/` directory while retaining discovery of legacy logs.

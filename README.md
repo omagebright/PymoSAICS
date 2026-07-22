@@ -11,7 +11,7 @@ and outputs remain visible to the user.
 2. Paste this URL into **Install from PyMOLWiki or any URL**:
 
    ```text
-   https://github.com/omagebright/PymoSAICS/releases/download/v0.2.4/PymoSAICS-0.2.4.zip
+   https://github.com/omagebright/PymoSAICS/releases/download/v0.3.0/PymoSAICS-0.3.0.zip
    ```
 
 3. Choose **Install**, restart PyMOL, then open **Plugin → PymoSAICS**.
@@ -23,7 +23,7 @@ macOS. It does not include MOSAICS source code.
 
 | Runtime | Selectable force-field profiles |
 |---|---|
-| MOSAICS 3.9.1 | bsc1/OL3 standard, bsc0 standard, OL15/OL3 standard |
+| MOSAICS 3.9.1 | bsc1/OL3 standard, bsc0 standard, OL15/OL3 standard, KB_3pt |
 | Experimental validated stack | Every bundled profile, including terminal OL15/21/24 and ff14SB |
 | Custom executable | User-selected Windows, macOS, or Linux build; compatibility must be validated |
 
@@ -44,8 +44,9 @@ The bundled profiles are:
 - AMBER99 + parmbsc1/OL3 for DNA/RNA;
 - AMBER99 + parmbsc0 as the legacy DNA/RNA comparator;
 - AMBER OL15/OL3, OL21/OL3, and OL24/OL3 for DNA/RNA;
-- true-terminal variants of OL15/OL3, OL21/OL3, and OL24/OL3; and
-- AMBER ff14SB for proteins, including the validated disulfide workflow.
+- true-terminal variants of OL15/OL3, OL21/OL3, and OL24/OL3;
+- AMBER ff14SB for proteins, including the validated disulfide workflow; and
+- the historical MOSAICS KB_3pt protein/protein-complex topology and potential.
 
 Profiles that have not passed compatibility testing with the selected runtime
 are disabled rather than silently mixed with an incompatible executable.
@@ -77,6 +78,45 @@ members, required rotation centers, non-overlapping residue pairs, documented
 WP2 proposal-width presets, Å/radian units, a live `region.data` preview, and
 PyMOL selection/visualization. Invalid regions cannot be accepted.
 
+### Existing and historical MOSAICS projects
+
+Point PymoSAICS at a project directory or browse to an existing `.input` or
+`.inp` file. Input discovery is recursive. When a single deck contains foreign
+absolute paths and every referenced basename has one unambiguous local match,
+PymoSAICS automatically creates a managed `mcmc.input` using
+`${PROJECT_DIR}`. The source deck is preserved. Output paths are placed under
+`output/`; the unsupported historical `param_out_file` directive is removed
+because MOSAICS writes `sim_param.out` in the working directory.
+
+Selecting a Run input loads its actual temperature, step count, statistics
+frequency, seed, closure width, replica count, energy gap, and output prefix
+into Build. **Apply visible settings** performs a surgical update of only those
+existing directives. Repeated `energy_term` entries, cryo-EM options, comments,
+and every unknown scientific option remain unchanged. Review the complete text,
+then choose **Save input**. **Make portable** performs the same path import on
+demand and reports ambiguous or missing files instead of guessing.
+
+### Build a KB_3pt starting project from a PDB
+
+Select **MOSAICS KB_3pt** and **Three-point protein natural moves**, then load a
+local PDB, fetch an RCSB identifier, or use a PyMOL object. Preparation writes:
+
+- `structure.pdb` with CA, carbonyl O, and a geometric centroid of the
+  side-chain heavy atoms for each canonical protein residue;
+- `structure.mapping.tsv`, including chain relabeling, residue renumbering,
+  centroid provenance, and any incomplete residue omitted because CA or O was
+  absent;
+- the authentic `top_3pt_prot_na.rtf` and `par_3pt_prot_na.prm`; and
+- one explicit segment region per chain as a conservative, editable starting
+  hierarchy.
+
+Glycine CMA is placed 0.01 Å from CA to avoid coincident sites, following the
+historical convention. A fetched PDB is enough to create and execute a valid
+KB_3pt starter project, but it cannot reveal experiment-specific STRIDE
+boundaries, domain hierarchy, cryo-EM images, orientations, or energy weights.
+Import the original deck and associated files when exact reproduction is the
+goal—for example Tom's 7QPJ regions or the three Mm-cpn refinement levels.
+
 ## Presets
 
 The interface provides reviewable starting points for:
@@ -85,7 +125,8 @@ The interface provides reviewable starting points for:
 - BFGS local minimization;
 - simulated-tempering minimum searches;
 - regular and successive CBLC regressions;
-- protein side-chain natural moves; and
+- protein side-chain natural moves;
+- three-point protein/protein-complex natural moves; and
 - nucleic-acid or protein parallel-tempering landscape pilots.
 
 Every parameter remains editable. A finite minimization or sampling run cannot

@@ -2,9 +2,12 @@
 
 import hashlib
 import re
+import os
+import tempfile
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, Iterable, List, Sequence, Tuple
+from typing import Dict, Iterable, List, Mapping, Optional, Sequence, Tuple
 
 from .models import Diagnostic, PreparedRun, RuntimeConfig
 from .runtime import build_command, has_errors, validate_runtime
@@ -21,12 +24,236 @@ INPUT_FILE_KEYS = {
     "inter_database_file",
     "region_database_file",
     "pos_init_file",
+    "cryo_em_database_file",
+    "constraint_database_file",
+}
+OUTPUT_FILE_KEYS = {
+    "pos_out_file",
+    "atom_pos_file",
+    "param_out_file",
+    "epot_file",
+    "einter_file",
+    "tors_pos_file",
+    "hessian_file",
+    "eighess_file",
+}
+UNSUPPORTED_PORTABLE_KEYS = {
+    # MOSAICS 3.9.1 and the bundled experimental runtime always write this
+    # record as ./sim_param.out; neither parser accepts a configurable path.
+    "param_out_file": "MOSAICS writes sim_param.out in the working directory",
 }
 OUTPUT_PATTERNS = ("simulation.pdb", "simulation_result.pdb", "*.pos_out.pdb")
 
 
 class PreparationError(RuntimeError):
     """Raised when an invalid project is prepared for execution."""
+
+
+@dataclass(frozen=True)
+class PathRewrite:
+    key: str
+    original: str
+    replacement: str
+
+
+@dataclass(frozen=True)
+class PathIssue:
+    key: str
+    value: str
+    reason: str
+
+
+@dataclass(frozen=True)
+class PortableInput:
+    content: str
+    rewrites: Tuple[PathRewrite, ...]
+    unresolved: Tuple[PathIssue, ...]
+
+
+@dataclass(frozen=True)
+class ImportedInput:
+    input_path: Path
+    source_path: Path
+    rewrites: Tuple[PathRewrite, ...]
+
+
+class MosaicsInputDocument:
+    """Lossless view of a MOSAICS deck with surgical directive updates.
+
+    MOSAICS accepts repeated directives such as ``energy_term`` and historical
+    decks often carry options unknown to this PymoSAICS release.  This class
+    deliberately avoids reformatting or regenerating the file: callers can read
+    any directive and replace selected scalar values while every other byte is
+    retained.
+    """
+
+    def __init__(self, text: str):
+        self.text = text
+
+    def values(self, key: str) -> Tuple[str, ...]:
+        return tuple(
+            match.group(2).strip()
+            for match in ENTRY_PATTERN.finditer(self.text)
+            if match.group(1) == key
+        )
+
+    def value(self, key: str, default: Optional[str] = None) -> Optional[str]:
+        values = self.values(key)
+        return values[0] if values else default
+
+    def updated(self, changes: Mapping[str, object]) -> str:
+        text = self.text
+        for key, value in changes.items():
+            if not re.match(r"^[A-Za-z][A-Za-z0-9_]*$", key):
+                raise ValueError("invalid MOSAICS directive name: {}".format(key))
+            replacement = str(value)
+            if any(character in replacement for character in "{}\r\n"):
+                raise ValueError("invalid value for MOSAICS directive {}".format(key))
+            pattern = re.compile(r"(\\{}\{{)[^{{}}\r\n]*(\}})".format(re.escape(key)))
+            text, count = pattern.subn(
+                lambda match: match.group(1) + replacement + match.group(2),
+                text,
+                count=1,
+            )
+            if count == 0:
+                raise KeyError("MOSAICS directive is not present: {}".format(key))
+        return text
+
+
+def _project_file_index(project_directory: Path) -> Dict[str, Tuple[Path, ...]]:
+    grouped: Dict[str, List[Path]] = {}
+    for path in project_directory.rglob("*"):
+        if not path.is_file() or ".pymosaics" in path.parts or "output" in path.parts:
+            continue
+        grouped.setdefault(path.name, []).append(path.resolve())
+    return {
+        name: tuple(sorted(paths, key=lambda item: item.as_posix()))
+        for name, paths in grouped.items()
+    }
+
+
+def _project_placeholder(path: Path, project_directory: Path) -> str:
+    relative = path.resolve().relative_to(project_directory.resolve())
+    return "${PROJECT_DIR}/" + relative.as_posix()
+
+
+def make_portable_input(
+    text: str, project_directory: Path, source_directory: Optional[Path] = None
+) -> PortableInput:
+    """Remap foreign absolute paths without guessing between local candidates.
+
+    Input files are matched by unique basename within the project. Output files
+    are moved beneath a visible ``output`` directory. The returned text is safe
+    to move because all rewritten paths use ``${PROJECT_DIR}``.
+    """
+
+    project_directory = project_directory.expanduser().resolve()
+    source_directory = (
+        source_directory.expanduser().resolve()
+        if source_directory is not None
+        else project_directory
+    )
+    index = _project_file_index(project_directory)
+    rewrites: List[PathRewrite] = []
+    unresolved: List[PathIssue] = []
+
+    def replace(match: re.Match) -> str:
+        key, raw_value = match.group(1), match.group(2)
+        value = raw_value.strip()
+        if not value or key not in INPUT_FILE_KEYS | OUTPUT_FILE_KEYS:
+            return match.group(0)
+        if key in UNSUPPORTED_PORTABLE_KEYS:
+            explanation = UNSUPPORTED_PORTABLE_KEYS[key]
+            rewrites.append(PathRewrite(key, value, "removed: " + explanation))
+            return ""
+        if "${PROJECT_DIR}" in value or "${PYMOSAICS_FORCEFIELD_DIR}" in value:
+            return match.group(0)
+
+        path = Path(value).expanduser()
+        replacement = None
+        if key in OUTPUT_FILE_KEYS:
+            name = path.name
+            if not name:
+                unresolved.append(PathIssue(key, value, "output path has no filename"))
+                return match.group(0)
+            replacement = "${PROJECT_DIR}/output/" + name
+        else:
+            candidate = path if path.is_absolute() else source_directory / path
+            try:
+                if candidate.is_file() and candidate.resolve().is_relative_to(project_directory):
+                    replacement = _project_placeholder(candidate, project_directory)
+            except (OSError, ValueError):
+                replacement = None
+            if replacement is None:
+                candidates = index.get(path.name, ())
+                if len(candidates) == 1:
+                    replacement = _project_placeholder(candidates[0], project_directory)
+                elif len(candidates) > 1:
+                    unresolved.append(
+                        PathIssue(key, value, "ambiguous basename matches {} local files".format(len(candidates)))
+                    )
+                else:
+                    unresolved.append(PathIssue(key, value, "no local file has this basename"))
+        if replacement is None or replacement == value:
+            return match.group(0)
+        rewrites.append(PathRewrite(key, value, replacement))
+        return "\\{}{{{}}}".format(key, replacement)
+
+    content = ENTRY_PATTERN.sub(replace, text)
+    return PortableInput(content, tuple(rewrites), tuple(unresolved))
+
+
+def import_project_input(
+    source_input: Path,
+    destination_input: Optional[Path] = None,
+    project_directory: Optional[Path] = None,
+) -> ImportedInput:
+    """Create a managed portable copy of an existing MOSAICS input deck."""
+
+    source_input = source_input.expanduser().resolve()
+    if not source_input.is_file():
+        raise PreparationError("MOSAICS input does not exist: {}".format(source_input))
+    destination_input = (
+        destination_input.expanduser().resolve()
+        if destination_input is not None
+        else source_input.parent / "mcmc.input"
+    )
+    project_directory = (
+        project_directory.expanduser().resolve()
+        if project_directory is not None
+        else destination_input.parent
+    )
+    result = make_portable_input(
+        source_input.read_text(encoding="utf-8"),
+        project_directory,
+        source_directory=source_input.parent,
+    )
+    if result.unresolved:
+        details = "; ".join(
+            "{}={}: {}".format(issue.key, issue.value, issue.reason)
+            for issue in result.unresolved
+        )
+        raise PreparationError("Cannot import project portably: " + details)
+
+    destination_input.parent.mkdir(parents=True, exist_ok=True)
+    (destination_input.parent / "output").mkdir(parents=True, exist_ok=True)
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=str(destination_input.parent),
+            prefix=".pymosaics-import-",
+            suffix=".tmp",
+            delete=False,
+        ) as handle:
+            handle.write(result.content)
+            temporary = Path(handle.name)
+        os.replace(str(temporary), str(destination_input))
+    finally:
+        if temporary is not None and temporary.exists():
+            temporary.unlink()
+    return ImportedInput(destination_input, source_input, result.rewrites)
 
 
 def _portable(path: Path) -> str:
