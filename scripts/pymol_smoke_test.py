@@ -29,6 +29,9 @@ def main():
         parameter_input.write_text(
             "# \\mol_parm_file{forcefield/test.rtf}\n"
             "# \\pos_init_file{start.pdb}\n"
+            "# \\total_step_mc{100}\n"
+            "print('>>Report energies at step 50<<')\n"
+            "print('>>Report energies at step 100<<')\n"
             "print('PYMOSAICS_QPROCESS_SMOKE')\n",
             encoding="utf-8",
         )
@@ -55,6 +58,20 @@ def main():
         if content.palette().window().color().name().lower() != "#0d252f":
             raise SystemExit("The Build form did not receive the deterministic dark palette")
 
+        nucleic_project = root / "nucleic-builder"
+        dialog.project_edit.setText(str(nucleic_project))
+        dialog.nucleic_kind.setCurrentIndex(
+            dialog.nucleic_kind.findData("dna-rna-hybrid")
+        )
+        dialog.nucleic_sequence.setText("ACGT")
+        dialog.nucleic_form1.setCurrentText("A")
+        dialog.nucleic_form2.setCurrentText("A")
+        dialog._build_nucleic_acid()
+        if not (nucleic_project / "built_nucleic_acid.pdb").is_file():
+            raise SystemExit("The DNA:RNA builder did not create a PDB")
+        if "Exact atom names passed" not in dialog.nucleic_status.text():
+            raise SystemExit("The DNA:RNA builder did not pass exact RTF validation")
+
         dialog.project_edit.setText(str(root))
         dialog._scan_inputs()
         discovered_inputs = {
@@ -78,6 +95,7 @@ def main():
             dialog.validation_output,
             dialog.command_preview,
             dialog.run_button,
+            dialog.run_progress,
             dialog.auto_load,
             dialog.log_output,
         )
@@ -104,16 +122,24 @@ def main():
             raise SystemExit("The Analysis acceptance columns require horizontal scrolling")
         dialog.analysis_pages.setCurrentIndex(1)
         application.processEvents()
+        if dialog.rmsd_plot.width() < 220 or dialog.terminal_table.width() < 250:
+            raise SystemExit("The trajectory-analysis workbench is clipped")
+        dialog.analysis_pages.setCurrentIndex(2)
+        application.processEvents()
         if dialog.trajectory_combo.width() < 200:
             raise SystemExit("The structural-landscape trajectory selector is clipped")
         if dialog.landscape_plot.width() < 300 or dialog.landscape_plot.height() < 170:
             raise SystemExit("The structural-landscape plot is too small to use")
         if dialog.representative_list.width() < 250 or dialog.representative_list.height() < 100:
             raise SystemExit("The structural representative list is too small to use")
-        dialog.analysis_pages.setCurrentIndex(2)
+        dialog.analysis_pages.setCurrentIndex(3)
         application.processEvents()
         if dialog.output_list.height() < 260:
             raise SystemExit("The Analysis files list is too small to use")
+        dialog.analysis_pages.setCurrentIndex(4)
+        application.processEvents()
+        if dialog.analysis_input_preview.height() < 120:
+            raise SystemExit("The input/protocol viewer is too small to use")
         dialog.tabs.setCurrentWidget(dialog.build_tab)
         application.processEvents()
 
@@ -162,6 +188,8 @@ def main():
             raise SystemExit("The run log is hidden instead of being stored in project/logs")
         if read_text_file(log, maximum_bytes=None).rstrip("\n") != dialog.log_output.toPlainText().rstrip("\n"):
             raise SystemExit("The Run tab does not display the complete persisted log")
+        if dialog.run_progress.value() != dialog.run_progress.maximum():
+            raise SystemExit("The completed run did not reach 100% progress")
         dialog.close()
         print("PASS: Qt dialog and shell-free QProcess execution")
 

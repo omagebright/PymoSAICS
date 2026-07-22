@@ -4,16 +4,38 @@ import unittest
 from pathlib import Path
 
 from pymosaics.core.analysis import (
+    acceptance_assessment,
     discover_energy_series,
     discover_pdb_outputs,
     discover_project_files,
     latest_log,
     parse_acceptance_log,
+    parse_sampling_protocol,
     read_text_file,
 )
 
 
 class AnalysisTests(unittest.TestCase):
+    def test_sampling_protocol_identifies_single_replica_stsamc(self):
+        protocol = parse_sampling_protocol(
+            "\\simulation_typ{minimize}\n"
+            "\\minimize_type{stsamc}\n"
+            "\\prop_type{cart}\n"
+            "\\prop_trans_sig{1.2e-5}\n"
+            "\\replica_number{0}\n"
+            "\\temperature{300}\n"
+            "\\total_step_mc{100000}\n"
+        )
+        self.assertIn("fluctuating-temperature", protocol.method)
+        self.assertEqual(protocol.replica_count, 1)
+        self.assertEqual(protocol.proposal_type, "cart")
+        self.assertEqual(protocol.proposal_translation_sigma, 1.2e-5)
+
+    def test_sampling_protocol_identifies_parallel_tempering(self):
+        protocol = parse_sampling_protocol("\\replica_number{5}\n")
+        self.assertIn("Parallel tempering", protocol.method)
+        self.assertEqual(protocol.replica_count, 6)
+
     def test_energy_and_acceptance_parsing(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
@@ -23,6 +45,19 @@ class AnalysisTests(unittest.TestCase):
             series = discover_energy_series(root)
             self.assertEqual(series[0].values, (-10.5, -8.0))
             self.assertEqual(parse_acceptance_log(log)[0].ratio, 0.25)
+            self.assertEqual(acceptance_assessment(0.25), "target")
+            self.assertEqual(acceptance_assessment(0.10), "low")
+            self.assertEqual(acceptance_assessment(0.75), "high")
+
+    def test_acceptance_parser_keeps_latest_report_for_each_chain(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            log = Path(temporary) / "run.log"
+            log.write_text(
+                "Chain 0 1 10 0.10\nChain 1 3 10 0.30\nChain 0 4 10 0.40\n",
+                encoding="utf-8",
+            )
+            summaries = parse_acceptance_log(log)
+            self.assertEqual([(item.chain, item.ratio) for item in summaries], [(0, 0.4), (1, 0.3)])
 
     def test_project_files_include_logs_and_identify_pdbs(self):
         with tempfile.TemporaryDirectory() as temporary:
